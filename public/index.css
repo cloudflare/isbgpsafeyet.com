@@ -58,8 +58,8 @@ h1 {
 }
 
 .InlineSafeHighlight {
-  color: var(--green-2);
-  background: var(--green-8);
+  color: var(--green-1);
+  background: rgba(var(--green-7-rgb), .8);
 }
 
 table[data-sortable] th {
@@ -68,9 +68,6 @@ table[data-sortable] th {
 
 table[data-sortable] th:not([data-sortable="false"]) {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
@@ -119,9 +116,7 @@ table[data-sortable] th[data-sorted-direction="ascending"]:after {
 }
 
 .BGPSafetyTable th {
-  vertical-align: bottom;
   font-weight: bold;
-  border-bottom: 2px solid var(--border-color);
 }
 
 .BGPSafetyTable th,
@@ -139,27 +134,23 @@ table[data-sortable] th[data-sorted-direction="ascending"]:after {
   vertical-align: top;
 }
 
-.BGPSafetyTable th {
-  padding-bottom: .1875em;
-}
-
 .BGPSafetyTable tbody tr:not(:last-child) td {
   border-bottom: 1px solid var(--border-color);
 }
 
 .BGPSafetyTable [data-status="safe"] {
-  color: var(--green-2);
-  background: var(--green-8);
+  color: var(--green-1);
+  background: rgba(var(--green-7-rgb), .8);
 }
 
 .BGPSafetyTable [data-status="somewhat-safe"] {
-  color: var(--gold-2);
-  background: var(--gold-8);
+  color: var(--gold-1);
+  background: rgba(var(--gold-7-rgb), .8);
 }
 
 .BGPSafetyTable [data-status="unsafe"] {
-  color: var(--red-2);
-  background: var(--red-8);
+  color: var(--red-1);
+  background: rgba(var(--red-7-rgb), .8);
 }
 
 @media (max-width: 768px) {
