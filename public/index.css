@@ -43,6 +43,10 @@ h1 {
   text-align: center;
 }
 
+h1 em {
+  color: var(--gray-4);
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 9vw;
@@ -60,6 +64,12 @@ h1 {
 .InlineSafeHighlight {
   color: var(--green-1);
   background: rgba(var(--green-7-rgb), .8);
+}
+
+@media (min-width: 769px) {
+  .InlineSafeHighlight {
+    border-radius: .15em;
+  }
 }
 
 table[data-sortable] th {
@@ -105,7 +115,7 @@ table[data-sortable] th[data-sorted-direction="ascending"]:after {
 
 .BGPSafetyTable {
   width: 100%;
-  --content-indent: 1em;
+  --content-indent: 1.1em;
   width: calc(100% + 2 * var(--content-indent));
   margin-left: calc(-1 * var(--content-indent));
   border-collapse: collapse;
@@ -116,7 +126,8 @@ table[data-sortable] th[data-sorted-direction="ascending"]:after {
 }
 
 .BGPSafetyTable th {
-  font-weight: bold;
+  font-weight: 500;
+  color: var(--gray-4);
 }
 
 .BGPSafetyTable th,
@@ -138,23 +149,49 @@ table[data-sortable] th[data-sorted-direction="ascending"]:after {
   border-bottom: 1px solid var(--border-color);
 }
 
-.BGPSafetyTable [data-status="safe"] {
+.BGPSafetyTable td:last-child {
+  font-weight: 500;
+}
+
+@media (min-width: 769px) {
+  .BGPSafetyTable tbody tr:first-child td:last-child {
+    border-radius: .3125em .3125em 0 0;
+  }
+
+  .BGPSafetyTable tbody tr:last-child td:last-child {
+    border-radius: 0 0 .3125em .3125em;
+  }
+
+  .BGPSafetyTable [data-status="safe"] {
+    box-shadow: -5px 0 var(--green-4);
+  }
+
+  .BGPSafetyTable [data-status="somewhat-safe"] {
+    box-shadow: -5px 0 var(--gold-4);
+  }
+
+  .BGPSafetyTable [data-status="unsafe"] {
+    box-shadow: -5px 0 var(--red-4);
+  }
+}
+
+.BGPSafetyTable [data-status="safe"] td:last-child {
   color: var(--green-1);
   background: rgba(var(--green-7-rgb), .8);
 }
 
-.BGPSafetyTable [data-status="somewhat-safe"] {
+.BGPSafetyTable [data-status="somewhat-safe"] td:last-child {
   color: var(--gold-1);
   background: rgba(var(--gold-7-rgb), .8);
 }
 
-.BGPSafetyTable [data-status="unsafe"] {
+.BGPSafetyTable [data-status="unsafe"] td:last-child {
   color: var(--red-1);
   background: rgba(var(--red-7-rgb), .8);
 }
 
 @media (max-width: 768px) {
-  .BGPSafetyTable tr > *:nth-child(4) {
+  .BGPSafetyTable tr > *:nth-child(3) {
     display: none;
   }
 }

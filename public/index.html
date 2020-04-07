@@ -32,71 +32,71 @@
     <div class="Page">
       <div class="Stack">
         <div>
-          <h1>Is BGP <span class="InlineSafeHighlight">safe</span> yet? <em style="opacity: .3">No.</em></h1>
+          <h1>Is BGP <span class="InlineSafeHighlight">safe</span> yet? <em>No.</em></h1>
 
           <table class="BGPSafetyTable" data-sortable>
             <thead>
               <tr>
                 <th>Name</th>
                 <th>Type</th>
-                <th data-sorted="true" data-sorted-direction="descending">Status</th>
                 <th>Details</th>
+                <th data-sorted="true" data-sorted-direction="descending">Status</th>
               </tr>
             </thead>
             <tbody>
-              <tr data-status="unsafe">
-                <td>Comcast</td>
-                <td>ISP</td>
-                <td>unsafe</td>
-                <td></td>
-              </tr>
-              <tr data-status="unsafe">
-                <td>Google</td>
-                <td>Content</td>
-                <td>unsafe</td>
-                <td></td>
-              </tr>
-              <tr data-status="unsafe">
-                <td>Level3</td>
-                <td>Transit</td>
-                <td>unsafe</td>
-                <td></td>
-              </tr>
-              <tr data-status="unsafe">
-                <td>Telia</td>
-                <td>Transit</td>
-                <td>unsafe</td>
-                <td></td>
-              </tr>
-              <tr data-status="somewhat-safe">
-                <td>TATA</td>
-                <td>Transit</td>
-                <td>somewhat safe</td>
-                <td>filtering</td>
-              </tr>
-              <tr data-status="somewhat-safe">
-                <td>Cogent</td>
-                <td>Transit</td>
-                <td>somewhat safe</td>
-                <td>started</td>
-              </tr>
-              <tr data-status="somewhat-safe">
-                <td>Amazon</td>
-                <td>Content</td>
-                <td>somewhat safe</td>
-                <td>signed</td>
-              </tr>
               <tr data-status="safe">
                 <td>AT&T</td>
                 <td>ISP</td>
+                <td>signed + filtering</td>
                 <td>safe</td>
-                <td>signed+filtering</td>
               </tr>
               <tr data-status="safe">
                 <td>Cloudflare</td>
-                <td>Content</td>
+                <td>content</td>
+                <td>signed + filtering</td>
                 <td>safe</td>
-                <td>signed+filtering</td>
+              </tr>
+              <tr data-status="somewhat-safe">
+                <td>Amazon</td>
+                <td>content</td>
+                <td>signed</td>
+                <td>somewhat safe</td>
+              </tr>
+              <tr data-status="somewhat-safe">
+                <td>Cogent</td>
+                <td>transit</td>
+                <td>started</td>
+                <td>somewhat safe</td>
+              </tr>
+              <tr data-status="somewhat-safe">
+                <td>TATA</td>
+                <td>transit</td>
+                <td>filtering</td>
+                <td>somewhat safe</td>
+              </tr>
+              <tr data-status="unsafe">
+                <td>Comcast</td>
+                <td>ISP</td>
+                <td></td>
+                <td>unsafe</td>
+              </tr>
+              <tr data-status="unsafe">
+                <td>Google</td>
+                <td>content</td>
+                <td></td>
+                <td>unsafe</td>
+              </tr>
+              <tr data-status="unsafe">
+                <td>Level3</td>
+                <td>transit</td>
+                <td></td>
+                <td>unsafe</td>
+              </tr>
+              <tr data-status="unsafe">
+                <td>Telia</td>
+                <td>transit</td>
+                <td></td>
+                <td>unsafe</td>
               </tr>
             </tbody>
           </table>
