@@ -139,7 +139,7 @@ h1 em {
 
 .BGPSafetyTable th[data-sorted-direction="ascending"]::after {
   border-bottom-color: currentColor;
-  top: -.2em;
+  top: -.1em;
 }
 
 .BGPSafetyTable th,
