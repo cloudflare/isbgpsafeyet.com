@@ -180,7 +180,7 @@ h1 em {
     box-shadow: -5px 0 var(--green-4);
   }
 
-  .BGPSafetyTable [data-status="somewhat-safe"] {
+  .BGPSafetyTable [data-status="partially-safe"] {
     box-shadow: -5px 0 var(--gold-4);
   }
 
@@ -194,7 +194,7 @@ h1 em {
   background: rgba(var(--green-7-rgb), .8);
 }
 
-.BGPSafetyTable [data-status="somewhat-safe"] td:last-child {
+.BGPSafetyTable [data-status="partially-safe"] td:last-child {
   color: var(--gold-1);
   background: rgba(var(--gold-7-rgb), .8);
 }
