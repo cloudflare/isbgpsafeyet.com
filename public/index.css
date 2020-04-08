@@ -50,7 +50,7 @@ h1 em {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 9vw;
+    font-size: 8vw;
   }
 }
 
@@ -68,6 +68,8 @@ h1 em {
 .InlineSafeHighlight {
   color: var(--green-1);
   background: rgba(var(--green-7-rgb), .8);
+  padding-left: .2em;
+  padding-right: .2em;
 }
 
 @media (min-width: 769px) {
@@ -204,6 +206,12 @@ h1 em {
 
 @media (max-width: 768px) {
   .BGPSafetyTable tr > *:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .BGPSafetyTable tr > *:nth-child(2) {
     display: none;
   }
 }
