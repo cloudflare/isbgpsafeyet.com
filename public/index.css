@@ -390,18 +390,18 @@ h1, h2 {
   .BGPSafetyTable tbody tr:last-child td:last-child {
     border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
+}
 
-  .BGPSafetyTable [data-status="safe"] {
-    box-shadow: -5px 0 var(--green-4);
-  }
+.BGPSafetyTable [data-status="safe"] {
+  box-shadow: -5px 0 var(--green-4);
+}
 
-  .BGPSafetyTable [data-status="partially-safe"] {
-    box-shadow: -5px 0 var(--yellow-4);
-  }
+.BGPSafetyTable [data-status="partially-safe"] {
+  box-shadow: -5px 0 var(--yellow-4);
+}
 
-  .BGPSafetyTable [data-status="unsafe"] {
-    box-shadow: -5px 0 var(--red-4);
-  }
+.BGPSafetyTable [data-status="unsafe"] {
+  box-shadow: -5px 0 var(--red-4);
 }
 
 .BGPSafetyTable [data-status="safe"] td:last-child {
