@@ -113,7 +113,7 @@ h1 em {
   }
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: var(--gray-0);
 }
 
@@ -246,19 +246,25 @@ h1, h2 {
 
 
 .Markdown h2 {
+  font-size: 2.5em;
+}
+
+.Markdown h3 {
   font-size: 2em;
-  margin-bottom: .25em;
 }
 
 @media (max-width: 768px) {
   .Markdown h2 {
+    font-size: 2em;
+  }
+
+  .Markdown h3 {
     font-size: 1.5em;
   }
 }
 
-
-.FAQ[id]::before,
-.Markdown h2[id]::before {
+.Markdown h2[id]::before,
+.Markdown h3[id]::before {
   content: "";
   display: block;
   padding-top: 1.5em;
@@ -432,6 +438,36 @@ h1, h2 {
   .BGPSafetyTable tr > *:nth-child(2) {
     display: none;
   }
+}
+
+
+.FAQItem summary h3 {
+  display: inline-block;
+  font-size: inherit;
+}
+
+.FAQItem summary {
+  font-size: 1.5em;
+  padding: 0 .6em;
+  background: var(--gray-8);
+  color: var(--gray-4);
+  border-radius: var(--border-radius);
+}
+
+.FAQItem {
+  margin-bottom: 1.5em;
+}
+
+.FAQItem p {
+  padding-left: 2.7em;
+}
+
+.FAQItem[open] {
+  margin-bottom: 2.5em;
+}
+
+.FAQItem[open] summary {
+  margin-bottom: .5em;
 }
 
 
