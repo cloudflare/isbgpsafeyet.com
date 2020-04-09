@@ -125,7 +125,7 @@ h1 em {
 .Test[data-type="running"] {
   color: var(--gray-4);
   text-align: center;
-  padding: 1.575em;
+  padding: 2.31em 1em;
 }
 
 .Test[data-type="running"]::before {
