@@ -4,8 +4,21 @@
 
 html {
   box-sizing: border-box;
-  --font-size: 17px;
+  --border-radius: .3125em;
+  --font-size: 18px;
   --accent-color-rgb: var(--green-4-rgb);
+}
+
+@media (max-width: 1280px) {
+  html {
+    --font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    --font-size: 16px;
+  }
 }
 
 body {
@@ -18,10 +31,6 @@ body {
   max-width: 100%;
   margin: auto;
   padding: 3em;
-}
-
-.Page > .Stack > div {
-  --gap: 4em;
 }
 
 @media (max-width: 768px) {
@@ -55,13 +64,82 @@ h1 em {
 }
 
 
-.Markdown h2 {
-  font-size: 2em;
+.Button-is-black {
+  background: var(--color);
+  color: #fff;
 }
 
-.Markdown--hero-paragraph {
-  font-size: 1.15em;
-  line-height: 1.7;
+.Button-is-gray {
+  background: var(--gray-8);
+}
+
+
+.Test {
+  position: relative;
+  font-size: 1.1em;
+  background: var(--gray-8);
+  padding: .9em 1.2em;
+  margin-top: 1em;
+}
+
+.Test:empty {
+  display: none;
+}
+
+.Test::before {
+  content: attr(data-type);
+  display: block;
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: var(--gray-4);
+  margin-bottom: .2em;
+}
+
+.Test[data-type="running"] {
+  color: var(--gray-4);
+  text-align: center;
+  padding: 1.575em;
+}
+
+.Test[data-type="running"]::before {
+  display: none;
+}
+
+.Test[data-type="running"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: calc(50% - 5em); /* TODO */
+  width: .8em;
+  height: .8em;
+  border-radius: .5em;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-left-color: currentColor;
+  animation: test-running .6s linear infinite;
+}
+
+@keyframes test-running {
+  to { transform: rotate(360deg) }
+}
+
+.Test[data-type="success"] {
+  border-left: 1em solid var(--green-5);
+}
+
+.Test[data-type="error"],
+.Test[data-type="failure"] {
+  border-left: 1em solid var(--red-5);
+}
+
+
+.Markdown h2 {
+  font-size: 2em;
 }
 
 
@@ -169,11 +247,11 @@ h1 em {
 
 @media (min-width: 769px) {
   .BGPSafetyTable tbody tr:first-child td:last-child {
-    border-radius: .3125em .3125em 0 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 
   .BGPSafetyTable tbody tr:last-child td:last-child {
-    border-radius: 0 0 .3125em .3125em;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
 
   .BGPSafetyTable [data-status="safe"] {

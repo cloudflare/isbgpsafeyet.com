@@ -30,10 +30,31 @@
 
   <body>
     <div class="Page">
-      <div class="Stack">
+      <div class="Stack" style="--gap: 4em">
         <div>
           <h1>Is BGP <span class="InlineSafeHighlight">safe</span> yet? <em>No.</em></h1>
 
+          <div class="Stack" style="--gap: 2em">
+            <div class="Markdown">
+              <p><a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Border Gateway Protocol (BGP)</a> is the postal service of the Internet. It’s responsible for looking at all of the available paths that data could travel and picking the best route.</p>
+
+              <p>Unfortunately, it isn’t secure, and there have been some <a href="https://blog.cloudflare.com/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today/">major Internet disruptions</a> as a result. But fortunately there is a way to make it secure.</p>
+
+              <p>ISPs like and other major Internet players (Comcast, Sprint, Verizon, and others) would need to implement a certification system, called <a href>RPKI</a>.</p>
+            </div>
+
+            <div>
+              <div class="Row Row-is-centered" style="--gap: 1em">
+                <button class="Button Button-is-black" data-js-test>Test&nbsp;if&nbsp;your&nbsp;ISP&nbsp;is&nbsp;safe</button>
+                <a class="Button Button-is-gray" href="#faq">Learn&nbsp;more</a>
+              </div>
+            </div>
+
+            <div class="Test" data-js-test-results></div>
+          </div>
+        </div>
+
+        <div>
           <table class="BGPSafetyTable" data-sortable>
             <thead>
               <tr>
@@ -162,9 +183,27 @@
           </table>
         </div>
 
-        <div class="Markdown">
-          <h2 id="about">About</h2>
-          <p class="Markdown--hero-paragraph"><a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Border Gateway Protocol (BGP)</a> routing isn’t secure. Its main hope, RPKI, uses a certificate system that’s akin to secure web browsing (or at-least its early days). While secure web browsing has moved on and is far more secure and is somewhat the default these days, the state of BGP route validation has not moved forward. To secure BGP routing, all networks would need to be embrace RPKI. <a href="https://blog.cloudflare.com/rpki/">Learn&nbsp;more&nbsp;→</a></p>
+        <div>
+          <div class="Stack" style="--gap: 2em">
+            <div id="faq" class="Markdown">
+              <h2 id="what-is-bgp">What is BGP?</h2>
+              <p><a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Border Gateway Protocol (BGP)</a> is the postal service of the Internet. When someone drops a letter into a mailbox, the postal service processes that piece of mail and chooses a fast, efficient route to deliver that letter to its recipient. Similarly, when someone submits data across the Internet, BGP is responsible for looking at all of the available paths that data could travel and picking the best route, which usually means hopping between autonomous systems. <a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Learn&nbsp;more&nbsp;→</a></p>
+
+              <h2 id="why-is-bgp-unsafe">Why is BGP unsafe?</h2>
+              <p>By default, BGP does not embed any security protocols. It is up to every autonomous system to implement filtering of “wrong routes”. Leaking routes can break parts of the Internet by making them unreachable. It is commonly the result of misconfigurations. Although, it is not always accidental. A practice called BGP hijack consists of redirecting traffic to another autonomous system to steal information (via phishing, or passive listening for instance).</p>
+
+              <h2 id="what-is-rpki">What is RPKI?</h2>
+              <p>With 800k+ routes on the Internet, it is impossible to check them manually. <a href="https://blog.cloudflare.com/rpki/">Resource Public Key Infrastructure (RPKI)</a> is a security framework method that associates a route with an autonomous system. It uses cryptography in order to validate the information before being passed onto the routers. <a href="https://blog.cloudflare.com/rpki/">Learn&nbsp;more&nbsp;→</a></p>
+
+              <h2 id="what-can-you-do">What can you do?</h2>
+              <p><a href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share this page</a>. For BGP to be safe, all of the major ISPs will need to embrace RPKI. Sharing this page will increase awareness of the problem which can ultimately pressure ISPs into impementing RPKI for the good of themselves and the general public. When the Internet is safe, everybody wins.</p>
+            </div>
+            <div>
+              <div class="Row Row-is-centered" style="--gap: 1em">
+                <a class="Button Button-is-primary" href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share&nbsp;IsBGPSafeYet.com&nbsp;→</a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="MadeBy">
@@ -183,5 +222,6 @@
 
     <script src="https://unpkg.com/focus-visible-polyfill"></script>
     <script src="js/sortable.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
