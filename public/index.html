@@ -199,6 +199,9 @@
                 <h2 id="what-is-rpki">What is RPKI?</h2>
                 <p>With 800k+ routes on the Internet, it is impossible to check them manually. <a href="https://blog.cloudflare.com/rpki/">Resource Public Key Infrastructure (RPKI)</a> is a security framework method that associates a route with an autonomous system. It uses cryptography in order to validate the information before being passed onto the routers. <a href="https://blog.cloudflare.com/rpki/">Learn&nbsp;more&nbsp;→</a></p>
 
+                <h2 id="how-does-the-test-work">How does the test work?</h2>
+                <p>In order to test if your ISP is implementing BGP safely, we announce a legitimate route but we make sure the announcement is invalid. If you can load the website we host on that route, that means the invalid route was accepted by your ISP. A leaked or a hijacked route would likely be accepted too.</p>
+
                 <h2 id="what-can-you-do">What can you do?</h2>
                 <p><a href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share this page</a>. For BGP to be safe, all of the major ISPs will need to embrace RPKI. Sharing this page will increase awareness of the problem which can ultimately pressure ISPs into impementing RPKI for the good of themselves and the general public. When the Internet is safe, everybody wins.</p>
               </div>
