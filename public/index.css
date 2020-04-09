@@ -432,22 +432,29 @@ h1, h2 {
 }
 
 
-.MadeBy {
+.Footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.MadeBy--logo-link {
+.Footer--logo-link {
   display: block;
   height: 96px;
   width: 96px;
 }
 
-.MadeBy--logo {
+.Footer--logo {
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.Footer--legal {
+  text-align: center;
+  font-size: .8em;
+  color: var(--gray-5);
 }
 
 
