@@ -61,6 +61,13 @@ summary:not([is-focus-visible]) {
   }
 }
 
+@media (max-width: 414px) {
+  .Page {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+  }
+}
+
 
 h1 {
   font-size: 3em;
@@ -90,6 +97,14 @@ h1 em {
   background: var(--gray-8);
   padding: .9em 1.2em;
   margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .Test {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: .8em 1em;
+  }
 }
 
 .Test:empty {
