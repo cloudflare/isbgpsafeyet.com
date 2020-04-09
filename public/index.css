@@ -26,6 +26,21 @@ body {
 }
 
 
+summary {
+  cursor: pointer;
+  box-shadow: 0 0 0 var(--focus-size) var(--focus-color);
+  transition: box-shadow .3s ease;
+}
+
+[js-focus-visible-polyfill-available] summary:focus {
+  outline: none;
+}
+
+summary:not([is-focus-visible]) {
+  --focus-size: 0em;
+}
+
+
 .Page {
   width: 46em;
   max-width: 100%;
@@ -135,6 +150,44 @@ h1 em {
 .Test[data-type="error"],
 .Test[data-type="failure"] {
   border-left: 1em solid var(--red-5);
+}
+
+.Test summary {
+  font-size: .8em;
+  margin: .4em 0 0;
+  text-indent: .125em;
+}
+
+.Test pre {
+  margin: .4em 0 0;
+  font-size: .7em;
+  line-height: 1.7;
+  font-family: var(--monospace-font-family);
+  padding: .8em 1em .6em;
+  background: var(--gray-9);
+  overflow-x: auto;
+}
+
+.Test pre::-webkit-scrollbar {
+  height: 1em;
+}
+
+.Test pre::-webkit-scrollbar-track {
+  background: none;
+  border: none;
+}
+
+.Test pre::-webkit-scrollbar-thumb {
+  min-width: 3.5em;
+  background-color: var(--gray-6);
+  background-clip: padding-box;
+  border: .25em solid transparent;
+  border-radius: .5em;
+  box-shadow: none;
+}
+
+.Test pre::-webkit-scrollbar-thumb:active {
+  background-color: var(--gray-4);
 }
 
 

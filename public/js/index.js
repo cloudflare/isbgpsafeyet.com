@@ -12,6 +12,25 @@
 
       el.setAttribute('data-type', type)
       el.textContent = message
+
+      if (type === 'success' || type === 'failure') {
+        const details = document.createElement('details')
+        const summary = document.createElement('summary')
+        const pre = document.createElement('pre')
+
+        details.appendChild(summary)
+        details.appendChild(pre)
+
+        summary.textContent = 'Details'
+
+        if (type === 'success') {
+          pre.textContent = 'fetch https://valid.rpki.cloudflare.com: [succeeded]\nfetch https://invalid.rpki.cloudflare.com: [failed]'
+        } else {
+          pre.textContent = 'fetch https://valid.rpki.cloudflare.com: [succeeded]\nfetch https://invalid.rpki.cloudflare.com: [succeeded]'
+        }
+
+        el.appendChild(details)
+      }
     }
 
     const runTest = () => {
