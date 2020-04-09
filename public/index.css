@@ -6,7 +6,7 @@ html {
   box-sizing: border-box;
   --border-radius: .3125em;
   --font-size: 18px;
-  --accent-color-rgb: var(--green-4-rgb);
+  --accent-color-rgb: 41, 129, 218;
 }
 
 @media (max-width: 1280px) {
