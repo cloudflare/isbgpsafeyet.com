@@ -63,7 +63,7 @@
               .then(text => {
                 completed = true
                 if (timedOut) return
-                render('failure', 'Your ISP did not implement BGP safely. It should be using RPKI.')
+                render('failure', 'Your ISP does not implement BGP safely. It should be using RPKI.')
               })
             .catch(err => success())
         })
