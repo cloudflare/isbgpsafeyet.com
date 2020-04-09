@@ -8,7 +8,9 @@ html {
   box-sizing: border-box;
   --border-radius: .3125em;
   --font-size: 18px;
-  --accent-color-rgb: 41, 129, 218;
+  --line-height: 1.7;
+  --color-rgb: var(--gray-1-rgb);
+  --accent-color-rgb: var(--indigo-3-rgb);
 }
 
 @media (max-width: 1280px) {
@@ -20,6 +22,7 @@ html {
 @media (max-width: 768px) {
   html {
     --font-size: 16px;
+    --line-height: 1.5;
   }
 }
 
@@ -43,36 +46,53 @@ summary:not([is-focus-visible]) {
 }
 
 
-.Page {
-  width: 46em;
-  max-width: 100%;
-  margin: auto;
-  padding: 3em;
+.Hero {
+  background: var(--gray-9);
 }
 
-@media (max-width: 768px) {
-  .Page {
-    padding-left: 0;
-    padding-right: 0;
+@media (min-width: 769px) {
+  .Hero--actions {
+    font-size: 1.1em;
   }
+}
 
-  .Page > .Stack > div {
-    padding-left: 1em;
-    padding-right: 1em;
-    --gap: 2.5em;
-  }
+.Column {
+  width: 42em;
+  max-width: 100%;
+  margin: auto;
+  padding: 3em 1em;
 }
 
 @media (max-width: 414px) {
-  .Page {
+  .Column {
     padding-top: 1.75em;
     padding-bottom: 1.75em;
   }
 }
 
 
+.Stack {
+  --gap: 4rem;
+}
+
+.Stack.Stack-is-secondary {
+  --gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .Stack {
+    --gap: 2.5rem;
+  }
+
+  .Stack.Stack-is-secondary {
+    --gap: 1.25rem;
+  }
+}
+
+
 h1 {
   font-size: 3em;
+  line-height: 1;
   margin: 0 0 .75em;
   text-align: center;
 }
@@ -83,10 +103,29 @@ h1 em {
 
 @media (max-width: 768px) {
   h1 {
+    font-size: 6.5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
     font-size: 8vw;
   }
 }
 
+h1, h2 {
+  color: var(--gray-0);
+}
+
+
+.Button {
+  padding-left: 1.1875em;
+  padding-right: 1.1875em;
+}
+
+.Button-is-bordered {
+  --color-rgb: var(--indigo-4-rgb);
+}
 
 .Button-is-gray {
   background: var(--gray-8);
@@ -205,12 +244,30 @@ h1 em {
 
 .Markdown h2 {
   font-size: 2em;
+  margin-bottom: .25em;
+}
+
+@media (max-width: 768px) {
+  .Markdown h2 {
+    font-size: 1.5em;
+  }
+}
+
+
+.FAQ[id]::before,
+.Markdown h2[id]::before {
+  content: "";
+  display: block;
+  padding-top: 1.5em;
+  margin-top: -1.5em;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 
 .InlineSafeHighlight {
-  color: var(--green-1);
-  background: rgba(var(--green-7-rgb), .8);
+  color: var(--status-green-fg);
+  background: var(--status-green-bg);
   padding-left: .2em;
   padding-right: .2em;
 }
@@ -230,7 +287,6 @@ h1 em {
   border-collapse: collapse;
   border-spacing: 0;
   border: 0;
-  --border-color: rgba(var(--color-rgb), .1);
 }
 
 @media (max-width: 768px) {
@@ -244,7 +300,7 @@ h1 em {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .02em;
-  color: var(--gray-4);
+  color: var(--gray-3);
   vertical-align: bottom;
   white-space: nowrap;
 }
@@ -289,7 +345,7 @@ h1 em {
 
 .BGPSafetyTable th,
 .BGPSafetyTable td {
-  padding: .3rem var(--content-indent);
+  padding: .2rem var(--content-indent);
   text-align: left;
 }
 
@@ -302,8 +358,24 @@ h1 em {
   vertical-align: top;
 }
 
+.BGPSafetyTable tbody tr:nth-child(even) {
+  background: rgba(var(--gray-9-rgb), .9);
+}
+
 .BGPSafetyTable tbody tr:not(:last-child) td {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--gray-8);
+}
+
+.BGPSafetyTable tbody tr[data-status="safe"]:not(:last-child) td:last-child {
+  border-bottom-color: rgba(var(--green-2-rgb), .08);
+}
+
+.BGPSafetyTable tbody tr[data-status="partially-safe"]:not(:last-child) td:last-child {
+  border-bottom-color: rgba(var(--yellow-2-rgb), .08);
+}
+
+.BGPSafetyTable tbody tr[data-status="unsafe"]:not(:last-child) td:last-child {
+  border-bottom-color: rgba(var(--red-2-rgb), .08);
 }
 
 .BGPSafetyTable td:last-child {
@@ -324,7 +396,7 @@ h1 em {
   }
 
   .BGPSafetyTable [data-status="partially-safe"] {
-    box-shadow: -5px 0 var(--gold-4);
+    box-shadow: -5px 0 var(--yellow-4);
   }
 
   .BGPSafetyTable [data-status="unsafe"] {
@@ -333,18 +405,18 @@ h1 em {
 }
 
 .BGPSafetyTable [data-status="safe"] td:last-child {
-  color: var(--green-1);
-  background: rgba(var(--green-7-rgb), .8);
+  color: var(--status-green-fg);
+  background: var(--status-green-bg);
 }
 
 .BGPSafetyTable [data-status="partially-safe"] td:last-child {
-  color: var(--gold-1);
-  background: rgba(var(--gold-7-rgb), .8);
+  color: var(--status-yellow-fg);
+  background: var(--status-yellow-bg);
 }
 
 .BGPSafetyTable [data-status="unsafe"] td:last-child {
-  color: var(--red-1);
-  background: rgba(var(--red-7-rgb), .8);
+  color: var(--status-red-fg);
+  background: var(--status-red-bg);
 }
 
 @media (max-width: 768px) {
