@@ -79,11 +79,6 @@ h1 em {
 }
 
 
-.Button-is-black {
-  background: var(--color);
-  color: #fff;
-}
-
 .Button-is-gray {
   background: var(--gray-8);
 }
