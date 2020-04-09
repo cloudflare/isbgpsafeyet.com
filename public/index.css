@@ -462,6 +462,12 @@ h1, h2, h3 {
   padding-left: 2.7em;
 }
 
+@media (max-width: 413px) {
+  .FAQItem p {
+    padding-left: 0;
+  }
+}
+
 .FAQItem[open] {
   margin-bottom: 2.5em;
 }
