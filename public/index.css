@@ -124,7 +124,7 @@ h1, h2 {
 }
 
 .Button-is-bordered {
-  --color-rgb: var(--indigo-4-rgb);
+  --color-rgb: var(--indigo-2-rgb);
 }
 
 .Button-is-gray {
