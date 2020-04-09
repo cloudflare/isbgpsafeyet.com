@@ -119,6 +119,9 @@ h1, h2 {
 
 
 .Button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 1.1875em;
   padding-right: 1.1875em;
 }
