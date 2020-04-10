@@ -249,17 +249,9 @@ h1, h2, h3 {
   font-size: 2.5em;
 }
 
-.Markdown h3 {
-  font-size: 2em;
-}
-
 @media (max-width: 768px) {
   .Markdown h2 {
     font-size: 2em;
-  }
-
-  .Markdown h3 {
-    font-size: 1.5em;
   }
 }
 
@@ -447,11 +439,19 @@ h1, h2, h3 {
 }
 
 .FAQItem summary {
+  display: flex;
+  align-items: center;
   font-size: 1.5em;
-  padding: 0 .6em;
+  padding: .25em .6em;
   background: var(--gray-8);
   color: var(--gray-4);
   border-radius: var(--border-radius);
+}
+
+@media (max-width: 768px) {
+  .FAQItem summary {
+    font-size: 1.2em;
+  }
 }
 
 .FAQItem {
