@@ -1,20 +1,20 @@
-name,type,details,status
-AT&T,ISP,signed + filtering,safe
-Cloudflare,cloud,signed + filtering,safe
-NTT,transit,signed + filtering,safe
-Telia,transit,signed + filtering,safe
-Amazon,cloud,signed,partially safe
-Cogent,transit,started,partially safe
-Deutsche Telekom,ISP,started,partially safe
-Orange,transit,started,partially safe
-PCCW,transit,started,partially safe
-Sparkle,transit,started,partially safe
-TATA,transit,filtering,partially safe
-Telxius,transit,started,partially safe
-Comcast,ISP,,unsafe
-Google,cloud,,unsafe
-GTT,transit,,unsafe
-Level3,transit,,unsafe
-Sprint,transit,,unsafe
-Verizon,ISP,,unsafe
-Zayo,transit,,unsafe
+name,type,details,status,asn
+AT&T,ISP,signed + filtering,safe,7018
+Cloudflare,cloud,signed + filtering,safe,13335
+NTT,transit,signed + filtering,safe,2914
+Telia,transit,signed + filtering,safe,1299
+Amazon,cloud,signed,partially safe,16509
+Cogent,transit,started,partially safe,174
+Deutsche Telekom,ISP,started,partially safe,3320
+Orange,transit,started,partially safe,3215
+PCCW,transit,started,partially safe,3491
+Sparkle,transit,started,partially safe,6762
+TATA,transit,filtering,partially safe,6453
+Telxius,transit,started,partially safe,12956
+Comcast,ISP,,unsafe,7922
+Google,cloud,,unsafe,15169
+GTT,transit,,unsafe,3257
+Level3,transit,,unsafe,3356
+Sprint,transit,,unsafe,1239
+Verizon,ISP,,unsafe,701
+Zayo,transit,,unsafe,6461

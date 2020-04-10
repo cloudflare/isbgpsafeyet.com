@@ -134,6 +134,20 @@ h1, h2, h3 {
   background: var(--gray-8);
 }
 
+.Button-is-question-mark {
+  font-size: .9em;
+  margin-left: .125em;
+  padding: 0 .6em;
+  border-radius: 999em;
+  font-weight: 700;
+}
+
+.Button-looks-like-text {
+  padding: .25em .7em;
+  margin-top: -.25em;
+  margin-left: -.7em;
+}
+
 
 .Test {
   position: relative;
@@ -296,6 +310,10 @@ h1, h2, h3 {
   }
 }
 
+.BGPSafetyTable[data-hide-asn-column="true"] [data-column="asn"] {
+  display: none;
+}
+
 .BGPSafetyTable th {
   font-size: .8em;
   font-weight: 600;
@@ -421,21 +439,33 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
-  .BGPSafetyTable tr > *:nth-child(3) {
+  .BGPSafetyTable [data-column="asn"],
+  .BGPSafetyTable [data-column="details"] {
     display: none;
   }
 }
 
 @media (max-width: 576px) {
-  .BGPSafetyTable tr > *:nth-child(2) {
+  .BGPSafetyTable [data-column="type"] {
     display: none;
   }
 }
 
-.BGPSafetyTable--caption {
+.BGPSafetyTable--footer {
+  display: flex;
   font-size: .85em;
   padding-top: 1em;
   opacity: .8;
+}
+
+.BGPSafetyTable--footer-actions {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .BGPSafetyTable--footer-actions {
+    display: none;
+  }
 }
 
 

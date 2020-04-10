@@ -59,21 +59,28 @@
     <div class="Column">
       <div class="Stack">
         <div>
-          <table class="BGPSafetyTable" data-sortable>
+          <table class="BGPSafetyTable" data-js-table data-sortable data-hide-asn-column="true">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Details</th>
-                <th data-sorted="true" data-sorted-direction="ascending">Status</th>
+                <th data-column="name">Name</th>
+                <th data-column="asn" data-sortable-type="numeric">ASN <a class="Button Button-is-bordered Button-is-question-mark" href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)">?</a></th>
+                <th data-column="type">Type</th>
+                <th data-column="details">Details</th>
+                <th data-column="status" data-sortable-type="numeric" data-sorted="true" data-sorted-direction="ascending">Status</th>
               </tr>
             </thead>
-            <tbody data-js-table-body></tbody>
+            <tbody></tbody>
           </table>
 
-          <div class="BGPSafetyTable--caption">
-            <div class="Markdown">
-              <p>Last updated April 10, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/blob/master/public/data/operators.csv">Edit on Github</a></p>
+          <div class="BGPSafetyTable--footer">
+            <div class="BGPSafetyTable--footer-info">
+              <div class="Markdown">
+                <p>Last updated April 10, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/blob/master/public/data/operators.csv">Edit on Github</a></p>
+              </div>
+            </div>
+
+            <div class="BGPSafetyTable--footer-actions">
+              <button class="Button Button-looks-like-text" data-js-toggle-asn-column>＋ Show ASN column</button>
             </div>
           </div>
         </div>

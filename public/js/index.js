@@ -4,32 +4,48 @@
       .then(r => r.text())
       .then(d3.csvParse)
       .then(data => {
-        const tbody = document.querySelector('[data-js-table-body]')
+        const table = document.querySelector('[data-js-table]')
+        const tbody = table.querySelector('tbody')
+        const columns = Array.from(table.querySelectorAll('th')).map(th => th.getAttribute('data-column'))
 
         data.forEach(d => {
           const tr = document.createElement('tr')
           tr.setAttribute('data-status', d.status.split(' ').join('-'))
 
-          const tdName = document.createElement('td')
-          tdName.innerText = d.name
-          tr.appendChild(tdName)
+          columns.forEach(name => {
+            const td = document.createElement('td')
+            td.setAttribute('data-column', name)
+            td.innerText = d[name]
 
-          const tdType = document.createElement('td')
-          tdType.innerText = d.type
-          tr.appendChild(tdType)
+            if (name === 'asn') {
+              td.setAttribute('data-value', d[name])
+            }
 
-          const tdDetails = document.createElement('td')
-          tdDetails.innerText = d.details
-          tr.appendChild(tdDetails)
+            if (name === 'status') {
+              td.setAttribute('data-value', [, 'safe', 'partially safe', 'unsafe'].indexOf(d.status))
+            }
 
-          const tdStatus = document.createElement('td')
-          tdStatus.innerText = d.status
-          tdStatus.setAttribute('data-value', `safety-scale-${[, 'safe', 'partially safe', 'unsafe'].indexOf(d.status)}`)
-          tr.appendChild(tdStatus)
+            tr.appendChild(td)
+          })
 
           tbody.appendChild(tr)
         })
       })
+  }
+
+  const setupASNColumnToggle = () => {
+    const table = document.querySelector('[data-js-table]')
+    const button = document.querySelector('[data-js-toggle-asn-column]')
+
+    button.addEventListener('click', () => {
+      if (table.getAttribute('data-hide-asn-column') === 'true') {
+        table.setAttribute('data-hide-asn-column', 'false')
+        button.textContent = '－ Hide ASN column'
+      } else {
+        table.setAttribute('data-hide-asn-column', 'true')
+        button.textContent = '＋ Show ASN column'
+      }
+    })
   }
 
   const initTesting = () => {
@@ -110,6 +126,7 @@
 
   const init = () => {
     initTable()
+    setupASNColumnToggle()
     initTesting()
   }
 
