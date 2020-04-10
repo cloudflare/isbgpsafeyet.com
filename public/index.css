@@ -448,12 +448,6 @@ h1, h2, h3 {
   border-radius: var(--border-radius);
 }
 
-@media (max-width: 768px) {
-  .FAQItem summary {
-    font-size: 1.2em;
-  }
-}
-
 .FAQItem {
   margin-bottom: 1.5em;
 }
@@ -463,6 +457,10 @@ h1, h2, h3 {
 }
 
 @media (max-width: 413px) {
+  .FAQItem summary {
+    font-size: 1.2em;
+  }
+
   .FAQItem p {
     padding-left: 0;
   }
