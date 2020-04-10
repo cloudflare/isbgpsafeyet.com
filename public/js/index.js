@@ -22,7 +22,7 @@
             }
 
             if (name === 'status') {
-              td.setAttribute('data-value', [, 'safe', 'partially safe', 'unsafe'].indexOf(d.status))
+              td.setAttribute('data-value', [, 'safe', 'partially safe', 'unsafe'].indexOf(d[name]))
             }
 
             tr.appendChild(td)
