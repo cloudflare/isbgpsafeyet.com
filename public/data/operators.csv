@@ -1,9 +1,9 @@
 name,type,details,status
 AT&T,ISP,signed + filtering,safe
-Cloudflare,content,signed + filtering,safe
+Cloudflare,cloud,signed + filtering,safe
 NTT,transit,signed + filtering,safe
 Telia,transit,signed + filtering,safe
-Amazon,content,signed,partially safe
+Amazon,cloud,signed,partially safe
 Cogent,transit,started,partially safe
 Deutsche Telekom,ISP,started,partially safe
 Orange,transit,started,partially safe
@@ -12,7 +12,7 @@ Sparkle,transit,started,partially safe
 TATA,transit,filtering,partially safe
 Telxius,transit,started,partially safe
 Comcast,ISP,,unsafe
-Google,content,,unsafe
+Google,cloud,,unsafe
 GTT,transit,,unsafe
 Level3,transit,,unsafe
 Sprint,transit,,unsafe
