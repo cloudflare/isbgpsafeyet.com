@@ -200,6 +200,8 @@
               <details class="FAQItem">
                 <summary><h3 id="why-is-bgp-unsafe">Why is BGP unsafe?</h2></summary>
                 <p>By default, BGP does not embed any security protocols. It is up to every autonomous system to implement filtering of “wrong routes”. Leaking routes can break parts of the Internet by making them unreachable. It is commonly the result of misconfigurations. Although, it is not always accidental. A practice called BGP hijack consists of redirecting traffic to another autonomous system to steal information (via phishing, or passive listening for instance).</p>
+
+                <p>BGP can be made safe if all autonomous systems (AS) only announce legitimate routes. A route is defined as legitimate when the owner of the resource allows its announcement. Filters need to be built in order to make sure only legitimate routes are accepted. There are a few approaches for BGP route validation which vary in degrees of trustability and efficiency. A mature implementation is RPKI.</p>
               </details>
 
               <details class="FAQItem">
@@ -209,7 +211,7 @@
 
               <details class="FAQItem">
                 <summary><h3 id="how-does-the-test-work">How does the test work?</h2></summary>
-                <p>In order to test if your ISP is implementing BGP safely, we announce a legitimate route but we make sure the announcement is invalid. If you can load the website we host on that route, that means the invalid route was accepted by your ISP. A leaked or a hijacked route would likely be accepted too.</p>
+                <p>In order to test if your ISP is implementing BGP safely, we announce a legitimate route but we make sure the announcement is <em>invalid</em>. If you can load the website we host on that route, that means the invalid route was accepted by your ISP. A leaked or a hijacked route would likely be accepted too.</p>
               </details>
 
               <details class="FAQItem">
