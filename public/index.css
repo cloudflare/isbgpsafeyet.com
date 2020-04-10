@@ -432,6 +432,12 @@ h1, h2, h3 {
   }
 }
 
+.BGPSafetyTable--caption {
+  font-size: .85em;
+  padding-top: 1em;
+  opacity: .8;
+}
+
 
 .FAQItem summary h3 {
   display: inline-block;
