@@ -113,7 +113,7 @@ h1 em {
   }
 }
 
-h1, h2, h3 {
+h1, h2 {
   color: var(--gray-0);
 }
 
@@ -270,7 +270,7 @@ h1, h2, h3 {
 }
 
 .Markdown h2[id]::before,
-.Markdown h3[id]::before {
+.Markdown details[id]::before {
   content: "";
   display: block;
   padding-top: 1.5em;
@@ -475,20 +475,18 @@ h1, h2, h3 {
   }
 }
 
-
-.FAQItem summary h3 {
-  display: inline-block;
-  font-size: inherit;
-}
-
 .FAQItem summary {
-  display: flex;
-  align-items: center;
   font-size: 1.5em;
-  padding: .25em .6em;
+  padding: 0 .6em;
+  line-height: 1.75;
   background: var(--gray-8);
   color: var(--gray-4);
   border-radius: var(--border-radius);
+}
+
+.FAQItem summary span {
+  font-weight: 600;
+  color: var(--gray-0);
 }
 
 .FAQItem {

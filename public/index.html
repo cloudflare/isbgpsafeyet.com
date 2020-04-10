@@ -90,35 +90,35 @@
             <div class="Markdown">
               <h2 id="faq">FAQ</h2>
 
-              <details class="FAQItem" open>
-                <summary><h3 id="what-is-bgp">What is BGP?</h2></summary>
+              <details class="FAQItem" id="what-is-bgp" open>
+                <summary><span>What is BGP?</span></summary>
                 <p><a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Border Gateway Protocol (BGP)</a> is the postal service of the Internet. When someone drops a letter into a mailbox, the postal service processes that piece of mail and chooses a fast, efficient route to deliver that letter to its recipient. Similarly, when someone submits data across the Internet, BGP is responsible for looking at all of the available paths that data could travel and picking the best route, which usually means hopping between autonomous systems. <a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Learn&nbsp;more&nbsp;→</a></p>
               </details>
 
-              <details class="FAQItem">
-                <summary><h3 id="why-is-bgp-unsafe">Why is BGP unsafe?</h2></summary>
+              <details class="FAQItem" id="why-is-bgp-unsafe">
+                <summary><span>Why is BGP unsafe?</span></summary>
                 <p>By default, BGP does not embed any security protocols. It is up to every autonomous system to implement filtering of “wrong routes”. Leaking routes can break parts of the Internet by making them unreachable. It is commonly the result of misconfigurations. Although, it is not always accidental. A practice called BGP hijack consists of redirecting traffic to another autonomous system to steal information (via phishing, or passive listening for instance).</p>
 
                 <p>BGP can be made safe if all autonomous systems (AS) only announce legitimate routes. A route is defined as legitimate when the owner of the resource allows its announcement. Filters need to be built in order to make sure only legitimate routes are accepted. There are a few approaches for BGP route validation which vary in degrees of trustability and efficiency. A mature implementation is RPKI.</p>
               </details>
 
-              <details class="FAQItem">
-                <summary><h3 id="what-is-rpki">What is RPKI?</h2></summary>
+              <details class="FAQItem" id="what-is-rpki">
+                <summary><span>What is RPKI?</span></summary>
                 <p>With 800k+ routes on the Internet, it is impossible to check them manually. <a href="https://blog.cloudflare.com/rpki/">Resource Public Key Infrastructure (RPKI)</a> is a security framework method that associates a route with an autonomous system. It uses cryptography in order to validate the information before being passed onto the routers. You can <a href="https://blog.cloudflare.com/rpki/">read more about RPKI</a> on the Cloudflare blog.</p>
               </details>
 
-              <details class="FAQItem">
-                <summary><h3 id="how-does-the-test-work">How does the test work?</h2></summary>
+              <details class="FAQItem" id="how-does-the-test-work">
+                <summary><span>How does the test work?</span></summary>
                 <p>In order to test if your ISP is implementing BGP safely, we announce a legitimate route but we make sure the announcement is <em>invalid</em>. If you can load the website we host on that route, that means the invalid route was accepted by your ISP. A leaked or a hijacked route would likely be accepted too.</p>
               </details>
 
-              <details class="FAQItem">
-                <summary><h3 id="can-even-more-be-done">Can even more be done?</h2></summary>
+              <details class="FAQItem" id="can-even-more-be-done">
+                <summary><span>Can even more be done?</span></summary>
                 <p>Over the years, network operators and developers started working groups to design and deploy standards to overcome unsafe routing protocols. <a href="https://cloudflare.com">Cloudflare</a> recently joined a global initiative called <a href="https://www.manrs.org/2020/03/new-category-of-cdns-and-cloud-providers-join-manrs-to-improve-routing-security/">Mutually Agreed Norms for Routing Security (MANRS)</a>. It’s a community of security-minded organizations committed to making routing infrastructure more robust and secure, and members agree to implement filtering mechanisms. New voices are always appreciated.</p>
               </details>
 
-              <details class="FAQItem" open>
-                <summary><h3 id="what-can-you-do">What can you do?</h2></summary>
+              <details class="FAQItem" id="what-can-you-do" open>
+                <summary><span>What can you do?</span></summary>
                 <p><a href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share this page</a>. For BGP to be safe, all of the major ISPs will need to embrace RPKI. Sharing this page will increase awareness of the problem which can ultimately pressure ISPs into implementing RPKI for the good of themselves and the general public. You can also reach out to your service provider or hosting company directly and ask them to deploy RPKI and join MANRS. When the Internet is safe, everybody wins.</p>
               </details>
             </div>
