@@ -1,4 +1,5 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
+import OPERATORS from '../public/data/operators.csv'
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -41,6 +42,13 @@ async function handleEvent(event) {
         bypassCache: true,
       }
     }
+
+    if (url.pathname === "/" || url.pathname === "/index.html"){
+      const page = await getAssetFromKV(event, options)
+
+      return new HTMLRewriter().on('head', new StringInjector("OPERATORS", OPERATORS)).transform(page)
+    }
+
     return await getAssetFromKV(event, options)
   } catch (e) {
     // if an error is thrown try to serve the asset at 404.html
@@ -55,6 +63,27 @@ async function handleEvent(event) {
     }
 
     return new Response(e.message || e.toString(), { status: 500 })
+  }
+}
+
+class StringInjector {
+  constructor(name, body) {
+    this.name = name
+    this.body = body
+  }
+
+  element(element){
+    element.prepend(`
+    <script>
+      ${ this.name } = \`${ this.escapeQuotes(this.body) }\`;
+    </script>
+    `, {
+      html: true
+    })
+  }
+
+  escapeQuotes(value) {
+    return value.replace(/\`/g, '\\\`')
   }
 }
 

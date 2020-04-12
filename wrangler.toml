@@ -4,6 +4,7 @@ account_id = "04cb62d57d02b212c133288d8e42f84c"
 workers_dev = false
 route = "isbgpsafeyet.com/*"
 zone_id = "72a2ccd3f2b1c26c23d134d8d1a70a5d"
+webpack_config = "workers-site/webpack.config.js"
 
 [site]
 bucket = "./public"

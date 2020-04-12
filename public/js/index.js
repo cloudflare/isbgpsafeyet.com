@@ -1,36 +1,35 @@
 (() => {
   const initTable = () => {
-    fetch('data/operators.csv')
-      .then(r => r.text())
-      .then(d3.csvParse)
-      .then(data => {
-        const table = document.querySelector('[data-js-table]')
-        const tbody = table.querySelector('tbody')
-        const columns = Array.from(table.querySelectorAll('th')).map(th => th.getAttribute('data-column'))
+    // OPERATORS is injected by the Worker serving this site
+    // Use `wrangler dev` to preview
+    const data = d3.csvParse(OPERATORS)
 
-        data.forEach(d => {
-          const tr = document.createElement('tr')
-          tr.setAttribute('data-status', d.status.split(' ').join('-'))
+    const table = document.querySelector('[data-js-table]')
+    const tbody = table.querySelector('tbody')
+    const columns = Array.from(table.querySelectorAll('th')).map(th => th.getAttribute('data-column'))
 
-          columns.forEach(name => {
-            const td = document.createElement('td')
-            td.setAttribute('data-column', name)
-            td.innerText = d[name]
+    data.forEach(d => {
+      const tr = document.createElement('tr')
+      tr.setAttribute('data-status', d.status.split(' ').join('-'))
 
-            if (name === 'asn') {
-              td.setAttribute('data-value', d[name])
-            }
+      columns.forEach(name => {
+        const td = document.createElement('td')
+        td.setAttribute('data-column', name)
+        td.innerText = d[name]
 
-            if (name === 'status') {
-              td.setAttribute('data-value', [, 'safe', 'partially safe', 'unsafe'].indexOf(d[name]))
-            }
+        if (name === 'asn') {
+          td.setAttribute('data-value', d[name])
+        }
 
-            tr.appendChild(td)
-          })
+        if (name === 'status') {
+          td.setAttribute('data-value', [, 'safe', 'partially safe', 'unsafe'].indexOf(d[name]))
+        }
 
-          tbody.appendChild(tr)
-        })
+        tr.appendChild(td)
       })
+
+      tbody.appendChild(tr)
+    })
   }
 
   const setupASNColumnToggle = () => {
