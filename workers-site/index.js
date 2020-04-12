@@ -1,6 +1,8 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
 import OPERATORS from '../public/data/operators.csv'
 
+import parse from 'csv-parse/lib/sync'
+
 /**
  * The DEBUG flag will do two things that help during development:
  * 1. we will skip caching on the edge, which makes it easier to
@@ -46,7 +48,10 @@ async function handleEvent(event) {
     if (url.pathname === "/" || url.pathname === "/index.html"){
       const page = await getAssetFromKV(event, options)
 
-      return new HTMLRewriter().on('head', new StringInjector("OPERATORS", OPERATORS)).transform(page)
+      return new HTMLRewriter()
+        .on('head', new StringInjector("OPERATORS", OPERATORS))
+        .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
+        .transform(page)
     }
 
     return await getAssetFromKV(event, options)
@@ -83,7 +88,59 @@ class StringInjector {
   }
 
   escapeQuotes(value) {
-    return value.replace(/\`/g, '\\\`')
+    return value.replace(new RegExp('`', 'g'), '\\\`')
+  }
+}
+
+
+
+function template(rows){
+  function each(value, func){
+    let out = ''
+    for (let key in value){
+      out += func(value[key], key)
+    }
+    return out
+  }
+
+  function tbody(v){
+    return `
+      <tbody>
+        ${ each(v, row) }
+      </tbody>
+    `
+  }
+
+  function row(r){
+    return `
+      <tr data-status="${ r.status.replace(/ /g, '-') }">
+        ${ each(r, cell) }
+      </tr>
+    `
+  }
+
+  function cell(val, key){
+    return `
+      <td data-column="${ key }">${ val }
+    `
+  }
+
+  return tbody(rows)
+}
+
+class OperatorsTableBuilder {
+  constructor(operators) {
+    this.operators = operators
+  }
+
+  element(element){
+    const rows = parse(this.operators, {
+      columns: true
+    })
+
+    element.append(template(rows), {
+      html: true
+    })
   }
 }
 

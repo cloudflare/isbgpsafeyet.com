@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.0.9",
+    "csv-parse": "^4.8.8",
     "raw-loader": "^4.0.0"
   }
 }
