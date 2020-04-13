@@ -121,7 +121,7 @@ function template(rows){
 
   function cell(val, key){
     return `
-      <td data-column="${ key }">${ val }
+      <td data-column="${ key }" data-value="${ val.replace(/"/g, '\\"') }">${ val }
     `
   }
 
