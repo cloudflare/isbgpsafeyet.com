@@ -121,8 +121,15 @@ function template(rows){
 
   function cell(val, key){
     return `
-      <td data-column="${ key }" data-value="${ val.replace(/"/g, '\\"') }">${ val }
+      <td data-column="${ key }" data-value="${ sortKey(key, val).toString().replace(/"/g, '\\"') }">${ val }
     `
+  }
+
+  function sortKey(key, val){
+    if (key === 'status')
+      return [, 'safe', 'partially safe', 'unsafe'].indexOf(val)
+    else
+      return val
   }
 
   return tbody(rows)
