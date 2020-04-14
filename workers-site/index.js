@@ -45,7 +45,7 @@ async function handleEvent(event) {
       }
     }
 
-    if (url.pathname === "/" || url.pathname === "/index.html"){
+    if (url.pathname === "/" || url.pathname === "/index.html") {
       const page = await getAssetFromKV(event, options)
 
       return new HTMLRewriter()
@@ -77,7 +77,7 @@ class StringInjector {
     this.body = body
   }
 
-  element(element){
+  element(element) {
     element.prepend(`
     <script>
       ${ this.name } = \`${ this.escapeQuotes(this.body) }\`;
@@ -92,18 +92,16 @@ class StringInjector {
   }
 }
 
-
-
-function template(rows){
-  function each(value, func){
+function template(rows) {
+  function each(value, func) {
     let out = ''
-    for (let key in value){
+    for (let key in value) {
       out += func(value[key], key)
     }
     return out
   }
 
-  function tbody(v){
+  function tbody(v) {
     return `
       <tbody>
         ${ each(v, row) }
@@ -111,7 +109,7 @@ function template(rows){
     `
   }
 
-  function row(r){
+  function row(r) {
     return `
       <tr data-status="${ r.status.replace(/ /g, '-') }">
         ${ each(r, cell) }
@@ -119,13 +117,13 @@ function template(rows){
     `
   }
 
-  function cell(val, key){
+  function cell(val, key) {
     return `
       <td data-column="${ key }" data-value="${ sortKey(key, val).toString().replace(/"/g, '\\"') }">${ val }
     `
   }
 
-  function sortKey(key, val){
+  function sortKey(key, val) {
     if (key === 'status')
       return [, 'safe', 'partially safe', 'unsafe'].indexOf(val)
     else
@@ -140,7 +138,7 @@ class OperatorsTableBuilder {
     this.operators = operators
   }
 
-  element(element){
+  element(element) {
     const rows = parse(this.operators, {
       columns: true
     })
