@@ -32,7 +32,7 @@
 
   <body>
     <div class="Hero">
-      <div class="Column">
+      <div class="Column Column-is-section">
         <h1>Is BGP <span class="InlineSafeHighlight">safe</span> yet? <em>No.</em></h1>
 
         <div class="Stack Stack-is-secondary">
@@ -56,93 +56,189 @@
       </div>
     </div>
 
-    <div class="Column">
-      <div class="Stack">
-        <div>
-          <table class="BGPSafetyTable" data-js-table data-sortable data-hide-asn-column="true">
-            <thead>
-              <tr>
-                <th data-column="name">Name</th>
-                <th data-column="type">Type</th>
-                <th data-column="details">Details</th>
-                <th data-column="status" data-sortable-type="numeric" data-sorted="true" data-sorted-direction="ascending">Status</th>
-                <th data-column="asn" data-sortable="false" data-sortable-type="numeric">ASN <a class="Button Button-is-bordered Button-is-question-mark" href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" title="Autonomous system number" data-tooltip>?</a></th>
-              </tr>
-            </thead>
-          </table>
+    <div class="Stack">
+      <div class="Column Column-is-section">
+        <table class="BGPSafetyTable" data-js-table data-sortable data-hide-asn-column="true">
+          <thead>
+            <tr>
+              <th data-column="name">Name</th>
+              <th data-column="type">Type</th>
+              <th data-column="details">Details</th>
+              <th data-column="status" data-sortable-type="numeric" data-sorted="true" data-sorted-direction="ascending">Status</th>
+              <th data-column="asn" data-sortable="false" data-sortable-type="numeric">ASN <a class="Button Button-is-bordered Button-is-question-mark" href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" title="Autonomous system number" data-tooltip>?</a></th>
+            </tr>
+          </thead>
+        </table>
 
-          <div class="BGPSafetyTable--footer">
-            <div class="BGPSafetyTable--footer-info">
-              <div class="Markdown">
-                <p>Last updated April 10, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/blob/master/public/data/operators.csv">Edit on Github</a></p>
-              </div>
-            </div>
-
-            <div class="BGPSafetyTable--footer-actions">
-              <button class="Button Button-looks-like-text" data-js-toggle-asn-column>＋ Show ASN column</button>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="Stack Stack-is-secondary">
+        <div class="BGPSafetyTable--footer">
+          <div class="BGPSafetyTable--footer-info">
             <div class="Markdown">
-              <h2 id="faq">FAQ</h2>
+              <p>Last updated April 10, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/blob/master/public/data/operators.csv">Edit on Github</a></p>
+            </div>
+          </div>
 
-              <details class="FAQItem" id="what-is-bgp" open>
-                <summary><span>What is BGP?</span></summary>
-                <p><a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Border Gateway Protocol (BGP)</a> is the postal service of the Internet. When someone drops a letter into a mailbox, the postal service processes that piece of mail and chooses a fast, efficient route to deliver that letter to its recipient. Similarly, when someone submits data across the Internet, BGP is responsible for looking at all of the available paths that data could travel and picking the best route, which usually means hopping between autonomous systems. <a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Learn&nbsp;more&nbsp;→</a></p>
-              </details>
+          <div class="BGPSafetyTable--footer-actions">
+            <button class="Button Button-looks-like-text" data-js-toggle-asn-column>＋ Show ASN column</button>
+          </div>
+        </div>
+      </div>
 
-              <details class="FAQItem" id="why-is-bgp-unsafe">
-                <summary><span>Why is BGP unsafe?</span></summary>
-                <p>By default, BGP does not embed any security protocols. It is up to every autonomous system to implement filtering of “wrong routes”. Leaking routes can break parts of the Internet by making them unreachable. It is commonly the result of misconfigurations. Although, it is not always accidental. A practice called BGP hijack consists of redirecting traffic to another autonomous system to steal information (via phishing, or passive listening for instance).</p>
+      <div>
+        <div class="Stack Stack-is-secondary">
+          <div class="Column">
+            <div class="Markdown">
+              <h2 id="whats-a-bgp-hijack">What’s a BGP hijack?</h2>
 
-                <p>BGP can be made safe if all autonomous systems (AS) only announce legitimate routes. A route is defined as legitimate when the owner of the resource allows its announcement. Filters need to be built in order to make sure only legitimate routes are accepted. There are a few approaches for BGP route validation which vary in degrees of trustability and efficiency. A mature implementation is RPKI.</p>
-              </details>
+              <p>To better understand why BGP’s lack of security is so problematic, let’s look at a simplified model of how BGP is used to route Internet requests.</p>
 
-              <details class="FAQItem" id="what-is-rpki">
-                <summary><span>What is RPKI?</span></summary>
-                <p>With 800k+ routes on the Internet, it is impossible to check them manually. <a href="https://blog.cloudflare.com/rpki/">Resource Public Key Infrastructure (RPKI)</a> is a security framework method that associates a route with an autonomous system. It uses cryptography in order to validate the information before being passed onto the routers. You can <a href="https://blog.cloudflare.com/rpki/">read more about RPKI</a> on the Cloudflare blog.</p>
-              </details>
+              <p>The Internet is not run by just <em>one</em> company. It’s made up of thousands of autonomous nodes, located all around the world, connected to each other in a massive graph.</p>
 
-              <details class="FAQItem" id="how-does-the-test-work">
-                <summary><span>How does the test work?</span></summary>
-                <p>In order to test if your ISP is implementing BGP safely, we announce a legitimate route but we make sure the announcement is <em>invalid</em>. If you can load the website we host on that route, that means the invalid route was accepted by your ISP. A leaked or a hijacked route would likely be accepted too.</p>
-              </details>
+              <p>In essence, the way BGP works is that each node must determine how to route requests using only what it knows from <strong>the nodes it connects with directly</strong>.</p>
 
-              <details class="FAQItem" id="can-even-more-be-done">
-                <summary><span>Can even more be done?</span></summary>
-                <p>Over the years, network operators and developers started working groups to design and deploy standards to overcome unsafe routing protocols. <a href="https://cloudflare.com">Cloudflare</a> recently joined a global initiative called <a href="https://www.manrs.org/2020/03/new-category-of-cdns-and-cloud-providers-join-manrs-to-improve-routing-security/">Mutually Agreed Norms for Routing Security (MANRS)</a>. It’s a community of security-minded organizations committed to making routing infrastructure more robust and secure, and members agree to implement filtering mechanisms. New voices are always appreciated.</p>
-              </details>
+              <p>For example, in the simple network A–B–C–D–E, the node A only knows how to reach E based on information it received from B. The node B knows about the network from A and C. And so forth.</p>
 
-              <details class="FAQItem" id="what-can-you-do" open>
-                <summary><span>What can you do?</span></summary>
-                <p><a href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share this page</a>. For BGP to be safe, all of the major ISPs will need to embrace RPKI. Sharing this page will increase awareness of the problem which can ultimately pressure ISPs into implementing RPKI for the good of themselves and the general public. You can also reach out to your service provider or hosting company directly and ask them to deploy RPKI and join MANRS. When the Internet is safe, everybody wins.</p>
-              </details>
+              <p>A <strong>BGP hijack</strong> occurs when a malicious node deceives another node, lying about what route exist for its neighbors. Since BGP does not embed any security protocols, this misinformation can propogate from node to node, until a large number of nodes now know about, and attempt to use these incorrect, nonexistent, or malicious routes.</p>
             </div>
 
-            <div>
-              <div class="Row Row-is-centered">
-                <a class="Button Button-is-primary" href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share&nbsp;on&nbsp;Twitter&nbsp;→</a>
+            <h3 class="Diagram---header" data-js-diagram-header>Normal request</h3>
+          </div>
+
+          <div class="Diagram" data-js-diagram path="happy">
+            <div class="Diagram--surface">
+              <div class="Diagram--edge" position="1" path="both">
+                <div class="Diagram--edge-line"></div>
+                <div class="Diagram--edge-data"></div>
+              </div>
+
+              <div class="Diagram--edge" position="2" path="switch">
+                <div class="Diagram--edge-line"></div>
+                <div class="Diagram--edge-data"></div>
+              </div>
+
+              <div class="Diagram--edge" position="3" path="sad">
+                <div class="Diagram--edge-line"></div>
+                <div class="Diagram--edge-data"></div>
+              </div>
+
+              <div class="Diagram--edge" position="3" path="happy">
+                <div class="Diagram--edge-line"></div>
+                <div class="Diagram--edge-data"></div>
+              </div>
+
+              <div class="Diagram--edge" position="4" path="happy">
+                <div class="Diagram--edge-line"></div>
+                <div class="Diagram--edge-data"></div>
+              </div>
+
+              <div class="Diagram--node" position="1" path="both">
+                <div class="Diagram--node-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 50"><path fill="var(--background)" d="M17 11h39v26H17z"/><path fill="var(--color)" d="M60 37h5a6 6 0 01-6 6H14a6 6 0 01-6-6h5V11.56c0-1.11.13-1.78.5-2.48.36-.67.9-1.22 1.58-1.58a4.8 4.8 0 012.48-.5h37.88a4.8 4.8 0 012.48.5c.67.36 1.22.9 1.58 1.58.37.7.5 1.37.5 2.48V37zM17 11v26h39V11H17z"/></svg></div>
+                <div class="Diagram--node-circle"></div>
+                <div class="Diagram--node-label">Laptop</div>
+              </div>
+
+              <div class="Diagram--node" position="2" path="both">
+                <div class="Diagram--node-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 50"><path fill="var(--background)" d="M17 11h39v28H17z"/><path fill="var(--color)" fill-rule="evenodd" d="M42 31h10v4H42v-4zm14-8H17V11h39v12zm0 4v12H17V27h39zM42 15h10v4H42v-4zM13 43V7h47v36H13z"/></svg></div>
+                <div class="Diagram--node-circle"></div>
+                <div class="Diagram--node-label">ISP</div>
+              </div>
+
+              <div class="Diagram--node" position="3" path="sad">
+                <div class="Diagram--node-circle"></div>
+                <div class="Diagram--node-label">Hijacker</div>
+              </div>
+
+              <div class="Diagram--node" position="3" path="happy">
+                <div class="Diagram--node-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 50"><path fill="var(--background)" d="M17 11h39v28H17z"/><path fill="var(--color)" fill-rule="evenodd" d="M42 31h10v4H42v-4zm14-8H17V11h39v12zm0 4v12H17V27h39zM42 15h10v4H42v-4zM13 43V7h47v36H13z"/></svg></div>
+                <div class="Diagram--node-circle"></div>
+                <div class="Diagram--node-label"><span>Transit</span><span class="Diagram--node-label-question-mark"><a class="Button Button-is-secondary Button-is-question-mark" href="https://en.wikipedia.org/wiki/Internet_transit" title="Internet transit provider" data-tooltip>?</a></span></div>
+              </div>
+
+              <div class="Diagram--node" position="4" path="sad">
+                <div class="Diagram--node-circle"></div>
+                <div class="Diagram--node-label">Malicious website</div>
+              </div>
+
+              <div class="Diagram--node" position="4" path="happy">
+                <div class="Diagram--node-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 50"><path fill="var(--background)" d="M17 11h39v28H17z"/><path fill="var(--color)" fill-rule="evenodd" d="M42 31h10v4H42v-4zm14-8H17V11h39v12zm0 4v12H17V27h39zM42 15h10v4H42v-4zM13 43V7h47v36H13z"/></svg></div>
+                <div class="Diagram--node-circle"></div>
+                <div class="Diagram--node-label">ISP</div>
+              </div>
+
+              <div class="Diagram--node" position="5" path="both">
+                <div class="Diagram--node-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 50"><path fill="var(--background)" d="M22.64 39A9.65 9.65 0 0113 29.33a9.65 9.65 0 0111.6-9.46 14.47 14.47 0 0128.17 4.63 7.24 7.24 0 010 14.5H22.64zm0 0A9.65 9.65 0 0113 29.33a9.65 9.65 0 0111.6-9.46 14.47 14.47 0 0128.17 4.63 7.24 7.24 0 010 14.5H22.64zm0 0A9.65 9.65 0 0113 29.33a9.65 9.65 0 0111.6-9.46 14.47 14.47 0 0128.17 4.63 7.24 7.24 0 010 14.5H22.64z"/><path fill="var(--color)" d="M22.64 37h30.13a5.24 5.24 0 000-10.5h-2v-2a12.47 12.47 0 00-24.27-4l-.57 1.68-1.74-.36A7.66 7.66 0 1022.64 37zM62 31.75c0 5.1-4.13 9.25-9.23 9.25H22.64A11.65 11.65 0 0111 29.33 11.65 11.65 0 0123.31 17.7a16.47 16.47 0 0131.36 5A9.25 9.25 0 0162 31.76z"/></svg></div>
+                <div class="Diagram--node-circle"></div>
+                <div class="Diagram--node-label">Web resource</div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="Footer">
-          <a class="Footer--logo-link Link Link-without-underline" href="https://cloudflare.com">
-            <svg class="Footer--logo" id="CloudflareDocsLogomark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="CloudflareDocsLogomark--title CloudflareDocsLogomark--desc" fill="currentColor">
-              <defs>
-                <title id="CloudflareDocsLogomark--title">Cloudflare docs logomark</title>
-                <desc id="CloudflareDocsLogomark--desc">The logo for Cloudflare used in the Cloudflare’s developer documentation.</desc>
-              </defs>
-              <path d="M31.236 28.717c-.373-.548-1.003-.864-1.76-.9l-14.353-.195a.262.262 0 01-.221-.122.348.348 0 01-.035-.267.396.396 0 01.338-.268l14.48-.195c1.714-.085 3.58-1.533 4.232-3.309l.828-2.25a.503.503 0 00.023-.292c-.932-4.404-4.698-7.689-9.198-7.689-4.15 0-7.672 2.798-8.931 6.679a4.156 4.156 0 00-2.973-.864c-1.994.207-3.59 1.874-3.789 3.954a4.84 4.84 0 00.105 1.545c-3.253.097-5.853 2.871-5.853 6.29 0 .304.024.608.059.912.023.146.14.256.28.256h26.488c.151 0 .291-.11.338-.268l.198-.742c.245-.876.152-1.68-.256-2.275zM36.062 21.39c-.128 0-.268 0-.396.012-.093 0-.175.073-.21.17l-.56 2.032c-.244.876-.151 1.679.257 2.275.373.548 1.003.864 1.76.9l3.055.195c.093 0 .175.049.222.122a.356.356 0 01.035.267.396.396 0 01-.339.268l-3.182.195c-1.726.085-3.58 1.532-4.232 3.309l-.234.62c-.046.122.035.243.164.243h10.935a.289.289 0 00.28-.219 8.654 8.654 0 00.292-2.214c0-4.501-3.521-8.175-7.847-8.175"></path>
-            </svg>
-          </a>
-
-          <div class="Footer--legal">© 2020 Cloudflare, Inc. · <a class="Link Link-without-underline" href="https://www.cloudflare.com/privacypolicy/">Privacy</a> · <a class="Link Link-without-underline" href="https://www.cloudflare.com/website-terms/">Terms</a></div>
+          <div class="Column">
+            <div class="Diagram---footer">
+              <button class="Button Button-is-primary Button-is-elevated" data-js-diagram-toggle>Hijack the request</button>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="Column">
+        <div class="Stack Stack-is-secondary">
+          <div class="Markdown">
+            <h2 id="faq">FAQ</h2>
+
+            <details class="FAQItem" id="what-is-bgp" open>
+              <summary><span>What is BGP?</span></summary>
+              <p><a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Border Gateway Protocol (BGP)</a> is the postal service of the Internet. When someone drops a letter into a mailbox, the postal service processes that piece of mail and chooses a fast, efficient route to deliver that letter to its recipient. Similarly, when someone submits data across the Internet, BGP is responsible for looking at all of the available paths that data could travel and picking the best route, which usually means hopping between autonomous systems. <a href="https://www.cloudflare.com/learning/security/glossary/what-is-bgp/">Learn&nbsp;more&nbsp;→</a></p>
+            </details>
+
+            <details class="FAQItem" id="why-is-bgp-unsafe">
+              <summary><span>Why is BGP unsafe?</span></summary>
+              <p>By default, BGP does not embed any security protocols. It is up to every autonomous system to implement filtering of “wrong routes”. Leaking routes can break parts of the Internet by making them unreachable. It is commonly the result of misconfigurations. Although, it is not always accidental. A practice called BGP hijack consists of redirecting traffic to another autonomous system to steal information (via phishing, or passive listening for instance).</p>
+              <p>BGP can be made safe if all autonomous systems (AS) only announce legitimate routes. A route is defined as legitimate when the owner of the resource allows its announcement. Filters need to be built in order to make sure only legitimate routes are accepted. There are a few approaches for BGP route validation which vary in degrees of trustability and efficiency. A mature implementation is RPKI.</p>
+            </details>
+
+            <details class="FAQItem" id="what-is-rpki">
+              <summary><span>What is RPKI?</span></summary>
+              <p>With 800k+ routes on the Internet, it is impossible to check them manually. <a href="https://blog.cloudflare.com/rpki/">Resource Public Key Infrastructure (RPKI)</a> is a security framework method that associates a route with an autonomous system. It uses cryptography in order to validate the information before being passed onto the routers. You can <a href="https://blog.cloudflare.com/rpki/">read more about RPKI</a> on the Cloudflare blog.</p>
+            </details>
+
+            <details class="FAQItem" id="how-does-the-test-work">
+              <summary><span>How does the test work?</span></summary>
+              <p>In order to test if your ISP is implementing BGP safely, we announce a legitimate route but we make sure the announcement is <em>invalid</em>. If you can load the website we host on that route, that means the invalid route was accepted by your ISP. A leaked or a hijacked route would likely be accepted too.</p>
+            </details>
+
+            <details class="FAQItem" id="can-even-more-be-done">
+              <summary><span>Can even more be done?</span></summary>
+              <p>Over the years, network operators and developers started working groups to design and deploy standards to overcome unsafe routing protocols. <a href="https://cloudflare.com">Cloudflare</a> recently joined a global initiative called <a href="https://www.manrs.org/2020/03/new-category-of-cdns-and-cloud-providers-join-manrs-to-improve-routing-security/">Mutually Agreed Norms for Routing Security (MANRS)</a>. It’s a community of security-minded organizations committed to making routing infrastructure more robust and secure, and members agree to implement filtering mechanisms. New voices are always appreciated.</p>
+            </details>
+
+            <details class="FAQItem" id="what-can-you-do" open>
+              <summary><span>What can you do?</span></summary>
+              <p><a href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share this page</a>. For BGP to be safe, all of the major ISPs will need to embrace RPKI. Sharing this page will increase awareness of the problem which can ultimately pressure ISPs into implementing RPKI for the good of themselves and the general public. You can also reach out to your service provider or hosting company directly and ask them to deploy RPKI and join MANRS. When the Internet is safe, everybody wins.</p>
+            </details>
+          </div>
+
+          <div>
+            <div class="Row Row-is-centered">
+              <a class="Button Button-is-primary" href="https://twitter.com/intent/tweet/?text=Check%20out%20isbgpsafeyet.com%20to%20see%20if%20your%20Internet%20Service%20Provider%20implements%20BGP%20in%20a%20safe%20way%20or%20if%20it%20leaves%20the%20Internet%20vulnerable%20to%20route%20leaks.&url=http%3A%2F%2Fisbgpsafeyet.com&via=Cloudflare">Share&nbsp;on&nbsp;Twitter&nbsp;→</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Column Column-is-section">
+      <div class="Footer">
+        <a class="Footer--logo-link Link Link-without-underline" href="https://cloudflare.com">
+          <svg class="Footer--logo" id="CloudflareDocsLogomark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="CloudflareDocsLogomark--title CloudflareDocsLogomark--desc" fill="currentColor">
+            <defs>
+              <title id="CloudflareDocsLogomark--title">Cloudflare docs logomark</title>
+              <desc id="CloudflareDocsLogomark--desc">The logo for Cloudflare used in the Cloudflare’s developer documentation.</desc>
+            </defs>
+            <path d="M31.236 28.717c-.373-.548-1.003-.864-1.76-.9l-14.353-.195a.262.262 0 01-.221-.122.348.348 0 01-.035-.267.396.396 0 01.338-.268l14.48-.195c1.714-.085 3.58-1.533 4.232-3.309l.828-2.25a.503.503 0 00.023-.292c-.932-4.404-4.698-7.689-9.198-7.689-4.15 0-7.672 2.798-8.931 6.679a4.156 4.156 0 00-2.973-.864c-1.994.207-3.59 1.874-3.789 3.954a4.84 4.84 0 00.105 1.545c-3.253.097-5.853 2.871-5.853 6.29 0 .304.024.608.059.912.023.146.14.256.28.256h26.488c.151 0 .291-.11.338-.268l.198-.742c.245-.876.152-1.68-.256-2.275zM36.062 21.39c-.128 0-.268 0-.396.012-.093 0-.175.073-.21.17l-.56 2.032c-.244.876-.151 1.679.257 2.275.373.548 1.003.864 1.76.9l3.055.195c.093 0 .175.049.222.122a.356.356 0 01.035.267.396.396 0 01-.339.268l-3.182.195c-1.726.085-3.58 1.532-4.232 3.309l-.234.62c-.046.122.035.243.164.243h10.935a.289.289 0 00.28-.219 8.654 8.654 0 00.292-2.214c0-4.501-3.521-8.175-7.847-8.175"></path>
+          </svg>
+        </a>
+
+        <div class="Footer--legal">© 2020 Cloudflare, Inc. · <a class="Link Link-without-underline" href="https://www.cloudflare.com/privacypolicy/">Privacy</a> · <a class="Link Link-without-underline" href="https://www.cloudflare.com/website-terms/">Terms</a></div>
       </div>
     </div>
 

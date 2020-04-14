@@ -90,9 +90,30 @@
     button.addEventListener('click', () => runTest())
   }
 
+  const initDiagram = () => {
+    const header = document.querySelector('[data-js-diagram-header]')
+    const button = document.querySelector('[data-js-diagram-toggle]')
+    const el = document.querySelector('[data-js-diagram]')
+
+    button.addEventListener('click', () => {
+      if (el.getAttribute('path') === 'happy') {
+        el.setAttribute('path', 'sad')
+        button.textContent = 'Undo BGP hijack'
+        button.className = 'Button Button-is-bordered Button-has-depth'
+        header.textContent = 'BGP hijack'
+      } else {
+        el.setAttribute('path', 'happy')
+        button.textContent = 'Hijack the request'
+        button.className = 'Button Button-is-primary Button-is-elevated'
+        header.textContent = 'Normal request'
+      }
+    })
+  }
+
   const init = () => {
     setupASNColumnToggle()
     initTesting()
+    initDiagram()
   }
 
   init()

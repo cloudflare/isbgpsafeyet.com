@@ -88,15 +88,23 @@ summary:not([is-focus-visible]) {
   }
 }
 
+
 .Column {
   width: 42em;
   max-width: 100%;
-  margin: auto;
-  padding: 3em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.Column-is-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 @media (max-width: 414px) {
-  .Column {
+  .Column-is-section {
     padding-top: 1.75em;
     padding-bottom: 1.75em;
   }
@@ -506,6 +514,223 @@ h1, h2 {
     display: none;
   }
 }
+
+
+.Diagram---header {
+  position: absolute;
+  font-size: 1.25em;
+  margin-top: 4rem;
+  line-height: 2rem;
+  margin-left: .25em;
+  z-index: 10;
+}
+
+.Diagram {
+  position: relative;
+  --grid-line-color: rgba(var(--gray-8-rgb), .8);
+  --grid-line-thickness: 1px;
+  --grid-size: 2em;
+  --grid-height: 20em;
+  --grid-width: 60em;
+  --grid-positions-count: 5;
+  --grid-positions-unit: calc(var(--grid-width) / (var(--grid-positions-count) + 1));
+  height: calc(var(--grid-height) + var(--grid-line-thickness));
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.Diagram--surface {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50vw - var(--grid-width) / 2);
+  width: calc(var(--grid-width) + var(--grid-line-thickness));
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--grid-line-color) var(--grid-line-thickness),
+      transparent var(--grid-line-thickness)
+    ),
+    linear-gradient(
+      to right,
+      var(--grid-line-color) var(--grid-line-thickness),
+      transparent var(--grid-line-thickness)
+    );
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+.Diagram [position="1"] { left: calc(var(--grid-positions-unit) * 1); }
+.Diagram [position="2"] { left: calc(var(--grid-positions-unit) * 2); }
+.Diagram [position="3"] { left: calc(var(--grid-positions-unit) * 3); }
+.Diagram [position="4"] { left: calc(var(--grid-positions-unit) * 4); }
+.Diagram [position="5"] { left: calc(var(--grid-positions-unit) * 5); }
+
+.Diagram--node {
+  position: absolute;
+  top: calc(var(--grid-height) / 2);
+  --background: var(--gray-4);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.Diagram--node[path="sad"] {
+  --background: var(--red-4);
+}
+
+.Diagram[path="sad"] .Diagram--node[path="sad"] {
+  transform: translate3d(0, calc(2 * var(--grid-size)), 0);
+}
+
+.Diagram[path="sad"] .Diagram--node[path="happy"] {
+  transform: translate3d(0, calc(-2 * var(--grid-size)), 0);
+}
+
+.Diagram--node-circle {
+  position: absolute;
+  --size: 1.5em;
+  width: var(--size);
+  height: var(--size);
+  left: calc(-1 * var(--size) / 2);
+  top: calc(-1 * var(--size) / 2);
+  background: var(--background);
+  border: .25em solid #fff;
+  border-radius: 100%;
+}
+
+.Diagram[path="sad"] .Diagram--node[path="happy"] {
+  transform: translate3d(0, calc(-2 * var(--grid-size)), 0);
+}
+
+.Diagram--node-icon {
+  position: absolute;
+  top: -68px;
+  width: 73px;
+  height: 50px;
+  margin-left: -36px;
+  --color: var(--gray-4);
+  --background: #fff;
+  transition: opacity 1s ease;
+}
+
+.Diagram--node-label {
+  position: absolute;
+  top: calc(var(--grid-size) / 2);
+  left: calc(-1 * var(--grid-positions-unit) / 2);
+  right: calc(-1 * var(--grid-positions-unit) / 2);
+  text-align: center;
+  line-height: var(--grid-size);
+  text-shadow: 0 0 .5em #fff, 0 0 .5em #fff, 0 0 .25em #fff;
+  transition: opacity 1s ease;
+}
+
+.Diagram--node-label-question-mark {
+  margin-left: .3125em;
+  font-size: .8em;
+}
+
+.Diagram[path="happy"] .Diagram--node[path="sad"] .Diagram--node-icon,
+.Diagram[path="happy"] .Diagram--node[path="sad"] .Diagram--node-label {
+  opacity: 0;
+}
+
+.Diagram[path="sad"] .Diagram--node[path="happy"] .Diagram--node-icon,
+.Diagram[path="sad"] .Diagram--node[path="happy"] .Diagram--node-label,
+.Diagram[path="sad"] .Diagram--node[path="both"][position="5"] .Diagram--node-icon,
+.Diagram[path="sad"] .Diagram--node[path="both"][position="5"] .Diagram--node-label {
+  opacity: .4;
+}
+
+.Diagram--edge {
+  position: absolute;
+  top: calc(var(--grid-height) / 2);
+  --background: var(--gray-7);
+  --line-thickness: 6px;
+  --delay: 0s;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.Diagram [position="2"] { --delay: 0.75s }
+.Diagram [position="3"] { --delay: 1.50s }
+.Diagram [position="4"] { --delay: 2.25s }
+.Diagram [position="5"] { --delay: 3.00s }
+
+.Diagram--edge-line {
+  position: absolute;
+  top: 50%;
+  width: calc(2 * var(--line-thickness) + var(--grid-positions-unit));
+  height: var(--line-thickness);
+  left: calc(-1 * var(--line-thickness));
+  top: calc(-1 * var(--line-thickness) / 2);
+  border-radius: 99em;
+  background: var(--background);
+}
+
+.Diagram--edge[path="sad"] {
+  --background: #f8b5ab;
+}
+
+.Diagram[path="sad"] .Diagram--edge[path="switch"] {
+  transform: translate3d(0, 0, 0) rotate(22deg);
+}
+
+.Diagram[path="sad"] .Diagram--edge[path="sad"] {
+  transform: translate3d(0, calc(2 * var(--grid-size)), 0);
+}
+
+.Diagram[path="sad"] .Diagram--edge[path="happy"] {
+  transform: translate3d(0, calc(-2 * var(--grid-size)), 0);
+}
+
+.Diagram[path="sad"] .Diagram--edge[path="happy"][position="4"] {
+  transform: translate3d(0, calc(-2 * var(--grid-size)), 0) rotate(22deg);
+}
+
+.Diagram--edge-data {
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  background: var(--gray-0);
+  border-radius: 2px;
+  margin-left: -10px;
+  top: -5px;
+  left: 0;
+  animation: diagram-edge-data-pulse 5s var(--delay) linear infinite;
+}
+
+.Diagram[path="happy"] .Diagram--edge[path="sad"] .Diagram--edge-data,
+.Diagram[path="sad"] .Diagram--edge[path="happy"] .Diagram--edge-data {
+  visibility: hidden;
+}
+
+@keyframes diagram-edge-data-pulse {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(.5);
+  }
+
+  3% {
+    opacity: 1;
+    transform: translate3d(calc(var(--grid-positions-unit) * .2), 0, 0) scale(1);
+  }
+
+  12.5% {
+    opacity: 1;
+    transform: translate3d(calc(var(--grid-positions-unit) * .8), 0, 0) scale(1);
+  }
+
+  16%, 100% {
+    opacity: 0;
+    transform: translate3d(var(--grid-positions-unit), 0, 0) scale(.5);
+  }
+}
+
+.Diagram---footer {
+  text-align: center;
+}
+
 
 .FAQItem summary {
   font-size: 1.5em;

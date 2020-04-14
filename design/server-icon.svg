@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 50">
+  <path fill="var(--background)" d="M17 11h39v28H17z"/>
+  <path fill="var(--color)" fill-rule="evenodd" d="M42 31h10v4H42v-4zm14-8H17V11h39v12zm0 4v12H17V27h39zM42 15h10v4H42v-4zM13 43V7h47v36H13z"/>
+</svg>
