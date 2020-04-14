@@ -92,15 +92,15 @@
       <div class="Markdown">
         <h2 id="whats-a-bgp-hijack">What’s a BGP hijack?</h2>
 
-        <p>To better understand why BGP’s lack of security is so problematic, let’s look at a simplified model of how BGP is used to route Internet requests.</p>
+        <p>To better understand why BGP’s lack of security is so problematic, let’s look at a simplified model of how BGP is used to route Internet packets.</p>
 
-        <p>The Internet is not run by just <em>one</em> company. It’s made up of thousands of autonomous nodes, located all around the world, connected to each other in a massive graph.</p>
+        <p>The Internet is not run by just <em>one</em> company. It’s made up of thousands of autonomous systems with nodes located all around the world, connected to each other in a massive graph.</p>
 
-        <p>In essence, the way BGP works is that each node must determine how to route requests using only what it knows from <strong>the nodes it connects with directly</strong>.</p>
+        <p>In essence, the way BGP works is that each node must determine how to route packets using only what it knows from <strong>the nodes it connects with directly</strong>.</p>
 
         <p>For example, in the simple network A–B–C–D–E, the node A only knows how to reach E based on information it received from B. The node B knows about the network from A and C. And so forth.</p>
 
-        <p>A <strong>BGP hijack</strong> occurs when a malicious node deceives another node, lying about what the routes are for its neighbors. Since BGP does not embed any security protocols, this misinformation can propogate from node to node, until a large number of nodes now know about, and attempt to use these incorrect, nonexistent, or malicious routes.</p>
+        <p>A <strong>BGP hijack</strong> occurs when a malicious node deceives another node, lying about what the routes are for its neighbors. Without any security protocols, this misinformation can propagate from node to node, until a large number of nodes now know about, and attempt to use these incorrect, nonexistent, or malicious routes.</p>
       </div>
     </div>
 
