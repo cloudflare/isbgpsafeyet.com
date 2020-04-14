@@ -363,6 +363,20 @@ h1, h2 {
   white-space: nowrap;
 }
 
+@supports ((-webkit-backdrop-filter: blur(1em)) or (backdrop-filter: blur(1em))) {
+  .BGPSafetyTable th {
+    position: sticky;
+    top: 0;
+    background: rgba(var(--background-color-rgb), .8);
+    -webkit-backdrop-filter: saturate(200%) blur(1.25em);
+    backdrop-filter: saturate(200%) blur(1.25em);
+  }
+
+  .BGPSafetyTable th:first-child {
+    box-shadow: -1em 0 var(--background-color);
+  }
+}
+
 .BGPSafetyTable th:not([data-sortable="false"]) {
   -webkit-user-select: none;
   user-select: none;
