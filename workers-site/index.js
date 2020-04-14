@@ -121,7 +121,7 @@ function template(rows){
 
   function cell(val, key){
     return `
-      <td data-column="${ key }" data-value="${ sortKey(key, val).toString().replace(/"/g, '\\"') }">${ val }
+      <td data-column="${ key }" data-value="${ sortKey(key, val).toString().replace(/"/g, '\\"') }">${ val }</td>
     `
   }
 
