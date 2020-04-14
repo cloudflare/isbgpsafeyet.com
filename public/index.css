@@ -48,7 +48,6 @@ body {
   padding: .3em 1em;
   transform: translate3d(-50%, 0, 0);
   margin-bottom: .5em;
-  /*background: var(--color);*/
   background: var(--gray-0);
   color: #fff;
   border-radius: var(--border-radius);
@@ -228,7 +227,7 @@ h1, h2 {
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
-  left: calc(50% - 5em); /* TODO */
+  left: calc(50% - 5em);
   width: .8em;
   height: .8em;
   border-radius: .5em;
