@@ -782,6 +782,10 @@ h1, h2 {
 
 
 .Footer {
+  background: var(--gray-9);
+}
+
+.Footer--content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -790,8 +794,9 @@ h1, h2 {
 
 .Footer--logo-link {
   display: block;
-  height: 96px;
-  width: 96px;
+  height: 2.4em;
+  width: 4.8em;
+  margin-bottom: .75em;
 }
 
 .Footer--logo {
@@ -803,7 +808,7 @@ h1, h2 {
 .Footer--legal {
   text-align: center;
   font-size: .8em;
-  color: var(--gray-5);
+  margin-bottom: 1em;
 }
 
 
