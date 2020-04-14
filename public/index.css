@@ -587,7 +587,7 @@ h1, h2 {
   position: absolute;
   top: calc(var(--grid-height) / 2);
   --background: var(--gray-4);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity .65s ease, transform .65s ease;
 }
 
 .Diagram--node[path="sad"] {
@@ -626,7 +626,7 @@ h1, h2 {
   margin-left: -36px;
   --color: var(--gray-4);
   --background: #fff;
-  transition: opacity 1s ease;
+  transition: opacity .65s ease;
 }
 
 .Diagram--node-label {
@@ -637,7 +637,7 @@ h1, h2 {
   text-align: center;
   line-height: var(--grid-size);
   text-shadow: 0 0 .5em #fff, 0 0 .5em #fff, 0 0 .25em #fff;
-  transition: opacity 1s ease;
+  transition: opacity .65s ease;
 }
 
 .Diagram--node-label-question-mark {
@@ -663,7 +663,7 @@ h1, h2 {
   --background: var(--gray-7);
   --line-thickness: 6px;
   --delay: 0s;
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity .65s ease, transform .65s ease;
 }
 
 .Diagram [position="2"] { --delay: 0.75s }
