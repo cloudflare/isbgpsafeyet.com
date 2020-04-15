@@ -531,6 +531,13 @@ h1, h2 {
 }
 
 
+@media (max-width: 960px) {
+  .BodyWithDiagrams {
+    display: none;
+  }
+}
+
+
 .Diagram {
   position: relative;
   --grid-line-color: rgba(var(--gray-8-rgb), .8);
@@ -769,14 +776,6 @@ h1, h2 {
 
 .Diagram---footer {
   text-align: center;
-}
-
-@media (max-width: 960px) {
-  .Diagram,
-  .Diagram---header,
-  .Diagram---footer {
-    display: none;
-  }
 }
 
 
