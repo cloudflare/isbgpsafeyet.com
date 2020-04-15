@@ -300,6 +300,12 @@ h1, h2 {
   }
 }
 
+@media (max-width: 374px) {
+  .Markdown h2 {
+    font-size: 1.75em;
+  }
+}
+
 .Markdown h2[id]::before,
 .Markdown details[id]::before {
   content: "";
