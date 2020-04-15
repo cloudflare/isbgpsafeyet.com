@@ -531,29 +531,19 @@ h1, h2 {
 }
 
 
-.Diagram---header {
-  position: absolute;
-  font-size: 1.25em;
-  padding-top: 4rem;
-  line-height: 2rem;
-  margin: 0 0 0 .25em;
-  z-index: 10;
-}
-
 .Diagram {
   position: relative;
   --grid-line-color: rgba(var(--gray-8-rgb), .8);
   --grid-line-thickness: 1px;
-  --grid-size: 2em;
-  --grid-height: 20em;
-  --grid-width: 60em;
+  --grid-size: 2rem;
+  --grid-height: 20rem;
+  --grid-width: 60rem;
   --grid-positions-count: 5;
   --grid-positions-unit: calc(var(--grid-width) / (var(--grid-positions-count) + 1));
   height: calc(var(--grid-height) + var(--grid-line-thickness));
   margin: 2em auto;
   width: 100%;
   overflow: hidden;
-  pointer-events: none;
   user-select: none;
 }
 
@@ -577,6 +567,32 @@ h1, h2 {
   background-size: var(--grid-size) var(--grid-size);
 }
 
+.Diagram--header {
+  position: absolute;
+  left: var(--grid-positions-unit);
+  top: var(--grid-size);
+  font-size: 1.25em;
+  line-height: var(--grid-size);
+  margin: 0 0 0 .25em;
+}
+
+.Diagram--header [unsafe],
+.Diagram--header [safe] {
+  padding-left: .2em;
+  padding-right: .2em;
+  border-radius: .15em;
+}
+
+.Diagram--header [unsafe] {
+  color: var(--status-red-fg);
+  background: var(--status-red-bg);
+}
+
+.Diagram--header [safe] {
+  color: var(--status-green-fg);
+  background: var(--status-green-bg);
+}
+
 .Diagram [position="1"] { left: calc(var(--grid-positions-unit) * 1); }
 .Diagram [position="2"] { left: calc(var(--grid-positions-unit) * 2); }
 .Diagram [position="3"] { left: calc(var(--grid-positions-unit) * 3); }
@@ -590,7 +606,7 @@ h1, h2 {
   transition: opacity .65s ease, transform .65s ease;
 }
 
-.Diagram--node[path="sad"] {
+.Diagram[data-js-diagram="unsafe"] .Diagram--node[path="sad"] {
   --background: var(--red-4);
 }
 
@@ -640,20 +656,15 @@ h1, h2 {
   transition: opacity .65s ease;
 }
 
-.Diagram--node-label-question-mark {
-  margin-left: .3125em;
-  font-size: .8em;
-}
-
 .Diagram[path="happy"] .Diagram--node[path="sad"] .Diagram--node-icon,
 .Diagram[path="happy"] .Diagram--node[path="sad"] .Diagram--node-label {
   opacity: 0;
 }
 
-.Diagram[path="sad"] .Diagram--node[path="happy"] .Diagram--node-icon,
-.Diagram[path="sad"] .Diagram--node[path="happy"] .Diagram--node-label,
-.Diagram[path="sad"] .Diagram--node[path="both"][position="5"] .Diagram--node-icon,
-.Diagram[path="sad"] .Diagram--node[path="both"][position="5"] .Diagram--node-label {
+.Diagram[data-js-diagram="unsafe"][path="sad"] .Diagram--node[path="happy"] .Diagram--node-icon,
+.Diagram[data-js-diagram="unsafe"][path="sad"] .Diagram--node[path="happy"] .Diagram--node-label,
+.Diagram[data-js-diagram="unsafe"][path="sad"] .Diagram--node[path="both"][position="5"] .Diagram--node-icon,
+.Diagram[data-js-diagram="unsafe"][path="sad"] .Diagram--node[path="both"][position="5"] .Diagram--node-label {
   opacity: .4;
 }
 
@@ -682,12 +693,26 @@ h1, h2 {
   background: var(--background);
 }
 
-.Diagram--edge[path="sad"] {
-  --background: #f8b5ab;
+.Diagram[data-js-diagram="unsafe"] .Diagram--edge[path="sad"],
+.Diagram[data-js-diagram="unsafe"] .Diagram--edge[with-status-color] {
+  --background: #f5ced2;
 }
 
-.Diagram[path="sad"] .Diagram--edge[path="switch"] {
+.Diagram[data-js-diagram="safe"] .Diagram--edge[with-status-color] {
+  --background: #a3e0a6;
+}
+
+.Diagram[path="happy"] .Diagram--edge[path="switch"][with-status-color],
+.Diagram[path="sad"] .Diagram--edge[path="switch"]:not([with-status-color]) {
+  opacity: 0;
+}
+
+.Diagram[data-js-diagram="unsafe"][path="sad"] .Diagram--edge[path="switch"] {
   transform: translate3d(0, 0, 0) rotate(22deg);
+}
+
+.Diagram[data-js-diagram="safe"][path="sad"] .Diagram--edge[path="switch"] {
+  transform: translate3d(0, 0, 0) rotate(-22deg);
 }
 
 .Diagram[path="sad"] .Diagram--edge[path="sad"] {
@@ -714,8 +739,9 @@ h1, h2 {
   animation: diagram-edge-data-pulse 5s var(--delay) linear infinite;
 }
 
-.Diagram[path="happy"] .Diagram--edge[path="sad"] .Diagram--edge-data,
-.Diagram[path="sad"] .Diagram--edge[path="happy"] .Diagram--edge-data {
+.Diagram[data-js-diagram="unsafe"][path="happy"] .Diagram--edge[path="sad"] .Diagram--edge-data,
+.Diagram[data-js-diagram="unsafe"][path="sad"] .Diagram--edge[path="happy"] .Diagram--edge-data,
+.Diagram[data-js-diagram="safe"] .Diagram--edge[path="sad"] .Diagram--edge-data {
   visibility: hidden;
 }
 

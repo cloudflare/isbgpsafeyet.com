@@ -90,30 +90,55 @@
     button.addEventListener('click', () => runTest())
   }
 
-  const initDiagram = () => {
-    const header = document.querySelector('[data-js-diagram-header]')
-    const button = document.querySelector('[data-js-diagram-toggle]')
-    const el = document.querySelector('[data-js-diagram]')
+  const initDiagrams = () => {
+    document.querySelectorAll('[data-js-diagram]').forEach(el => {
+      const name = el.getAttribute('data-js-diagram')
+      const header = el.querySelector('[data-js-diagram-header]')
+      const button = document.querySelector(`[data-js-diagram-toggle-for="${ name }"]`)
 
-    button.addEventListener('click', () => {
-      if (el.getAttribute('path') === 'happy') {
-        el.setAttribute('path', 'sad')
-        button.textContent = 'Undo BGP hijack'
-        button.className = 'Button Button-is-bordered Button-has-depth'
-        header.textContent = 'BGP hijack'
-      } else {
-        el.setAttribute('path', 'happy')
-        button.textContent = 'Hijack the request'
-        button.className = 'Button Button-is-primary Button-is-elevated'
-        header.textContent = 'Normal request'
+      const copy = {
+        unsafe: {
+          header: {
+            happy: 'Normal request',
+            sad: 'Hijacked'
+          },
+          button: {
+            happy: 'Hijack the request',
+            sad: 'Undo BGP hijack'
+          }
+        },
+        safe: {
+          header: {
+            happy: 'BGP with RPKI',
+            sad: 'BGP with RPKI'
+          },
+          button: {
+            happy: 'Attempt to hijack',
+            sad: 'Undo hijack attempt'
+          }
+        }
       }
+
+      button.addEventListener('click', () => {
+        if (el.getAttribute('path') === 'happy') {
+          el.setAttribute('path', 'sad')
+          button.className = 'Button Button-is-bordered Button-has-depth'
+        } else {
+          el.setAttribute('path', 'happy')
+          button.className = 'Button Button-is-primary Button-is-elevated'
+        }
+
+        const path = el.getAttribute('path')
+        header.textContent = copy[name].header[path]
+        button.textContent = copy[name].button[path]
+      })
     })
   }
 
   const init = () => {
     setupASNColumnToggle()
     initTesting()
-    initDiagram()
+    initDiagrams()
   }
 
   init()
