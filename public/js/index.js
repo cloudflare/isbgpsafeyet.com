@@ -1,4 +1,18 @@
 (() => {
+  const successMessageDetails = `${ ''
+}fetch https://valid.rpki.cloudflare.com
+  success: correctly accepted valid prefixes
+
+fetch https://invalid.rpki.cloudflare.com
+  success: correctly rejected invalid prefixes`
+
+  const errorMessageDetails = `${ ''
+}fetch https://valid.rpki.cloudflare.com
+  success: correctly accepted valid prefixes
+
+fetch https://invalid.rpki.cloudflare.com
+  failed: incorrectly accepted invalid prefixes`
+
   const setupASNColumnToggle = () => {
     const table = document.querySelector('[data-js-table]')
     const button = document.querySelector('[data-js-toggle-asn-column]')
@@ -39,9 +53,9 @@
         summary.textContent = 'Details'
 
         if (type === 'success') {
-          pre.textContent = 'fetch https://valid.rpki.cloudflare.com: [succeeded]\nfetch https://invalid.rpki.cloudflare.com: [failed]'
+          pre.textContent = successMessageDetails
         } else {
-          pre.textContent = 'fetch https://valid.rpki.cloudflare.com: [succeeded]\nfetch https://invalid.rpki.cloudflare.com: [succeeded]'
+          pre.textContent = errorMessageDetails
         }
 
         el.appendChild(details)
