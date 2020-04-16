@@ -67,7 +67,7 @@
         .then(response => response.text())
         .then(response => {
           if (!response.includes('warp=off')) {
-            render('success', 'You are using Cloudflare WARP which implements BGP safely.')
+            render('success', 'You are using Cloudflare WARP, which implements BGP safely.')
             return
           }
 
