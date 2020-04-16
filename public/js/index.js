@@ -53,6 +53,7 @@
 
       const uid = Math.floor((Math.random() * 10e10)).toString(16)
 
+      const warpFetch = fetch(`https://valid.rpki.cloudflare.com/cdn-cgi/trace`)
       const validFetch = fetch(`https://valid.rpki.cloudflare.com/${ uid }`)
       const invalidFetch = fetch(`https://invalid.rpki.cloudflare.com/${ uid }`)
 
@@ -62,26 +63,38 @@
         render('success', 'Your ISP implements BGP safely. It correctly dropped invalid prefixes.')
       }
 
-      validFetch
-        .then(() => {
-          let timedOut = false
-          let completed = false
+      warpFetch
+        .then(response => response.text())
+          .then(resp =>
+          {
+            if(!resp.includes('warp=off')) {
+              render('success', 'You are using Cloudflare Warp which implements BGP safely.')
+              return
+            }
+          validFetch
+            .then(() => {
+              let timedOut = false
+              let completed = false
 
-          setTimeout(() => {
-            timedOut = true
-            if (completed) return
-            success()
-          }, 2 * 1000)
+              setTimeout(() => {
+                timedOut = true
+                if (completed) return
+                success()
+              }, 2 * 1000)
 
-          invalidFetch
-            .then(data => data.text())
-              .then(text => {
-                completed = true
-                if (timedOut) return
-                render('failure', 'Your ISP does not implement BGP safely. It should be using RPKI.')
-              })
-            .catch(err => success())
-        })
+              invalidFetch
+                .then(data => data.text())
+                  .then(text => {
+                    completed = true
+                    if (timedOut) return
+                    render('failure', 'Your ISP does not implement BGP safely. It should be using RPKI.')
+                  })
+                .catch(err => success())
+            })
+            .catch(err => {
+              render('error', 'An error occured trying to conduct the test. Please try again.')
+            })
+          })
         .catch(err => {
           render('error', 'An error occured trying to conduct the test. Please try again.')
         })
