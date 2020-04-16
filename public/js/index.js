@@ -59,8 +59,17 @@
 
       render('running', 'Running test...')
 
-      const success = () => {
-        render('success', 'Your ISP implements BGP safely. It correctly dropped invalid prefixes.')
+      const getISPInfo = (data) => {
+        if (!data || data.asn === 0) return ''
+
+        if (data.name && data.name !== '')
+          return `(${ data.name }, AS${ data.asn }) `
+        else
+          return `(AS${ data.asn }) `
+      }
+
+      const success = (data) => {
+        render('success', `Your ISP ${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`)
       }
 
       warpFetch
@@ -72,24 +81,24 @@
           }
 
           validFetch
-            .then(() => {
+            .then(response => response.json())
+            .then(data => {
               let timedOut = false
               let completed = false
 
               setTimeout(() => {
                 timedOut = true
                 if (completed) return
-                success()
+                success(data)
               }, 2 * 1000)
 
               invalidFetch
-                .then(response => response.text())
-                .then(text => {
+                .then(() => {
                   completed = true
                   if (timedOut) return
-                  render('failure', 'Your ISP does not implement BGP safely. It should be using RPKI.')
+                  render('failure', `Your ISP ${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI.`)
                 })
-                .catch(err => success())
+                .catch(err => success(data))
             })
             .catch(err => {
               render('error', 'An error occured trying to conduct the test. Please try again.')
