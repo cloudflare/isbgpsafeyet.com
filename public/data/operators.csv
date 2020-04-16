@@ -4,18 +4,21 @@ Cloudflare,cloud,signed + filtering,safe,13335
 NTT,transit,signed + filtering,safe,2914
 Telia,transit,signed + filtering,safe,1299
 Amazon,cloud,signed,partially safe,16509
-Cogent,transit,started,partially safe,174
-GTT,transit,started,partially safe,3257
-PCCW,transit,started,partially safe,3491
-Sparkle,transit,started,partially safe,6762
-TATA,transit,filtering,partially safe,6453
+Cogent,transit,filtering peers only,partially safe,174
+GTT,transit,filtering peers only,partially safe,3257
+PCCW,transit,filtering peers only,partially safe,3491
+TATA,transit,filtering peers only,partially safe,6453
+Level3/CenturyLink,transit,,unsafe,3356
+Sparkle,transit,started,unsafe,6762
+Hurricane Electric,transit,,unsafe,6939
 Deutsche Telekom,ISP,started,unsafe,3320
 Telxius,transit,started,unsafe,12956
-Orange,transit,started,unsafe,3215
+Orange,transit,started,unsafe,5511
 Comcast,ISP,,unsafe,7922
 Google,cloud,,unsafe,15169
-Level3,transit,,unsafe,3356
 Sprint,transit,,unsafe,1239
 Verizon,ISP,,unsafe,701
 Zayo,transit,,unsafe,6461
-Telefonica,transit,,unsafe,12956
+Telefonica/Telxius,transit,,unsafe,12956
+Telstra,transit,,unsafe,4637
+Vodafone,transit,,unsafe,1273
