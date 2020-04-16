@@ -53,7 +53,7 @@
 
       const uid = Math.floor((Math.random() * 10e10)).toString(16)
 
-      const warpFetch = fetch(`https://valid.rpki.cloudflare.com/cdn-cgi/trace`)
+      const warpFetch = fetch('https://valid.rpki.cloudflare.com/cdn-cgi/trace')
       const validFetch = fetch(`https://valid.rpki.cloudflare.com/${ uid }`)
       const invalidFetch = fetch(`https://invalid.rpki.cloudflare.com/${ uid }`)
 
@@ -65,12 +65,12 @@
 
       warpFetch
         .then(response => response.text())
-          .then(resp =>
-          {
-            if(!resp.includes('warp=off')) {
-              render('success', 'You are using Cloudflare Warp which implements BGP safely.')
-              return
-            }
+        .then(response => {
+          if (!response.includes('warp=off')) {
+            render('success', 'You are using Cloudflare WARP which implements BGP safely.')
+            return
+          }
+
           validFetch
             .then(() => {
               let timedOut = false
@@ -83,12 +83,12 @@
               }, 2 * 1000)
 
               invalidFetch
-                .then(data => data.text())
-                  .then(text => {
-                    completed = true
-                    if (timedOut) return
-                    render('failure', 'Your ISP does not implement BGP safely. It should be using RPKI.')
-                  })
+                .then(response => response.text())
+                .then(text => {
+                  completed = true
+                  if (timedOut) return
+                  render('failure', 'Your ISP does not implement BGP safely. It should be using RPKI.')
+                })
                 .catch(err => success())
             })
             .catch(err => {
