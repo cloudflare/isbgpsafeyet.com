@@ -106,7 +106,8 @@ fetch https://invalid.rpki.cloudflare.com
       AS22773: '@CoxComm',
       AS22394: '@CELLCOATT',
       AS28573: '@NEToficial',
-      AS56478: '@HyperopticCS'
+      AS56478: '@HyperopticCS',
+      AS6327: '@ShawInfo',
     }
 
     const getISPInfo = (data, forTweet) => {
