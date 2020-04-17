@@ -11,7 +11,7 @@ const successMessageDetails = `${ ''
 fetch https://invalid.rpki.cloudflare.com
 <i pass><i>${ svgCheck }</i></i>correctly rejected invalid prefixes`
 
-const errorMessageDetails = `${ ''
+const failureMessageDetails = `${ ''
 }fetch https://valid.rpki.cloudflare.com
 <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
@@ -40,7 +40,7 @@ const initTesting = () => {
   const button = document.querySelector('[data-js-test]')
   const el = document.querySelector('[data-js-test-results]')
 
-  const render = (type, message) => {
+  const render = ({ type, message, tweet }) => {
     if (type === 'running') {
       button.setAttribute('disabled', '')
     } else {
@@ -48,7 +48,22 @@ const initTesting = () => {
     }
 
     el.setAttribute('data-type', type)
-    el.textContent = message
+    el.innerHTML = ''
+
+    const messageEl = document.createElement('span')
+    messageEl.textContent = message
+    el.appendChild(messageEl)
+
+    if (tweet) {
+      messageEl.textContent += ' '
+      const tweetWrapper = document.createElement('span')
+      tweetWrapper.className = 'Markdown'
+      const tweetLink = document.createElement('a')
+      tweetLink.href = `https://twitter.com/intent/tweet/?via=Cloudflare&text=${ encodeURIComponent(tweet) }`
+      tweetLink.innerHTML = 'Tweet&nbsp;this&nbsp;→'
+      tweetWrapper.appendChild(tweetLink)
+      el.appendChild(tweetWrapper)
+    }
 
     if (type === 'success' || type === 'failure') {
       const details = document.createElement('details')
@@ -63,11 +78,86 @@ const initTesting = () => {
       if (type === 'success') {
         pre.innerHTML = successMessageDetails
       } else {
-        pre.innerHTML = errorMessageDetails
+        pre.innerHTML = failureMessageDetails
       }
 
       el.appendChild(details)
     }
+  }
+
+  const twitterASNs = {
+    AS701: '@VERIZON',
+    AS812: '@Rogers',
+    AS2856: '@bt_uk',
+    AS3215: '@Orange_France',
+    AS3303: '@Swisscom',
+    AS3320: '@deutschetelekom',
+    AS4764: '@Aussie_BB',
+    AS5089: '@virginmedia',
+    AS5645: '@TekSavvyNetwork',
+    AS5769: '@videotron',
+    AS6181: '@CincyBell',
+    AS6830: '@libertyglobal',
+    AS7922: '@Comcast',
+    AS10838: '@getspectrum',
+    AS12322: '@free',
+    AS12430: '@vodafone_es',
+    AS13030: '@init7',
+    AS15557: '@SFR',
+    AS20001: '@getspectrum',
+    AS20115: '@getspectrum',
+    AS21502: '@Numericable',
+    AS21928: '@TMobile',
+    AS22773: '@CoxComm',
+    AS22394: '@CELLCOATT',
+    AS28573: '@NEToficial',
+    AS56478: '@HyperopticCS'
+  }
+
+  const getISPInfo = (data, forTweet) => {
+    if (!data || data.asn === 0) return ' '
+
+    if (data.name && data.name !== '') {
+      const twitterUsername = twitterASNs[`AS${ data.asn }`]
+
+      if (forTweet && twitterUsername) {
+        return `, ${ twitterUsername } (AS${ data.asn }), `
+      }
+
+      return ` (${ data.name }, AS${ data.asn }) `
+    }
+
+    return ` (AS${ data.asn }) `
+  }
+
+  const renderSuccessWARP = () => {
+    render({
+      type: 'success',
+      message: 'You are using Cloudflare WARP, which implements BGP safely.'
+    })
+  }
+
+  const renderSuccess = data => {
+    render({
+      type: 'success',
+      message: `Your ISP${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`,
+      tweet: `My Internet provider${ getISPInfo(data, true) }implements BGP safely! Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+    })
+  }
+
+  const renderFailure = data => {
+    render({
+      type: 'failure',
+      message: `Your ISP${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI to protect the Internet from BGP hijacks.`,
+      tweet: `Unfortunately, my Internet provider${ getISPInfo(data, true) }does NOT implement BGP safely. Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+    })
+  }
+
+  const renderError = () => {
+    render({
+      type: 'error',
+      message: 'An error occured trying to conduct the test. Please try again.'
+    })
   }
 
   const runTest = () => {
@@ -79,27 +169,16 @@ const initTesting = () => {
     const validFetch = fetch(`https://valid.rpki.cloudflare.com/${ uid }`)
     const invalidFetch = fetch(`https://invalid.rpki.cloudflare.com/${ uid }`)
 
-    render('running', 'Running test...')
-
-    const getISPInfo = (data) => {
-      if (!data || data.asn === 0) return ''
-
-      if (data.name && data.name !== '')
-        return `(${ data.name }, AS${ data.asn }) `
-      else
-        return `(AS${ data.asn }) `
-    }
-
-    const success = (data) => {
-      render('success', `Your ISP ${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`)
-    }
+    render({
+      type: 'running',
+      message: 'Running test...'
+    })
 
     warpFetch
       .then(response => response.text())
       .then(response => {
         if (!response.includes('warp=off')) {
-          render('success', 'You are using Cloudflare WARP, which implements BGP safely.')
-          return
+          return renderSuccessWARP()
         }
 
         validFetch
@@ -111,23 +190,23 @@ const initTesting = () => {
             setTimeout(() => {
               timedOut = true
               if (completed) return
-              success(data)
+              renderSuccess(data)
             }, 2 * 1000)
 
             invalidFetch
               .then(() => {
                 completed = true
                 if (timedOut) return
-                render('failure', `Your ISP ${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI.`)
+                renderFailure(data)
               })
-              .catch(err => success(data))
+              .catch(err => renderSuccess(data))
           })
           .catch(err => {
-            render('error', 'An error occured trying to conduct the test. Please try again.')
+            renderError()
           })
         })
       .catch(err => {
-        render('error', 'An error occured trying to conduct the test. Please try again.')
+        renderError()
       })
   }
 
