@@ -131,7 +131,7 @@ fetch https://invalid.rpki.cloudflare.com
       render({
         type: 'failure',
         message: `Your ISP${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI to protect the Internet from BGP hijacks.`,
-        tweet: `My Internet provider${ getISPInfo(data, true) }does not implement BGP safely. Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+        tweet: `Unfortunately, my Internet provider${ getISPInfo(data, true) }does NOT implement BGP safely. Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
       })
     }
 
