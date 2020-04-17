@@ -9,7 +9,7 @@
 fetch https://invalid.rpki.cloudflare.com
   <i pass><i>${ svgCheck }</i></i>correctly rejected invalid prefixes`
 
-  const errorMessageDetails = `${ ''
+  const failureMessageDetails = `${ ''
 }fetch https://valid.rpki.cloudflare.com
   <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
@@ -58,7 +58,7 @@ fetch https://invalid.rpki.cloudflare.com
         if (type === 'success') {
           pre.innerHTML = successMessageDetails
         } else {
-          pre.innerHTML = errorMessageDetails
+          pre.innerHTML = failureMessageDetails
         }
 
         el.appendChild(details)
