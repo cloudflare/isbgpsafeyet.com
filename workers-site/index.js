@@ -1,5 +1,5 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
-import OPERATORS from '../data/operators.csv'
+import OPERATORS_STRING from '../data/operators.csv'
 
 import parse from 'csv-parse/lib/sync'
 
@@ -11,6 +11,21 @@ import parse from 'csv-parse/lib/sync'
  *    than the default 404.html page.
  */
 const DEBUG = false
+
+function statusSortIndex(status){
+  return [, 'safe', 'partially safe', 'unsafe'].indexOf(status)
+}
+
+const OPERATORS = parse(OPERATORS_STRING, {columns: true})
+
+// Yay for stable sorting in ES2019!
+OPERATORS.sort(function(a, b){
+  return a.name.localeCompare(b.name)
+})
+
+OPERATORS.sort(function(a, b){
+  return statusSortIndex(a.status) - statusSortIndex(b.status)
+})
 
 addEventListener('fetch', event => {
   try {
@@ -47,7 +62,7 @@ async function handleEvent(event) {
       response.headers.set('Cache-Control', 'public; max-age=60')
 
       return new HTMLRewriter()
-        .on('head', new StringInjector('OPERATORS', OPERATORS))
+        .on('head', new VarInjector('OPERATORS', OPERATORS))
         .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
         .transform(response)
     } else {
@@ -71,7 +86,7 @@ async function handleEvent(event) {
   }
 }
 
-class StringInjector {
+class VarInjector {
   constructor(name, body) {
     this.name = name
     this.body = body
@@ -80,15 +95,11 @@ class StringInjector {
   element(element) {
     element.prepend(`
     <script>
-      ${ this.name } = \`${ this.escapeQuotes(this.body) }\`;
+      const ${ this.name } = ${ JSON.stringify(this.body) };
     </script>
     `, {
       html: true
     })
-  }
-
-  escapeQuotes(value) {
-    return value.replace(new RegExp('`', 'g'), '\\\`')
   }
 }
 
@@ -119,13 +130,13 @@ function template(rows) {
 
   function cell(val, key) {
     return `
-      <td data-column="${ key }" data-value="${ sortKey(key, val).toString().replace(/"/g, '\\"') }">${ val }
+      <td data-column="${ key }" data-value="${ sortKey(key, val).toString().replace(/"/g, '&quot;') }">${ val }
     `
   }
 
   function sortKey(key, val) {
     if (key === 'status')
-      return [, 'safe', 'partially safe', 'unsafe'].indexOf(val)
+      return statusSortIndex(val)
     else
       return val
   }
@@ -139,23 +150,12 @@ class OperatorsTableBuilder {
   }
 
   element(element) {
-    const rows = parse(this.operators, {
-      columns: true
-    })
-
-    element.append(template(rows), {
+    element.append(template(this.operators), {
       html: true
     })
   }
 }
 
-/**
- * Here's one example of how to modify a request to
- * remove a specific prefix, in this case `/docs` from
- * the url. This can be useful if you are deploying to a
- * route on a zone, or if you only want your static content
- * to exist at a specific path.
- */
 function handlePrefix(prefix) {
   return request => {
     // compute the default (e.g. / -> index.html)
