@@ -1,17 +1,20 @@
 (() => {
+  const svgCheck = '<svg viewBox="0 0 16 16"><path d="M2.5 8.5l3.5 3.5l8 -8"/></svg>'
+  const svgTimes = '<svg viewBox="0 0 16 16"><path d="M3 3l10 10m-10 0l10 -10"/></svg>'
+
   const successMessageDetails = `${ ''
 }fetch https://valid.rpki.cloudflare.com
-  success: correctly accepted valid prefixes
+  <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
 fetch https://invalid.rpki.cloudflare.com
-  success: correctly rejected invalid prefixes`
+  <i pass><i>${ svgCheck }</i></i>correctly rejected invalid prefixes`
 
   const errorMessageDetails = `${ ''
 }fetch https://valid.rpki.cloudflare.com
-  success: correctly accepted valid prefixes
+  <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
 fetch https://invalid.rpki.cloudflare.com
-  failed: incorrectly accepted invalid prefixes`
+  <i fail><i>${ svgTimes }</i></i>incorrectly accepted invalid prefixes`
 
   const setupASNColumnToggle = () => {
     const table = document.querySelector('[data-js-table]')
@@ -53,9 +56,9 @@ fetch https://invalid.rpki.cloudflare.com
         summary.textContent = 'Details'
 
         if (type === 'success') {
-          pre.textContent = successMessageDetails
+          pre.innerHTML = successMessageDetails
         } else {
-          pre.textContent = errorMessageDetails
+          pre.innerHTML = errorMessageDetails
         }
 
         el.appendChild(details)
