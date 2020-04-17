@@ -248,7 +248,7 @@ h1, h2 {
 
 .Test[data-type="error"],
 .Test[data-type="failure"] {
-  border-left: 1em solid var(--red-5);
+  border-left: 1em solid var(--red-4);
 }
 
 .Test summary {
