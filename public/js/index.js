@@ -106,6 +106,7 @@ fetch https://invalid.rpki.cloudflare.com
       AS22773: '@CoxComm',
       AS22394: '@CELLCOATT',
       AS28573: '@NEToficial',
+      AS32329: '@monkeybrainsnet',
       AS56478: '@HyperopticCS'
     }
 
