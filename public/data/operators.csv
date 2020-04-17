@@ -9,6 +9,7 @@ GTT,transit,filtering peers only,partially safe,3257
 PCCW,transit,filtering peers only,partially safe,3491
 TATA,transit,filtering peers only,partially safe,6453
 Comcast,ISP,,unsafe,7922
+Claro S.A. (NET),ISP,,unsafe,28573
 Deutsche Telekom,ISP,started,unsafe,3320
 Google,cloud,,unsafe,15169
 Hurricane Electric,transit,,unsafe,6939
