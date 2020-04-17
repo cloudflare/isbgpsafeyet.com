@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const PurgeCSSPlugin = require('purgecss-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -44,13 +43,6 @@ module.exports = {
   optimization: {
     minimizer: [
       new TerserPlugin(),
-      new PurgeCSSPlugin({
-        paths: ['./src/index.html', './src/404.html'],
-        variables: true,
-
-        /* Created by index.js */
-        whitelistPattern: '/svg/',
-      }),
     ],
   },
 };
