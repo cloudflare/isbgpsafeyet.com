@@ -35,7 +35,7 @@ fetch https://invalid.rpki.cloudflare.com
     const button = document.querySelector('[data-js-test]')
     const el = document.querySelector('[data-js-test-results]')
 
-    const render = (type, message) => {
+    const render = ({ type, message, tweet }) => {
       if (type === 'running') {
         button.setAttribute('disabled', '')
       } else {
@@ -43,7 +43,22 @@ fetch https://invalid.rpki.cloudflare.com
       }
 
       el.setAttribute('data-type', type)
-      el.textContent = message
+      el.innerHTML = ''
+
+      const messageEl = document.createElement('span')
+      messageEl.textContent = message
+      el.appendChild(messageEl)
+
+      if (tweet) {
+        messageEl.textContent += ' '
+        const tweetWrapper = document.createElement('span')
+        tweetWrapper.className = 'Markdown'
+        const tweetLink = document.createElement('a')
+        tweetLink.href = `https://twitter.com/intent/tweet/?via=Cloudflare&text=${ encodeURIComponent(tweet) }`
+        tweetLink.innerHTML = 'Tweet&nbsp;this&nbsp;→'
+        tweetWrapper.appendChild(tweetLink)
+        el.appendChild(tweetWrapper)
+      }
 
       if (type === 'success' || type === 'failure') {
         const details = document.createElement('details')
@@ -65,6 +80,45 @@ fetch https://invalid.rpki.cloudflare.com
       }
     }
 
+    const getISPInfo = data => {
+      if (!data || data.asn === 0) return ''
+
+      if (data.name && data.name !== '')
+        return `(${ data.name }, AS${ data.asn }) `
+      else
+        return `(AS${ data.asn }) `
+    }
+
+    const renderSuccessWARP = () => {
+      render({
+        type: 'success',
+        message: 'You are using Cloudflare WARP, which implements BGP safely.'
+      })
+    }
+
+    const renderSuccess = data => {
+      render({
+        type: 'success',
+        message: `Your ISP ${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`,
+        tweet: `My Internet provider ${ getISPInfo(data) }implements BGP safely! Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+      })
+    }
+
+    const renderFailure = data => {
+      render({
+        type: 'failure',
+        message: `Your ISP ${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI to protect the Internet from BGP hijacks.`,
+        tweet: `My Internet provider ${ getISPInfo(data) }does not implement BGP safely. Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+      })
+    }
+
+    const renderError = () => {
+      render({
+        type: 'error',
+        message: 'An error occured trying to conduct the test. Please try again.'
+      })
+    }
+
     const runTest = () => {
       const now = performance.now()
 
@@ -74,27 +128,16 @@ fetch https://invalid.rpki.cloudflare.com
       const validFetch = fetch(`https://valid.rpki.cloudflare.com/${ uid }`)
       const invalidFetch = fetch(`https://invalid.rpki.cloudflare.com/${ uid }`)
 
-      render('running', 'Running test...')
-
-      const getISPInfo = (data) => {
-        if (!data || data.asn === 0) return ''
-
-        if (data.name && data.name !== '')
-          return `(${ data.name }, AS${ data.asn }) `
-        else
-          return `(AS${ data.asn }) `
-      }
-
-      const success = (data) => {
-        render('success', `Your ISP ${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`)
-      }
+      render({
+        type: 'running',
+        message: 'Running test...'
+      })
 
       warpFetch
         .then(response => response.text())
         .then(response => {
           if (!response.includes('warp=off')) {
-            render('success', 'You are using Cloudflare WARP, which implements BGP safely.')
-            return
+            return renderSuccessWARP()
           }
 
           validFetch
@@ -106,23 +149,23 @@ fetch https://invalid.rpki.cloudflare.com
               setTimeout(() => {
                 timedOut = true
                 if (completed) return
-                success(data)
+                renderSuccess(data)
               }, 2 * 1000)
 
               invalidFetch
                 .then(() => {
                   completed = true
                   if (timedOut) return
-                  render('failure', `Your ISP ${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI.`)
+                  renderFailure(data)
                 })
-                .catch(err => success(data))
+                .catch(err => renderSuccess(data))
             })
             .catch(err => {
-              render('error', 'An error occured trying to conduct the test. Please try again.')
+              renderError()
             })
           })
         .catch(err => {
-          render('error', 'An error occured trying to conduct the test. Please try again.')
+          renderError()
         })
     }
 
