@@ -174,10 +174,22 @@ fetch https://invalid.rpki.cloudflare.com
     })
   }
 
+  const openPossibleTargetFAQItem = () => {
+    const target = document.querySelector(':target')
+    if (!target || target.tagName.toLowerCase() !== 'details') return
+
+    target.setAttribute('open', '')
+    target.scrollIntoView()
+  }
+
   const init = () => {
     setupASNColumnToggle()
     initTesting()
     initDiagrams()
+
+    requestAnimationFrame(() => {
+      openPossibleTargetFAQItem()
+    })
   }
 
   init()
