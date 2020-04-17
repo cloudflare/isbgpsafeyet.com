@@ -93,7 +93,7 @@ fetch https://invalid.rpki.cloudflare.com
       AS20001: '@getspectrum',
       AS20115: '@getspectrum',
       AS22773: '@CoxComm',
-      AS28573: '@NEToficial'     
+      AS28573: '@NEToficial'
     }
 
     const getISPInfo = (data, forTweet) => {
