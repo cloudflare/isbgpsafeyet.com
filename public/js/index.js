@@ -80,13 +80,29 @@ fetch https://invalid.rpki.cloudflare.com
       }
     }
 
-    const getISPInfo = data => {
-      if (!data || data.asn === 0) return ''
+    const twitterASNs = {
+      AS7922: '@Comcast',
+      AS3320: '@deutschetelekom',
+      AS701: '@VERIZON',
+      AS5089: '@virginmedia',
+      AS20115: '@getspectrum',
+      AS12430: '@vodafone_es'
+    }
 
-      if (data.name && data.name !== '')
-        return `(${ data.name }, AS${ data.asn }) `
-      else
-        return `(AS${ data.asn }) `
+    const getISPInfo = (data, forTweet) => {
+      if (!data || data.asn === 0) return ' '
+
+      if (data.name && data.name !== '') {
+        const twitterUsername = twitterASNs[`AS${ data.asn }`]
+
+        if (forTweet && twitterUsername) {
+          return `, ${ twitterUsername } (AS${ data.asn }), `
+        }
+
+        return ` (${ data.name }, AS${ data.asn }) `
+      }
+
+      return ` (AS${ data.asn }) `
     }
 
     const renderSuccessWARP = () => {
@@ -99,16 +115,16 @@ fetch https://invalid.rpki.cloudflare.com
     const renderSuccess = data => {
       render({
         type: 'success',
-        message: `Your ISP ${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`,
-        tweet: `My Internet provider ${ getISPInfo(data) }implements BGP safely! Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+        message: `Your ISP${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`,
+        tweet: `My Internet provider${ getISPInfo(data, true) }implements BGP safely! Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
       })
     }
 
     const renderFailure = data => {
       render({
         type: 'failure',
-        message: `Your ISP ${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI to protect the Internet from BGP hijacks.`,
-        tweet: `My Internet provider ${ getISPInfo(data) }does not implement BGP safely. Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+        message: `Your ISP${ getISPInfo(data) }does not implement BGP safely. It should be using RPKI to protect the Internet from BGP hijacks.`,
+        tweet: `My Internet provider${ getISPInfo(data, true) }does not implement BGP safely. Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
       })
     }
 
