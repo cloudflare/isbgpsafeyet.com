@@ -1,6 +1,7 @@
 name,type,details,status,asn
 AT&T,ISP,signed + filtering peers only,partially safe,7018
 Cloudflare,cloud,signed + filtering,safe,13335
+Cox Communications, ISP,,unsafe, 22773
 NTT,transit,signed + filtering,safe,2914
 Telia,transit,signed + filtering,safe,1299
 Amazon,cloud,signed,partially safe,16509
