@@ -1,4 +1,5 @@
 name,type,details,status,asn
+EBOX,ISP,signed + filtering,safe,1403
 AT&T,ISP,signed + filtering,safe,7018
 Cloudflare,cloud,signed + filtering,safe,13335
 NTT,transit,signed + filtering,safe,2914
