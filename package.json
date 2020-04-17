@@ -1,0 +1,38 @@
+{
+  "name": "isbgpsafeyet.com",
+  "version": "1.0.0",
+  "description": "**Is BGP safe yet?** is an initiative by Cloudflare to make BGP more secure by deploying RPKI.",
+  "main": "public/index.js",
+  "scripts": {
+    "build": "webpack-cli",
+    "webpack-dev": "webpack-cli -w ",
+    "wrangler-dev": "wrangler dev",
+    "start": "concurrently --kill-others-on-fail --names 'webpack ,wrangler' --prefix name --prefix-colors 'bgCyan.black,bgYellow.black' \"npm run webpack-dev\" \"npm run wrangler-dev\" \"while ! nc -z localhost 8787; do\nsleep 1\ndone; open 'http://127.0.0.1:8787'\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudflare/isbgpsafeyet.com.git"
+  },
+  "author": "Adam Schwartz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudflare/isbgpsafeyet.com/issues"
+  },
+  "homepage": "https://github.com/cloudflare/isbgpsafeyet.com#readme",
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.8.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.2",
+    "focus-visible-polyfill": "^0.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "purgecss-webpack-plugin": "^2.1.2",
+    "sortable": "git+https://github.com/HubSpot/sortable.git",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

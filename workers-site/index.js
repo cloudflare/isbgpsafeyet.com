@@ -1,5 +1,5 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
-import OPERATORS from '../public/data/operators.csv'
+import OPERATORS from '../data/operators.csv'
 
 import parse from 'csv-parse/lib/sync'
 
@@ -31,30 +31,30 @@ async function handleEvent(event) {
   const url = new URL(event.request.url)
   let options = {}
 
-  /**
-   * You can add custom logic to how we fetch your assets
-   * by configuring the function `mapRequestToAsset`
-   */
-  // options.mapRequestToAsset = handlePrefix(/^\/docs/)
-
   try {
     if (DEBUG) {
-      // customize caching
       options.cacheControl = {
         bypassCache: true,
       }
     }
 
+    const page = await getAssetFromKV(event, options)
+
+    // Allow headers to be altered
+    const response = new Response(page.body, page)
+
     if (url.pathname === "/" || url.pathname === "/index.html") {
-      const page = await getAssetFromKV(event, options)
+      response.headers.set('Cache-Control', 'public; max-age=60')
 
       return new HTMLRewriter()
-        .on('head', new StringInjector("OPERATORS", OPERATORS))
+        .on('head', new StringInjector('OPERATORS', OPERATORS))
         .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
-        .transform(page)
-    }
+        .transform(response)
+    } else {
+      response.headers.set('Cache-Control', 'public; max-age=86400')
 
-    return await getAssetFromKV(event, options)
+      return response
+    }
   } catch (e) {
     // if an error is thrown try to serve the asset at 404.html
     if (!DEBUG) {
