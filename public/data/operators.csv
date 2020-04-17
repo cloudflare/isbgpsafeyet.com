@@ -9,16 +9,15 @@ GTT,transit,filtering peers only,partially safe,3257
 PCCW,transit,filtering peers only,partially safe,3491
 TATA,transit,filtering peers only,partially safe,6453
 Comcast,ISP,,unsafe,7922
-Deutsche Telekom,ISP,started,unsafe,3320
+Deutsche Telekom/DTAG,ISP,started,unsafe,3320
 Google,cloud,,unsafe,15169
 Hurricane Electric,transit,,unsafe,6939
 Level3/CenturyLink,transit,,unsafe,3356
-Orange,transit,started,unsafe,5511
-Sparkle,transit,started,unsafe,6762
+France Telecom/Orange,transit,started,unsafe,5511
+Telecom Italia/Sparkle,transit,started,unsafe,6762
 Sprint,transit,,unsafe,1239
 Telefonica/Telxius,transit,,unsafe,12956
-Telstra,transit,,unsafe,4637
-Telxius,transit,started,unsafe,12956
+Telstra International,transit,,unsafe,4637
 Verizon,ISP,,unsafe,701
 Vodafone,transit,,unsafe,1273
 Zayo,transit,,unsafe,6461
