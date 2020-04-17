@@ -85,15 +85,28 @@ fetch https://invalid.rpki.cloudflare.com
       AS812: '@Rogers',
       AS2856: '@bt_uk',
       AS3215: '@Orange_France',
+      AS3303: '@Swisscom',
       AS3320: '@deutschetelekom',
+      AS4764: '@Aussie_BB',
       AS5089: '@virginmedia',
       AS5645: '@TekSavvyNetwork',
+      AS5769: '@videotron',
+      AS6181: '@CincyBell',
+      AS6830: '@libertyglobal',
       AS7922: '@Comcast',
+      AS10838: '@getspectrum',
+      AS12322: '@free',
       AS12430: '@vodafone_es',
+      AS13030: '@init7',
+      AS15557: '@SFR',
       AS20001: '@getspectrum',
       AS20115: '@getspectrum',
+      AS21502: '@Numericable',
+      AS21928: '@TMobile',
       AS22773: '@CoxComm',
-      AS28573: '@NEToficial'
+      AS22394: '@CELLCOATT',
+      AS28573: '@NEToficial',
+      AS56478: '@HyperopticCS'
     }
 
     const getISPInfo = (data, forTweet) => {
