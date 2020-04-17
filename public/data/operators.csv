@@ -10,6 +10,7 @@ PCCW,transit,filtering peers only,partially safe,3491
 TATA,transit,filtering peers only,partially safe,6453
 Comcast,ISP,,unsafe,7922
 Deutsche Telekom,ISP,started,unsafe,3320
+EE,Transit,,unsafe,12576
 Google,cloud,,unsafe,15169
 Hurricane Electric,transit,,unsafe,6939
 Level3/CenturyLink,transit,,unsafe,3356
