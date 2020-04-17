@@ -81,12 +81,19 @@ fetch https://invalid.rpki.cloudflare.com
     }
 
     const twitterASNs = {
-      AS7922: '@Comcast',
-      AS3320: '@deutschetelekom',
       AS701: '@VERIZON',
+      AS812: '@Rogers',
+      AS2856: '@bt_uk',
+      AS3215: '@Orange_France',
+      AS3320: '@deutschetelekom',
       AS5089: '@virginmedia',
+      AS5645: '@TekSavvyNetwork',
+      AS7922: '@Comcast',
+      AS12430: '@vodafone_es',
+      AS20001: '@getspectrum',
       AS20115: '@getspectrum',
-      AS12430: '@vodafone_es'
+      AS22773: '@CoxComm',
+      AS28573: '@NEToficial'     
     }
 
     const getISPInfo = (data, forTweet) => {
