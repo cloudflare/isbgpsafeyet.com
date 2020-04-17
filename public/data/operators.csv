@@ -8,6 +8,7 @@ Cogent,transit,filtering peers only,partially safe,174
 GTT,transit,filtering peers only,partially safe,3257
 PCCW,transit,filtering peers only,partially safe,3491
 TATA,transit,filtering peers only,partially safe,6453
+ACT (Atria Convergence Technologies),ISP,,unsafe,24309
 Comcast,ISP,,unsafe,7922
 Deutsche Telekom,ISP,started,unsafe,3320
 Google,cloud,,unsafe,15169
@@ -21,5 +22,4 @@ Telstra,transit,,unsafe,4637
 Telxius,transit,started,unsafe,12956
 Verizon,ISP,,unsafe,701
 Vodafone,transit,,unsafe,1273
-ACT(Atria Convergence Technologies Ltd),ISP,,unsafe,24309 
 Zayo,transit,,unsafe,6461
