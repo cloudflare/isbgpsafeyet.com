@@ -1,5 +1,6 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
 import OPERATORS_STRING from '../data/operators.csv'
+import ISP_TWITTER_STRING from '../data/twitter.csv'
 
 import parse from 'csv-parse/lib/sync'
 import pickBy from 'lodash.pickby'
@@ -13,15 +14,22 @@ import pickBy from 'lodash.pickby'
  */
 const DEBUG = false
 
+const OPERATORS = parse(OPERATORS_STRING, {columns: true})
+const ISP_TWITTER = parse(ISP_TWITTER_STRING, {columns: true})
+
 function statusSortIndex(status){
   return [, 'safe', 'partially safe', 'unsafe'].indexOf(status)
 }
 
-const OPERATORS = parse(OPERATORS_STRING, {columns: true})
-
+// Yay for stable sorting in ES2019!
 OPERATORS.sort(function(a, b){
   return +a.rank - +b.rank
 })
+
+OPERATORS.sort(function(a, b){
+  return statusSortIndex(a.status) - statusSortIndex(b.status)
+})
+
 
 addEventListener('fetch', event => {
   try {
@@ -58,7 +66,7 @@ async function handleEvent(event) {
       response.headers.set('Cache-Control', 'public; max-age=60')
 
       return new HTMLRewriter()
-        .on('head', new VarInjector('OPERATORS', OPERATORS))
+        .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
         .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
         .transform(response)
     } else {

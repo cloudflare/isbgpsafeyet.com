@@ -85,66 +85,17 @@ const initTesting = () => {
     }
   }
 
-  const twitterASNs = {
-    AS577: '@Bell',
-    AS701: '@VERIZON',
-    AS812: '@Rogers',
-    AS852: '@TELUS',
-    AS1221: '@Telstra',
-    AS1399: '@megacable',
-    AS2856: '@bt_uk',
-    AS3215: '@Orange_France',
-    AS3303: '@Swisscom',
-    AS3320: '@deutschetelekom',
-    AS3352: '@Telefonica',
-    AS4764: '@Aussie_BB',
-    AS5089: '@virginmedia',
-    AS5466: '@eir',
-    AS5645: '@TekSavvyNetwork',
-    AS5769: '@videotron',
-    AS6128: '@Optimum',
-    AS6181: '@CincyBell',
-    AS6327: '@ShawInfo',
-    AS6799: '@otenet_gr',
-    AS6830: '@libertyglobal',
-    AS7029: '@Windstream',
-    AS7922: '@Comcast',
-    AS8151: '@Telmex',
-    AS8167: '@oi_oficial',
-    AS8559: '@KabelplusDK',
-    AS8881: '@versatel',
-    AS10838: '@getspectrum',
-    AS12322: '@free',
-    AS12353: '@VodafonePT',
-    AS12430: '@vodafone_es',
-    AS13030: '@init7',
-    AS15557: '@SFR',
-    AS20001: '@getspectrum',
-    AS20115: '@getspectrum',
-    AS21502: '@Numericable',
-    AS21928: '@TMobile',
-    AS22773: '@CoxComm',
-    AS22394: '@CELLCOATT',
-    AS23889: '@telecom_mu',
-    AS25178: '@PCCWGlobal',
-    AS28403: '@RadiomovilDIPSA',
-    AS28573: '@NEToficial',
-    AS30722: '@VodafoneIT',
-    AS41998: '@NetComBW',
-    AS46375: '@sonic',
-    AS47524: '@turksat',
-    AS56478: '@HyperopticCS',
-    AS134067: '@unitiwireless'
-  }
-
   const getISPInfo = (data, forTweet) => {
     if (!data || data.asn === 0) return ' '
 
     if (data.name && data.name !== '') {
-      const twitterUsername = twitterASNs[`AS${ data.asn }`]
-
-      if (forTweet && twitterUsername) {
-        return `, ${ twitterUsername } (AS${ data.asn }), `
+      if (forTweet) {
+        for (var i=0; i < ISP_TWITTER.length; i++){
+          if (ISP_TWITTER[i].asn === data.asn.toString()){
+            const twitterUsername = `@${ ISP_TWITTER[i].handle }`
+            return `, ${ twitterUsername } (AS${ data.asn }), `
+          }
+        }
       }
 
       return ` (${ data.name }, AS${ data.asn }) `
