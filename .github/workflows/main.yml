@@ -21,6 +21,8 @@ jobs:
       run: npm i @cloudflare/wrangler@1.8.4 -g
     - name: Install Workers script deps
       run: npm install
+    - name: Build site
+      run: npm run build
     - name: Build Workers script
       run: wrangler build
     - name: Wrangler auth check
