@@ -477,6 +477,14 @@ h1, h2 {
   text-align: right;
 }
 
+.BGPSafetyTable tr {
+  white-space: nowrap;
+}
+
+.BGPSafetyTable tbody {
+  letter-spacing: -.01em;
+}
+
 .BGPSafetyTable tbody tr:nth-child(even) {
   background: rgba(var(--gray-9-rgb), .9);
 }
@@ -497,8 +505,18 @@ h1, h2 {
   border-bottom-color: rgba(var(--red-2-rgb), .08);
 }
 
+.BGPSafetyTable td[data-column="name"] {
+  letter-spacing: -.03em;
+}
+
+.BGPSafetyTable td[data-value="signed + filtering peers only"] {
+  font-size: .95em;
+  letter-spacing: -.03em;
+}
+
 .BGPSafetyTable td[data-column="status"] {
   font-weight: 500;
+  letter-spacing: -.02em;
 }
 
 @media (min-width: 769px) {
