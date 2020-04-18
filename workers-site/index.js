@@ -2,6 +2,7 @@ import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
 import OPERATORS_STRING from '../data/operators.csv'
 
 import parse from 'csv-parse/lib/sync'
+import pickBy from 'lodash.pickby'
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -18,13 +19,8 @@ function statusSortIndex(status){
 
 const OPERATORS = parse(OPERATORS_STRING, {columns: true})
 
-// Yay for stable sorting in ES2019!
 OPERATORS.sort(function(a, b){
-  return a.name.localeCompare(b.name)
-})
-
-OPERATORS.sort(function(a, b){
-  return statusSortIndex(a.status) - statusSortIndex(b.status)
+  return +a.rank - +b.rank
 })
 
 addEventListener('fetch', event => {
@@ -104,6 +100,8 @@ class VarInjector {
 }
 
 function template(rows) {
+  const columns = ['name', 'type', 'details', 'status', 'asn']
+
   function each(value, func) {
     let out = ''
     for (let key in value) {
@@ -121,6 +119,10 @@ function template(rows) {
   }
 
   function row(r) {
+    r = pickBy(r, (v, k) => {
+      return (columns.indexOf(k) !== -1)
+    })
+
     return `
       <tr data-status="${ r.status.replace(/ /g, '-') }">
         ${ each(r, cell) }
