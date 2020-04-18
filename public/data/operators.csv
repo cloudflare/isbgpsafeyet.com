@@ -1,25 +1,26 @@
-name,type,details,status,asn
-Level3/CenturyLink,transit,,unsafe,3356
-Telia,transit,signed + filtering,safe,1299
-Cogent,transit,filtering peers only,partially safe,174
-GTT,transit,filtering peers only,partially safe,3257
-NTT,transit,signed + filtering,safe,2914
-Sparkle,transit,started,unsafe,6762
-Hurricane Electric,transit,,unsafe,6939
-TATA,transit,filtering peers only,partially safe,6453
-PCCW,transit,filtering peers only,partially safe,3491
-Zayo,transit,,unsafe,6461
-Vodafone,transit,,unsafe,1273
-RETN,transit,,unsafe,9002
-Orange,transit,started,unsafe,5511
-Telstra,transit,,unsafe,4637
-Telefonica/Telxius,transit,,unsafe,12956
-Singapore Telecom (SingTel),transit,,unsafe,7473
-Deutsche Telekom,ISP,started,unsafe,3320
-Verizon,ISP,,unsafe,701
-AT&T,ISP,signed + filtering peers only,partially safe,7018
-Comcast,ISP,,unsafe,7922
-Sprint,transit,,unsafe,1239
-Cloudflare,cloud,signed + filtering,safe,13335
-Amazon,cloud,signed,partially safe,16509
-Google,cloud,,unsafe,15169
+name,type,details,status,asn,rank
+Level3/CenturyLink,transit,,unsafe,3356,1
+Telia,transit,signed + filtering,safe,1299,2
+Cogent,transit,filtering peers only,partially safe,174,3
+GTT,transit,filtering peers only,partially safe,3257,4
+NTT,transit,signed + filtering,safe,2914,5
+Sparkle,transit,started,unsafe,6762,6
+Hurricane Electric,transit,,unsafe,6939,7
+TATA,transit,filtering peers only,partially safe,6453,8
+PCCW,transit,filtering peers only,partially safe,3491,9
+Zayo,transit,,unsafe,6461,10
+Vodafone,transit,,unsafe,1273,11
+RETN,transit,,unsafe,9002,13
+Orange,transit,started,unsafe,5511,14
+Telstra,transit,,unsafe,4637,15
+Telefonica/Telxius,transit,,unsafe,12956,16
+Singapore Telecom (SingTel),transit,,unsafe,7473,17
+PJSC RosTelecom,transit,,unsafe,12389,19
+Deutsche Telekom,ISP,started,unsafe,3320,20
+Verizon,ISP,,unsafe,701,21
+AT&T,ISP,signed + filtering peers only,partially safe,7018,22
+Comcast,ISP,,unsafe,7922,23
+Sprint,transit,,unsafe,1239,34
+Cloudflare,cloud,signed + filtering,safe,13335,1819
+Amazon,cloud,signed,partially safe,16509,3444
+Google,cloud,,unsafe,15169,1714
