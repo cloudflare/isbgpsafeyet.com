@@ -84,6 +84,7 @@ fetch https://invalid.rpki.cloudflare.com
       AS577: '@Bell',
       AS701: '@VERIZON',
       AS812: '@Rogers',
+      AS852: '@TELUS',
       AS1221: '@Telstra',
       AS1399: '@megacable',
       AS2856: '@bt_uk',
@@ -98,6 +99,7 @@ fetch https://invalid.rpki.cloudflare.com
       AS5769: '@videotron',
       AS6128: '@Optimum',
       AS6181: '@CincyBell',
+      AS6327: '@ShawInfo',
       AS6799: '@otenet_gr',
       AS6830: '@libertyglobal',
       AS7029: '@Windstream',
@@ -127,9 +129,7 @@ fetch https://invalid.rpki.cloudflare.com
       AS46375: '@sonic',
       AS47524: '@turksat',
       AS56478: '@HyperopticCS',
-      AS134067: '@unitiwireless',
-      AS6327: '@ShawInfo',
-      AS852: '@TELUS'
+      AS134067: '@unitiwireless'
     }
 
     const getISPInfo = (data, forTweet) => {
