@@ -5,7 +5,7 @@
 A list of major operators tracks the status of their RPKI deployments into three categories:
 safe, partially safe and unsafe. Contributions are welcome.
 
-[Contribute to the list →](https://github.com/cloudflare/isbgpsafeyet.com/blob/master/public/data/operators.csv)
+[Contribute to the list →](https://github.com/cloudflare/isbgpsafeyet.com/blob/master/data/operators.csv)
 
 The website also provides a simple test to determine if your operator is filtering RPKI invalid prefixes.
 
