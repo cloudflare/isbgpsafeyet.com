@@ -122,7 +122,6 @@ fetch https://invalid.rpki.cloudflare.com
       AS25178: '@PCCWGlobal',
       AS28403: '@RadiomovilDIPSA',
       AS28573: '@NEToficial',
-      AS56478: '@HyperopticCS',
       AS6327: '@ShawInfo',
       AS30722: '@VodafoneIT',
       AS41998: '@NetComBW',
