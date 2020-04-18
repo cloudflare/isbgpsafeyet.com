@@ -127,7 +127,9 @@ fetch https://invalid.rpki.cloudflare.com
       AS46375: '@sonic',
       AS47524: '@turksat',
       AS56478: '@HyperopticCS',
-      AS134067: '@unitiwireless'
+      AS134067: '@unitiwireless',
+      AS6327: '@ShawInfo',
+      AS852: '@TELUS'
     }
 
     const getISPInfo = (data, forTweet) => {
