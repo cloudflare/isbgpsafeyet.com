@@ -24,3 +24,4 @@ Sprint,transit,,unsafe,1239,34
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 Amazon,cloud,signed,partially safe,16509,3444
 Google,cloud,,unsafe,15169,1714
+Avative.NET,ISP,,unsafe,394752,638
