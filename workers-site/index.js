@@ -30,6 +30,23 @@ OPERATORS.sort(function(a, b){
   return statusSortIndex(a.status) - statusSortIndex(b.status)
 })
 
+const majorCloudASNs = [
+  '13335', // Cloudflare
+  '15169', // Google
+  '16509', // Amazon
+]
+
+const MAJOR_OPERATORS = OPERATORS.filter(operator => {
+  const rank = +operator.rank
+
+  if (1 <= rank && rank <= 24)
+    return true
+
+  if (majorCloudASNs.includes(operator.asn))
+    return true
+
+  return false
+})
 
 addEventListener('fetch', event => {
   try {
@@ -72,7 +89,7 @@ async function handleEvent(event) {
 
       return new HTMLRewriter()
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
-        .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
+        .on('table.BGPSafetyTable', new OperatorsTableBuilder(MAJOR_OPERATORS))
         .transform(response)
     } else {
       response.headers.set('Cache-Control', 'public; max-age=86400')
