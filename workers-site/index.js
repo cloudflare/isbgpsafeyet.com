@@ -30,6 +30,24 @@ OPERATORS.sort(function(a, b){
   return statusSortIndex(a.status) - statusSortIndex(b.status)
 })
 
+const majorCloudASNs = [
+  '13335', // Cloudflare
+  '14907', // Wikimedia
+  '15169', // Google
+  '16509', // Amazon
+]
+
+const MAJOR_OPERATORS = OPERATORS.filter(operator => {
+  const rank = +operator.rank
+
+  if (1 <= rank && rank <= 24)
+    return true
+
+  if (majorCloudASNs.includes(operator.asn))
+    return true
+
+  return false
+})
 
 addEventListener('fetch', event => {
   try {
@@ -64,10 +82,15 @@ async function handleEvent(event) {
 
     if (url.pathname === "/" || url.pathname === "/index.html") {
       response.headers.set('Cache-Control', 'public; max-age=60')
+      response.headers.set('Content-Security-Policy', "default-src 'none'; script-src 'self' data: 'unsafe-inline'; object-src 'none'; style-src 'self' ui.components.workers.dev; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' invalid.rpki.cloudflare.com valid.rpki.cloudflare.com")
+      response.headers.set('X-XSS-Protection', '1; mode=block')
+      response.headers.set('X-Frame-Options', 'DENY')
+      response.headers.set('Referrer-Policy', 'unsafe-url')
+      response.headers.set('Feature-Policy', 'none')
 
       return new HTMLRewriter()
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
-        .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
+        .on('table.BGPSafetyTable', new OperatorsTableBuilder(MAJOR_OPERATORS))
         .transform(response)
     } else {
       response.headers.set('Cache-Control', 'public; max-age=86400')
@@ -163,19 +186,5 @@ class OperatorsTableBuilder {
     element.append(template(this.operators), {
       html: true
     })
-  }
-}
-
-function handlePrefix(prefix) {
-  return request => {
-    // compute the default (e.g. / -> index.html)
-    let defaultAssetKey = mapRequestToAsset(request)
-    let url = new URL(defaultAssetKey.url)
-
-    // strip the prefix from the path for lookup
-    url.pathname = url.pathname.replace(prefix, '/')
-
-    // inherit all other props from the default request
-    return new Request(url.toString(), defaultAssetKey)
   }
 }

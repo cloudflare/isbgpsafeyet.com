@@ -6,17 +6,17 @@ const svgTimes = '<svg viewBox="0 0 16 16"><path d="M3 3l10 10m-10 0l10 -10"/></
 
 const successMessageDetails = `${ ''
 }fetch https://valid.rpki.cloudflare.com
-<i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
+  <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
 fetch https://invalid.rpki.cloudflare.com
-<i pass><i>${ svgCheck }</i></i>correctly rejected invalid prefixes`
+  <i pass><i>${ svgCheck }</i></i>correctly rejected invalid prefixes`
 
 const failureMessageDetails = `${ ''
 }fetch https://valid.rpki.cloudflare.com
-<i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
+  <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
 fetch https://invalid.rpki.cloudflare.com
-<i fail><i>${ svgTimes }</i></i>incorrectly accepted invalid prefixes`
+  <i fail><i>${ svgTimes }</i></i>incorrectly accepted invalid prefixes`
 
 const setupASNColumnToggle = () => {
   const table = document.querySelector('[data-js-table]')

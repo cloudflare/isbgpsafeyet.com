@@ -6,6 +6,7 @@ asn,handle
 1221,Telstra
 1399,megacable
 2856,bt_uk
+3209,vodafone_de
 3215,Orange_France
 3303,Swisscom
 3320,deutschetelekom
@@ -22,15 +23,16 @@ asn,handle
 6830,libertyglobal
 7029,Windstream
 7922,Comcast
+7992,cogeco
 8151,Telmex
 8167,oi_oficial
 8559,KabelplusDK
 8881,versatel
 10838,getspectrum
+12271,getspectrum
 12322,free
 12353,VodafonePT
 12430,vodafone_es
-13030,init7
 15557,SFR
 20001,getspectrum
 20115,getspectrum
