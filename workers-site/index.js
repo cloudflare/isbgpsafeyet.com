@@ -32,6 +32,7 @@ OPERATORS.sort(function(a, b){
 
 const majorCloudASNs = [
   '13335', // Cloudflare
+  '14907', // Wikimedia
   '15169', // Google
   '16509', // Amazon
 ]
