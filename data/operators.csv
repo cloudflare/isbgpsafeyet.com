@@ -20,6 +20,7 @@ Deutsche Telekom,ISP,started,unsafe,3320,20
 Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
+Liberty Global,transit,signed + partially filtering,partially safe,6830,29
 Sprint,transit,,unsafe,1239,34
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 Amazon,cloud,signed,partially safe,16509,3444
