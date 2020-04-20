@@ -26,6 +26,7 @@ Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
 NetCom BW,ISP,,unsafe,41998,1508
 Google,cloud,,unsafe,15169,1714
+TekSavvy,ISP,,safe,5645,1727
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
