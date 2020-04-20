@@ -35,3 +35,5 @@ Free SAS,ISP,signed,unsafe,12322,3007
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
+Bouygues Telecom (FR),ISP,,unsafe,5410,
+Free Mobile (FR),ISP,unsafe,51207,
