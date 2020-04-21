@@ -47,3 +47,8 @@ Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Gigabit DK,cloud,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 A2B Internet,ISP,signed + filtering,safe,51088,1755
+Turknet,ISP,,unsafe,12735
+TurkTelekom,ISP,,unsafe,9121
+TurkCell,ISP,,unsafe,16135
+Turksat,ISP,,unsafe,47524
+Millenicom,ISP,,unsafe,34296
