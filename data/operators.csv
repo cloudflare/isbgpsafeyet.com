@@ -50,7 +50,7 @@ A2B Internet,ISP,signed + filtering,safe,51088,1755
 A1 Telekom Austria,ISP,,unsafe,8447,8717
 Hutchison Drei Austria,ISP,,unsafe,25255,8718
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,8719
-Next Layer Telekommunikationsdienstleistungs- und Beratungs GmbH,transit,started,unsafe,1764,8720
+Next Layer Telekommunikationsdienstleistungs- und Beratungs GmbH,transit,signed + filtering,safe,1764,8720
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,8721
 ACONET,transit,started,unsafe,1853,8723
 eww ag,transit,,unsafe,21013,8724
