@@ -17,16 +17,16 @@ const DEBUG = false
 const OPERATORS = parse(OPERATORS_STRING, {columns: true})
 const ISP_TWITTER = parse(ISP_TWITTER_STRING, {columns: true})
 
-function statusSortIndex(status){
+function statusSortIndex(status) {
   return [, 'safe', 'partially safe', 'unsafe'].indexOf(status)
 }
 
 // Yay for stable sorting in ES2019!
-OPERATORS.sort(function(a, b){
+OPERATORS.sort(function(a, b) {
   return +a.rank - +b.rank
 })
 
-OPERATORS.sort(function(a, b){
+OPERATORS.sort(function(a, b) {
   return statusSortIndex(a.status) - statusSortIndex(b.status)
 })
 
@@ -80,7 +80,7 @@ async function handleEvent(event) {
     // Allow headers to be altered
     const response = new Response(page.body, page)
 
-    if (url.pathname === "/" || url.pathname === "/index.html") {
+    if (url.pathname === '/' || url.pathname === '/index.html') {
       response.headers.set('Cache-Control', 'public; max-age=60')
       response.headers.set('Content-Security-Policy', "default-src 'none'; script-src 'self' data: 'unsafe-inline'; object-src 'none'; style-src 'self' ui.components.workers.dev; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' invalid.rpki.cloudflare.com valid.rpki.cloudflare.com")
       response.headers.set('X-XSS-Protection', '1; mode=block')
