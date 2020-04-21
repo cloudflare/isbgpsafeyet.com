@@ -13,6 +13,7 @@ asn,handle
 3352,Telefonica
 4764,Aussie_BB
 5089,virginmedia
+5410,Bouygues Telecom
 5466,eir
 5645,TekSavvyNetwork
 5769,videotron
@@ -34,6 +35,7 @@ asn,handle
 12353,VodafonePT
 12430,vodafone_es
 15557,SFR
+16591,GoogleFiber
 20001,getspectrum
 20115,getspectrum
 21502,Numericable
@@ -48,6 +50,6 @@ asn,handle
 41998,NetComBW
 46375,sonic
 47524,turksat
+51207,Free Mobile
 56478,HyperopticCS
 134067,unitiwireless
-16591,GoogleFiber
