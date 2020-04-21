@@ -21,6 +21,7 @@ Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
 Sprint,transit,,unsafe,1239,34
+Core-Backbone,transit,signed + filtering,safe,33891,46
 Swisscom,ISP,,unsafe,3303,69
 RCS&RDS,ISP,,unsafe,8708,102
 Wave Broadband,ISP,,unsafe,11404,136
