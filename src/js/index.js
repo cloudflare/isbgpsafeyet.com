@@ -1,4 +1,4 @@
-import 'sortable/js/sortable.js'
+import './vendor/sortable.min.js'
 import 'focus-visible-polyfill'
 
 const svgCheck = '<svg viewBox="0 0 16 16"><path d="M2.5 8.5l3.5 3.5l8 -8"/></svg>'
