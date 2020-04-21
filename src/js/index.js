@@ -22,8 +22,7 @@ const setupASNColumnToggle = () => {
   const table = document.querySelector('[data-js-table]')
   const button = document.querySelector('[data-js-toggle-asn-column]')
 
-  if (!button)
-    return
+  if (!button) return
 
   button.addEventListener('click', () => {
     if (table.getAttribute('data-hide-asn-column') === 'true') {
