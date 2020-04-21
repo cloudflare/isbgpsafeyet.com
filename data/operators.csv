@@ -28,6 +28,7 @@ Sunrise Communications AG,ISP,,unsafe,6730,203
 Vodafone DE,ISP,,unsafe,3209,276
 Telenor,ISP,signed + filtering,safe,2119,288
 RCN,ISP,signed + filtering,safe,6079,396
+MNET,ISP,signed + filtering,safe,8767,440
 Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
 Videotron,ISP,,unsafe,5769,677
@@ -41,4 +42,6 @@ Aussie Broadband,ISP,started,unsafe,4764,2319
 Free SAS,ISP,signed,unsafe,12322,3007
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
+Atria Convergence,ISP,signed + filtering,safe,24309,4053
+Gigabit DK,cloud,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
