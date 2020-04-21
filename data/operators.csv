@@ -22,6 +22,7 @@ AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
 Sprint,transit,,unsafe,1239,34
 Swisscom,ISP,,unsafe,3303,69
+RCS&RDS,ISP,,unsafe,8708,102
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 Vodafone DE,ISP,,unsafe,3209,276
 Sunrise Communications AG,ISP,,unsafe,6730,203
