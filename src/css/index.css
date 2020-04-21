@@ -383,7 +383,7 @@ h1, h2 {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 961px) {
   .BGPSafetyTable[data-hide-asn-column="false"] {
     --outdent: 4rem;
     margin-left: calc(-1 * var(--outdent));
@@ -556,8 +556,13 @@ h1, h2 {
   background: var(--status-red-bg);
 }
 
+@media (max-width: 960px) {
+  .BGPSafetyTable [data-column="asn"] {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .BGPSafetyTable [data-column="asn"],
   .BGPSafetyTable [data-column="details"] {
     display: none;
   }
