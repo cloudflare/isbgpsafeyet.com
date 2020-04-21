@@ -27,6 +27,7 @@ Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 Sunrise Communications AG,ISP,,unsafe,6730,203
 Vodafone DE,ISP,,unsafe,3209,276
 Telenor,ISP,signed + filtering,safe,2119,288
+RCN,ISP,signed + filtering,safe,6079,396
 Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
 Videotron,ISP,,unsafe,5769,677
