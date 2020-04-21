@@ -47,3 +47,5 @@ Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Gigabit DK,cloud,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 A2B Internet,ISP,signed + filtering,safe,51088,1755
+Continent 8 LLC,cloud,,unsafe,14537,1513
+iiNet Limited,ISP,,unsafe,4739,975
