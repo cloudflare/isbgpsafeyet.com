@@ -525,10 +525,6 @@ h1, h2 {
   letter-spacing: -.01em;
 }
 
-.BGPSafetyTable tbody tr:nth-child(even) {
-  background: rgba(var(--gray-9-rgb), .9);
-}
-
 .BGPSafetyTable tbody tr:not(:last-child) td {
   border-bottom: 1px solid var(--gray-8);
 }
@@ -557,16 +553,6 @@ h1, h2 {
 .BGPSafetyTable td[data-column="status"] {
   font-weight: 500;
   letter-spacing: -.02em;
-}
-
-@media (min-width: 769px) {
-  .BGPSafetyTable tbody tr:first-child td[data-column="status"] {
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-  }
-
-  .BGPSafetyTable tbody tr:last-child td[data-column="status"] {
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-  }
 }
 
 .BGPSafetyTable [data-status="safe"] {
