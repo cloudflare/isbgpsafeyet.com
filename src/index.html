@@ -67,27 +67,51 @@
     <div class="Column">
       <div class="Spacer"></div>
 
-      <table class="BGPSafetyTable" data-js-table data-sortable data-hide-asn-column="true">
+      <div class="Markdown">
+        <h2 class="Markdown--h2-as-h3">Latest updates</h2>
+
+        <ul>
+          <li>April 20, 2020 – USI Fiber currently working on RPKI implementation (<a href="https://twitter.com/usifiber/status/1252272488979091457">source</a>)
+          <li>April 19, 2020 – Aussie Broadband plans to support RPKI “shortly” (<a href="https://twitter.com/Aussie_BB/status/1252067879358361600">source</a>)
+        </ul>
+      </div>
+
+      <div class="Spacer"></div>
+
+      <div class="TableHeader">
+        <div class="Markdown">
+          <h2 class="Markdown--h2-as-h3">Status</h2>
+        </div>
+
+        <div class="TableHeader--subheader">
+          <div class="TableHeader--info">
+            <div class="Markdown">
+              <p data-js-table-summary>Displaying <span data-major-operators-count></span> major operators</p>
+            </div>
+          </div>
+
+          <div class="TableHeader--actions">
+            <button class="Button Button-is-slim" data-js-toggle-show-all-rows>＋ Show all</button>
+            <button class="Button Button-is-slim" data-js-toggle-asn-column large-desktop-only>＋ Show ASN column</button>
+          </div>
+        </div>
+      </div>
+
+      <table class="BGPSafetyTable" data-js-table data-sortable data-show-all-rows="false" data-hide-asn-column="true">
         <thead>
           <tr>
-            <th data-column="name">Name</th>
-            <th data-column="type">Type</th>
-            <th data-column="details">Details</th>
-            <th data-column="status" data-sortable-type="numeric" data-sorted="true" data-sorted-direction="ascending">Status</th>
-            <th data-column="asn" data-sortable="false" data-sortable-type="numeric">ASN <a class="Button Button-is-bordered Button-is-question-mark" href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" title="Autonomous system number" data-tooltip>?</a></th>
+            <th data-column="name"><span>Name</span></th>
+            <th data-column="type"><span>Type</span></th>
+            <th data-column="details"><span>Details</span></th>
+            <th data-column="status" data-sortable-type="numeric" data-sorted="true" data-sorted-direction="ascending"><span>Status</span></th>
+            <th data-column="asn" data-sortable="false" data-sortable-type="numeric"><span>ASN <a class="Button Button-is-bordered Button-is-question-mark" href="https://en.wikipedia.org/wiki/Autonomous_system_(Internet)" title="Autonomous system number" data-tooltip>?</a></span></th>
           </tr>
         </thead>
       </table>
 
-      <div class="BGPSafetyTable--footer">
-        <div class="BGPSafetyTable--footer-info">
-          <div class="Markdown">
-            <p>Last updated April 17, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/tree/master/data">Edit on GitHub</a></p>
-          </div>
-        </div>
-
-        <div class="BGPSafetyTable--footer-actions">
-          <button class="Button Button-looks-like-text" data-js-toggle-asn-column>＋ Show ASN column</button>
+      <div class="BGPSafetyTable---footer">
+        <div class="Markdown">
+          <p>Last updated April 20, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/tree/master/data">Edit on GitHub</a></p>
         </div>
       </div>
 
@@ -310,6 +334,7 @@
           <details class="FAQItem" id="what-is-rpki">
             <summary><span>What is RPKI?</span></summary>
             <p>With 800k+ routes on the Internet, it is impossible to check them manually. <a href="https://blog.cloudflare.com/rpki/">Resource Public Key Infrastructure (RPKI)</a> is a security framework method that associates a route with an autonomous system. It uses cryptography in order to validate the information before being passed onto the routers. You can <a href="https://blog.cloudflare.com/rpki/">read more about RPKI</a> on the Cloudflare blog.</p>
+            <p>On May 14th, Job Snijders from NTT will present a free <a href="https://www.brighttalk.com/webcast/5648/396013/rpki-101-with-job-snijders">RPKI 101</a> webinar.</p>
           </details>
 
           <details class="FAQItem" id="how-does-the-test-work">
