@@ -37,17 +37,17 @@ const majorCloudASNs = [
   '16509', // Amazon
 ]
 
-const MAJOR_OPERATORS = OPERATORS.filter(operator => {
+let MAJOR_OPERATORS_COUNT = 0
+
+for (let i = 0; i < OPERATORS.length; i += 1) {
+  const operator = OPERATORS[i]
   const rank = +operator.rank
 
-  if (1 <= rank && rank <= 24)
-    return true
+  const major = (1 <= rank && rank <= 24) || majorCloudASNs.includes(operator.asn)
+  if (major) MAJOR_OPERATORS_COUNT += 1
 
-  if (majorCloudASNs.includes(operator.asn))
-    return true
-
-  return false
-})
+  operator.major = major
+}
 
 addEventListener('fetch', event => {
   try {
@@ -90,7 +90,8 @@ async function handleEvent(event) {
 
       return new HTMLRewriter()
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
-        .on('table.BGPSafetyTable', new OperatorsTableBuilder(MAJOR_OPERATORS))
+        .on('[data-major-operators-count]', new StringInjector(MAJOR_OPERATORS_COUNT))
+        .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
         .transform(response)
     } else {
       response.headers.set('Cache-Control', 'public; max-age=86400')
@@ -130,6 +131,16 @@ class VarInjector {
   }
 }
 
+class StringInjector {
+  constructor(string) {
+    this.string = string
+  }
+
+  element(element) {
+    element.setInnerContent(this.string)
+  }
+}
+
 function template(rows) {
   const columns = ['name', 'type', 'details', 'status', 'asn']
 
@@ -150,12 +161,11 @@ function template(rows) {
   }
 
   function row(r) {
-    r = pickBy(r, (v, k) => {
-      return (columns.indexOf(k) !== -1)
-    })
+    const major = r.major
+    r = pickBy(r, (v, k) => columns.indexOf(k) !== -1)
 
     return `
-      <tr data-status="${ r.status.replace(/ /g, '-') }">
+      <tr data-status="${ r.status.replace(/ /g, '-') }" data-is-major="${ major }">
         ${ each(r, cell) }
       </tr>
     `
