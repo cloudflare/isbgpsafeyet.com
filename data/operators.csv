@@ -30,6 +30,7 @@ Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 Sunrise Communications AG,ISP,,unsafe,6730,203
 Vodafone DE,ISP,,unsafe,3209,276
+Virgin Media UK,ISP,,unsafe,5089,284
 Telenor,ISP,signed + filtering,safe,2119,288
 RCN,ISP,signed + filtering,safe,6079,396
 MNET,ISP,signed + filtering,safe,8767,440
@@ -40,6 +41,7 @@ Videotron,ISP,,unsafe,5769,677
 NetCom BW,ISP,,unsafe,41998,1508
 Google,cloud,,unsafe,15169,1714
 TekSavvy,ISP,,unsafe,5645,1727
+A2B Internet,ISP,signed + filtering,safe,51088,1755
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
@@ -49,6 +51,4 @@ OVH,cloud,,unsafe,16276,3982
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
-A2B Internet,ISP,signed + filtering,safe,51088,1755
-Virgin Media UK,ISP,,unsafe,5089,284
 Scaleway,cloud,signed + filtering,safe,12876,10343
