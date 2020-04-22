@@ -27,6 +27,7 @@ Core-Backbone,transit,signed + filtering,safe,33891,46
 Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 RCS&RDS,ISP,,unsafe,8708,102
+TurkTelekom,ISP,,unsafe,9121,127
 M247,cloud,,unsafe,9009,133
 Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
@@ -41,6 +42,7 @@ Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
 Videotron,ISP,,unsafe,5769,677
 2degrees,ISP,,unsafe,23655,856
+Turknet,ISP,,unsafe,12735,954
 NetCom BW,ISP,,unsafe,41998,1508
 A3 Sverige,ISP,,unsafe,45011,1644
 Google,cloud,,unsafe,15169,1714
@@ -57,7 +59,10 @@ Aura Fiber,ISP,,unsafe,204274,6735
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 A2B Internet,ISP,signed + filtering,safe,51088,1755
+Millenicom,ISP,,unsafe,34296
 EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
+TurkCell,ISP,,unsafe,16135,10254
 Scaleway,cloud,signed + filtering,safe,12876,10343
+Turksat,ISP,,unsafe,47524,10355
 Coextro,ISP,,unsafe,36445,13475
