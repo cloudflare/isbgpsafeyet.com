@@ -18,6 +18,7 @@ asn,handle
 3352,Telefonica
 4764,Aussie_BB
 5089,virginmedia
+5410,bouyguestelecom
 5466,eir
 5432,proximus
 5488,proximus
@@ -38,6 +39,8 @@ asn,handle
 8881,versatel
 9031,edpnet
 9208,win_ICTpartner
+9299,PLDT_Cares
+10139,LiveSmart
 10838,getspectrum
 12271,getspectrum
 12322,free
@@ -71,5 +74,4 @@ asn,handle
 62044,Zscaler_Inc_EMEA
 134067,unitiwireless
 16591,GoogleFiber
-5089,virginmedia
-5410,bouyguestelecom
+10139,SMARTCares
