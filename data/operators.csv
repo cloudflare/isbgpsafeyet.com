@@ -24,6 +24,7 @@ Bell Canada,ISP,,unsafe,577,90
 Sprint,transit,,unsafe,1239,34
 KPN,transit,signed + filtering,safe,286,36
 Core-Backbone,transit,signed + filtering,safe,33891,46
+Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 RCS&RDS,ISP,,unsafe,8708,102
 M247,cloud,,unsafe,9009,133
@@ -55,6 +56,7 @@ Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Aura Fiber,ISP,,unsafe,204274,6735
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
+A2B Internet,ISP,signed + filtering,safe,51088,1755
 EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
 Scaleway,cloud,signed + filtering,safe,12876,10343
