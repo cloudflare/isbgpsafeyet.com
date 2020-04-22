@@ -21,8 +21,10 @@ Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
 Sprint,transit,,unsafe,1239,34
+KPN,transit,signed + filtering,safe,286,36
 Swisscom,ISP,,unsafe,3303,69
 RCS&RDS,ISP,,unsafe,8708,102
+M247,cloud,,unsafe,9009,133
 Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 Sunrise Communications AG,ISP,,unsafe,6730,203
@@ -44,7 +46,8 @@ Free SAS,ISP,signed,unsafe,12322,3007
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
-Gigabit DK,cloud,signed + filtering,safe,60876,7680
+Gigabit DK,ISP,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 A2B Internet,ISP,signed + filtering,safe,51088,1755
 Colt Technology,transit,unsafe,8220,50
+Scaleway,cloud,signed + filtering,safe,12876,10343
