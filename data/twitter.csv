@@ -11,6 +11,7 @@ asn,handle
 2856,bt_uk
 3209,vodafone_de
 3215,Orange_France
+3269,tim_official
 3303,Swisscom
 3304,Scarlet
 3320,deutschetelekom
@@ -45,6 +46,9 @@ asn,handle
 12430,vodafone_es
 12876,as12876
 15557,SFR
+12626,SFR
+12566,SFR
+29372,SFR
 20001,getspectrum
 20115,getspectrum
 21502,Numericable
@@ -66,4 +70,5 @@ asn,handle
 57933,IRISnet_team
 134067,unitiwireless
 16591,GoogleFiber
-3269,tim_official
+5089,virginmedia
+5410,bouyguestelecom
