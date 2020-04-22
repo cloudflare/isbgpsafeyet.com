@@ -55,5 +55,6 @@ Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 EE,ISP,,unsafe,12576,10206
+Plusnet,ISP,,unsafe,6871,10237
 Scaleway,cloud,signed + filtering,safe,12876,10343
 Coextro,ISP,,unsafe,36445,13475
