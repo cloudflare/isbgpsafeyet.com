@@ -48,8 +48,10 @@ Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
 Free SAS,ISP,signed,unsafe,12322,3007
 Amazon,cloud,signed,partially safe,16509,3444
+Google,cloud,,unsafe,15169,1714
 OVH,cloud,,unsafe,16276,3982
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 Scaleway,cloud,signed + filtering,safe,12876,10343
+Coextro,ISP,,unsafe,36445,13475
