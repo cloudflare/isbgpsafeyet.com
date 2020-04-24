@@ -30,11 +30,9 @@ Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 RCS&RDS,ISP,,unsafe,8708,102
 Next Layer GmbH,transit,signed + filtering,safe,1764,126
-
 TurkTelekom,ISP,,unsafe,9121,127
 M247,cloud,,unsafe,9009,133
 A1 Telekom Austria,ISP,,unsafe,8447,135
-
 Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 TIM,ISP,,unsafe,3269,176
@@ -47,14 +45,11 @@ Telenor,ISP,signed + filtering,safe,2119,288
 Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
-
 ACONET,transit,started,unsafe,1853,384
-
 RCN,ISP,signed + filtering,safe,6079,396
 Devoli,ISP,signed + filtering,safe,45177,422
 MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
-
 Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
 Videotron,ISP,,unsafe,5769,677
