@@ -47,6 +47,7 @@ Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
 ACONET,transit,started,unsafe,1853,384
+SFR,ISP,,unsafe,15557,394
 RCN,ISP,signed + filtering,safe,6079,396
 Devoli,ISP,signed + filtering,safe,45177,422
 MNET,ISP,signed + filtering,safe,8767,440
