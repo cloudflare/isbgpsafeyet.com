@@ -28,6 +28,7 @@ KPN,transit,signed + filtering,safe,286,36
 Core-Backbone,transit,signed + filtering,safe,33891,46
 Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
+Cox Communications, ISP,,unsafe,22773,77
 TPG,transit,,unsafe,7545,87
 RCS&RDS,ISP,,unsafe,8708,102
 Next Layer GmbH,transit,signed + filtering,safe,1764,126
@@ -76,6 +77,7 @@ TekSavvy,ISP,,unsafe,5645,1727
 SkyCable,ISP,,unsafe,23944,1746
 A2B Internet,ISP,signed + filtering,safe,51088,1755
 Cloudflare,cloud,signed + filtering,safe,13335,1819
+Telefonica Peru,ISP,,unsafe,6147,2099
 Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
 K-NET,ISP,,unsafe,24904,2851
