@@ -93,12 +93,14 @@ Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 Amazon,cloud,signed,partially safe,16509,3444
+O2 Broadband,ISP,,unsafe,35228,3501
 OVH,cloud,,unsafe,16276,3982
 Kingston Communications PLC,ISP,,unsafe,12390,4029
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
 T-Mobile,ISP,,unsafe,21928,4793
+Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
 Numericable,ISP,,unsafe,21502,4825
 Monkeybrains,ISP,,unsafe,32329,5215
