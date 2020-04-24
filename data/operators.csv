@@ -59,6 +59,7 @@ A2B Internet,ISP,signed + filtering,safe,51088,1755
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
+K-NET,ISP,,unsafe,24904,2851
 Free SAS,ISP,signed,unsafe,12322,3007
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
