@@ -43,6 +43,7 @@ Telenor,ISP,signed + filtering,safe,2119,288
 Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
 RCN,ISP,signed + filtering,safe,6079,396
+Devoli,ISP,signed + filtering,safe,45177,422
 MNET,ISP,signed + filtering,safe,8767,440
 Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
