@@ -72,6 +72,7 @@ Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
 K-NET,ISP,,unsafe,24904,2851
 Free SAS,ISP,signed,unsafe,12322,3007
+Bouygues Telecom,ISP,,unsafe,5410,3011
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
@@ -86,6 +87,7 @@ Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
+Free Mobile,ISP,,unsafe,51207,10266
 Scaleway,cloud,signed + filtering,safe,12876,10343
 Turksat,ISP,,unsafe,47524,10355
 Globe Telecom,ISP,,unsafe,132199,10444
