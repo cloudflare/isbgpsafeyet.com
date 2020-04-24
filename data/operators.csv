@@ -30,6 +30,7 @@ Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 Cox Communications, ISP,,unsafe,22773,77
 TPG,transit,,unsafe,7545,87
+Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
 Next Layer GmbH,transit,signed + filtering,safe,1764,126
 TurkTelekom,ISP,,unsafe,9121,127
