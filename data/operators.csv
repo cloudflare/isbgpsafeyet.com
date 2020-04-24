@@ -72,7 +72,9 @@ iiNet Limited,ISP,,unsafe,4739,975
 HotNet Internet Services,ISP,,unsafe,12849,1257
 NetCom BW,ISP,,unsafe,41998,1508
 Continent 8 LLC,cloud,,unsafe,14537,1513
+SpaceNet,ISP,signed + filtering,safe,5539,1584
 A3 Sverige,ISP,,unsafe,45011,1644
+Deutsche Glasfaser,ISP,,unsafe,60294,1681
 Google,cloud,,unsafe,15169,1714
 TekSavvy,ISP,,unsafe,5645,1727
 SkyCable,ISP,,unsafe,23944,1746
