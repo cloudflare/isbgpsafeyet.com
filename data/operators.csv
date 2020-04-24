@@ -94,6 +94,7 @@ Bouygues Telecom,ISP,,unsafe,5410,3011
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
+Kingston Communications PLC,ISP,,unsafe,12390,4029
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
@@ -120,7 +121,6 @@ Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 Millenicom,ISP,,unsafe,34296,10945
 NetCup,cloud,,unsafe,197540,11196
-Kingston Communications PLC,ISP,,unsafe,12390
 PROMAX,ISP,,unsafe,31423,13078
 Coextro,ISP,,unsafe,36445,13475
 Redder,ISP,signed + filtering,safe,33986,17220
