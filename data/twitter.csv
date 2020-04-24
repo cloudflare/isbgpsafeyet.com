@@ -31,10 +31,13 @@ asn,handle
 6830,libertyglobal
 6848,Telenet
 7029,Windstream
+7545,TPG_Telecom
 7922,Comcast
 7992,cogeco
 8151,Telmex
 8167,oi_oficial
+8220,Colt_Technology
+8422,NetCologneNEWS
 8559,KabelplusDK
 8881,versatel
 9031,edpnet
@@ -59,6 +62,7 @@ asn,handle
 22773,CoxComm
 22394,CELLCOATT
 23889,telecom_mu
+24904,knetfr
 25178,PCCWGlobal
 28403,RadiomovilDIPSA
 28573,NEToficial
@@ -74,4 +78,14 @@ asn,handle
 62044,Zscaler_Inc_EMEA
 134067,unitiwireless
 16591,GoogleFiber
+18209,ACT Fibernet
+8447,A1Telekom
+25255,dreioesterreich
+8412,magentatelekom
+1764,next_layer
+47147,_ANEXIA
+1853,ziduniwien
+21013,eww_Gruppe
 10139,SMARTCares
+31423,PROMAX
+394256,Tech_Futures
