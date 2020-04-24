@@ -29,8 +29,10 @@ Core-Backbone,transit,signed + filtering,safe,33891,46
 Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 RCS&RDS,ISP,,unsafe,8708,102
+Next Layer GmbH,transit,signed + filtering,safe,1764,126
 TurkTelekom,ISP,,unsafe,9121,127
 M247,cloud,,unsafe,9009,133
+A1 Telekom Austria,ISP,,unsafe,8447,135
 Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 TIM,ISP,,unsafe,3269,176
@@ -42,11 +44,16 @@ Virgin Media UK,ISP,,unsafe,5089,284
 Telenor,ISP,signed + filtering,safe,2119,288
 Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
+ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
+ACONET,transit,started,unsafe,1853,384
 RCN,ISP,signed + filtering,safe,6079,396
+Devoli,ISP,signed + filtering,safe,45177,422
 MNET,ISP,signed + filtering,safe,8767,440
+Hutchison Drei Austria,ISP,,unsafe,25255,451
 Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
 Videotron,ISP,,unsafe,5769,677
+eww ag,transit,,unsafe,21013,722
 2degrees,ISP,,unsafe,23655,856
 NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
@@ -65,7 +72,11 @@ K-NET,ISP,,unsafe,24904,2851
 Free SAS,ISP,signed,unsafe,12322,3007
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
+Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
+T-Mobile,ISP,,unsafe,21928,4793
+Numericable,ISP,,unsafe,21502,4825
+Monkeybrains,ISP,,unsafe,32329,5215
 EBOX,ISP,signed + filtering,safe,1403,6501
 Aura Fiber,ISP,,unsafe,204274,6735
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
@@ -76,6 +87,7 @@ TurkCell,ISP,,unsafe,16135,10254
 Scaleway,cloud,signed + filtering,safe,12876,10343
 Turksat,ISP,,unsafe,47524,10355
 Globe Telecom,ISP,,unsafe,132199,10444
+Three UK,ISP,,unsafe,206067,10502
 Millenicom,ISP,,unsafe,34296,10945
 Coextro,ISP,,unsafe,36445,13475
-T-Mobile,ISP,,unsafe,21928,4793
+ViewQwest,ISP,signed + filtering,safe,18106,675
