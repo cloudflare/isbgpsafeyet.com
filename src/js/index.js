@@ -1,4 +1,4 @@
-import 'sortable/js/sortable.js'
+import './vendor/sortable.min.js'
 import 'focus-visible-polyfill'
 
 const svgCheck = '<svg viewBox="0 0 16 16"><path d="M2.5 8.5l3.5 3.5l8 -8"/></svg>'
@@ -18,12 +18,33 @@ const failureMessageDetails = `${ ''
 fetch https://invalid.rpki.cloudflare.com
   <i fail><i>${ svgTimes }</i></i>incorrectly accepted invalid prefixes`
 
+const setupShowAllRowsToggle = () => {
+  const table = document.querySelector('[data-js-table]')
+  const button = document.querySelector('[data-js-toggle-show-all-rows]')
+
+  if (!table || !button) return
+
+  const tableSummary = document.querySelector('[data-js-table-summary]')
+  const majorCount = table.querySelectorAll('tr[data-is-major="true"]').length
+
+  button.addEventListener('click', () => {
+    if (table.getAttribute('data-show-all-rows') === 'false') {
+      table.setAttribute('data-show-all-rows', 'true')
+      button.textContent = '－ Show fewer'
+      tableSummary.textContent = 'Displaying all operators'
+    } else {
+      table.setAttribute('data-show-all-rows', 'false')
+      button.textContent = '＋ Show all'
+      tableSummary.textContent = `Displaying ${ majorCount } major operators`
+    }
+  })
+}
+
 const setupASNColumnToggle = () => {
   const table = document.querySelector('[data-js-table]')
   const button = document.querySelector('[data-js-toggle-asn-column]')
 
-  if (!button)
-    return
+  if (!button) return
 
   button.addEventListener('click', () => {
     if (table.getAttribute('data-hide-asn-column') === 'true') {
@@ -245,6 +266,7 @@ const openPossibleTargetFAQItem = () => {
 }
 
 const init = () => {
+  setupShowAllRowsToggle()
   setupASNColumnToggle()
   initTesting()
   initDiagrams()
