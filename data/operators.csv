@@ -20,6 +20,7 @@ Deutsche Telekom,ISP,started,unsafe,3320,20
 Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
+TransTelecom,transit,,unsafe,20485,24
 Liberty Global,transit,signed,partially safe,6830,29
 Bell Canada,ISP,,unsafe,577,90
 Sprint,transit,,unsafe,1239,34
@@ -33,7 +34,9 @@ M247,cloud,,unsafe,9009,133
 Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 TIM,ISP,,unsafe,3269,176
+Rogers,ISP,,unsafe,812,198
 Sunrise Communications AG,ISP,,unsafe,6730,203
+Jaguar Network,ISP,signed + filtering,safe,30781,226
 Vodafone DE,ISP,,unsafe,3209,276
 Virgin Media UK,ISP,,unsafe,5089,284
 Telenor,ISP,signed + filtering,safe,2119,288
@@ -59,6 +62,7 @@ Free SAS,ISP,signed,unsafe,12322,3007
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
+EBOX,ISP,signed + filtering,safe,1403,6501
 Aura Fiber,ISP,,unsafe,204274,6735
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
@@ -70,4 +74,5 @@ Turksat,ISP,,unsafe,47524,10355
 Globe Telecom,ISP,,unsafe,132199,10444
 Millenicom,ISP,,unsafe,34296,10945
 Coextro,ISP,,unsafe,36445,13475
+T-Mobile,ISP,,unsafe,21928,4793
 PROMAX,ISP,,unsafe,31423,13078
