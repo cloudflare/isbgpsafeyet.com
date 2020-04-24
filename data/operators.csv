@@ -63,6 +63,8 @@ ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
+Telenet,ISP,,unsafe,6848,804
+NOS Portugal,ISP,,unsafe,2860,805
 Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 NetCologne,ISP,,unsafe,8422,873
@@ -77,6 +79,7 @@ SpaceNet,ISP,signed + filtering,safe,5539,1584
 A3 Sverige,ISP,,unsafe,45011,1644
 Deutsche Glasfaser,ISP,,unsafe,60294,1681
 Google,cloud,,unsafe,15169,1714
+Vodafone Portugal,ISP,,unsafe,12353, 1725
 TekSavvy,ISP,,unsafe,5645,1727
 SkyCable,ISP,,unsafe,23944,1746
 A2B Internet,ISP,signed + filtering,safe,51088,1755
@@ -84,6 +87,7 @@ Cloudflare,cloud,signed + filtering,safe,13335,1819
 Telefonica Peru,ISP,,unsafe,6147,2099
 Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
+MEO Portugal,ISP,,unsafe,3243,2490
 K-NET,ISP,,unsafe,24904,2851
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
@@ -115,8 +119,9 @@ Turksat,ISP,,unsafe,47524,10355
 Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 Millenicom,ISP,,unsafe,34296,10945
+NetCup,cloud,,unsafe,197540,11196
+Kingston Communications PLC,ISP,,unsafe,12390
 PROMAX,ISP,,unsafe,31423,13078
 Coextro,ISP,,unsafe,36445,13475
 Redder,ISP,signed + filtering,safe,33986,17220
 Avative Fiber,ISP,,unsafe,394752,19128
-
