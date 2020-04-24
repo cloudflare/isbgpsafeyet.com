@@ -94,7 +94,6 @@ Bouygues Telecom,ISP,,unsafe,5410,3011
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
-The Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 Kingston Communications PLC,ISP,,unsafe,12390,4029
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
