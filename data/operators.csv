@@ -42,6 +42,7 @@ Sunrise Communications AG,ISP,,unsafe,6730,203
 Jaguar Network,ISP,signed + filtering,safe,30781,226
 Vodafone DE,ISP,,unsafe,3209,276
 Virgin Media UK,ISP,,unsafe,5089,284
+Ensite Telecom,transit,signed + filtering,partially safe,28263,287
 Telenor,ISP,signed + filtering,safe,2119,288
 Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
