@@ -52,6 +52,7 @@ MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 Cogeco,ISP,,unsafe,7992,497
 Spectrum,ISP,,unsafe,12271,607
+ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
@@ -82,6 +83,7 @@ Numericable,ISP,,unsafe,21502,4825
 Monkeybrains,ISP,,unsafe,32329,5215
 EBOX,ISP,signed + filtering,safe,1403,6501
 Aura Fiber,ISP,,unsafe,204274,6735
+VoiceHost,ISP,signed + filtering,safe,31472,7527
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 EE,ISP,,unsafe,12576,10206
@@ -93,5 +95,5 @@ Turksat,ISP,,unsafe,47524,10355
 Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 Millenicom,ISP,,unsafe,34296,10945
+PROMAX,ISP,,unsafe,31423,13078
 Coextro,ISP,,unsafe,36445,13475
-ViewQwest,ISP,signed + filtering,safe,18106,675
