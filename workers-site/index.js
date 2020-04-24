@@ -14,6 +14,8 @@ import pickBy from 'lodash.pickby'
  */
 const DEBUG = false
 
+const IS_BGP_SAFE_YET = false // TODO - update when safe ;)
+
 const OPERATORS = parse(OPERATORS_STRING, {columns: true})
 const ISP_TWITTER = parse(ISP_TWITTER_STRING, {columns: true})
 
@@ -35,6 +37,7 @@ const majorCloudASNs = [
   '14907', // Wikimedia
   '15169', // Google
   '16509', // Amazon
+  '12876', // Scaleway
 ]
 
 let MAJOR_OPERATORS_COUNT = 0
@@ -90,6 +93,7 @@ async function handleEvent(event) {
 
       return new HTMLRewriter()
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
+        .on('[data-is-bgp-safe-yet]', new StringInjector(IS_BGP_SAFE_YET ? 'Yes.' : 'No.'))
         .on('[data-major-operators-count]', new StringInjector(MAJOR_OPERATORS_COUNT))
         .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
         .transform(response)
