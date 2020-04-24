@@ -94,6 +94,7 @@ Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 Amazon,cloud,signed,partially safe,16509,3444
+Proximus,ISP,,unsafe,5432,
 O2 Broadband,ISP,,unsafe,35228,3501
 OVH,cloud,,unsafe,16276,3982
 Kingston Communications PLC,ISP,,unsafe,12390,4029
