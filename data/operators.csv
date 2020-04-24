@@ -67,6 +67,8 @@ Amazon,cloud,signed,partially safe,16509,3444
 OVH,cloud,,unsafe,16276,3982
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 T-Mobile,ISP,,unsafe,21928,4793
+Numericable,ISP,,unsafe,21502,4825
+Monkeybrains,ISP,,unsafe,32329,5215
 EBOX,ISP,signed + filtering,safe,1403,6501
 Aura Fiber,ISP,,unsafe,204274,6735
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
