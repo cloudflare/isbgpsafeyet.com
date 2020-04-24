@@ -14,22 +14,43 @@ import pickBy from 'lodash.pickby'
  */
 const DEBUG = false
 
+const IS_BGP_SAFE_YET = false // TODO - update when safe ;)
+
 const OPERATORS = parse(OPERATORS_STRING, {columns: true})
 const ISP_TWITTER = parse(ISP_TWITTER_STRING, {columns: true})
 
-function statusSortIndex(status){
+function statusSortIndex(status) {
   return [, 'safe', 'partially safe', 'unsafe'].indexOf(status)
 }
 
 // Yay for stable sorting in ES2019!
-OPERATORS.sort(function(a, b){
+OPERATORS.sort(function(a, b) {
   return +a.rank - +b.rank
 })
 
-OPERATORS.sort(function(a, b){
+OPERATORS.sort(function(a, b) {
   return statusSortIndex(a.status) - statusSortIndex(b.status)
 })
 
+const majorCloudASNs = [
+  '13335', // Cloudflare
+  '14907', // Wikimedia
+  '15169', // Google
+  '16509', // Amazon
+  '12876', // Scaleway
+]
+
+let MAJOR_OPERATORS_COUNT = 0
+
+for (let i = 0; i < OPERATORS.length; i += 1) {
+  const operator = OPERATORS[i]
+  const rank = +operator.rank
+
+  const major = (1 <= rank && rank <= 24) || majorCloudASNs.includes(operator.asn)
+  if (major) MAJOR_OPERATORS_COUNT += 1
+
+  operator.major = major
+}
 
 addEventListener('fetch', event => {
   try {
@@ -62,11 +83,18 @@ async function handleEvent(event) {
     // Allow headers to be altered
     const response = new Response(page.body, page)
 
-    if (url.pathname === "/" || url.pathname === "/index.html") {
+    if (url.pathname === '/' || url.pathname === '/index.html') {
       response.headers.set('Cache-Control', 'public; max-age=60')
+      response.headers.set('Content-Security-Policy', "default-src 'none'; script-src 'self' data: 'unsafe-inline'; object-src 'none'; style-src 'self' ui.components.workers.dev; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' invalid.rpki.cloudflare.com valid.rpki.cloudflare.com")
+      response.headers.set('X-XSS-Protection', '1; mode=block')
+      response.headers.set('X-Frame-Options', 'DENY')
+      response.headers.set('Referrer-Policy', 'unsafe-url')
+      response.headers.set('Feature-Policy', 'none')
 
       return new HTMLRewriter()
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
+        .on('[data-is-bgp-safe-yet]', new StringInjector(IS_BGP_SAFE_YET ? 'Yes.' : 'No.'))
+        .on('[data-major-operators-count]', new StringInjector(MAJOR_OPERATORS_COUNT))
         .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
         .transform(response)
     } else {
@@ -107,6 +135,16 @@ class VarInjector {
   }
 }
 
+class StringInjector {
+  constructor(string) {
+    this.string = string
+  }
+
+  element(element) {
+    element.setInnerContent(this.string)
+  }
+}
+
 function template(rows) {
   const columns = ['name', 'type', 'details', 'status', 'asn']
 
@@ -127,12 +165,11 @@ function template(rows) {
   }
 
   function row(r) {
-    r = pickBy(r, (v, k) => {
-      return (columns.indexOf(k) !== -1)
-    })
+    const major = r.major
+    r = pickBy(r, (v, k) => columns.indexOf(k) !== -1)
 
     return `
-      <tr data-status="${ r.status.replace(/ /g, '-') }">
+      <tr data-status="${ r.status.replace(/ /g, '-') }" data-is-major="${ major }">
         ${ each(r, cell) }
       </tr>
     `
@@ -163,19 +200,5 @@ class OperatorsTableBuilder {
     element.append(template(this.operators), {
       html: true
     })
-  }
-}
-
-function handlePrefix(prefix) {
-  return request => {
-    // compute the default (e.g. / -> index.html)
-    let defaultAssetKey = mapRequestToAsset(request)
-    let url = new URL(defaultAssetKey.url)
-
-    // strip the prefix from the path for lookup
-    url.pathname = url.pathname.replace(prefix, '/')
-
-    // inherit all other props from the default request
-    return new Request(url.toString(), defaultAssetKey)
   }
 }
