@@ -57,6 +57,7 @@ Hutchison Drei Austria,ISP,,unsafe,25255,451
 Cogeco,ISP,,unsafe,7992,497
 DNA Oyj,ISP,,unsafe,16086,523
 Elisa Finland,ISP,,unsafe,719,577
+Reliance Jio,ISP,,unsafe,55836,584
 Spectrum,ISP,,unsafe,12271,607
 ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
@@ -94,6 +95,7 @@ ACT Fibernet,ISP,signed + filtering,18209,4821
 Numericable,ISP,,unsafe,21502,4825
 Monkeybrains,ISP,,unsafe,32329,5215
 BroadbandGibraltarLtd.,ISP,,unsafe,34803,5285
+Vodafone India,ISP,,unsafe,38266,6428
 EBOX,ISP,signed + filtering,safe,1403,6501
 Aura Fiber,ISP,,unsafe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
