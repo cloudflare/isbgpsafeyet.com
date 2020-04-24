@@ -20,6 +20,7 @@ Deutsche Telekom,ISP,started,unsafe,3320,20
 Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
+TransTelecom,transit,unsafe,20485,24
 Liberty Global,transit,signed,partially safe,6830,29
 Bell Canada,ISP,,unsafe,577,90
 Sprint,transit,,unsafe,1239,34
