@@ -41,6 +41,7 @@ Vodafone DE,ISP,,unsafe,3209,276
 Virgin Media UK,ISP,,unsafe,5089,284
 Telenor,ISP,signed + filtering,safe,2119,288
 Globe Telecom,ISP,,unsafe,4775,305
+HKBN,ISP,,unsafe,9269,308
 RCN,ISP,signed + filtering,safe,6079,396
 MNET,ISP,signed + filtering,safe,8767,440
 Cogeco,ISP,,unsafe,7992,497
