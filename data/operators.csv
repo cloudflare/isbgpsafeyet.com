@@ -88,6 +88,7 @@ A2B Internet,ISP,signed + filtering,safe,51088,1755
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 xs4all,cloud,signed + filtering,safe,3265,1935
 Telefonica Peru,ISP,,unsafe,6147,2099
+MTS Belarus,ISP,,unsafe,25106,2127
 Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
 MEO Portugal,ISP,,unsafe,3243,2490
