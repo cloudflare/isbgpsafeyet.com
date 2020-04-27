@@ -10,18 +10,19 @@ TATA,transit,filtering peers only,partially safe,6453,8
 PCCW,transit,filtering peers only,partially safe,3491,9
 Zayo,transit,,unsafe,6461,10
 Vodafone,transit,,unsafe,1273,11
-RETN,transit,,unsafe,9002,13
-Orange,transit,started,unsafe,5511,14
-Telstra,transit,,unsafe,4637,15
-Telefonica/Telxius,transit,,unsafe,12956,16
-SingTel,transit,,unsafe,7473,17
-PJSC RosTelecom,transit,,unsafe,12389,19
-Deutsche Telekom,ISP,started,unsafe,3320,20
-Verizon,ISP,,unsafe,701,21
-AT&T,ISP,signed + filtering peers only,partially safe,7018,22
-Comcast,ISP,,unsafe,7922,23
-TransTelecom,transit,,unsafe,20485,24
-Liberty Global,transit,signed,partially safe,6830,29
+RETN,transit,,unsafe,9002,12
+Orange,transit,started,unsafe,5511,13
+Telstra,transit,,unsafe,4637,14
+Telefonica/Telxius,transit,,unsafe,12956,15
+SingTel,transit,,unsafe,7473,16
+PJSC RosTelecom,transit,,unsafe,12389,17
+Deutsche Telekom,ISP,started,unsafe,3320,18
+Swisscom,ISP,,unsafe,3303,19
+Verizon,ISP,,unsafe,701,20
+AT&T,ISP,signed + filtering peers only,partially safe,7018,21
+Comcast,ISP,,unsafe,7922,22
+TransTelecom,transit,,unsafe,20485,23
+Liberty Global,transit,signed,partially safe,6830,24
 Bell Canada,ISP,,unsafe,577,90
 Sprint,transit,,unsafe,1239,34
 KPN,transit,signed + filtering,safe,286,36
