@@ -37,10 +37,6 @@ body {
   position: relative;
 }
 
-[with-tooltip]:hover {
-  opacity: .5;
-}
-
 [data-tooltip]:hover::after {
   display: block;
   content: attr(title);
