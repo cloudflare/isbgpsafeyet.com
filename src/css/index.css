@@ -555,15 +555,15 @@ h1, h2 {
   letter-spacing: -.02em;
 }
 
-.BGPSafetyTable [data-status="safe"] {
+.BGPSafetyTable [data-status="safe"] td:first-child {
   box-shadow: -5px 0 var(--green-4);
 }
 
-.BGPSafetyTable [data-status="partially-safe"] {
+.BGPSafetyTable [data-status="partially-safe"] td:first-child {
   box-shadow: -5px 0 var(--yellow-4);
 }
 
-.BGPSafetyTable [data-status="unsafe"] {
+.BGPSafetyTable [data-status="unsafe"] td:first-child {
   box-shadow: -5px 0 var(--red-4);
 }
 
