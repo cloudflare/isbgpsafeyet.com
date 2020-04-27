@@ -63,6 +63,7 @@ Cogeco,ISP,,unsafe,7992,497
 DNA Oyj,ISP,,unsafe,16086,523
 Elisa Finland,ISP,,unsafe,719,577
 Reliance Jio,ISP,,unsafe,55836,584
+Taiwan Fixed Network,ISP,signed,unsafe,9924,584
 Spectrum,ISP,,unsafe,12271,607
 Beltelecom,ISP,,unsafe,6697,658
 ViewQwest,ISP,signed + filtering,safe,18106,675
