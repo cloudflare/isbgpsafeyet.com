@@ -20,7 +20,114 @@ Deutsche Telekom,ISP,started,unsafe,3320,20
 Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
+TransTelecom,transit,,unsafe,20485,24
+Liberty Global,transit,signed,partially safe,6830,29
+Bell Canada,ISP,,unsafe,577,90
 Sprint,transit,,unsafe,1239,34
-Cloudflare,cloud,signed + filtering,safe,13335,1819
-Amazon,cloud,signed,partially safe,16509,3444
+KPN,transit,signed + filtering,safe,286,36
+Core-Backbone,transit,signed + filtering,safe,33891,46
+Windstream Communications,ISP,,unsafe,7029,64
+Swisscom,ISP,,unsafe,3303,69
+Cox Communications, ISP,,unsafe,22773,77
+TPG,transit,,unsafe,7545,87
+Optimum,ISP,,unsafe,6128,97
+RCS&RDS,ISP,,unsafe,8708,102
+Next Layer GmbH,transit,signed + filtering,safe,1764,126
+TurkTelekom,ISP,,unsafe,9121,127
+M247,cloud,,unsafe,9009,133
+A1 Telekom Austria,ISP,,unsafe,8447,135
+Wave Broadband,ISP,,unsafe,11404,136
+Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
+TIM,ISP,,unsafe,3269,176
+Rogers,ISP,,unsafe,812,198
+Sunrise Communications AG,ISP,,unsafe,6730,203
+Jaguar Network,ISP,signed + filtering,safe,30781,226
+Vodafone DE,ISP,,unsafe,3209,276
+Virgin Media UK,ISP,,unsafe,5089,284
+Ensite Telecom,transit,signed + filtering,partially safe,28263,287
+Telenor,ISP,signed + filtering,safe,2119,288
+Globe Telecom,ISP,,unsafe,4775,305
+HKBN,ISP,,unsafe,9269,308
+ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
+ACONET,transit,started,unsafe,1853,384
+SFR,ISP,,unsafe,15557,394
+RCN,ISP,signed + filtering,safe,6079,396
+Devoli,ISP,signed + filtering,safe,45177,422
+MNET,ISP,signed + filtering,safe,8767,440
+Hutchison Drei Austria,ISP,,unsafe,25255,451
+Cogeco,ISP,,unsafe,7992,497
+DNA Oyj,ISP,,unsafe,16086,523
+Elisa Finland,ISP,,unsafe,719,577
+Reliance Jio,ISP,,unsafe,55836,584
+Spectrum,ISP,,unsafe,12271,607
+ViewQwest,ISP,signed + filtering,safe,18106,675
+Videotron,ISP,,unsafe,5769,677
+Hetzner Online,cloud,signed,unsafe,24940,717
+eww ag,transit,,unsafe,21013,722
+Telenet,ISP,,unsafe,6848,804
+NOS Portugal,ISP,,unsafe,2860,805
+Obenetwork,ISP,signed + filtering,safe,197595,833
+2degrees,ISP,,unsafe,23655,856
+NetCologne,ISP,,unsafe,8422,873
+Bredband2,ISP,signed + filtering,safe,29518,879
+Turknet,ISP,,unsafe,12735,954
+iiNet Limited,ISP,,unsafe,4739,975
+noris network AG,ISP,signed + filtering,safe,12337,1156
+HotNet Internet Services,ISP,,unsafe,12849,1257
+NetCom BW,ISP,,unsafe,41998,1508
+Continent 8 LLC,cloud,,unsafe,14537,1513
+SpaceNet,ISP,signed + filtering,safe,5539,1584
+A3 Sverige,ISP,,unsafe,45011,1644
+Deutsche Glasfaser,ISP,,unsafe,60294,1681
 Google,cloud,,unsafe,15169,1714
+Vodafone Portugal,ISP,,unsafe,12353, 1725
+TekSavvy,ISP,,unsafe,5645,1727
+SkyCable,ISP,,unsafe,23944,1746
+A2B Internet,ISP,signed + filtering,safe,51088,1755
+Cloudflare,cloud,signed + filtering,safe,13335,1819
+xs4all,cloud,signed + filtering,safe,3265,1935
+Telefonica Peru,ISP,,unsafe,6147,2099
+Microsoft,cloud,,unsafe,8075,2262
+Aussie Broadband,ISP,started,unsafe,4764,2319
+MEO Portugal,ISP,,unsafe,3243,2490
+K-NET,ISP,,unsafe,24904,2851
+Free SAS,ISP,signed,unsafe,12322,3007
+Bouygues Telecom,ISP,,unsafe,5410,3011
+Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
+Amazon,cloud,signed,partially safe,16509,3444
+Proximus,ISP,,unsafe,5432,
+O2 Broadband,ISP,,unsafe,35228,3501
+OVH,cloud,,unsafe,16276,3982
+Kingston Communications PLC,ISP,,unsafe,12390,4029
+Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
+Atria Convergence,ISP,signed + filtering,safe,24309,4053
+Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
+T-Mobile,ISP,,unsafe,21928,4793
+Vodafone UK,ISP,,unsafe,5378,4810
+ACT Fibernet,ISP,signed + filtering,safe,18209,4821
+Numericable,ISP,,unsafe,21502,4825
+Monkeybrains,ISP,,unsafe,32329,5215
+BroadbandGibraltarLtd.,ISP,,unsafe,34803,5285
+Vodafone India,ISP,,unsafe,38266,6428
+EBOX,ISP,signed + filtering,safe,1403,6501
+Aura Fiber,ISP,,unsafe,204274,6735
+Kaisanet Oy,ISP,,unsafe,13170,6773
+VoiceHost,ISP,signed + filtering,safe,31472,7527
+Gigabit DK,ISP,signed + filtering,safe,60876,7680
+Tech Futures,ISP,signed + filtering,safe,394256,8414
+Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
+EE,ISP,,unsafe,12576,10206
+Plusnet,ISP,,unsafe,6871,10237
+TurkCell,ISP,,unsafe,16135,10254
+Free Mobile,ISP,,unsafe,51207,10266
+Scaleway,cloud,signed + filtering,safe,12876,10343
+Turksat,ISP,,unsafe,47524,10355
+Globe Telecom,ISP,,unsafe,132199,10444
+Three UK,ISP,,unsafe,206067,10502
+University of North Carolina at Chapel Hill,ISP,,unsafe,36850,10541
+Millenicom,ISP,,unsafe,34296,10945
+NetCup,cloud,,unsafe,197540,11196
+PROMAX,ISP,,unsafe,31423,13078
+Coextro,ISP,,unsafe,36445,13475
+Redder,ISP,signed + filtering,safe,33986,17220
+Avative Fiber,ISP,,unsafe,394752,19128
