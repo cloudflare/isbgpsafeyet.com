@@ -67,6 +67,7 @@ Elisa Finland,ISP,,unsafe,719,577
 Reliance Jio,ISP,,unsafe,55836,584
 Volia,cloud,,unsafe,25229,595
 Spectrum,ISP,,unsafe,12271,607
+Beltelecom,ISP,,unsafe,6697,658
 ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
 QuadraNet,cloud,,unsafe,8100,686
@@ -93,6 +94,7 @@ xneelo,cloud,,unsafe,37153,1232
 HotNet Internet Services,ISP,,unsafe,12849,1257
 Radore Veri Merkezi Hizmetleri,cloud,,unsafe,42926,1326
 ColoCrossing,cloud,,unsafe,36352,1365
+A1 Belarus,ISP,,unsafe,42772,1496
 Selectel MSK,cloud,,unsafe,50340,1504
 NetCom BW,ISP,,unsafe,41998,1508
 Continent 8 LLC,cloud,,unsafe,14537,1513
@@ -111,6 +113,7 @@ xs4all,cloud,signed + filtering,safe,3265,1935
 CSL IDC,cloud,,unsafe,9891,2007
 Telefonica Peru,ISP,,unsafe,6147,2099
 Digital Energy Technologies Limited (Global),cloud,,unsafe,61317,2105
+MTS Belarus,ISP,,unsafe,25106,2127
 TheGigabit,cloud,,unsafe,55720,2147
 Microsoft,cloud,,unsafe,8075,2262
 ST-BGP,cloud,,unsafe,46844,2295
@@ -188,6 +191,7 @@ LiveWorld Inc,cloud,,unsafe,19148,12777
 AMIS Telekom d.o.o.,cloud,,unsafe,29485,12837
 PROMAX,ISP,,unsafe,31423,13078
 LeaseWeb USA / DAL-10,cloud,,unsafe,394380,13079
+CBN Broadband,ISP,started,unsafe,135478,13344
 EHOSTIDC,cloud,,unsafe,45382,13385
 Coextro,ISP,,unsafe,36445,13475
 Aktsiaselts WaveCom,cloud,,unsafe,34702,13703

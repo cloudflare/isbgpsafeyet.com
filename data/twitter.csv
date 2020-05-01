@@ -30,6 +30,7 @@ asn,handle
 6128,Optimum
 6181,CincyBell
 6327,ShawInfo
+6697,BeltelecomBy
 6799,otenet_gr
 6830,libertyglobal
 6848,Telenet
@@ -73,6 +74,7 @@ asn,handle
 22394,CELLCOATT
 23889,telecom_mu
 24904,knetfr
+25106,by_mts
 25178,PCCWGlobal
 25255,dreioesterreich
 28403,RadiomovilDIPSA
@@ -83,6 +85,7 @@ asn,handle
 35228,O2
 36850,unc
 41998,NetComBW
+42772,a1belarus
 44944,Telenet
 46375,sonic
 47147,_ANEXIA
@@ -93,3 +96,4 @@ asn,handle
 62044,Zscaler_Inc_EMEA
 134067,unitiwireless
 394256,Tech_Futures
+135478,di_cbn
