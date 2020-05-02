@@ -41,6 +41,7 @@ M247,cloud,,unsafe,9009,133
 A1 Telekom Austria,ISP,,unsafe,8447,135
 Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
+Fastweb,ISP,,unsafe,12874,160
 TIM,ISP,,unsafe,3269,176
 Rogers,ISP,,unsafe,812,198
 Sunrise Communications AG,ISP,,unsafe,6730,203
@@ -82,6 +83,7 @@ Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
+Vodafone IT,ISP,,unsafe,30722,895
 Shentel,ISP,,unsafe,4922,903
 Proximus,ISP,,unsafe,5432,911
 Turknet,ISP,,unsafe,12735,954
