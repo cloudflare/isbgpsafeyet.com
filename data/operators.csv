@@ -135,3 +135,4 @@ CBN Broadband,ISP,started,unsafe,135478,13344
 Coextro,ISP,,unsafe,36445,13475
 Redder,ISP,signed + filtering,safe,33986,17220
 Avative Fiber,ISP,,unsafe,394752,19128
+Nianet A/S,ISP,signed,partially safe,31027,19324
