@@ -118,6 +118,7 @@ Aura Fiber,ISP,,unsafe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
 VoiceHost,ISP,signed + filtering,safe,31472,7527
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
+Clearfly Communications,ISP,signed + filtering,safe,27400,7985
 Tech Futures,ISP,signed + filtering,safe,394256,8414
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 EE,ISP,,unsafe,12576,10206
