@@ -74,7 +74,8 @@ Videotron,ISP,,unsafe,5769,677
 QuadraNet,cloud,,unsafe,8100,686
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
-CYTA,cloud,,safe,6866,763
+CDN77,cloud,,unsafe,60068,725
+CYTA,cloud,safe,6866,763
 CDN77,cloud,,unsafe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
 Telenet,ISP,,unsafe,6848,804
@@ -94,6 +95,7 @@ IP Converge Data Services Inc.,cloud,,unsafe,23930,1193
 Cablenet Cyprus,ISP,signed + filtering,safe,35432,1215
 xneelo,cloud,,unsafe,37153,1232
 HotNet Internet Services,ISP,,unsafe,12849,1257
+Synapsecom Telecoms,cloud,,unsafe,8280,1290
 Radore Veri Merkezi Hizmetleri,cloud,,unsafe,42926,1326
 ColoCrossing,cloud,,unsafe,36352,1365
 A1 Belarus,ISP,,unsafe,42772,1496
@@ -121,11 +123,14 @@ Microsoft,cloud,,unsafe,8075,2262
 ST-BGP,cloud,,unsafe,46844,2295
 Aussie Broadband,ISP,started,unsafe,4764,2319
 MEO Portugal,ISP,,unsafe,3243,2490
+UK-2 Limited,cloud,,unsafe,13213,2535
 Galaxy Communications,cloud,,unsafe,27796,2663
 ARTNET,cloud,,unsafe,197155,2836
 K-NET,ISP,,unsafe,24904,2851
+GSL Networks,cloud,,unsafe,137409,2942
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
+Triolan,ISP,filtering,partially safe,13188,3091
 Networx Bulgaria,ISP,,unsafe,34569,3170
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 GSL Networks,cloud,,unsafe,137409,3277
@@ -133,7 +138,7 @@ Amazon,cloud,signed,partially safe,16509,3444
 ComHemAB,ISP,started,unsafe,39651,3484
 O2 Broadband,ISP,,unsafe,35228,3501
 Fishnet Communications,cloud,,unsafe,43317,3679
-Argon Data Communication,cloud,,unsafe,58477,3907
+ArgonHost,cloud,,unsafe,58477,3945
 OVH,cloud,,unsafe,16276,3982
 Kingston Communications PLC,ISP,,unsafe,12390,4029
 Westhost,cloud,,unsafe,29854,4032
@@ -151,7 +156,7 @@ Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
 Numericable,ISP,,unsafe,21502,4825
 H4Y Technologies LLC,cloud,,unsafe,397373,4857
-Intergrid,cloud,,unsafe,133480,4965
+Intergrid,cloud,,unsafe,133480,4984
 INTERSPACE-MK,cloud,,unsafe,200899,5200
 Monkeybrains,ISP,,unsafe,32329,5215
 BroadbandGibraltarLtd.,ISP,,unsafe,34803,5285
@@ -183,6 +188,7 @@ TOPNET / tunisia,cloud,,unsafe,37705,10329
 B2 Net Solutions,cloud,,unsafe,55286,10338
 Scaleway,cloud,signed + filtering,safe,12876,10343
 Turksat,ISP,,unsafe,47524,10355
+TOPNET,ISP,,unsafe,37705,10374
 Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 University of North Carolina at Chapel Hill,ISP,,unsafe,36850,10541
@@ -206,7 +212,7 @@ Informacines sistemos ir technologijos UAB,cloud,,unsafe,61272,14606
 Leaseweb USA Inc.,cloud,,unsafe,393886,14245
 KemiNet,cloud,,unsafe,197706,14332
 Datapark,ISP,,unsafe,21040,14383
-Web World Ireland,cloud,,unsafe,30900,14691
+Web World Ireland,cloud,,unsafe,30900,14606
 Database by Design LLC,cloud,,unsafe,17090,15018
 Serverfield,cloud,,unsafe,134094,15153
 ELSERVER S.R.L,cloud,,unsafe,52270,15568
@@ -222,7 +228,7 @@ FlokiNET,cloud,,unsafe,200651,20940
 Kviknet DK,ISP,signed + filtering,safe,204151,21799
 HQserv,cloud,,unsafe,42994,22744
 TL Group,cloud,,unsafe,263812,24357
-Pacswitch Global Telecom Limited,cloud,,unsafe,55536,27546
+Pacswitch,ISP,filtering,partially safe,55536,27617
 Asimia Damaskou,cloud,,unsafe,205053,36355
 iServer-AS,cloud,,unsafe,57127,36355
 NUT HOST SRL,cloud,,unsafe,264649,36355
