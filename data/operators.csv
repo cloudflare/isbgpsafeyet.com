@@ -66,6 +66,7 @@ ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
+CDN77,cloud,,unsafe,60068,725
 Telenet,ISP,,unsafe,6848,804
 NOS Portugal,ISP,,unsafe,2860,805
 Obenetwork,ISP,signed + filtering,safe,197595,833
@@ -77,6 +78,7 @@ iiNet Limited,ISP,,unsafe,4739,975
 noris network AG,ISP,signed + filtering,safe,12337,1156
 Cablenet Cyprus,ISP,signed + filtering,safe,35432,1215
 HotNet Internet Services,ISP,,unsafe,12849,1257
+Synapsecom Telecoms,cloud,,unsafe,8280,1290
 A1 Belarus,ISP,,unsafe,42772,1496
 NetCom BW,ISP,,unsafe,41998,1508
 Continent 8 LLC,cloud,,unsafe,14537,1513
@@ -114,6 +116,7 @@ T-Mobile,ISP,,unsafe,21928,4793
 Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
 Numericable,ISP,,unsafe,21502,4825
+Intergrid,cloud,,unsafe,133480,4984
 Monkeybrains,ISP,,unsafe,32329,5215
 BroadbandGibraltarLtd.,ISP,,unsafe,34803,5285
 Vodafone India,ISP,,unsafe,38266,6428
@@ -131,6 +134,7 @@ TurkCell,ISP,,unsafe,16135,10254
 Free Mobile,ISP,,unsafe,51207,10266
 Scaleway,cloud,signed + filtering,safe,12876,10343
 Turksat,ISP,,unsafe,47524,10355
+TOPNET,ISP,,unsafe,37705,10374
 Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 University of North Carolina at Chapel Hill,ISP,,unsafe,36850,10541
@@ -140,6 +144,7 @@ PROMAX,ISP,,unsafe,31423,13078
 CBN Broadband,ISP,started,unsafe,135478,13344
 Coextro,ISP,,unsafe,36445,13475
 ASERGO,cloud,signed + filtering,safe,30736,14105
+Web World Ireland,cloud,,unsafe,30900,14606
 Redder,ISP,signed + filtering,safe,33986,17220
 Avative Fiber,ISP,,unsafe,394752,19128
 Kviknet DK,ISP,signed + filtering,safe,204151,21799
