@@ -29,6 +29,7 @@ Core-Backbone,transit,signed + filtering,safe,33891,46
 Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 Cox Communications, ISP,,unsafe,22773,77
+G8 Networks,transit,,safe,28329,85
 TPG,transit,,unsafe,7545,87
 Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
