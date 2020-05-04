@@ -77,6 +77,7 @@ iiNet Limited,ISP,,unsafe,4739,975
 noris network AG,ISP,signed + filtering,safe,12337,1156
 Cablenet Cyprus,ISP,signed + filtering,safe,35432,1215
 HotNet Internet Services,ISP,,unsafe,12849,1257
+Synapsecom Telecoms,cloud,,unsafe,8280,1290
 A1 Belarus,ISP,,unsafe,42772,1496
 NetCom BW,ISP,,unsafe,41998,1508
 Continent 8 LLC,cloud,,unsafe,14537,1513
