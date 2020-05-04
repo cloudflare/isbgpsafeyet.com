@@ -29,8 +29,9 @@ Core-Backbone,transit,signed + filtering,safe,33891,46
 Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 Cox Communications, ISP,,unsafe,22773,77
-SK Broadband,cloud,,unsafe,9318,85
+G8 Networks,transit,signed + filtering,safe,28329,85
 TPG,transit,,unsafe,7545,87
+SK Broadband,cloud,,unsafe,9318,95
 Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
 Next Layer GmbH,transit,signed + filtering,safe,1764,126
@@ -82,7 +83,7 @@ Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
-Proximus,ISP,,unsafe,5432,911
+Proximus,ISP,,unsafe,5432,917
 Turknet,ISP,,unsafe,12735,954
 iiNet Limited,ISP,,unsafe,4739,975
 Selectel Ltd.,cloud,,unsafe,49505,1080
@@ -90,6 +91,7 @@ SOFTLAYER,cloud,,unsafe,36351,1062
 Total Server Solutions,cloud,,unsafe,46562,1139
 noris network AG,ISP,signed + filtering,safe,12337,1156
 IP Converge Data Services Inc.,cloud,,unsafe,23930,1193
+Cablenet Cyprus,ISP,signed + filtering,safe,35432,1215
 xneelo,cloud,,unsafe,37153,1232
 HotNet Internet Services,ISP,,unsafe,12849,1257
 Radore Veri Merkezi Hizmetleri,cloud,,unsafe,42926,1326
@@ -124,9 +126,11 @@ ARTNET,cloud,,unsafe,197155,2836
 K-NET,ISP,,unsafe,24904,2851
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
+Networx Bulgaria,ISP,,unsafe,34569,3170
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 GSL Networks,cloud,,unsafe,137409,3277
 Amazon,cloud,signed,partially safe,16509,3444
+ComHemAB,ISP,started,unsafe,39651,3484
 O2 Broadband,ISP,,unsafe,35228,3501
 Fishnet Communications,cloud,,unsafe,43317,3679
 Argon Data Communication,cloud,,unsafe,58477,3907
@@ -166,6 +170,7 @@ VoiceHost,ISP,signed + filtering,safe,31472,7527
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 GTHost US,cloud,,unsafe,63023,7915
 Siamdata Communication,cloud,,unsafe,56309,7934
+Clearfly Communications,ISP,signed + filtering,safe,27400,7985
 Tech Futures,ISP,signed + filtering,safe,394256,8414
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 Cloud9,cloud,,unsafe,57814,8983
@@ -196,6 +201,7 @@ EHOSTIDC,cloud,,unsafe,45382,13385
 Coextro,ISP,,unsafe,36445,13475
 Aktsiaselts WaveCom,cloud,,unsafe,34702,13703
 ThorDC,cloud,,unsafe,50613,13743
+ASERGO,cloud,signed + filtering,safe,30736,14105
 Informacines sistemos ir technologijos UAB,cloud,,unsafe,61272,14606
 Leaseweb USA Inc.,cloud,,unsafe,393886,14245
 KemiNet,cloud,,unsafe,197706,14332
@@ -213,6 +219,7 @@ Dynamic ASP Inc.,cloud,,unsafe,36077,18778
 Avative Fiber,ISP,,unsafe,394752,19128
 GLOBALHOST-BOSNIA-AS,cloud,,unsafe,200698,19722
 FlokiNET,cloud,,unsafe,200651,20940
+Kviknet DK,ISP,signed + filtering,safe,204151,21799
 HQserv,cloud,,unsafe,42994,22744
 TL Group,cloud,,unsafe,263812,24357
 Pacswitch Global Telecom Limited,cloud,,unsafe,55536,27546
