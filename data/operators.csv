@@ -101,7 +101,7 @@ UK-2 Limited,cloud,,unsafe,13213,2535
 K-NET,ISP,,unsafe,24904,2851
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
-Triolan,ISP,signed + filtering,safe,13188,3091
+Triolan,ISP,filtering,partially safe,13188,3091
 Networx Bulgaria,ISP,,unsafe,34569,3170
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 Amazon,cloud,signed,partially safe,16509,3444
