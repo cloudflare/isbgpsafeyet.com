@@ -133,5 +133,6 @@ NetCup,cloud,,unsafe,197540,11196
 PROMAX,ISP,,unsafe,31423,13078
 CBN Broadband,ISP,started,unsafe,135478,13344
 Coextro,ISP,,unsafe,36445,13475
+ASERGO,cloud,signed + filtering,safe,30736,14105
 Redder,ISP,signed + filtering,safe,33986,17220
 Avative Fiber,ISP,,unsafe,394752,19128
