@@ -131,6 +131,7 @@ TurkCell,ISP,,unsafe,16135,10254
 Free Mobile,ISP,,unsafe,51207,10266
 Scaleway,cloud,signed + filtering,safe,12876,10343
 Turksat,ISP,,unsafe,47524,10355
+TOPNET,ISP,,unsafe,37705,10374
 Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 University of North Carolina at Chapel Hill,ISP,,unsafe,36850,10541
