@@ -66,6 +66,7 @@ ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
+CDN77,cloud,,unsafe,60068,725
 Telenet,ISP,,unsafe,6848,804
 NOS Portugal,ISP,,unsafe,2860,805
 Obenetwork,ISP,signed + filtering,safe,197595,833
