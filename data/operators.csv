@@ -5,7 +5,7 @@ Cogent,transit,filtering peers only,partially safe,174,3
 GTT,transit,filtering peers only,partially safe,3257,4
 NTT,transit,signed + filtering,safe,2914,5
 Sparkle,transit,started,unsafe,6762,6
-Hurricane Electric,transit,,unsafe,6939,7
+Hurricane Electric,transit,signed,unsafe,6939,7
 TATA,transit,filtering peers only,partially safe,6453,8
 PCCW,transit,filtering peers only,partially safe,3491,9
 Zayo,transit,,unsafe,6461,10
