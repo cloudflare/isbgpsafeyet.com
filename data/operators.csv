@@ -2,7 +2,7 @@ name,type,details,status,asn,rank
 Level3/CenturyLink,transit,,unsafe,3356,1
 Telia,transit,signed + filtering,safe,1299,2
 Cogent,transit,filtering peers only,partially safe,174,3
-GTT,transit,filtering peers only,partially safe,3257,4
+GTT,transit,signed + filtering,safe,3257,4
 NTT,transit,signed + filtering,safe,2914,5
 Sparkle,transit,started,unsafe,6762,6
 Hurricane Electric,transit,signed,unsafe,6939,7
