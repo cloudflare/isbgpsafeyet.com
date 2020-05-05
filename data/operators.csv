@@ -77,6 +77,7 @@ NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
 Turknet,ISP,,unsafe,12735,954
 iiNet Limited,ISP,,unsafe,4739,975
+IBM Cloud,cloud,,unsafe,36351,1042
 noris network AG,ISP,signed + filtering,safe,12337,1156
 Cablenet Cyprus,ISP,signed + filtering,safe,35432,1215
 HotNet Internet Services,ISP,,unsafe,12849,1257
