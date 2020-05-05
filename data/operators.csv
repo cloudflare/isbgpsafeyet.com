@@ -55,6 +55,7 @@ ACONET,transit,started,unsafe,1853,384
 SFR,ISP,,unsafe,15557,394
 RCN,ISP,signed + filtering,safe,6079,396
 Devoli,ISP,signed + filtering,safe,45177,422
+Psychz Networks,cloud,,unsafe,40676,424
 MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 Cogeco,ISP,,unsafe,7992,497
