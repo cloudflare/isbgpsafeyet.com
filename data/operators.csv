@@ -122,6 +122,7 @@ FishNet,cloud,,unsafe,43317,3698
 ArgonHost,cloud,,unsafe,58477,3945
 OVH,cloud,,unsafe,16276,3982
 Kingston Communications PLC,ISP,,unsafe,12390,4029
+EOLO,ISP,signed + filtering,safe,35612,4035
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
