@@ -48,6 +48,7 @@ Vodafone DE,ISP,,unsafe,3209,276
 Virgin Media UK,ISP,,unsafe,5089,284
 Ensite Telecom,transit,signed + filtering,partially safe,28263,287
 Telenor,ISP,signed + filtering,safe,2119,288
+Nianet A/S,ISP,signed,unsafe,31027,301
 Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
@@ -157,4 +158,3 @@ Kviknet DK,ISP,signed + filtering,safe,204151,21799
 IPXON,cloud,,unsafe,263812,24423
 Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
-Nianet A/S,ISP,signed,unsafe,31027,19324
