@@ -31,7 +31,6 @@ Swisscom,ISP,,unsafe,3303,69
 Cox Communications, ISP,,unsafe,22773,77
 G8 Networks,transit,signed + filtering,safe,28329,85
 TPG,transit,,unsafe,7545,87
-SK Broadband,cloud,,unsafe,9318,95
 Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
 Next Layer GmbH,transit,signed + filtering,safe,1764,126
@@ -110,6 +109,7 @@ Google,cloud,,unsafe,15169,1714
 Vodafone Portugal,ISP,,unsafe,12353, 1725
 TekSavvy,ISP,,unsafe,5645,1727
 SkyCable,ISP,,unsafe,23944,1746
+HostDime,cloud,,unsafe,33182,1753
 A2B Internet,ISP,signed + filtering,safe,51088,1755
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 HostDime.com Inc,cloud,,unsafe,33182,1841
@@ -134,6 +134,7 @@ Triolan,ISP,filtering,partially safe,13188,3091
 Networx Bulgaria,ISP,,unsafe,34569,3170
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 GSL Networks,cloud,,unsafe,137409,3277
+Ovnicom,cloud,,unsafe,27796,3322
 Amazon,cloud,signed,partially safe,16509,3444
 ComHemAB,ISP,started,unsafe,39651,3484
 O2 Broadband,ISP,,unsafe,35228,3501
@@ -228,9 +229,11 @@ FlokiNET,cloud,,unsafe,200651,20940
 Kviknet DK,ISP,signed + filtering,safe,204151,21799
 HQserv,cloud,,unsafe,42994,22744
 TL Group,cloud,,unsafe,263812,24357
+IPXON,cloud,,unsafe,263812,24423
 Pacswitch,ISP,filtering,partially safe,55536,27617
 Asimia Damaskou,cloud,,unsafe,205053,36355
 iServer-AS,cloud,,unsafe,57127,36355
 NUT HOST SRL,cloud,,unsafe,264649,36355
+NUTHOST,cloud,,unsafe,264649,36541
 SIA Bighost.lv,cloud,,unsafe,200709,42875
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
