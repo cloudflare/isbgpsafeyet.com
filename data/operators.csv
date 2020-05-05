@@ -70,6 +70,7 @@ eww ag,transit,,unsafe,21013,722
 CDN77,cloud,,unsafe,60068,725
 Telenet,ISP,,unsafe,6848,804
 NOS Portugal,ISP,,unsafe,2860,805
+Altibox,ISP,,unsafe,29695,816
 Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 NetCologne,ISP,,unsafe,8422,873
