@@ -117,6 +117,7 @@ Kingston Communications PLC,ISP,,unsafe,12390,4029
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
+LeapSwitch Networks,filtering,partially safe,132335,4261
 T-Mobile,ISP,,unsafe,21928,4793
 Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
