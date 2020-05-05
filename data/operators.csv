@@ -157,3 +157,4 @@ Kviknet DK,ISP,signed + filtering,safe,204151,21799
 IPXON,cloud,,unsafe,263812,24423
 Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
+Worldstream,ISP,signed,partially safe,49981,1890
