@@ -56,6 +56,7 @@ ACONET,transit,started,unsafe,1853,384
 SFR,ISP,,unsafe,15557,394
 RCN,ISP,signed + filtering,safe,6079,396
 Devoli,ISP,signed + filtering,safe,45177,422
+Psychz Networks,cloud,,unsafe,40676,424
 MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 NFOrce Internet Services,cloud,,unsafe,43350,459
@@ -86,6 +87,7 @@ NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
 Proximus,ISP,,unsafe,5432,917
 Turknet,ISP,,unsafe,12735,954
+Maxihost,cloud,,unsafe,262287,963
 iiNet Limited,ISP,,unsafe,4739,975
 Ziggo,ISP,signed,unsafe,33915,1014
 IBM Cloud,cloud,,unsafe,36351,1042
@@ -147,6 +149,7 @@ ArgonHost,cloud,,unsafe,58477,3945
 OVH,cloud,,unsafe,16276,3982
 Kingston Communications PLC,ISP,,unsafe,12390,4029
 Westhost,cloud,,unsafe,29854,4032
+EOLO,ISP,signed + filtering,safe,35612,4035
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 ALMOUROLTEC SERVICOS DE INFORMATICA E INTERNET LDA,cloud,,unsafe,24768,4105
