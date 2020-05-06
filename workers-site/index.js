@@ -38,6 +38,7 @@ const majorCloudASNs = [
   '15169', // Google
   '16509', // Amazon
   '12876', // Scaleway
+  '9009', // M247
 ]
 
 let MAJOR_OPERATORS_COUNT = 0
