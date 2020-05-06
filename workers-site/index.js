@@ -38,6 +38,7 @@ const majorCloudASNs = [
   '15169', // Google
   '16509', // Amazon
   '12876', // Scaleway
+  '9009', // M247
 ]
 
 let MAJOR_OPERATORS_COUNT = 0
@@ -95,7 +96,7 @@ async function handleEvent(event) {
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
         .on('[data-is-bgp-safe-yet]', new StringInjector(IS_BGP_SAFE_YET ? 'Yes.' : 'No.'))
         .on('[data-major-operators-count]', new StringInjector(MAJOR_OPERATORS_COUNT))
-        .on('table.BGPSafetyTable', new OperatorsTableBuilder(OPERATORS))
+        .on('table[data-js-table]', new OperatorsTableBuilder(OPERATORS))
         .transform(response)
     } else {
       response.headers.set('Cache-Control', 'public; max-age=86400')
@@ -145,6 +146,10 @@ class StringInjector {
   }
 }
 
+const safeAttr = (str) => {
+  return str.replace(/"/g, '&quot;')
+}
+
 function template(rows) {
   const columns = ['name', 'type', 'details', 'status', 'asn']
 
@@ -177,7 +182,7 @@ function template(rows) {
 
   function cell(val, key) {
     return `
-      <td data-column="${ key }" data-value="${ sortKey(key, val).toString().replace(/"/g, '&quot;') }">${ val }
+      <td data-column="${ key }" data-value="${ safeAttr(sortKey(key, val).toString()) }"><span title="${ safeAttr(val) }">${ val }</span></td>
     `
   }
 
