@@ -76,6 +76,7 @@ Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
+Shentel,ISP,,unsafe,4922,903
 Turknet,ISP,,unsafe,12735,954
 Maxihost,cloud,,unsafe,262287,963
 iiNet Limited,ISP,,unsafe,4739,975
