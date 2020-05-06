@@ -168,8 +168,8 @@ ASERGO,cloud,signed + filtering,safe,30736,14105
 Web World Ireland,cloud,,unsafe,30900,14606
 Redder,ISP,signed + filtering,safe,33986,17220
 Avative Fiber,ISP,,unsafe,394752,19128
-Kviknet DK,ISP,signed + filtering,safe,204151,21799
 Green Mini host,cloud,signed + filtering,safe,205668,19323
+Kviknet DK,ISP,signed + filtering,safe,204151,21799
 IPXON,cloud,,unsafe,263812,24423
 Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
