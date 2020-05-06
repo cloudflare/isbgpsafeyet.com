@@ -85,6 +85,7 @@ Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
+Shentel,ISP,,unsafe,4922,903
 Proximus,ISP,,unsafe,5432,917
 Turknet,ISP,,unsafe,12735,954
 Maxihost,cloud,,unsafe,262287,963
@@ -102,6 +103,7 @@ HotNet Internet Services,ISP,,unsafe,12849,1257
 Synapsecom Telecoms,cloud,,unsafe,8280,1290
 Radore Veri Merkezi Hizmetleri,cloud,,unsafe,42926,1326
 ColoCrossing,cloud,,unsafe,36352,1365
+Pakistan Telecom Company Limited,ISP,,unsafe,45595,1433
 A1 Belarus,ISP,,unsafe,42772,1496
 Selectel MSK,cloud,,unsafe,50340,1504
 NetCom BW,ISP,,unsafe,41998,1508
@@ -234,6 +236,7 @@ Nobis Technology Group L.L.C.,cloud,,unsafe,15003,17342
 ENAHOST s.r.o.,cloud,,unsafe,201924,17977
 Dynamic ASP Inc.,cloud,,unsafe,36077,18778
 Avative Fiber,ISP,,unsafe,394752,19128
+Green Mini host,cloud,signed + filtering,safe,205668,19323
 GLOBALHOST-BOSNIA-AS,cloud,,unsafe,200698,19722
 FlokiNET,cloud,,unsafe,200651,20940
 Kviknet DK,ISP,signed + filtering,safe,204151,21799

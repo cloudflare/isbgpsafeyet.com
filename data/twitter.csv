@@ -22,6 +22,7 @@ asn,handle
 3320,deutschetelekom
 3352,Telefonica
 4764,Aussie_BB
+4922,Shentel
 5089,virginmedia
 5378,VodafoneUK
 5410,bouyguestelecom
@@ -133,6 +134,7 @@ asn,handle
 41998,NetComBW
 42772,a1belarus
 44944,Telenet
+45595,PTCLOfficial
 46375,sonic
 47147,_ANEXIA
 47524,turksat
@@ -164,6 +166,7 @@ asn,handle
 198024,IstekkiOy
 202053,UpCloud
 203609,Erillisverkot
+205668,macminihost  
 206067,ThreeUK
 206927,Bittium
 262287,maxihost
