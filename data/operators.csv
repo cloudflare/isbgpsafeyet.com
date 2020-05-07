@@ -158,6 +158,7 @@ ALMOUROLTEC SERVICOS DE INFORMATICA E INTERNET LDA,cloud,,unsafe,24768,4105
 Global IP Exchange,cloud,,unsafe,47536,4117
 trabia network,cloud,,unsafe,43289,4133
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
+Packetexchange,cloud,,unsafe,58065,4171
 LeapSwitch Networks,cloud,filtering,partially safe,132335,4261
 Amanah Tech,cloud,,unsafe,32489,4279
 UNMETERED,cloud,,unsafe,54133,4340
@@ -237,6 +238,7 @@ Nobis Technology Group L.L.C.,cloud,,unsafe,15003,17342
 ENAHOST s.r.o.,cloud,,unsafe,201924,17977
 Dynamic ASP Inc.,cloud,,unsafe,36077,18778
 Avative Fiber,ISP,,unsafe,394752,19128
+Globalhost d.o.o.,cloud,,unsafe,200698,19806
 Green Mini host,cloud,signed + filtering,safe,205668,19323
 GLOBALHOST-BOSNIA-AS,cloud,,unsafe,200698,19722
 FlokiNET,cloud,,unsafe,200651,20940
@@ -250,4 +252,5 @@ iServer-AS,cloud,,unsafe,57127,36355
 NUT HOST SRL,cloud,,unsafe,264649,36355
 NUTHOST,cloud,,unsafe,264649,36541
 SIA Bighost.lv,cloud,,unsafe,200709,42875
+Estoxy,cloud,,unsafe,208673,49189
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
