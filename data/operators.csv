@@ -98,7 +98,7 @@ SpaceNet,ISP,signed + filtering,safe,5539,1584
 A3 Sverige,ISP,,unsafe,45011,1644
 Deutsche Glasfaser,ISP,,unsafe,60294,1681
 Google,cloud,,unsafe,15169,1714
-Vodafone Portugal,ISP,,unsafe,12353, 1725
+Vodafone Portugal,ISP,,unsafe,12353,1725
 TekSavvy,ISP,,unsafe,5645,1727
 SkyCable,ISP,,unsafe,23944,1746
 HostDime,cloud,,unsafe,33182,1753
