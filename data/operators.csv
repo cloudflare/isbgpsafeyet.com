@@ -147,6 +147,7 @@ Afrihost,ISP,,unsafe,37611,6492
 EBOX,ISP,signed + filtering,safe,1403,6501
 Aura Fiber,ISP,,unsafe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
+Axcelx,cloud,,unsafe,33083,7453
 VoiceHost,ISP,signed + filtering,safe,31472,7527
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 Clearfly Communications,ISP,signed + filtering,safe,27400,7985
