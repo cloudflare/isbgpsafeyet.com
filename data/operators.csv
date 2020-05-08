@@ -195,3 +195,4 @@ IPXON,cloud,,unsafe,263812,24423
 Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
 Estoxy,cloud,,unsafe,208673,49189
+Get (Telia Norway),ISP,signed + filtering,safe,41164,4847
