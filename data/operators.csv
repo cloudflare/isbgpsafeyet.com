@@ -61,6 +61,7 @@ MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 NFOrce Internet Services,cloud,,unsafe,43350,459
 Psychz Networks,cloud,,unsafe,40676,463
+SuddenLink,ISP,,unsafe,19108,470
 Delta Telecom,cloud,,unsafe,29049,471
 Cogeco,ISP,,unsafe,7992,497
 DNA Oyj,ISP,,unsafe,16086,523
