@@ -22,7 +22,7 @@ AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
 TransTelecom,transit,,unsafe,20485,24
 Liberty Global,transit,signed,partially safe,6830,29
-Telekom Hungary,signed,unsafe,5483,59
+Telekom Hungary,ISP,signed,unsafe,5483,59
 Bell Canada,ISP,,unsafe,577,90
 Sprint,transit,,unsafe,1239,34
 KPN,transit,signed + filtering,safe,286,36
