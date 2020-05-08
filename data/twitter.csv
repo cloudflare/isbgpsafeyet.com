@@ -36,6 +36,7 @@ asn,handle
 6181,CincyBell
 6327,ShawInfo
 6667,ElisaOyj
+6677,siminn
 6697,BeltelecomBy
 6799,otenet_gr
 6830,libertyglobal
@@ -45,6 +46,7 @@ asn,handle
 7545,TPG_Telecom
 7922,Comcast
 7992,cogeco
+8100,QuadraNet
 8151,Telmex
 8167,oi_oficial
 8220,Colt_Technology
@@ -110,19 +112,23 @@ asn,handle
 28704,proximus
 29132,imageworldFIN
 29422,TeliaFinland
+29485,A1Hrvatska
 29695,Altibox
+29854,WestHost
 30722,VodafoneIT
 30736,ASERGOGroup
 30798,TNNetOy
 30900,webworldireland
 31615,tmobile_webcare
 31639,planeettanet
+33083,Axcelx
 33182,hostdime
 33801,EdzcomOfficial
 33915,ZiggoWebcare
 35382,Capnova
 35612,eolo_it
 36351,IBMcloud
+36352,ColoCrossing
 37611,Afrihost
 37705,Topnet_FSI
 39857,AaltoUniversity
@@ -135,9 +141,11 @@ asn,handle
 41998,NetComBW
 42772,a1belarus
 43289,trabia_network
+43350,nforce_bv
 44944,Telenet
 45595,PTCLOfficial
 46375,sonic
+46562,livetss
 47147,_ANEXIA
 47524,turksat
 47377,OrangeBeFR
@@ -167,6 +175,7 @@ asn,handle
 135478,di_cbn
 196655,NivosOy
 198024,IstekkiOy
+199524,gcorelabs
 200698,GlobalHost_bh
 202053,UpCloud
 203609,Erillisverkot
@@ -177,3 +186,4 @@ asn,handle
 263812,ipxonnetworks
 264649,nuthost
 394256,Tech_Futures
+394380,Leaseweb
