@@ -68,6 +68,7 @@ Spectrum,ISP,,unsafe,12271,607
 Beltelecom,ISP,,unsafe,6697,658
 ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
+QuadraNet,cloud,,unsafe,8100,686
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
 CDN77,cloud,,unsafe,60068,725
