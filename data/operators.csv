@@ -81,6 +81,7 @@ Obenetwork,ISP,signed + filtering,safe,197595,833
 NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
 Shentel,ISP,,unsafe,4922,903
+Proximus,ISP,,unsafe,5432,911
 Turknet,ISP,,unsafe,12735,954
 Maxihost,cloud,,unsafe,262287,963
 iiNet Limited,ISP,,unsafe,4739,975
@@ -127,7 +128,6 @@ Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 Ovnicom,cloud,,unsafe,27796,3322
 Amazon,cloud,signed,partially safe,16509,3444
 ComHemAB,ISP,started,unsafe,39651,3484
-Proximus,ISP,,unsafe,5432,
 O2 Broadband,ISP,,unsafe,35228,3501
 FishNet,cloud,,unsafe,43317,3698
 ArgonHost,cloud,,unsafe,58477,3945
