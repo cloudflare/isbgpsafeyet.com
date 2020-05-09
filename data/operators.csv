@@ -150,6 +150,7 @@ Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
 Numericable,ISP,,unsafe,21502,4825
 Get (Telia Norway),ISP,signed + filtering,safe,41164,4847
+H4Y,cloud,signed,unsafe,397373,4857
 Intergrid,cloud,,unsafe,133480,4984
 Mobilink,ISP,,unsafe,45669,5198
 Monkeybrains,ISP,,unsafe,32329,5215
