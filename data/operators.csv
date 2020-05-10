@@ -62,7 +62,6 @@ MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 NFOrce,cloud,signed,unsafe,43350,459
 Psychz Networks,cloud,,unsafe,40676,463
-Psychz Networks,cloud,,unsafe,40676,463
 SuddenLink,ISP,,unsafe,19108,470
 Delta Telecom,cloud,,unsafe,29049,471
 Cogeco,ISP,,unsafe,7992,497
@@ -110,10 +109,8 @@ Terrahost,cloud,signed + filtering,safe,56655,1416
 A1 Belarus,ISP,,unsafe,42772,1496
 Maxihost,cloud,,unsafe,262287,1499
 Selectel MSK,cloud,,unsafe,50340,1504
-Selectel MSK,cloud,,unsafe,50340,1504
 NetCom BW,ISP,,unsafe,41998,1508
 Continent 8 LLC,cloud,,unsafe,14537,1513
-Synapsecom Telecoms,cloud,,unsafe,8280,1522
 Synapsecom Telecoms,cloud,,unsafe,8280,1522
 SpaceNet,ISP,signed + filtering,safe,5539,1584
 A3 Sverige,ISP,,unsafe,45011,1644
@@ -145,7 +142,6 @@ Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Triolan,ISP,filtering,partially safe,13188,3056
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
-GSL Networks,cloud,,unsafe,137409,3277
 GSL Networks,cloud,,unsafe,137409,3277
 Amazon,cloud,signed,partially safe,16509,3444
 Digi,ISP,,unsafe,20845,3473
@@ -199,7 +195,6 @@ Clearfly Communications,ISP,signed + filtering,safe,27400,7943
 Tech Futures,ISP,signed + filtering,safe,394256,8414
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 Cloud9,cloud,,unsafe,57814,8983
-Cloud9,cloud,,unsafe,57814,8983
 EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
@@ -232,7 +227,6 @@ ThorDC,cloud,,unsafe,50613,13743
 ASERGO,cloud,signed + filtering,safe,30736,14022
 Leaseweb USA-MIA-11,cloud,,unsafe,393886,14245
 KemiNet,cloud,,unsafe,197706,14332
-Datapark,ISP,,unsafe,21040,14383
 Datapark,ISP,,unsafe,21040,14383
 Informacines sistemos ir technologijos UAB,cloud,,unsafe,61272,14606
 Web World Ireland,cloud,,unsafe,30900,14691
