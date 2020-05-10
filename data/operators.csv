@@ -197,6 +197,7 @@ volumedrive,cloud,filtering,partially safe,46664,15704
 MadeIT,cloud,filtering,partially safe,54455,16842
 Redder,ISP,signed + filtering,safe,33986,17220
 nobistech,cloud,,unsafe,15003,17342
+Dynamic Hosting,cloud,,unsafe,36077,18778
 Avative Fiber,ISP,,unsafe,394752,19128
 Globalhost d.o.o.,cloud,,unsafe,200698,19806
 Green Mini host,cloud,signed + filtering,safe,205668,19323
