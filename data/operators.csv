@@ -168,6 +168,7 @@ eSecureData,cloud,signed,unsafe,11831,7324
 Axcelx,cloud,,unsafe,33083,7453
 VoiceHost,ISP,signed + filtering,safe,31472,7527
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
+GTHost,cloud,filtering,partially safe,63023,7915
 Clearfly Communications,ISP,signed + filtering,safe,27400,7985
 Tech Futures,ISP,signed + filtering,safe,394256,8414
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
