@@ -44,6 +44,7 @@ asn,handle
 6848,Telenet
 6866,cytacyprus
 7029,Windstream
+7203,Leaseweb
 7545,TPG_Telecom
 7922,Comcast
 7992,cogeco
@@ -94,6 +95,7 @@ asn,handle
 29372,SFR
 16086,DNA_fi
 16302,SuomiCom
+19148,Leaseweb
 20001,getspectrum
 20904,Netplaza
 20115,getspectrum
@@ -200,5 +202,7 @@ asn,handle
 393886,Leaseweb
 394256,Tech_Futures
 394380,Leaseweb
+395954,Leaseweb
+396190,Leaseweb
 396362,Leaseweb
 397373,h4ytec
