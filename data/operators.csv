@@ -192,6 +192,7 @@ Coextro,ISP,,unsafe,36445,13475
 ASERGO,cloud,signed + filtering,safe,30736,14105
 Leaseweb USA-MIA-11,cloud,,unsafe,393886,14245
 Web World Ireland,cloud,,unsafe,30900,14606
+Database By Design LLC,cloud,,unsafe,17090,15018
 volumedrive,cloud,filtering,partially safe,46664,15704
 MadeIT,cloud,filtering,partially safe,54455,16842
 Redder,ISP,signed + filtering,safe,33986,17220
