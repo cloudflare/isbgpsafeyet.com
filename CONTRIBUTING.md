@@ -23,7 +23,7 @@ Follow the steps below:
     * type: ISP, cloud or transit
     * details: indicates the progression of an RPKI deployment (eg: signed + filtering/filtering peers only)
     * status: the RPKI state:
-      _unsafe_ (nothing deployed, not filtering),
+      _unsafe_ (nothing deployed, only signed or not filtering),
       _partially safe_ (not filtering all the peers),
       _safe_ (fully signed and fully filtering)
     * asn: autonomous system number (eg: 7018 for AT&T)
