@@ -159,6 +159,7 @@ Cloud9,cloud,,unsafe,57814,5936
 Vodafone India,ISP,,unsafe,38266,6428
 Afrihost,ISP,,unsafe,37611,6492
 EBOX,ISP,signed + filtering,safe,1403,6501
+tzulo,cloud,,unsafe,11878,6586
 Aura Fiber,ISP,,unsafe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
 Axcelx,cloud,,unsafe,33083,7453
@@ -179,16 +180,22 @@ T-Mobile Thuis,ISP,signed,unsafe,50266,10402
 Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 University of North Carolina at Chapel Hill,ISP,,unsafe,36850,10541
+Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
 Millenicom,ISP,,unsafe,34296,10945
 NetCup,cloud,,unsafe,197540,11196
+Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
 A1 Hrvatska,ISP,,unsafe,29485,12837
 PROMAX,ISP,,unsafe,31423,13078
-Leaseweb,cloud,,unsafe,394380,13079
+Leaseweb USA-DAL-10,cloud,,unsafe,394380,13079
 CBN Broadband,ISP,started,unsafe,135478,13344
 Coextro,ISP,,unsafe,36445,13475
 ASERGO,cloud,signed + filtering,safe,30736,14105
+Leaseweb USA-MIA-11,cloud,,unsafe,393886,14245
 Web World Ireland,cloud,,unsafe,30900,14606
+volumedrive,cloud,filtering,partially safe,46664,15704
+MadeIT,cloud,filtering,partially safe,54455,16842
 Redder,ISP,signed + filtering,safe,33986,17220
+nobistech,cloud,,unsafe,15003,17342
 Avative Fiber,ISP,,unsafe,394752,19128
 Globalhost d.o.o.,cloud,,unsafe,200698,19806
 Green Mini host,cloud,signed + filtering,safe,205668,19323
@@ -197,3 +204,4 @@ IPXON,cloud,,unsafe,263812,24423
 Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
 Estoxy,cloud,,unsafe,208673,49189
+Terrahost,cloud,signed + filtering,safe,56655,59201
