@@ -75,6 +75,7 @@ Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
 CDN77,cloud,,unsafe,60068,725
 G-Core Labs,cloud,,unsafe,199524,759
+cyta,ISP,cloud,signed + filtering,safe,6866,763
 Telenet,ISP,,unsafe,6848,804
 NOS Portugal,ISP,,unsafe,2860,805
 Altibox,ISP,,unsafe,29695,816
