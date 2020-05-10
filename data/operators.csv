@@ -78,6 +78,7 @@ Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
 Videotron,ISP,,unsafe,5769,727
 G-Core Labs,cloud,,unsafe,199524,759
+cyta,ISP,signed + filtering,safe,6866,763
 CDN77,cloud,,unsafe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
 Telenet,ISP,,unsafe,6848,804
@@ -165,8 +166,9 @@ Global IP Exchange,cloud,,unsafe,47536,4117
 trabia network,cloud,signed,unsafe,43289,4133
 Packetexchange,cloud,,unsafe,58065,4136
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
+Packetexchange,cloud,,unsafe,58065,4171
 LeapSwitch Networks,cloud,filtering,partially safe,132335,4214
-Amanah Tech,cloud,,unsafe,32489,4279
+Amanah,cloud,,unsafe,32489,4279
 UNMETERED,cloud,,unsafe,54133,4340
 T-Mobile,ISP,,unsafe,21928,4793
 Vodafone UK,ISP,,unsafe,5378,4810
@@ -188,11 +190,11 @@ Istanbuldc Veri Merkezi,cloud,,unsafe,197328,6633
 Aura Fiber,ISP,,unsafe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
 Phase Layer Global Networks,cloud,,unsafe,51852,6959
-eSecureData,cloud,,unsafe,11831,7324
+eSecureData,cloud,signed,unsafe,11831,7324
 Axcelx,cloud,,unsafe,33083,7453
 VoiceHost,ISP,signed + filtering,safe,31472,7527
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
-GTHost US,cloud,,unsafe,63023,7915
+GTHost,cloud,filtering,partially safe,63023,7915
 Siamdata Communication,cloud,,unsafe,56309,7934
 Clearfly Communications,ISP,signed + filtering,safe,27400,7943
 Tech Futures,ISP,signed + filtering,safe,394256,8414
@@ -204,8 +206,7 @@ Plusnet,ISP,,unsafe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
 Free Mobile,ISP,,unsafe,51207,10266
 T-Mobile Netherlands,ISP,,unsafe,31615,10273
-Leaseweb USA Inc.,cloud,,unsafe,395954,10306
-TOPNET / tunisia,cloud,,unsafe,37705,10329
+Leaseweb USA-LAX-11,cloud,,unsafe,395954,10306
 TOPNET,ISP,,unsafe,37705,10329
 B2 Net Solutions,cloud,,unsafe,55286,10338
 Scaleway,cloud,signed + filtering,safe,12876,10343
@@ -214,13 +215,13 @@ T-Mobile Thuis,ISP,signed,unsafe,50266,10362
 Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 University of North Carolina at Chapel Hill,ISP,,unsafe,36850,10541
-LeaseWeb USA / SFO-12,cloud,,unsafe,7203,10618
-Leaseweb USA Inc.,cloud,,unsafe,396190,10900
+Leaseweb USA-SFO-12,cloud,,unsafe,7203,10618
+Leaseweb USA-SEA-10,cloud,,unsafe,396190,10900
 Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
 Millenicom,ISP,,unsafe,34296,10945
 NetCup,cloud,,unsafe,197540,11196
 Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
-LiveWorld Inc,cloud,,unsafe,19148,12777
+Leaseweb USA-PHX-11,cloud,,unsafe,19148,12777
 A1 Hrvatska,ISP,,unsafe,29485,12837
 PROMAX,ISP,,unsafe,31423,13078
 Leaseweb USA-DAL-10,cloud,,unsafe,394380,13079
@@ -244,7 +245,7 @@ MadeIT,cloud,filtering,partially safe,54455,16842
 Redder,ISP,signed + filtering,safe,33986,17220
 nobistech,cloud,,unsafe,15003,17342
 ENAHOST s.r.o.,cloud,,unsafe,201924,17977
-Dynamic ASP Inc.,cloud,,unsafe,36077,18778
+Dynamic Hosting,cloud,,unsafe,36077,18778
 Avative Fiber,ISP,,unsafe,394752,19128
 Green Mini host,cloud,signed + filtering,safe,205668,19229
 Globalhost d.o.o.,cloud,,unsafe,200698,19722

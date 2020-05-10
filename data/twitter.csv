@@ -42,8 +42,9 @@ asn,handle
 6799,otenet_gr
 6830,libertyglobal
 6848,Telenet
-6848,Telenet
+6866,cytacyprus
 7029,Windstream
+7203,Leaseweb
 7545,TPG_Telecom
 7922,Comcast
 7992,cogeco
@@ -66,6 +67,7 @@ asn,handle
 10139,LiveSmart
 10139,SMARTCares
 10838,getspectrum
+11831,eSecureData
 12271,getspectrum
 12322,free
 12330,MPYPalvelut
@@ -93,6 +95,7 @@ asn,handle
 29372,SFR
 16086,DNA_fi
 16302,SuomiCom
+19148,Leaseweb
 20001,getspectrum
 20904,Netplaza
 20115,getspectrum
@@ -126,12 +129,14 @@ asn,handle
 30900,webworldireland
 31615,tmobile_webcare
 31639,planeettanet
+32489,AmanahTech
 33083,Axcelx
 33182,hostdime
 33801,EdzcomOfficial
 33915,ZiggoWebcare
 35382,Capnova
 35612,eolo_it
+36077,dynamichosting
 36351,IBMcloud
 36352,ColoCrossing
 37611,Afrihost
@@ -177,6 +182,7 @@ asn,handle
 58065,packetexchange1
 60068,CDN77com
 62044,Zscaler_Inc_EMEA
+63023,GTHostCOM
 132335,leapswitch
 133480,intergridanz
 134067,unitiwireless
@@ -196,5 +202,7 @@ asn,handle
 393886,Leaseweb
 394256,Tech_Futures
 394380,Leaseweb
+395954,Leaseweb
+396190,Leaseweb
 396362,Leaseweb
 397373,h4ytec
