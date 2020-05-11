@@ -50,7 +50,7 @@ Virgin Media UK,ISP,,unsafe,5089,284
 Ensite Telecom,transit,signed + filtering,partially safe,28263,287
 Telenor,ISP,signed + filtering,safe,2119,288
 Globe Telecom,ISP,,unsafe,4775,305
-HKBN,ISP,,unsafe,9269,308
+HKBN,ISP,signed + filtering,safe,9269,308
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
 Vocus Group NZ,ISP,,unsafe,9790,370
 ACONET,transit,started,unsafe,1853,384
