@@ -62,6 +62,7 @@ MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 NFOrce,cloud,signed,unsafe,43350,459
 SuddenLink,ISP,,unsafe,19108,470
+Kyivstar,ISP,,unsafe,15895,477
 Cogeco,ISP,,unsafe,7992,497
 DNA Oyj,ISP,,unsafe,16086,523
 Elisa Finland,ISP,,unsafe,719,577
