@@ -149,7 +149,7 @@ Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
 Packetexchange,cloud,,unsafe,58065,4171
 LeapSwitch Networks,cloud,filtering,partially safe,132335,4261
 Amanah,cloud,,unsafe,32489,4279
-Via Radio Dourados,transit,safe,signed + filtering,61785,4697
+Via Radio Dourados,transit,signed + filtering,safe,61785,4697
 T-Mobile,ISP,,unsafe,21928,4793
 Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
