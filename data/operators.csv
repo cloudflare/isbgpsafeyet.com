@@ -29,7 +29,7 @@ Telekom Hungary,ISP,signed,unsafe,5483,59
 Windstream Communications,ISP,,unsafe,7029,64
 Swisscom,ISP,,unsafe,3303,69
 Cox Communications, ISP,,unsafe,22773,77
-G8 Networks,transit,signed + filtering,safe,28329,81
+G8,transit,signed + filtering,safe,28329,81
 SK Broadband,ISP,,unsafe,9318,85
 TPG,transit,,unsafe,7545,87
 Bell Canada,ISP,,unsafe,577,90
@@ -43,6 +43,7 @@ Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
 TIM,ISP,,unsafe,3269,176
 Rogers,ISP,,unsafe,812,198
+British Telecommunications,ISP,,unsafe,2856,199
 Sunrise Communications AG,ISP,,unsafe,6730,203
 Jaguar Network,ISP,signed + filtering,safe,30781,226
 Vodafone DE,ISP,,unsafe,3209,276
@@ -62,6 +63,7 @@ Hutchison Drei Austria,ISP,,unsafe,25255,451
 NFOrce,cloud,signed,unsafe,43350,459
 Psychz Networks,cloud,,unsafe,40676,463
 SuddenLink,ISP,,unsafe,19108,470
+Kyivstar,ISP,,unsafe,15895,477
 Cogeco,ISP,,unsafe,7992,497
 DNA Oyj,ISP,,unsafe,16086,523
 Elisa Finland,ISP,,unsafe,719,577
@@ -124,6 +126,7 @@ MEO Portugal,ISP,,unsafe,3243,2490
 UK-2 Limited,cloud,,unsafe,13213,2517
 Ovnicom,cloud,,unsafe,27796,2663
 K-NET,ISP,,unsafe,24904,2851
+APIK Media,cloud,signed + filtering,safe,58820,2982
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Triolan,ISP,filtering,partially safe,13188,3056
@@ -148,6 +151,7 @@ Packetexchange,cloud,,unsafe,58065,4136
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
 LeapSwitch Networks,cloud,filtering,partially safe,132335,4214
 Amanah,cloud,,unsafe,32489,4279
+Via Radio Dourados,transit,signed + filtering,safe,61785,4697
 T-Mobile,ISP,,unsafe,21928,4793
 Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
