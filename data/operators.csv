@@ -125,6 +125,7 @@ MEO Portugal,ISP,,unsafe,3243,2490
 UK-2 Limited,cloud,,unsafe,13213,2535
 K-NET,ISP,,unsafe,24904,2851
 GSL Networks,cloud,,unsafe,137409,2942
+APIK Media,cloud,signed + filtering,safe,58820,2982
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Triolan,ISP,filtering,partially safe,13188,3091
