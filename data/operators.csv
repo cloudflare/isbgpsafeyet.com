@@ -21,17 +21,27 @@ Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
 Comcast,ISP,,unsafe,7922,23
 TransTelecom,transit,,unsafe,20485,24
+Algar Telecom,transit,,unsafe,16735,26
 Liberty Global,transit,signed,partially safe,6830,29
 Telekom Hungary,ISP,signed,unsafe,5483,59
 Bell Canada,ISP,,unsafe,577,90
 Sprint,transit,,unsafe,1239,34
 KPN,transit,signed + filtering,safe,286,36
+Telefonica Vivo,transit,,unsafe,10429,39
+Internexa,transit,,unsafe,262589,40
+Oi,ISP,,unsafe,7738,45
 Core-Backbone,transit,signed + filtering,safe,33891,46
+Vivo GVT,ISP,,unsafe,18881,54
+Embratel,transit,,unsafe,4230,58
+Eletronet,transit,,unsafe,267613,63
 Windstream Communications,ISP,,unsafe,7029,64
+TIM Brasil,ISP,,unsafe,26615,67
 Swisscom,ISP,,unsafe,3303,69
+MOB Telecom,transit,,unsafe,28598,74
 Cox Communications, ISP,,unsafe,22773,77
 G8,transit,signed + filtering,safe,28329,85
 TPG,transit,,unsafe,7545,87
+Durand,transit,,unsafe,22356,88
 SK Broadband,ISP,,unsafe,9318,95
 Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
