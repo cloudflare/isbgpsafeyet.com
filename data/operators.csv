@@ -232,3 +232,28 @@ Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
 Estoxy,cloud,,unsafe,208673,49189
 Terrahost,cloud,signed + filtering,safe,56655,59201
+Globenet,transit,,unsafe,52320,32
+Angola Cables,transit,,unsafe,37468,42
+China Telecom,transit,,unsafe,4809,43
+Seabras,transit,,unsafe,13786,83
+Commcorp,transit,,unsafe,14840,122
+American Tower Brasil,transit,,unsafe,23106,154
+Vogel,transit,,unsafe,25933,166
+OpenX,transit,signed + filtering,safe,263444,173
+TELY,transit,,unsafe,53087,188
+Forte Telecom,transit,,unsafe,263009,246
+ITS Telecom,transit,,unsafe,28186,255
+Alta Rede,transit,,unsafe,28260,259
+Copel Telecom,transit,,unsafe,14868,333
+Wirelink,transit,,unsafe,28368,391
+TASCOM,transit,,unsafe,52871,415
+K2 Telecom,transit,,unsafe,53181,453
+Brisanet,isp,,unsafe,28126,710
+ASAP Telecom,transit,,unsafe,264144,749
+FasterNET,isp,,unsafe,28580,924
+UltraWave Telecom,isp,signed + filtering,safe,262659,1049
+SKY Brasil,isp,,unsafe,11338,2599
+Locaweb,cloud,,unsafe,27715,2752
+EdgeUno,cloud,,unsafe,7195,3160
+ProveNET,isp,,unsafe,263945,8791
+Claro Brasil,isp,,unsafe,28573,10205
