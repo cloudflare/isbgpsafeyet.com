@@ -23,13 +23,15 @@ Comcast,ISP,,unsafe,7922,23
 TransTelecom,transit,,unsafe,20485,24
 Algar Telecom,transit,,unsafe,16735,26
 Liberty Global,transit,signed,partially safe,6830,29
-Telekom Hungary,ISP,signed,unsafe,5483,59
-Bell Canada,ISP,,unsafe,577,90
+Globenet,transit,,unsafe,52320,32
 Sprint,transit,,unsafe,1239,34
 KPN,transit,signed + filtering,safe,286,36
 Telefonica Vivo,transit,,unsafe,10429,39
 Internexa,transit,,unsafe,262589,40
+Angola Cables,transit,,unsafe,37468,42
+China Telecom,transit,,unsafe,4809,43
 Oi,ISP,,unsafe,7738,45
+Telekom Hungary,ISP,signed,unsafe,5483,59
 Core-Backbone,transit,signed + filtering,safe,33891,46
 Vivo GVT,ISP,,unsafe,18881,54
 Embratel,transit,,unsafe,4230,58
@@ -39,23 +41,33 @@ TIM Brasil,ISP,,unsafe,26615,67
 Swisscom,ISP,,unsafe,3303,69
 MOB Telecom,transit,,unsafe,28598,74
 Cox Communications, ISP,,unsafe,22773,77
+Seabras,transit,,unsafe,13786,83
 G8,transit,signed + filtering,safe,28329,85
 TPG,transit,,unsafe,7545,87
 Durand,transit,,unsafe,22356,88
+Bell Canada,ISP,,unsafe,577,90
 SK Broadband,ISP,,unsafe,9318,95
 Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
+Commcorp,transit,,unsafe,14840,122
 Next Layer GmbH,transit,signed + filtering,safe,1764,126
 TurkTelekom,ISP,,unsafe,9121,127
 M247,cloud,,unsafe,9009,133
 A1 Telekom Austria,ISP,,unsafe,8447,135
 Wave Broadband,ISP,,unsafe,11404,136
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
+American Tower Brasil,transit,,unsafe,23106,154
+Vogel,transit,,unsafe,25933,166
+OpenX,transit,signed + filtering,safe,263444,173
 TIM,ISP,,unsafe,3269,176
+TELY,transit,,unsafe,53087,188
 Rogers,ISP,,unsafe,812,198
 British Telecommunications,ISP,,unsafe,2856,199
 Sunrise Communications AG,ISP,,unsafe,6730,203
 Jaguar Network,ISP,signed + filtering,safe,30781,226
+Forte Telecom,transit,,unsafe,263009,246
+ITS Telecom,transit,,unsafe,28186,255
+Alta Rede,transit,,unsafe,28260,259
 Vodafone DE,ISP,,unsafe,3209,276
 Virgin Media UK,ISP,,unsafe,5089,284
 Ensite Telecom,transit,signed + filtering,partially safe,28263,287
@@ -64,14 +76,18 @@ Vivacom,ISP,signed,partially safe,8866,304
 Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
+Copel Telecom,transit,,unsafe,14868,333
 Vocus Group NZ,ISP,,unsafe,9790,370
 ACONET,transit,started,unsafe,1853,384
+Wirelink,transit,,unsafe,28368,391
 SFR,ISP,,unsafe,15557,394
 RCN,ISP,signed + filtering,safe,6079,396
+TASCOM,transit,,unsafe,52871,415
 Devoli,ISP,signed + filtering,safe,45177,422
 Psychz Networks,cloud,,unsafe,40676,424
 MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
+K2 Telecom,transit,,unsafe,53181,453
 NFOrce,cloud,signed,unsafe,43350,459
 SuddenLink,ISP,,unsafe,19108,470
 Kyivstar,ISP,,unsafe,15895,477
@@ -84,9 +100,11 @@ Beltelecom,ISP,,unsafe,6697,658
 ViewQwest,ISP,signed + filtering,safe,18106,675
 Videotron,ISP,,unsafe,5769,677
 QuadraNet,cloud,,unsafe,8100,686
+Brisanet,isp,,unsafe,28126,710
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
 CDN77,cloud,,unsafe,60068,725
+ASAP Telecom,transit,,unsafe,264144,749
 G-Core Labs,cloud,,unsafe,199524,759
 cyta,ISP,signed + filtering,safe,6866,763
 Telenet,ISP,,unsafe,6848,804
@@ -98,12 +116,14 @@ NetCologne,ISP,,unsafe,8422,873
 Bredband2,ISP,signed + filtering,safe,29518,879
 Shentel,ISP,,unsafe,4922,903
 Proximus,ISP,,unsafe,5432,911
+FasterNET,isp,,unsafe,28580,924
 Turknet,ISP,,unsafe,12735,954
 Maxihost,cloud,,unsafe,262287,963
 iiNet Limited,ISP,,unsafe,4739,975
 Siminn,ISP,,unsafe,6677,982
 Ziggo,ISP,signed,unsafe,33915,1014
 IBM Cloud,cloud,,unsafe,36351,1042
+UltraWave Telecom,isp,signed + filtering,safe,262659,1049
 Selectel Ltd,cloud,,unsafe,49505,1081
 Total Server Solutions,cloud,,unsafe,46562,1139
 noris network AG,ISP,signed + filtering,safe,12337,1156
@@ -135,12 +155,15 @@ Aussie Broadband,ISP,started,unsafe,4764,2319
 Dhiraagu,ISP,signed + filtering,safe,7642,2357
 MEO Portugal,ISP,,unsafe,3243,2490
 UK-2 Limited,cloud,,unsafe,13213,2535
+SKY Brasil,isp,,unsafe,11338,2599
+Locaweb,cloud,,unsafe,27715,2752
 K-NET,ISP,,unsafe,24904,2851
 GSL Networks,cloud,,unsafe,137409,2942
 APIK Media,cloud,signed + filtering,safe,58820,2982
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Triolan,ISP,filtering,partially safe,13188,3091
+EdgeUno,cloud,,unsafe,7195,3160
 Networx Bulgaria,ISP,,unsafe,34569,3170
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 Ovnicom,cloud,,unsafe,27796,3322
@@ -188,6 +211,8 @@ GTHost,cloud,filtering,partially safe,63023,7915
 Clearfly Communications,ISP,signed + filtering,safe,27400,7985
 Tech Futures,ISP,signed + filtering,safe,394256,8414
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
+ProveNET,isp,,unsafe,263945,8791
+Claro Brasil,isp,,unsafe,28573,10205
 EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
@@ -232,28 +257,4 @@ Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
 Estoxy,cloud,,unsafe,208673,49189
 Terrahost,cloud,signed + filtering,safe,56655,59201
-Globenet,transit,,unsafe,52320,32
-Angola Cables,transit,,unsafe,37468,42
-China Telecom,transit,,unsafe,4809,43
-Seabras,transit,,unsafe,13786,83
-Commcorp,transit,,unsafe,14840,122
-American Tower Brasil,transit,,unsafe,23106,154
-Vogel,transit,,unsafe,25933,166
-OpenX,transit,signed + filtering,safe,263444,173
-TELY,transit,,unsafe,53087,188
-Forte Telecom,transit,,unsafe,263009,246
-ITS Telecom,transit,,unsafe,28186,255
-Alta Rede,transit,,unsafe,28260,259
-Copel Telecom,transit,,unsafe,14868,333
-Wirelink,transit,,unsafe,28368,391
-TASCOM,transit,,unsafe,52871,415
-K2 Telecom,transit,,unsafe,53181,453
-Brisanet,isp,,unsafe,28126,710
-ASAP Telecom,transit,,unsafe,264144,749
-FasterNET,isp,,unsafe,28580,924
-UltraWave Telecom,isp,signed + filtering,safe,262659,1049
-SKY Brasil,isp,,unsafe,11338,2599
-Locaweb,cloud,,unsafe,27715,2752
-EdgeUno,cloud,,unsafe,7195,3160
-ProveNET,isp,,unsafe,263945,8791
-Claro Brasil,isp,,unsafe,28573,10205
+
