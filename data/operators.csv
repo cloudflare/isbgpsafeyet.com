@@ -69,6 +69,7 @@ Forte Telecom,transit,,unsafe,263009,246
 ITS Telecom,transit,,unsafe,28186,255
 Alta Rede,transit,,unsafe,28260,259
 Vodafone DE,ISP,,unsafe,3209,276
+Acorus Networks,ISP,signed + filtering,safe,35280,277
 Virgin Media UK,ISP,,unsafe,5089,284
 Ensite Telecom,transit,signed + filtering,partially safe,28263,287
 Telenor,ISP,signed + filtering,safe,2119,288
