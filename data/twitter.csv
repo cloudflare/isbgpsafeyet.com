@@ -1,6 +1,7 @@
 asn,handle
 577,Bell
 701,VERIZON
+786,Jisc
 812,Rogers
 852,TELUS
 1221,Telstra
@@ -46,6 +47,7 @@ asn,handle
 7029,Windstream
 7203,Leaseweb
 7545,TPG_Telecom
+7642,Dhiraagu
 7922,Comcast
 7992,cogeco
 8100,QuadraNet
@@ -110,6 +112,7 @@ asn,handle
 24713,CGI_FI
 24751,JNTPSP
 24904,knetfr
+24940,Hetzner_Online
 25106,by_mts
 25178,PCCWGlobal
 25255,dreioesterreich
@@ -134,6 +137,7 @@ asn,handle
 33182,hostdime
 33801,EdzcomOfficial
 33915,ZiggoWebcare
+35280,Acorus Networks/Volterra
 35382,Capnova
 35612,eolo_it
 36077,dynamichosting
@@ -161,6 +165,7 @@ asn,handle
 47147,_ANEXIA
 47524,turksat
 47377,OrangeBeFR
+47800,lanetua
 48403,planeettanet
 49422,DNA_fi
 49505,selectel
