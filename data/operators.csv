@@ -210,6 +210,7 @@ Kaisanet Oy,ISP,,unsafe,13170,6773
 eSecureData,cloud,signed,unsafe,11831,7324
 Axcelx,cloud,,unsafe,33083,7453
 VoiceHost,ISP,signed + filtering,safe,31472,7527
+Neptune Networks,cloud,signed + filtering,safe,397143,7597
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 GTHost,cloud,filtering,partially safe,63023,7915
 Clearfly Communications,ISP,signed + filtering,safe,27400,7985
