@@ -234,6 +234,7 @@ Leaseweb USA-SFO-12,cloud,,unsafe,7203,10618
 Leaseweb USA-SEA-10,cloud,,unsafe,396190,10900
 Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
 Millenicom,ISP,,unsafe,34296,10945
+Trustpower,ISP,started,unsafe,55850,11135
 NetCup,cloud,,unsafe,197540,11196
 Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
 Leaseweb USA-PHX-11,cloud,,unsafe,19148,12777
@@ -261,4 +262,3 @@ Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
 Estoxy,cloud,,unsafe,208673,49189
 Terrahost,cloud,signed + filtering,safe,56655,59201
-Trustpower,ISP,started,unsafe,55850,11135
