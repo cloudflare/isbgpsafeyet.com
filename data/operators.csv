@@ -65,6 +65,7 @@ TELY,transit,,unsafe,53087,188
 Rogers,ISP,,unsafe,812,198
 British Telecommunications,ISP,,unsafe,2856,199
 Sunrise Communications AG,ISP,,unsafe,6730,203
+SIA Tet,ISP,,unsafe,12578,205
 Jaguar Network,ISP,signed + filtering,safe,30781,226
 Forte Telecom,transit,,unsafe,263009,246
 ITS Telecom,transit,,unsafe,28186,255
