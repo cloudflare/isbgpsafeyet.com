@@ -84,8 +84,7 @@ async function handleEvent(event) {
     // Allow headers to be altered
     const response = new Response(page.body, page)
 
-    // // Manually adding utf8 charset for now since kv-asset-handler
-    // has it fixed (https://git.io/Jf1aQ) but it's not yet in a release
+    // Manually adding utf8 charset for now until https://git.io/Jf1aQ is added to release
     const contentType = response.headers.get('content-type')
     if (contentType.startsWith('text')) {
       response.headers.set('content-type', contentType + '; charset=utf8')
