@@ -84,6 +84,13 @@ async function handleEvent(event) {
     // Allow headers to be altered
     const response = new Response(page.body, page)
 
+    // // Manually adding utf8 charset for now since kv-asset-handler
+    // has it fixed (https://git.io/Jf1aQ) but it's not yet in a release
+    const contentType = response.headers.get('content-type')
+    if (contentType.startsWith('text')) {
+      response.headers.set('content-type', contentType + '; charset=utf8')
+    }
+
     if (url.pathname === '/' || url.pathname === '/index.html') {
       response.headers.set('Cache-Control', 'public; max-age=60')
       response.headers.set('Content-Security-Policy', "default-src 'none'; script-src 'self' data: 'unsafe-inline'; object-src 'none'; style-src 'self' ui.components.workers.dev; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' invalid.rpki.cloudflare.com valid.rpki.cloudflare.com")
