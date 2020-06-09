@@ -17,6 +17,7 @@ asn,handle
 3209,vodafone_de
 3215,Orange_France
 3238,Alcom_ax
+3265,xs4all
 3269,tim_official
 3303,Swisscom
 3304,Scarlet
@@ -55,9 +56,11 @@ asn,handle
 8167,oi_oficial
 8220,Colt_Technology
 8236,DNA_fi
+8282,coloclue
 8412,magentatelekom
 8422,NetCologneNEWS
 8447,A1Telekom
+8455,as8455
 8559,KabelplusDK
 8881,versatel
 9009,WeAreM247
@@ -78,6 +81,7 @@ asn,handle
 12392,VOOetvous
 12430,vodafone_es
 12582,TeliaFinland
+12859,bitnl
 12876,as12876
 13170,KaisanetOy
 15424,ElisaOyj
@@ -102,6 +106,7 @@ asn,handle
 20904,Netplaza
 20115,getspectrum
 20931,ElisaOyj
+21221,infopact
 21334,Vodafone_HU
 21366,ElisaOyj
 21502,Numericable
@@ -182,6 +187,7 @@ asn,handle
 56478,HyperopticCS
 56655,TerraHost
 57066,Yleisradio
+57866,fusixnetworks
 57933,IRISnet_team
 58003,planeettanet
 58065,packetexchange1
