@@ -13,6 +13,7 @@ asn,handle
 1853,ziduniwien
 2018,Telenet
 2611,belnet_be
+2852,CESNET_cz
 2856,bt_uk
 3209,vodafone_de
 3215,Orange_France
@@ -33,6 +34,7 @@ asn,handle
 5432,proximus
 5483,telekomHU
 5488,proximus
+5610,O2_CZ
 5645,TekSavvyNetwork
 5769,videotron
 6128,Optimum
@@ -83,15 +85,17 @@ asn,handle
 12582,TeliaFinland
 12859,bitnl
 12876,as12876
-13170,KaisanetOy
-15424,ElisaOyj
-15496,AaltoUniversity
 12626,SFR
 12566,SFR
 12735,TurkNet
+13036,TMobile_CZE
+13170,KaisanetOy
 13213,UK2
+15424,ElisaOyj
+15496,AaltoUniversity
 15557,SFR
 15796,SaltMobile_Care
+16019,Vodafone_CZ
 16135,Turkcell
 16591,GoogleFiber
 17090,dbdesignllc
