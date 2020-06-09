@@ -159,6 +159,7 @@ Cloudflare,cloud,signed + filtering,safe,13335,1819
 xs4all,cloud,signed + filtering,safe,3265,1935
 Telefonica Peru,ISP,,unsafe,6147,2099
 MTS Belarus,ISP,,unsafe,25106,2127
+Netwerkvereniging ColoClue,ISP,signed + filtering,safe,8283,2152
 Microsoft,cloud,,unsafe,8075,2262
 Aussie Broadband,ISP,started,unsafe,4764,2319
 Dhiraagu,ISP,signed + filtering,safe,7642,2357
