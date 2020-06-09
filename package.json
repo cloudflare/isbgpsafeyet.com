@@ -7,7 +7,8 @@
     "build": "webpack-cli",
     "webpack-dev": "webpack-cli -w ",
     "wrangler-dev": "wrangler dev",
-    "start": "concurrently --kill-others-on-fail --names 'webpack ,wrangler' --prefix name --prefix-colors 'bgCyan.black,bgYellow.black' \"npm run webpack-dev\" \"npm run wrangler-dev\" \"while ! nc -z localhost 8787; do\nsleep 1\ndone; open 'http://localhost:8787'\""
+    "start": "concurrently --kill-others-on-fail --names 'webpack ,wrangler' --prefix name --prefix-colors 'bgCyan.black,bgYellow.black' \"npm run webpack-dev\" \"npm run wrangler-dev\" \"while ! nc -z localhost 8787; do\nsleep 1\ndone; open 'http://localhost:8787'\"",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,10 @@
     "concurrently": "^5.1.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.2",
+    "csv-parse": "^4.8.9",
     "focus-visible-polyfill": "^0.1.0",
     "html-webpack-plugin": "^4.2.0",
+    "jest": "^25.4.0",
     "lodash.pickby": "^4.6.0",
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
