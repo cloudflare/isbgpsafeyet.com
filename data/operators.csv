@@ -66,6 +66,7 @@ Rogers,ISP,,unsafe,812,198
 British Telecommunications,ISP,,unsafe,2856,199
 Sunrise Communications AG,ISP,,unsafe,6730,203
 SIA Tet,ISP,,unsafe,12578,205
+TDC,ISP,,unsafe,3292,222
 Jaguar Network,ISP,signed + filtering,safe,30781,226
 Forte Telecom,transit,,unsafe,263009,246
 ITS Telecom,transit,,unsafe,28186,255
@@ -225,6 +226,7 @@ EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
 Free Mobile,ISP,,unsafe,51207,10266
+Hi3G,ISP,,unsafe,44034,10272
 Leaseweb USA-LAX-11,cloud,,unsafe,395954,10306
 Scaleway,cloud,signed + filtering,safe,12876,10343
 T-Mobile Netherlands,ISP,,unsafe,31615,10346
