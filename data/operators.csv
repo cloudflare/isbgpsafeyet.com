@@ -68,6 +68,7 @@ Sunrise Communications AG,ISP,,unsafe,6730,203
 SIA Tet,ISP,,unsafe,12578,205
 TDC,ISP,,unsafe,3292,222
 Jaguar Network,ISP,signed + filtering,safe,30781,226
+PLDT,ISP,,unsafe,9299,230
 Forte Telecom,transit,,unsafe,263009,246
 ITS Telecom,transit,,unsafe,28186,255
 Alta Rede,transit,,unsafe,28260,259
@@ -243,6 +244,7 @@ Globe Telecom,ISP,,unsafe,132199,10444
 Three UK,ISP,,unsafe,206067,10502
 University of North Carolina at Chapel Hill,ISP,,unsafe,36850,10541
 Leaseweb USA-SFO-12,cloud,,unsafe,7203,10618
+Smart Communications,ISP,,unsafe,10139,10625
 Leaseweb USA-SEA-10,cloud,,unsafe,396190,10900
 Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
 Millenicom,ISP,,unsafe,34296,10945
