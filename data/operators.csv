@@ -12,7 +12,7 @@ Zayo,transit,,unsafe,6461,10
 Vodafone,transit,,unsafe,1273,11
 RETN,transit,,unsafe,9002,13
 Orange,transit,started,unsafe,5511,14
-Telstra Global,transit,signed,unsafe,4637,15
+Telstra Global,transit,signed,partially safe,4637,15
 Telefonica/Telxius,transit,,unsafe,12956,16
 SingTel,transit,,unsafe,7473,17
 PJSC RosTelecom,transit,,unsafe,12389,19
@@ -40,7 +40,7 @@ Windstream Communications,ISP,,unsafe,7029,64
 TIM Brasil,ISP,,unsafe,26615,67
 Swisscom,ISP,,unsafe,3303,69
 MOB Telecom,transit,,unsafe,28598,74
-Telstra Australia,transit,signed,unsafe,1221,76
+Telstra Australia,transit,signed,partially safe,1221,76
 Cox Communications, ISP,,unsafe,22773,77
 G8 Networks,transit,signed + filtering,safe,28329,81
 Seabras,transit,,unsafe,13786,83
