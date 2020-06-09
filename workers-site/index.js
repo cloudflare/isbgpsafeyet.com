@@ -38,6 +38,7 @@ const majorCloudASNs = [
   '15169', // Google
   '16509', // Amazon
   '12876', // Scaleway
+  '9009', // M247
 ]
 
 let MAJOR_OPERATORS_COUNT = 0
@@ -82,6 +83,12 @@ async function handleEvent(event) {
 
     // Allow headers to be altered
     const response = new Response(page.body, page)
+
+    // Manually adding utf8 charset for now until https://git.io/Jf1aQ is added to release
+    const contentType = response.headers.get('content-type')
+    if (contentType.startsWith('text')) {
+      response.headers.set('content-type', contentType + '; charset=utf8')
+    }
 
     if (url.pathname === '/' || url.pathname === '/index.html') {
       response.headers.set('Cache-Control', 'public; max-age=60')
