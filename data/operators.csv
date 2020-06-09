@@ -270,3 +270,4 @@ Pacswitch,ISP,filtering,partially safe,55536,27617
 NUTHOST,cloud,,unsafe,264649,36541
 Estoxy,cloud,,unsafe,208673,49189
 Terrahost,cloud,signed + filtering,safe,56655,59201
+Galaxy Broadband,ISP,started,unsafe,139879,59342
