@@ -189,6 +189,7 @@ O2 Broadband,ISP,,unsafe,35228,3501
 Vodafone Hungary,ISP,,unsafe,21334,3508
 FishNet,cloud,,unsafe,43317,3698
 ArgonHost,cloud,,unsafe,58477,3945
+Gis Telecom,ISP,signed + filtering,safe,264130,3947
 OVH,cloud,,unsafe,16276,3982
 Kingston Communications PLC,ISP,,unsafe,12390,4029
 WestHost,cloud,,unsafe,29854,4032
