@@ -75,6 +75,7 @@ Jaguar Network,ISP,signed + filtering,safe,30781,226
 PLDT,ISP,,unsafe,9299,230
 VNPT,cloud,,unsafe,45899,239
 Forte Telecom,transit,,unsafe,263009,246
+HiNet,ISP,signed + filtering,safe,3462,249
 ITS Telecom,transit,,unsafe,28186,255
 Alta Rede,transit,,unsafe,28260,259
 Vodafone DE,ISP,,unsafe,3209,276
@@ -113,6 +114,7 @@ KPN-Netco,ISP,signed,partially safe,1136,593
 KPN,netco,,unsafe,1136,593
 Volia,cloud,,unsafe,25229,595
 Spectrum,ISP,,unsafe,12271,607
+Taiwan Fixed Network,ISP,signed,unsafe,9924,613
 Beltelecom,ISP,,unsafe,6697,658
 ViewQwest,ISP,signed + filtering,safe,18106,675
 QuadraNet,cloud,,unsafe,8100,686
@@ -281,6 +283,7 @@ Free Mobile,ISP,,unsafe,51207,10266
 Hi3G,ISP,,unsafe,44034,10272
 T-Mobile Netherlands,ISP,,unsafe,31615,10273
 T-Mobile Netherlands,ISP,,unsafe,31615,10273
+Taiwan Mobile,ISP,signed,unsafe,24158,10284
 Leaseweb USA-LAX-11,cloud,,unsafe,395954,10306
 TOPNET,ISP,,unsafe,37705,10329
 B2 Net Solutions,cloud,,unsafe,55286,10338
