@@ -96,6 +96,7 @@ SFR,ISP,,unsafe,15557,394
 RCN,ISP,signed + filtering,safe,6079,396
 TASCOM,transit,,unsafe,52871,415
 Devoli,ISP,signed + filtering,safe,45177,422
+NTS Workspace AG,ISP,signed + filtering,safe,15576,432
 MNET,ISP,signed + filtering,safe,8767,440
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 K2 Telecom,transit,,unsafe,53181,453
