@@ -42,7 +42,7 @@ Swisscom,ISP,,unsafe,3303,69
 MOB Telecom,transit,,unsafe,28598,74
 Telstra Australia,transit,signed,partially safe,1221,76
 Cox Communications, ISP,,unsafe,22773,77
-G8 Networks,transit,signed + filtering,safe,28329,81
+G8,transit,signed + filtering,safe,28329,81
 Seabras,transit,,unsafe,13786,83
 SK Broadband,ISP,,unsafe,9318,85
 TPG,transit,,unsafe,7545,87
