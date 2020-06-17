@@ -123,7 +123,7 @@ eww ag,transit,,unsafe,21013,722
 Videotron,ISP,,unsafe,5769,727
 ASAP Telecom,transit,,unsafe,264144,749
 G-Core Labs,cloud,,unsafe,199524,759
-cyta,ISP,signed + filtering,safe,6866,763
+CYTA,ISP,signed + filtering,safe,6866,763
 Janet,ISP,,unsafe,786,781
 CDN77,cloud,,unsafe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
@@ -325,6 +325,5 @@ NUT HOST SRL,cloud,,unsafe,264649,36355
 SIA Bighost.lv,cloud,,unsafe,200709,42875
 Estoxy,cloud,,unsafe,208673,48965
 WhiteHat,ISP,signed + filtering,safe,51999,52250
-CYTA,cloud,safe,6866,763,59342
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Galaxy Broadband,ISP,started,unsafe,139879,59342
