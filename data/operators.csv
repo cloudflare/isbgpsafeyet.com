@@ -318,6 +318,7 @@ Kviknet DK,ISP,signed + filtering,safe,204151,21707
 HQserv,cloud,,unsafe,42994,22744
 TL Group,cloud,,unsafe,263812,24357
 Pacswitch,ISP,filtering,partially safe,55536,27546
+AnacondaWeb,ISP,signed + filtering,safe,265656,32585
 Asimia Damaskou,cloud,,unsafe,205053,36355
 iServer-AS,cloud,,unsafe,57127,36355
 NUT HOST SRL,cloud,,unsafe,264649,36355
