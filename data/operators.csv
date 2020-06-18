@@ -50,6 +50,7 @@ Durand,transit,,unsafe,22356,88
 Bell Canada,ISP,,unsafe,577,90
 Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
+GEANT,ISP,signed + filtering,safe,20965,103
 Commcorp,transit,,unsafe,14840,122
 Next Layer GmbH,transit,signed + filtering,safe,1764,126
 TurkTelekom,ISP,,unsafe,9121,127
