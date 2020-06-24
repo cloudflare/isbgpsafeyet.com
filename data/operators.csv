@@ -230,6 +230,7 @@ ACT Fibernet,ISP,signed + filtering,safe,18209,4821
 Numericable,ISP,,unsafe,21502,4825
 Get (Telia Norway),ISP,signed + filtering,safe,41164,4847
 H4Y,cloud,signed,unsafe,397373,4857
+MEO Portugal - Serviços de Comunicações e Multimédia,ISP,,unsafe,42863,4858
 Intergrid,cloud,,unsafe,133480,4965
 Mobilink,ISP,,unsafe,45669,5166
 INTERSPACE-MK,cloud,,unsafe,200899,5200
@@ -328,4 +329,3 @@ Estoxy,cloud,,unsafe,208673,48965
 WhiteHat,ISP,signed + filtering,safe,51999,52250
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Galaxy Broadband,ISP,started,unsafe,139879,59342
-MEO Portugal - Serviços de Comunicações e Multimédia,ISP,,unsafe,42863,59345
