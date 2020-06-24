@@ -68,6 +68,7 @@ TIM,ISP,,unsafe,3269,176
 TELY,transit,,unsafe,53087,188
 Rogers,ISP,,unsafe,812,198
 British Telecommunications,ISP,,unsafe,2856,199
+Vodafone España,ISP,,unsafe,12430,201
 Sunrise Communications AG,ISP,,unsafe,6730,203
 SIA Tet,ISP,,unsafe,12578,205
 TDC,ISP,,unsafe,3292,222
@@ -139,6 +140,7 @@ Vodafone IT,ISP,,unsafe,30722,890
 Shentel,ISP,,unsafe,4922,897
 Proximus,ISP,,unsafe,5432,911
 FasterNET,ISP,,unsafe,28580,924
+MásMóvil,ISP,,unsafe,15704,938
 Turknet,ISP,,unsafe,12735,954
 iiNet Limited,ISP,,unsafe,4739,975
 Siminn,ISP,,unsafe,6677,982
@@ -328,5 +330,3 @@ Estoxy,cloud,,unsafe,208673,48965
 WhiteHat,ISP,signed + filtering,safe,51999,52250
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Galaxy Broadband,ISP,started,unsafe,139879,59342
-MásMóvil,ISP,,unsafe,15704,59343
-Vodafone España,ISP,,unsafe,12430,59344
