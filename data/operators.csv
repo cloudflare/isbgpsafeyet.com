@@ -199,7 +199,7 @@ APIK Media,cloud,signed + filtering,safe,58820,2982
 Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Triolan,ISP,filtering,partially safe,13188,3056
-EdgeUno,cloud,,unsafe,7195,3160
+EdgeUno,cloud,signed + filtering,safe,3160
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 GSL Networks,cloud,,unsafe,137409,3277
 Amazon,cloud,signed,partially safe,16509,3444
