@@ -155,7 +155,7 @@ const initTesting = () => {
   const renderError = () => {
     render({
       type: 'error',
-      message: 'An error occured trying to conduct the test. Please try again.'
+      message: 'An error occurred trying to conduct the test. Please try again.'
     })
   }
 
