@@ -2,7 +2,7 @@
 
 Thank you for helping to keep the list up to date! We welcome contributions as well.
 
-This project is governed by Cloudflare's [code of conduct](https://github.com/cloudflare/.github/blob/master/CODE_OF_CONDUCT.md) and 
+This project is governed by Cloudflare's [code of conduct](https://github.com/cloudflare/.github/blob/master/CODE_OF_CONDUCT.md) and
 [guidelines](https://github.com/cloudflare/.github/blob/master/CONTRIBUTING.md).
 
 ## I have a question on RPKI or the website
@@ -17,6 +17,7 @@ if you haven't found the answer.
 * [twitter.csv](https://github.com/cloudflare/isbgpsafeyet.com/blob/master/data/twitter.csv) [[edit it online](https://github.com/cloudflare/isbgpsafeyet.com/edit/master/data/twitter.csv)]
 
 Follow the steps below:
+
 * when adding a new network:
   * the columns are:
     * name: most common name of a network (eg: AT&T)
@@ -27,7 +28,7 @@ Follow the steps below:
       _partially safe_ (not filtering all the peers),
       _safe_ (fully signed and fully filtering)
     * asn: autonomous system number (eg: 7018 for AT&T)
-    * rank: you can look them up using the ASN: https://asrank.caida.org/asns/3356
+    * rank: you can look them up using the ASN: [https://asrank.caida.org/asns/3356](https://asrank.caida.org/asns/3356)
   * sort the row by the rank
 * when adding a Twitter account, sort them by ASN
 
