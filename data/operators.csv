@@ -118,7 +118,7 @@ Spectrum,ISP,,unsafe,12271,607
 Taiwan Fixed Network,ISP,signed,unsafe,9924,613
 Beltelecom,ISP,,unsafe,6697,658
 ViewQwest,ISP,signed + filtering,safe,18106,675
-QuadraNet,cloud,,unsafe,8100,686
+QuadraNet,cloud,,safe,8100,686
 Brisanet,ISP,,unsafe,28126,710
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
