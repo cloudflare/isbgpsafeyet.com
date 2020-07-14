@@ -45,7 +45,7 @@ Cox Communications, ISP,,unsafe,22773,77
 G8,transit,signed + filtering,safe,28329,81
 Seabras,transit,,unsafe,13786,83
 SK Broadband,ISP,,unsafe,9318,85
-TPG,transit,,unsafe,7545,87
+TPG,ISP,,unsafe,7545,87
 Durand,transit,,unsafe,22356,88
 Bell Canada,ISP,,unsafe,577,90
 Optimum,ISP,,unsafe,6128,97
