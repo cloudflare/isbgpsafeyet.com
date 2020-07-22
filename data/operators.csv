@@ -128,7 +128,7 @@ ASAP Telecom,transit,,unsafe,264144,749
 G-Core Labs,cloud,,unsafe,199524,759
 CYTA,ISP,signed + filtering,safe,6866,763
 Janet,ISP,,unsafe,786,781
-CDN77,cloud,,unsafe,60068,782
+CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
 Telenet,ISP,,unsafe,6848,804
 NOS Portugal,ISP,,unsafe,2860,805
