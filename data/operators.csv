@@ -260,6 +260,7 @@ GTHost,cloud,filtering,partially safe,63023,7915
 Siamdata Communication,cloud,,unsafe,56309,7934
 Clearfly Communications,ISP,signed + filtering,safe,27400,7943
 Tech Futures,ISP,signed + filtering,safe,394256,8414
+DK Hostmaster,cloud,signed + filtering,safe,39839,8667
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 ProveNET,ISP,,unsafe,263945,8791
 Cloud9,cloud,,unsafe,57814,8983
