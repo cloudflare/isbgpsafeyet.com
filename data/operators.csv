@@ -38,7 +38,7 @@ Telekom Hungary,ISP,signed,unsafe,5483,59
 Eletronet,transit,,unsafe,267613,63
 Windstream Communications,ISP,,unsafe,7029,64
 TIM Brasil,ISP,,unsafe,26615,67
-Swisscom,ISP,signed,partially safe,3303,69
+Swisscom,ISP,signed + filtering,safe,3303,69
 MOB Telecom,transit,,unsafe,28598,74
 Telstra,transit,signed + filtering,safe,1221,76
 Cox Communications, ISP,,unsafe,22773,77
