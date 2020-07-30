@@ -314,6 +314,7 @@ ELSERVER S.R.L,cloud,,unsafe,52270,15568
 volumedrive,cloud,filtering,partially safe,46664,15704
 MadeIT,cloud,filtering,partially safe,54455,16842
 Redder,ISP,signed + filtering,safe,33986,17220
+Freethought Internet Limited,cloud,signed + filtering,safe,41000,17222
 nobistech,cloud,,unsafe,15003,17342
 ENAHOST s.r.o.,cloud,,unsafe,201924,17977
 Dynamic Hosting,cloud,,unsafe,36077,18778
@@ -335,4 +336,3 @@ WhiteHat,ISP,signed + filtering,safe,51999,52250
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Galaxy Broadband,ISP,started,unsafe,139879,59342
 Chilean Government Network (Red de Conectividad del Estado),ISP,signed + filtering,safe,17147,67265
-Freethought Internet Limited,cloud,signed + filtering,safe,41000,17222
