@@ -197,7 +197,7 @@ Locaweb,cloud,,unsafe,27715,2752
 ARTNET,cloud,,unsafe,197155,2836
 K-NET,ISP,,unsafe,24904,2851
 APIK Media,cloud,signed + filtering,safe,58820,2982
-Free SAS,ISP,signed + filtering,safe,12322,3007
+Free SAS,ISP,signed,unsafe,12322,3007
 Bouygues Telecom,ISP,,unsafe,5410,3011
 Triolan,ISP,filtering,partially safe,13188,3056
 EdgeUno,cloud,signed + filtering,safe,7195,3160
@@ -268,7 +268,7 @@ Claro Brasil,ISP,,unsafe,28573,10205
 EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
-Free Mobile,ISP,signed + filtering,safe,51207,10266
+Free Mobile,ISP,signed,unsafe,51207,10266
 Hi3G,ISP,,unsafe,44034,10272
 T-Mobile Netherlands,ISP,,unsafe,31615,10273
 Taiwan Mobile,ISP,signed,unsafe,24158,10284
