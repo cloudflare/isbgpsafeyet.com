@@ -66,7 +66,7 @@ Vogel,transit,,unsafe,25933,166
 OpenX,transit,signed + filtering,safe,263444,173
 TIM,ISP,,unsafe,3269,176
 TELY,transit,,unsafe,53087,188
-Rogers,ISP,,unsafe,812,198
+Rogers,ISP,signed,partially safe,812,198
 British Telecommunications,ISP,,unsafe,2856,199
 Vodafone España,ISP,,unsafe,12430,201
 Sunrise Communications AG,ISP,,unsafe,6730,203
