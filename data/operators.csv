@@ -28,10 +28,11 @@ Sprint,transit,,unsafe,1239,34
 KPN,transit,signed + filtering,safe,286,36
 Telefonica Vivo,transit,,unsafe,10429,39
 Internexa,transit,,unsafe,262589,40
+Core-Backbone,transit,signed + filtering,safe,33891,41
 Angola Cables,transit,,unsafe,37468,42
 China Telecom,transit,,unsafe,4809,43
 Oi,ISP,,unsafe,7738,45
-Core-Backbone,transit,signed + filtering,safe,33891,46
+Vocus Communications,transit,,unsafe,4826,46
 Vivo GVT,ISP,,unsafe,18881,54
 Embratel,transit,,unsafe,4230,58
 Telekom Hungary,ISP,signed,unsafe,5483,59
@@ -40,9 +41,10 @@ Windstream Communications,ISP,,unsafe,7029,64
 TIM Brasil,ISP,,unsafe,26615,67
 Swisscom,ISP,signed + filtering,safe,3303,69
 MOB Telecom,transit,,unsafe,28598,74
-Telstra,transit,signed + filtering,safe,1221,76
-Cox Communications, ISP,,unsafe,22773,77
+Cox Communications, ISP,,unsafe,22773,76
+Optus,transit,,unsafe,7474,77
 G8,transit,signed + filtering,safe,28329,81
+Telstra,transit,signed + filtering,safe,1221,82
 Seabras,transit,,unsafe,13786,83
 SK Broadband,ISP,,unsafe,9318,85
 TPG,ISP,,unsafe,7545,87
@@ -52,7 +54,7 @@ Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
 GEANT,ISP,signed + filtering,safe,20965,103
 Commcorp,transit,,unsafe,14840,122
-Next Layer GmbH,transit,signed + filtering,safe,1764,126
+Superloop Australia,transit,,unsafe,38195,126
 TurkTelekom,ISP,,unsafe,9121,127
 Shaw Communications,ISP,,unsafe,6327,128
 M247,cloud,,unsafe,9009,133
@@ -60,11 +62,13 @@ A1 Telekom Austria,ISP,,unsafe,8447,135
 Wave Broadband,ISP,,unsafe,11404,136
 W I X NET DO BRASIL,cloud,,unsafe,53013,137
 Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
+Next Layer GmbH,transit,signed + filtering,safe,1764,141
 Fastweb,ISP,,unsafe,12874,151
 American Tower Brasil,transit,,unsafe,23106,154
 Vogel,transit,,unsafe,25933,166
 OpenX,transit,signed + filtering,safe,263444,173
 TIM,ISP,,unsafe,3269,176
+AAPT Limited,ISP,,unsafe,2764,181
 TELY,transit,,unsafe,53087,188
 Rogers,ISP,,unsafe,812,198
 British Telecommunications,ISP,,unsafe,2856,199
@@ -220,6 +224,7 @@ WestHost,cloud,,unsafe,29854,4032
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 Atria Convergence,ISP,signed + filtering,safe,24309,4053
 ALMOUROLTEC SERVICOS DE INFORMATICA E INTERNET LDA,cloud,,unsafe,24768,4105
+Optus Microplex,ISP,,unsafe,4804,4111
 Global IP Exchange,cloud,,unsafe,47536,4117
 trabia network,cloud,signed,unsafe,43289,4133
 Packetexchange,cloud,,unsafe,58065,4136
