@@ -30,6 +30,7 @@ asn,handle
 2047,roche
 2611,belnet_be
 2612,Sitasys
+2764,AAPTAustralia
 2852,CESNET_cz
 2856,bt_uk
 3209,vodafone_de
@@ -208,6 +209,7 @@ asn,handle
 36850,unc
 37611,Afrihost
 37705,Topnet_FSI
+38195,Superloopnet
 39651,ComHemAB
 39699,LouneaOy
 39857,AaltoUniversity
