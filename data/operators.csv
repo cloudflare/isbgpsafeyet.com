@@ -54,7 +54,7 @@ Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
 GEANT,ISP,signed + filtering,safe,20965,103
 Commcorp,transit,,unsafe,14840,122
-Superloop Australia,transit,filtering,safe,38195,126
+Superloop Australia,transit,,unsafe,38195,126
 TurkTelekom,ISP,,unsafe,9121,127
 Shaw Communications,ISP,,unsafe,6327,128
 M247,cloud,,unsafe,9009,133
