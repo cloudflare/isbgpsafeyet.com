@@ -342,3 +342,6 @@ WhiteHat,ISP,signed + filtering,safe,51999,52250
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Galaxy Broadband,ISP,started,unsafe,139879,59342
 Chilean Government Network (Red de Conectividad del Estado),ISP,signed + filtering,safe,17147,67265
+Silknet, ISP, signed, unsafe, 35805, 543
+Silknet, ISP, signed, unsafe, 15491, 13467
+Silknet, ISP, signed, unsafe, 42082, 18768
