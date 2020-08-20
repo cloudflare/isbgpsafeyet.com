@@ -114,6 +114,7 @@ Delta Telecom,cloud,,unsafe,29049,471
 Kyivstar,ISP,,unsafe,15895,477
 Cogeco,ISP,,unsafe,7992,497
 DNA Oyj,ISP,,unsafe,16086,523
+Silknet,ISP,signed,unsafe,35805,543
 NIB India,ISP,,unsafe,9829,576
 Elisa Finland,ISP,,unsafe,719,577
 Reliance Jio,ISP,,unsafe,55836,584
@@ -304,6 +305,7 @@ Leaseweb USA-DAL-10,cloud,,unsafe,394380,13079
 CBN Broadband,ISP,started,unsafe,135478,13267
 Lanet Network,ISP,,unsafe,47800,13295
 EHOSTIDC,cloud,,unsafe,45382,13385
+Silknet,ISP,signed,unsafe,15491,13467
 Coextro,ISP,,unsafe,36445,13475
 Aktsiaselts WaveCom,cloud,,unsafe,34702,13703
 ThorDC,cloud,,unsafe,50613,13743
@@ -323,6 +325,7 @@ Redder,ISP,signed + filtering,safe,33986,17220
 Freethought Internet Limited,cloud,signed + filtering,safe,41000,17222
 nobistech,cloud,,unsafe,15003,17342
 ENAHOST s.r.o.,cloud,,unsafe,201924,17977
+Silknet,ISP,signed,unsafe,42082,18768
 Dynamic Hosting,cloud,,unsafe,36077,18778
 Avative Fiber,ISP,,unsafe,394752,19128
 Green Mini host,cloud,signed + filtering,safe,205668,19229
