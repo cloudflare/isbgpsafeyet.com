@@ -242,6 +242,7 @@ Get (Telia Norway),ISP,signed + filtering,safe,41164,4847
 H4Y,cloud,signed,unsafe,397373,4857
 MEO Portugal - Serviços de Comunicações e Multimédia,ISP,,unsafe,42863,4858
 Intergrid,cloud,,unsafe,133480,4965
+Netflix,cloud,signed + filtering,safe,2906,5082
 Mobilink,ISP,,unsafe,45669,5166
 INTERSPACE-MK,cloud,,unsafe,200899,5200
 Monkeybrains,ISP,,unsafe,32329,5215
