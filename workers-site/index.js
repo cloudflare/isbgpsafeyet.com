@@ -39,6 +39,7 @@ const majorCloudASNs = [
   '16509', // Amazon
   '12876', // Scaleway
   '9009', // M247
+  '2906', // Netflix
 ]
 
 let MAJOR_OPERATORS_COUNT = 0
