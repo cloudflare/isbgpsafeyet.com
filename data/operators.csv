@@ -159,7 +159,8 @@ Selectel Ltd,cloud,,unsafe,49505,1080
 Total Server Solutions,cloud,,unsafe,46562,1139
 noris network AG,ISP,signed + filtering,safe,12337,1156
 IP Converge Data Services Inc.,cloud,,unsafe,23930,1193
-Cablenet Cyprus,ISP,signed + filtering,safe,35432,1224
+Cablenet Cyprus,ISP,signed + filtering,safe,35432,1219
+Digital Energy Technologies Limited (Global),cloud,signed + filtering peers,partially safe,61317,1224
 xneelo,cloud,,unsafe,37153,1232
 HotNet Internet Services,ISP,,unsafe,12849,1257
 Pakistan Telecom Company Limited,ISP,,unsafe,45595,1259
@@ -188,7 +189,6 @@ xs4all,cloud,signed + filtering,safe,3265,1937
 Worldstream,ISP,signed,partially safe,49981,2000
 CSL IDC,cloud,,unsafe,9891,2007
 Telefonica Peru,ISP,,unsafe,6147,2099
-Digital Energy Technologies Limited (Global),cloud,,unsafe,61317,2105
 MTS Belarus,ISP,,unsafe,25106,2127
 TheGigabit,cloud,,unsafe,55720,2147
 Netwerkvereniging ColoClue,ISP,signed + filtering,safe,8283,2152
