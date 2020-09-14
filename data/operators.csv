@@ -122,6 +122,7 @@ KPN-Netco,ISP,signed,partially safe,1136,593
 Volia,cloud,,unsafe,25229,595
 Spectrum,ISP,,unsafe,12271,607
 Taiwan Fixed Network,ISP,signed,unsafe,9924,613
+HOPUS,transit,signed + filtering,safe,44530,640
 Beltelecom,ISP,,unsafe,6697,658
 Persis Telecom,ISP,signed + filtering,safe,14282,671
 ViewQwest,ISP,signed + filtering,safe,18106,675
