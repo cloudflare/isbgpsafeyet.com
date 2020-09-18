@@ -41,7 +41,7 @@ Windstream Communications,ISP,,unsafe,7029,64
 TIM Brasil,ISP,,unsafe,26615,67
 Swisscom,ISP,signed + filtering,safe,3303,69
 MOB Telecom,transit,,unsafe,28598,74
-Cox Communications, ISP,,unsafe,22773,76
+Cox Communications, ISP,,unsafe,22773,78
 Optus,transit,,unsafe,7474,77
 G8,transit,signed + filtering,safe,28329,81
 Telstra,transit,signed + filtering,safe,1221,82
