@@ -138,7 +138,7 @@ Janet,ISP,,unsafe,786,781
 CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
 Telenet,ISP,,unsafe,6848,804
-NOS Portugal,ISP,,unsafe,2860,805
+NOS Portugal,ISP,signed,partially safe,2860,805
 Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 Altibox,ISP,,unsafe,29695,872
