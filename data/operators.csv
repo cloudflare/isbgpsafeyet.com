@@ -19,7 +19,7 @@ PJSC RosTelecom,transit,,unsafe,12389,19
 Deutsche Telekom,ISP,started,unsafe,3320,20
 Verizon,ISP,,unsafe,701,21
 AT&T,ISP,signed + filtering peers only,partially safe,7018,22
-Comcast,ISP,,unsafe,7922,23
+Comcast,ISP,started,unsafe,7922,23
 TransTelecom,transit,,unsafe,20485,24
 Algar Telecom,transit,,unsafe,16735,26
 Liberty Global,transit,signed,partially safe,6830,29
