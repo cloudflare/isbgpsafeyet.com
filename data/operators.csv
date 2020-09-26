@@ -82,7 +82,7 @@ PLDT,ISP,,unsafe,9299,230
 VNPT,cloud,,unsafe,45899,239
 Forte Telecom,transit,,unsafe,263009,246
 HiNet,ISP,signed + filtering,safe,3462,249
-ITS Telecom,transit,,unsafe,28186,255
+ITS Telecom,transit,signed + filtering,safe,28186,255
 Alta Rede,transit,,unsafe,28260,259
 Vodafone DE,ISP,,unsafe,3209,276
 Acorus Networks,ISP,signed + filtering,safe,35280,277
