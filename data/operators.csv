@@ -258,7 +258,7 @@ EBOX,ISP,signed + filtering,safe,1403,6501
 tzulo,cloud,,unsafe,11878,6586
 Istanbuldc Veri Merkezi,cloud,,unsafe,197328,6633
 Sprint Personal Communications Systems,transit,,unsafe,10507,6634
-Aura Fiber,ISP,,unsafe,204274,6735
+Aura Fiber,ISP,,safe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
 Phase Layer Global Networks,cloud,,unsafe,51852,6959
 eSecureData,cloud,signed,unsafe,11831,7324
