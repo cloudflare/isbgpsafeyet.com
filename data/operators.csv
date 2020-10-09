@@ -139,7 +139,7 @@ Janet,ISP,,unsafe,786,781
 CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
 Telenet,ISP,,unsafe,6848,804
-NOS Portugal,ISP,,unsafe,2860,805
+NOS COMUNICACOES,ISP,signed,unsafe,2860,836
 Obenetwork,ISP,signed + filtering,safe,197595,833
 2degrees,ISP,,unsafe,23655,856
 Altibox,ISP,,unsafe,29695,872
@@ -302,6 +302,7 @@ Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
 Millenicom,ISP,,unsafe,34296,10945
 Trustpower,ISP,started,unsafe,55850,11135
 NetCup,cloud,,unsafe,197540,11196
+NOS MADEIRA COMUNICACOES,ISP,,unsafe,15457,11772
 Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
 Leaseweb USA-PHX-11,cloud,,unsafe,19148,12777
 A1 Hrvatska,ISP,,unsafe,29485,12837
@@ -313,6 +314,7 @@ Lanet Network,ISP,,unsafe,47800,13295
 EHOSTIDC,cloud,,unsafe,45382,13385
 Silknet,ISP,signed,unsafe,15491,13467
 Coextro,ISP,,unsafe,36445,13475
+NOS ACORES COMUNICACOES,ISP,signed,unsafe,42580,13584
 Aktsiaselts WaveCom,cloud,,unsafe,34702,13703
 ThorDC,cloud,,unsafe,50613,13743
 Inter Connects Inc,cloud,,safe,46805,14046
