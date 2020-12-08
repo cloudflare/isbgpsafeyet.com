@@ -10,7 +10,7 @@ TATA,transit,filtering peers only,partially safe,6453,8
 PCCW,transit,filtering peers only,partially safe,3491,9
 Zayo,transit,,unsafe,6461,10
 Vodafone,transit,,unsafe,1273,11
-RETN,transit,,unsafe,9002,13
+RETN,transit,partially signed + filtering,safe,9002,13
 Orange,transit,started,unsafe,5511,14
 Telstra International,transit,signed,partially safe,4637,15
 Telefonica/Telxius,transit,,unsafe,12956,16
