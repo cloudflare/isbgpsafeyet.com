@@ -183,6 +183,7 @@ A3 Sverige,ISP,,unsafe,45011,1644
 Deutsche Glasfaser,ISP,,unsafe,60294,1681
 Google,cloud,signed,partially safe,15169,1714
 Vodafone Portugal,ISP,,unsafe,12353,1725
+Belnet,ISP,signed + filtering,safe,2611,1726
 TekSavvy,ISP,,unsafe,5645,1727
 SkyCable,ISP,,unsafe,23944,1746
 A2B Internet,ISP,signed + filtering,safe,51088,1755
