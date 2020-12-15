@@ -17,11 +17,11 @@
     <meta property="og:description" content="On the Internet, network devices exchange routes via a protocol called BGP (Border Gateway Protocol). Unfortunately, issues with BGP have led to malicious actors being able to hijack and misconfigure devices leading to security problems which have the potential to cause widespread problems. BGP security can be greatly improved by using technologies such as RPKI to sign Internet routes. This page attempts to track the progress of major Internet players (ISPs, transit operators, and content providers) in their progress to adopt RPKI and other technologies.">
     <meta property="og:url" content="https://isbgpsafeyet.com">
 
-    <meta property="og:image" content="https://isbgpsafeyet.com/media/open-graph.png">
-    <meta property="og:video" content="https://isbgpsafeyet.com/media/open-graph.mp4">
-    <meta property="og:video:type" content="video/mp4" />
-    <meta property="og:video:width" content="1948" />
-    <meta property="og:video:height" content="1180" />
+    <meta property="og:image" content="https://isbgpsafeyet.com/resources/open-graph.png">
+    <meta property="og:video" content="https://isbgpsafeyet.com/resources/open-graph.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1948">
+    <meta property="og:video:height" content="1180">
 
     <meta name="twitter:site" content="@Cloudflare">
     <meta name="twitter:creator" content="@Cloudflare">
@@ -71,6 +71,28 @@
         <h2 class="Markdown--h2-as-h3">Latest updates</h2>
 
         <ul>
+          <li>December 1, 2020 - RETN (AS9002) has deployed RPKI-based BGP route origin validation. (<a href="https://twitter.com/RETNnet/status/1333735456408793089">source</a>)
+          <li>September 14, 2020 - HOPUS (AS44530) is now filtering all eBGP sessions using RPKI ROV. (<a href="https://twitter.com/afenioux/status/1305430383345971201">source</a>)
+          <li>September 2, 2020 - Netflix has deployed RPKI globally and is dropping invalids prefixes. (<a href="https://openconnect.zendesk.com/hc/en-us/articles/360039673152">source</a>)
+          <li>September 1, 2020 - Swisscom is fully dropping RPKI invalids since end of July. (<a href="https://twitter.com/swisscom_csirt/status/1300666695959244800">source</a>)
+          <li>August 26, 2020 - Google is currently deploying RPKI. The network operator signed more than 90% of its prefixes.
+          <li>August 7, 2020 - HKIX, an Internet Exchange in Hong Kong deployed RPKI validation on all its member sessions and is now dropping RPKI invalids on their route servers. (<a href="https://www.hkix.net/hkix/route-policy.htm">source</a>)
+          <li>July 24, 2020 - Telstra AS1221, Australia’s leading telecommunications and technology company, now filters RPKI invalids. (<a href="http://lists.ausnog.net/pipermail/ausnog/2020-July/044367.html">source</a>)
+          <li>July 13, 2020 - Chilean Government Network (Red de Conectividad del Estado) at AS17147 succesfully deployed RPKI filtering and drops invalid prefixes. (<a href="https://twitter.com/BenjaMatias/status/1278565243136942081">source</a>)
+          <li>July 6, 2020 – GR-IX, the Greek Internet Exchange, is now dropping RPKI invalids on their route servers (<a href="https://www.ripe.net/ripe/mail/archives/connect-wg/2020-July/000109.html">source</a>)
+          <li>June 16, 2020 – Hurricane Electric AS6939, a major transit provider deployed RPKI filters (<a href="https://mailman.nanog.org/pipermail/nanog/2020-June/108277.html">source</a>)
+          <li>June 16, 2020 - AnacondaWeb AS265656, an ISP and hosting provider from Temuco (Chile), successfully deployed RPKI signing and filtering. (<a href="https://twitter.com/pcolomes/status/1271336495400574977">source</a>)
+          <li>June 5, 2020 – Cogent AS174, the 3rd largest transit provider, now filters all RPKI invalids
+          <li>June 1, 2020 – Mobicom, the main transit provider in Mongolia, deployed RPKI (<a href="https://twitter.com/Ulsbold1125/status/1266435596194418689">source</a>)
+          <li>May 18, 2020 – Dhiraagu, a Maldivian ISP deployed RPKI (<a href="https://twitter.com/isseykun/status/1261758917467668481">source</a>)
+          <li>May 10, 2020 – Terrahost, a Norwegian dedicated and cloud server provider deployed RPKI (<a href="https://twitter.com/TerraHost/status/1259311449073168384">source</a>)
+          <li>May 7, 2020 – LINX, an Internet Exchange based in the United Kingdom drops RPKI invalids (<a href="https://twitter.com/JobSnijders/status/1258546615838621696">source</a>)
+          <li>May 7, 2020 – MIXP, an Internet Exchange based in Mauritius signed and drops RPKI invalids (<a href="https://twitter.com/IXP_Mu/status/1258414385480863744">source</a>)
+          <li>May 6, 2020 – Asergo, a Danish cloud provider deployed RPKI (<a href="https://twitter.com/asergogroup/status/1258377169526546432">source</a>)
+          <li>May 5, 2020 – GTT is now filtering all their sessions (<a href="https://twitter.com/JobSnijders/status/1257737268565073921">source</a>)
+          <li>May 5, 2020 - WorldStream, a cloud provider is working on RPKI implementation (<a href="https://twitter.com/WorldstreamBV/status/1257670396461166593">source</a>)
+          <li>May 4, 2020 – Cablenet Cyprus deployed RPKI
+          <li>April 27, 2020 – Acorus/Volterra is deploying RPKI (<a href="https://twitter.com/CorsoAlexandre/status/1254772078588227586">source</a>)
           <li>April 24, 2020 – Kapsi, a Finnish ISP, deployed RPKI (<a href="https://twitter.com/atonkyra/status/1253609926221496322">source</a>)
           <li>April 24, 2020 – Cyta, a Cyprus ISP, deployed RPKI
           <li>April 23, 2020 – Jaguar Networks, deployed RPKI (<a href="https://twitter.com/JDescoux/status/1253344721201696768">source</a>)
@@ -118,7 +140,7 @@
     <div class="Column">
       <div class="BGPSafetyTable---footer">
         <div class="Markdown">
-          <p>Last updated April 24, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/tree/master/data">Edit on GitHub</a></p>
+          <p>Last updated July 22, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/tree/master/data">Edit on GitHub</a></p>
         </div>
       </div>
 
@@ -234,7 +256,7 @@
 
           <p>Enter <a href="https://blog.cloudflare.com/rpki/">Resource Public Key Infrastructure (RPKI)</a>, a security framework method that associates a route with an autonomous system. It gets a little technical, but the basic idea is that RPKI uses cryptography to provide nodes with a way of doing this validation.</p>
 
-          <p>With RPKI enabled, let’s see what happens to packets after an <em>attemped</em> BGP hijack. Click “<strong>Attempt to hijack</strong>” to visualize how RPKI allows the network to protect itself by invalidating the malicious routes:</p>
+          <p>With RPKI enabled, let’s see what happens to packets after an <em>attempted</em> BGP hijack. Click “<strong>Attempt to hijack</strong>” to visualize how RPKI allows the network to protect itself by invalidating the malicious routes:</p>
         </div>
       </div>
 

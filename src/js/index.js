@@ -133,11 +133,15 @@ const initTesting = () => {
   }
 
   const renderSuccess = data => {
-    render({
-      type: 'success',
-      message: `Your ISP${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`,
-      tweet: `My Internet provider${ getISPInfo(data, true) }implements BGP safely! Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
-    })
+    if (data.blackholed) {
+      renderFailure(data)
+    } else {
+      render({
+        type: 'success',
+        message: `Your ISP${ getISPInfo(data) }implements BGP safely. It correctly drops invalid prefixes.`,
+        tweet: `My Internet provider${ getISPInfo(data, true) }implements BGP safely! Check out https://isbgpsafeyet.com to see if your ISP implements BGP in a safe way or if it leaves the Internet vulnerable to malicious route hijacks.`
+      })
+    }
   }
 
   const renderFailure = data => {
@@ -151,7 +155,7 @@ const initTesting = () => {
   const renderError = () => {
     render({
       type: 'error',
-      message: 'An error occured trying to conduct the test. Please try again.'
+      message: 'An error occurred trying to conduct the test. Please try again.'
     })
   }
 
