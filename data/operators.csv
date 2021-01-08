@@ -24,7 +24,7 @@ TransTelecom,transit,,unsafe,20485,24
 Algar Telecom,transit,,unsafe,16735,26
 Liberty Global,transit,signed + filtering peers only,partially safe,6830,29
 Globenet,transit,,unsafe,52320,32
-Sprint,transit,,unsafe,1239,34
+Sprint,transit,filtering peers,partially safe,1239,34
 KPN,transit,signed + filtering,safe,286,36
 Telefonica Vivo,transit,,unsafe,10429,39
 Internexa,transit,,unsafe,262589,40
