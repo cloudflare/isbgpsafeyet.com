@@ -216,12 +216,12 @@ Triolan,ISP,filtering,partially safe,13188,3056
 EdgeUno,cloud,signed + filtering,safe,7195,3160
 Oy Creanova Hosting Solutions Ltd,cloud,,unsafe,51765,3209
 GSL Networks,cloud,,unsafe,137409,3277
-Amazon,cloud,signed + filtering,safe,16509,3444
 Digi,ISP,,unsafe,20845,3473
 EOLO,ISP,signed + filtering,safe,35612,3478
 O2 Broadband,ISP,,unsafe,35228,3501
 Vodafone Hungary,ISP,,unsafe,21334,3508
 Networx Bulgaria,ISP,,unsafe,34569,3603
+Amazon,cloud,signed + filtering,safe,16509,3626
 FishNet,cloud,,unsafe,43317,3679
 ArgonHost,cloud,,unsafe,58477,3907
 Gis Telecom,ISP,signed + filtering,safe,264130,3924
