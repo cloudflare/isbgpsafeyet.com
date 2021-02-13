@@ -57,6 +57,7 @@ GEANT,ISP,signed + filtering,safe,20965,103
 Commcorp,transit,,unsafe,14840,122
 Softdados Telecom,transit,signed + filtering,safe,52873,124
 Superloop Australia,transit,,unsafe,38195,126
+British Telecommunications PLC,ISP. unsafe, 5400, 127
 TurkTelekom,ISP,,unsafe,9121,127
 Shaw Communications,ISP,,unsafe,6327,128
 M247,cloud,,unsafe,9009,133
