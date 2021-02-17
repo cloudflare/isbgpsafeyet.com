@@ -97,6 +97,7 @@ Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
 Biznet Networks,ISP,signed + filtering,safe,17451,324
+Claro Argentina,ISP,,unsafe,11664,330
 Copel Telecom,transit,,unsafe,14868,333
 Vocus Group NZ,ISP,,unsafe,9790,370
 ACONET,transit,started,unsafe,1853,384
@@ -360,4 +361,3 @@ WhiteHat,ISP,signed + filtering,safe,51999,52250
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Galaxy Broadband,ISP,started,unsafe,139879,59342
 Chilean Government Network (Red de Conectividad del Estado),ISP,signed + filtering,safe,17147,67265
-Claro Argentina,ISP,,unsafe,11664,67285
