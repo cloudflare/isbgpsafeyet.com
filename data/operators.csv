@@ -183,7 +183,6 @@ CESNET,ISP,signed + filtering,safe,2852,1638
 A3 Sverige,ISP,,unsafe,45011,1644
 Deutsche Glasfaser,ISP,,unsafe,60294,1681
 Google,cloud,signed,partially safe,15169,1714
-HEAnet,ISP,signed + filtering,safe,1213,1724
 Vodafone Portugal,ISP,,unsafe,12353,1725
 Belnet,ISP,signed + filtering,safe,2611,1726
 TekSavvy,ISP,,unsafe,5645,1727
@@ -239,6 +238,7 @@ trabia network,cloud,signed,unsafe,43289,4133
 Packetexchange,cloud,,unsafe,58065,4136
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
 LeapSwitch Networks,cloud,filtering,partially safe,132335,4214
+HEAnet,ISP,signed + filtering,safe,1213,4219
 Amanah,cloud,,unsafe,32489,4279
 UNMETERED,cloud,,unsafe,54133,4340
 Via Radio Dourados,transit,signed + filtering,safe,61785,4697
