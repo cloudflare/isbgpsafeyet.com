@@ -78,7 +78,7 @@ Vodafone España,ISP,,unsafe,12430,201
 Sunrise Communications AG,ISP,,unsafe,6730,203
 SIA Tet,ISP,,unsafe,12578,205
 Vocus Retail,ISP,signed + filtering,safe,9443,210
-TDC,ISP,,unsafe,3292,222
+TDC,ISP,signed+filtering,safe,3292,286
 Jaguar Network,ISP,signed + filtering,safe,30781,226
 PLDT,ISP,,unsafe,9299,230
 VNPT,cloud,,unsafe,45899,239
