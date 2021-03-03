@@ -78,7 +78,7 @@ Vodafone España,ISP,,unsafe,12430,201
 Sunrise Communications AG,ISP,,unsafe,6730,203
 SIA Tet,ISP,,unsafe,12578,205
 Vocus Retail,ISP,signed + filtering,safe,9443,210
-TDC,ISP,,unsafe,3292,222
+TDC,ISP,signed+filtering,safe,3292,286
 Jaguar Network,ISP,signed + filtering,safe,30781,226
 PLDT,ISP,,unsafe,9299,230
 VNPT,cloud,,unsafe,45899,239
@@ -97,6 +97,7 @@ Globe Telecom,ISP,,unsafe,4775,305
 HKBN,ISP,,unsafe,9269,308
 ANEXIA Internetdienstleistungs GmbH,transit,signed + filtering,safe,47147,323
 Biznet Networks,ISP,signed + filtering,safe,17451,324
+Claro Argentina,ISP,,unsafe,11664,330
 Copel Telecom,transit,,unsafe,14868,333
 Vocus Group NZ,ISP,,unsafe,9790,370
 ACONET,transit,started,unsafe,1853,384
@@ -238,6 +239,7 @@ trabia network,cloud,signed,unsafe,43289,4133
 Packetexchange,cloud,,unsafe,58065,4136
 Alands Telekommunikation Ab,ISP,,unsafe,3238,4149
 LeapSwitch Networks,cloud,filtering,partially safe,132335,4214
+HEAnet,ISP,signed + filtering,safe,1213,4219
 Amanah,cloud,,unsafe,32489,4279
 UNMETERED,cloud,,unsafe,54133,4340
 Via Radio Dourados,transit,signed + filtering,safe,61785,4697
