@@ -290,7 +290,7 @@ EE,ISP,,unsafe,12576,10206
 Plusnet,ISP,,unsafe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
 Free Mobile,ISP,signed,unsafe,51207,10266
-Hi3G,ISP,,unsafe,44034,10272
+Hi3G,ISP,signed,unsafe,44034,10272
 T-Mobile Netherlands,ISP,,unsafe,31615,10273
 Taiwan Mobile,ISP,signed,unsafe,24158,10284
 Leaseweb USA-LAX-11,cloud,,unsafe,395954,10306
