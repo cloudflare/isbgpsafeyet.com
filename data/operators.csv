@@ -28,11 +28,11 @@ Sprint,transit,filtering peers,partially safe,1239,34
 KPN,transit,signed + filtering,safe,286,36
 Telefonica Vivo,transit,,unsafe,10429,39
 Internexa,transit,,unsafe,262589,40
-Core-Backbone,transit,signed + filtering,safe,33891,41
+Vocus Communications,transit,signed + filtering,safe,4826,41
 Angola Cables,transit,,unsafe,37468,42
 China Telecom,transit,,unsafe,4809,43
 Oi,ISP,,unsafe,7738,45
-Vocus Communications,transit,signed + filtering,safe,4826,46
+Core-Backbone,transit,signed + filtering,safe,33891,46
 Vivo GVT,ISP,,unsafe,18881,54
 Embratel,transit,,unsafe,4230,58
 Telekom Hungary,ISP,signed,unsafe,5483,59
