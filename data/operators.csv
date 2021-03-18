@@ -88,7 +88,7 @@ ITS Telecom,transit,signed + filtering,safe,28186,255
 Alta Rede,transit,,unsafe,28260,259
 Vodafone DE,ISP,,unsafe,3209,276
 Acorus Networks,ISP,signed + filtering,safe,35280,277
-Virgin Media UK,ISP,,unsafe,5089,284
+Virgin Media UK,ISP,signed,partially safe,5089,284
 Ensite Telecom,transit,signed + filtering,safe,28263,287
 Telenor,ISP,signed + filtering,safe,2119,288
 Nianet A/S,ISP,signed,unsafe,31027,302
@@ -155,7 +155,7 @@ MásMóvil,ISP,,unsafe,15704,938
 Turknet,ISP,,unsafe,12735,954
 iiNet Limited,ISP,,unsafe,4739,975
 Siminn,ISP,,unsafe,6677,982
-Ziggo,ISP,signed,unsafe,33915,1028
+Ziggo,ISP,signed,partially safe,33915,1028
 UltraWave Telecom,ISP,signed + filtering,safe,262659,1049
 IBM Cloud,cloud,,unsafe,36351,1062
 PenTeleData,ISP,signed,unsafe,3737,1071
