@@ -1,28 +1,28 @@
 name,type,details,status,asn,rank
 Level3/CenturyLink,transit,started,unsafe,3356,1
-Telia,transit,signed + filtering,safe,1299,2
-Cogent,transit,signed + filtering,safe,174,3
-GTT,transit,signed + filtering,safe,3257,4
+GTT,transit,signed + filtering,safe,3257,2
+Telia,transit,signed + filtering,safe,1299,3
+Cogent,transit,signed + filtering,safe,174,4
 NTT,transit,signed + filtering,safe,2914,5
 Sparkle,transit,started,unsafe,6762,6
 Hurricane Electric,transit,signed + filtering,safe,6939,7
 TATA,transit,signed + filtering,safe,6453,8
-PCCW,transit,signed + filtering,safe,3491,9
-Zayo,transit,,unsafe,6461,10
-Vodafone,transit,,unsafe,1273,11
+Zayo,transit,,unsafe,6461,9
+PCCW,transit,signed + filtering,safe,3491,11
+Vodafone,transit,,unsafe,1273,12
 RETN,transit,partially signed + filtering,safe,9002,13
-Orange,transit,started,unsafe,5511,14
-Telstra International,transit,signed,partially safe,4637,15
-Telefonica/Telxius,transit,,unsafe,12956,16
-SingTel,transit,,unsafe,7473,17
-PJSC RosTelecom,transit,,unsafe,12389,19
-Deutsche Telekom,ISP,started,unsafe,3320,20
+Telstra International,transit,signed,partially safe,4637,14
+Telefonica/Telxius,transit,,unsafe,12956,15
+Orange,transit,started,unsafe,5511,16
+PJSC RosTelecom,transit,,unsafe,12389,17
+TransTelecom,transit,,unsafe,20485,18
+Deutsche Telekom,ISP,started,unsafe,3320,19
+AT&T,ISP,signed + filtering peers only,partially safe,7018,20
 Verizon,ISP,,unsafe,701,21
-AT&T,ISP,signed + filtering peers only,partially safe,7018,22
+Liberty Global,transit,signed + filtering peers only,partially safe,6830,22
 Comcast,ISP,started,unsafe,7922,23
-TransTelecom,transit,,unsafe,20485,24
 Algar Telecom,transit,,unsafe,16735,26
-Liberty Global,transit,signed + filtering peers only,partially safe,6830,29
+SingTel,transit,,unsafe,7473,17
 Globenet,transit,,unsafe,52320,32
 Sprint,transit,filtering peers,partially safe,1239,34
 KPN,transit,signed + filtering,safe,286,36
