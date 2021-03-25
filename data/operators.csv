@@ -118,6 +118,7 @@ Kyivstar,ISP,,unsafe,15895,477
 Cogeco,ISP,,unsafe,7992,497
 DNA Oyj,ISP,,unsafe,16086,523
 Silknet,ISP,signed,unsafe,35805,543
+Brisanet,ISP,signed + filtering,safe,28126,545
 NIB India,ISP,,unsafe,9829,576
 Elisa Finland,ISP,,unsafe,719,577
 Reliance Jio,ISP,signed,unsafe,55836,584
@@ -130,7 +131,6 @@ Beltelecom,ISP,,unsafe,6697,658
 Persis Telecom,ISP,signed + filtering,safe,14282,671
 ViewQwest,ISP,signed + filtering,safe,18106,675
 QuadraNet,cloud,,safe,8100,686
-Brisanet,ISP,,safe,28126,710
 Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
 Videotron,ISP,,unsafe,5769,727
