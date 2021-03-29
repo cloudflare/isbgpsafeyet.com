@@ -1,5 +1,5 @@
 name,type,details,status,asn,rank
-Level3/CenturyLink,transit,started,unsafe,3356,1
+Lumen,transit,signed + filtering,safe,3356,1
 GTT,transit,signed + filtering,safe,3257,2
 Telia,transit,signed + filtering,safe,1299,3
 Cogent,transit,signed + filtering,safe,174,4
