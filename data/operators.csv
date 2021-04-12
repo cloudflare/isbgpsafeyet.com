@@ -24,7 +24,7 @@ Comcast,ISP,started,unsafe,7922,23
 SingTel,transit,,unsafe,7473,24
 Algar Telecom,transit,,unsafe,16735,26
 Globenet,transit,,unsafe,52320,32
-Sprint,transit,filtering peers,partially safe,1239,34
+T-Mobile,transit,filtering,safe,1239,32
 KPN,transit,signed + filtering,safe,286,36
 Telefonica Vivo,transit,,unsafe,10429,39
 Internexa,transit,,unsafe,262589,40
