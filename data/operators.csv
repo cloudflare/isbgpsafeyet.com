@@ -287,7 +287,6 @@ Cloud9,cloud,,unsafe,57814,8983
 Stellar Technologies,cloud,signed + filtering,safe,14525,9490
 Claro Brasil,ISP,,unsafe,28573,10205
 EE,ISP,,unsafe,12576,10206
-Plusnet,ISP,filtering,partially safe,6871,10237
 TurkCell,ISP,,unsafe,16135,10254
 Free Mobile,ISP,signed,unsafe,51207,10266
 Hi3G,ISP,signed,unsafe,44034,10272
@@ -307,6 +306,7 @@ Leaseweb USA-SFO-12,cloud,,unsafe,7203,10618
 Smart Communications,ISP,,unsafe,10139,10625
 Leaseweb USA-SEA-10,cloud,,unsafe,396190,10900
 Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
+Plusnet,ISP,filtering,partially safe,6871,10921
 Millenicom,ISP,,unsafe,34296,10945
 Trustpower,ISP,started,unsafe,55850,11135
 NetCup,cloud,,unsafe,197540,11196
