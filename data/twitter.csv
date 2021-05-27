@@ -44,6 +44,7 @@ asn,handle
 3304,Scarlet
 3320,deutschetelekom
 3352,Telefonica
+3399,Obenetwork
 3737,PenTeleData
 4637,Telstra
 4739,iiNet
@@ -273,7 +274,6 @@ asn,handle
 135478,di_cbn
 139879,galaxy_net_pk
 196655,NivosOy
-197595,Obenetwork
 198024,IstekkiOy
 199524,gcorelabs
 200698,GlobalHost_bh
