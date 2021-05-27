@@ -20,7 +20,7 @@ Deutsche Telekom,ISP,started,unsafe,3320,19
 AT&T,ISP,signed + filtering peers only,partially safe,7018,20
 Verizon,ISP,,unsafe,701,21
 Liberty Global,transit,signed + filtering peers only,partially safe,6830,22
-Comcast,ISP,started,unsafe,7922,23
+Comcast,ISP,signed + filtering,safe,7922,23
 SingTel,transit,,unsafe,7473,24
 Algar Telecom,transit,,unsafe,16735,26
 Globenet,transit,,unsafe,52320,32
@@ -365,3 +365,4 @@ Galaxy Broadband,ISP,started,unsafe,139879,59342
 Chilean Government Network (Red de Conectividad del Estado),ISP,signed + filtering,safe,17147,67265
 Equinix Metal,Cloud,signed + filtering peers,partially safe,54825,774
 WOBCOM,ISP,signed + filtering,safe,9136,1821
+Powerhosting,Cloud,signed + filtering,safe,60422,29829
