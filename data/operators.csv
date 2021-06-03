@@ -142,7 +142,7 @@ CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
 Telenet,ISP,,unsafe,6848,804
 Obenetwork,ISP,signed + filtering,safe,3399,833
-NOS COMUNICACOES,ISP,signed,unsafe,2860,836
+NOS COMUNICACOES,ISP,signed + filtering,safe,2860,836
 2degrees,ISP,,unsafe,23655,856
 Altibox,ISP,signed + filtering,safe,29695,872
 NetCologne,ISP,,unsafe,8422,873
