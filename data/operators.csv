@@ -171,6 +171,7 @@ Claranet,ISP,,safe,8426,1251
 HotNet Internet Services,ISP,,unsafe,12849,1257
 Pakistan Telecom Company Limited,ISP,,unsafe,45595,1259
 Radore Veri Merkezi Hizmetleri,cloud,,unsafe,42926,1326
+SaskTel,ISP,signed,unsafe,803,1343
 ColoCrossing,cloud,filtering,partially safe,36352,1365
 Mobicom,transit,filtering,safe,55805,1367
 Terrahost,cloud,signed + filtering,safe,56655,1416
