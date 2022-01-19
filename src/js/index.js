@@ -193,7 +193,8 @@ const initTesting = () => {
             }, 2 * 1000)
 
             invalidFetch
-              .then(() => {
+              .then(response => response.json())
+              .then(data => {
                 completed = true
                 if (timedOut) return
                 renderFailure(data)
