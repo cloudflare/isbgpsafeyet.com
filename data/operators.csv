@@ -118,6 +118,7 @@ SuddenLink,ISP,,unsafe,19108,470
 Delta Telecom,cloud,,unsafe,29049,471
 Kyivstar,ISP,,unsafe,15895,477
 Cogeco,ISP,,unsafe,7992,497
+Inferno Communications,transit,signed + filtering,safe,207841,500
 DNA Oyj,ISP,,unsafe,16086,523
 Silknet,ISP,signed,unsafe,35805,543
 Brisanet,ISP,signed + filtering,safe,28126,545
@@ -140,7 +141,7 @@ Videotron,ISP,,unsafe,5769,727
 ASAP Telecom,transit,,unsafe,264144,749
 G-Core Labs,cloud,,unsafe,199524,759
 CYTA,ISP,signed + filtering,safe,6866,763
-Janet,ISP,,unsafe,786,781
+Janet,ISP,signed + filtering,safe,786,781
 CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
 Telenet,ISP,,unsafe,6848,804
