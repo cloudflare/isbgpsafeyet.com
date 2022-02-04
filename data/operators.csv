@@ -69,6 +69,7 @@ Telecom Argentina,ISP,,unsafe,7303,142
 Fastweb,ISP,,unsafe,12874,151
 American Tower Brasil,transit,,unsafe,23106,154
 Vogel,transit,,unsafe,25933,166
+TELUS Communications,ISP,signed + filtering,safe,852,166
 OpenX,transit,signed + filtering,safe,263444,173
 TIM,ISP,,unsafe,3269,176
 AAPT Limited,ISP,,unsafe,2764,181
@@ -79,7 +80,6 @@ Vodafone España,ISP,,unsafe,12430,201
 Sunrise Communications AG,ISP,,unsafe,6730,203
 SIA Tet,ISP,,unsafe,12578,205
 Vocus Retail,ISP,signed + filtering,safe,9443,210
-TDC,ISP,signed + filtering,safe,3292,286
 Jaguar Network,ISP,signed + filtering,safe,30781,226
 PLDT,ISP,,unsafe,9299,230
 VNPT,cloud,,unsafe,45899,239
@@ -90,6 +90,7 @@ Alta Rede,transit,,unsafe,28260,259
 Vodafone DE,ISP,,unsafe,3209,276
 Acorus Networks,ISP,signed + filtering,safe,35280,277
 Virgin Media UK,ISP,signed,partially safe,5089,284
+TDC,ISP,signed + filtering,safe,3292,286
 Ensite Telecom,transit,signed + filtering,safe,28263,287
 Telenor,ISP,signed + filtering,safe,2119,288
 Nianet A/S,ISP,signed,unsafe,31027,302
@@ -141,6 +142,7 @@ Videotron,ISP,,unsafe,5769,727
 ASAP Telecom,transit,,unsafe,264144,749
 G-Core Labs,cloud,,unsafe,199524,759
 CYTA,ISP,signed + filtering,safe,6866,763
+Equinix Metal,Cloud,signed + filtering peers,partially safe,54825,774
 Janet,ISP,partially signed + filtering,partially safe,786,781
 CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
@@ -166,6 +168,7 @@ PenTeleData,ISP,signed,unsafe,3737,1071
 Selectel Ltd,cloud,,unsafe,49505,1080
 Total Server Solutions,cloud,,unsafe,46562,1139
 noris network AG,ISP,signed + filtering,safe,12337,1156
+Vodafone Idea,ISP,,unsafe,55410,1175
 IP Converge Data Services Inc.,cloud,,unsafe,23930,1193
 Cablenet Cyprus,ISP,signed + filtering,safe,35432,1219
 Digital Energy Technologies Limited (Global),cloud,signed + filtering peers,partially safe,61317,1224
@@ -197,6 +200,7 @@ SkyCable,ISP,,unsafe,23944,1746
 A2B Internet,ISP,signed + filtering,safe,51088,1755
 Cybernet Pakistan,ISP,,unsafe,9541,1757
 Cloudflare,cloud,signed + filtering,safe,13335,1819
+WOBCOM,ISP,signed + filtering,safe,9136,1821
 HostDime.com Inc,cloud,,safe,33182,1841
 xs4all,cloud,signed + filtering,safe,3265,1937
 Worldstream,ISP,signed,partially safe,49981,2000
@@ -266,7 +270,6 @@ AltusHost,cloud,,unsafe,51430,5306
 Stadtnetz Bamberg,ISP,,unsafe,198570,5457
 DigitalOcean,cloud,filtering peers only,partially safe,14061,6381
 Vodafone India,ISP,,unsafe,38266,6428
-Vodafone Idea,ISP,,unsafe,55410,1175
 Afrihost,ISP,,unsafe,37611,6457
 EBOX,ISP,signed + filtering,safe,1403,6501
 tzulo,cloud,,unsafe,11878,6586
@@ -300,6 +303,7 @@ Hi3G,ISP,signed,unsafe,44034,10272
 T-Mobile Netherlands,ISP,,unsafe,31615,10273
 Taiwan Mobile,ISP,signed,unsafe,24158,10284
 Leaseweb USA-LAX-11,cloud,,unsafe,395954,10306
+UNITI-ITS,ISP,,unsafe,62632,10327
 TOPNET,ISP,,unsafe,37705,10329
 B2 Net Solutions,cloud,,unsafe,55286,10338
 Scaleway,cloud,signed + filtering,safe,12876,10343
@@ -322,7 +326,6 @@ Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
 Leaseweb USA-PHX-11,cloud,,unsafe,19148,12777
 A1 Hrvatska,ISP,,unsafe,29485,12837
 Wave G, ISP,,unsafe,54858,13010
-PROMAX,ISP,,safe,31423,13951
 Leaseweb USA-DAL-10,cloud,,unsafe,394380,13079
 CBN Broadband,ISP,started,unsafe,135478,13267
 Lanet Network,ISP,,unsafe,47800,13295
@@ -333,6 +336,7 @@ NOS ACORES COMUNICACOES,ISP,signed,unsafe,42580,13584
 Datapark,ISP,,safe,21040,13701
 Aktsiaselts WaveCom,cloud,,unsafe,34702,13703
 ThorDC,cloud,,unsafe,50613,13743
+PROMAX,ISP,,safe,31423,13951
 ASERGO,cloud,signed + filtering,safe,30736,14022
 Inter Connects Inc,cloud,,safe,46805,14046
 Leaseweb USA-MIA-11,cloud,,unsafe,393886,14245
@@ -360,6 +364,7 @@ HQserv,cloud,,unsafe,42994,22744
 TL Group,cloud,,safe,263812,24357
 Pacswitch,ISP,filtering,partially safe,55536,27546
 Nutrien,ISP,signed + filtering,safe,393891,28383
+Powerhosting,Cloud,signed + filtering,safe,60422,29829
 AnacondaWeb,ISP,signed + filtering,safe,265656,32585
 Asimia Damaskou,cloud,,unsafe,205053,36355
 iServer-AS,cloud,,unsafe,57127,36355
@@ -371,7 +376,3 @@ NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Galaxy Broadband,ISP,started,unsafe,139879,59342
 andrewnet,ISP,signed + filtering,safe,211562,63535
 Chilean Government Network (Red de Conectividad del Estado),ISP,signed + filtering,safe,17147,67265
-Equinix Metal,Cloud,signed + filtering peers,partially safe,54825,774
-WOBCOM,ISP,signed + filtering,safe,9136,1821
-Powerhosting,Cloud,signed + filtering,safe,60422,29829
-TELUS Communications,ISP,signed + filtering,safe,852,166
