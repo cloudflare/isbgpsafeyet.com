@@ -110,6 +110,7 @@ Devoli,ISP,signed + filtering,safe,45177,422
 NTS Workspace AG,ISP,signed + filtering,safe,15576,432
 MNET,ISP,signed + filtering,safe,8767,440
 WOW!,ISP,,unsafe,12083,445
+Spectrum,ISP,,safe,11351,447
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 K2 Telecom,transit,,unsafe,53181,453
 NFOrce,cloud,signed,unsafe,43350,459
