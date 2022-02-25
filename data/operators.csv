@@ -129,7 +129,7 @@ Reliance Jio,ISP,signed,unsafe,55836,584
 KPN-Netco,ISP,signed,partially safe,1136,593
 Volia,cloud,,unsafe,25229,595
 Spectrum,ISP,,unsafe,12271,607
-Spectrum,ISP,,safe,11351,607
+Spectrum,ISP,,safe,11351,447
 Taiwan Fixed Network,ISP,signed,unsafe,9924,613
 HOPUS,transit,signed + filtering,safe,44530,640
 Beltelecom,ISP,,unsafe,6697,658
