@@ -110,7 +110,7 @@ Devoli,ISP,signed + filtering,safe,45177,422
 NTS Workspace AG,ISP,signed + filtering,safe,15576,432
 MNET,ISP,signed + filtering,safe,8767,440
 WOW!,ISP,,unsafe,12083,445
-Spectrum,ISP,,safe,11351,447
+Charter Communications,ISP,,unsafe,11351,447
 Hutchison Drei Austria,ISP,,unsafe,25255,451
 K2 Telecom,transit,,unsafe,53181,453
 NFOrce,cloud,signed,unsafe,43350,459
@@ -129,7 +129,6 @@ Elisa Finland,ISP,,unsafe,719,577
 Reliance Jio,ISP,signed,unsafe,55836,584
 KPN-Netco,ISP,signed + filtering,safe,1136,593
 Volia,cloud,,unsafe,25229,595
-Spectrum,ISP,,unsafe,12271,607
 Taiwan Fixed Network,ISP,signed,unsafe,9924,613
 HOPUS,transit,signed + filtering,safe,44530,640
 Beltelecom,ISP,,unsafe,6697,658
