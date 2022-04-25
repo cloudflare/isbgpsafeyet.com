@@ -89,7 +89,7 @@ ITS Telecom,transit,signed + filtering,safe,28186,255
 Alta Rede,transit,,unsafe,28260,259
 Vodafone DE,ISP,,unsafe,3209,276
 Acorus Networks,ISP,signed + filtering,safe,35280,277
-Virgin Media UK,ISP,signed,partially safe,5089,284
+Virgin Media UK,ISP,signed + filtering,safe,5089,284
 Ensite Telecom,transit,signed + filtering,safe,28263,287
 Telenor,ISP,signed + filtering,safe,2119,288
 Nianet A/S,ISP,signed,unsafe,31027,302
