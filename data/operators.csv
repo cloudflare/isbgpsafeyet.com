@@ -376,3 +376,4 @@ Equinix Metal,Cloud,signed + filtering peers,partially safe,54825,774
 WOBCOM,ISP,signed + filtering,safe,9136,1821
 Powerhosting,Cloud,signed + filtering,safe,60422,29829
 TELUS Communications,ISP,signed + filtering,safe,852,166
+Bristol Bay Telephone Coop,signed + filtering,safe,397388,74134
