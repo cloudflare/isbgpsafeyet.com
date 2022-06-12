@@ -129,7 +129,7 @@ Elisa Finland,ISP,,unsafe,719,577
 Reliance Jio,ISP,signed,unsafe,55836,584
 KPN-Netco,ISP,signed + filtering,safe,1136,593
 Volia,cloud,,unsafe,25229,595
-Spectrum,ISP,,safe,12271,607
+Spectrum (Charter Communications,ISP,,safe,12271,607
 Taiwan Fixed Network,ISP,signed,unsafe,9924,613
 HOPUS,transit,signed + filtering,safe,44530,640
 Beltelecom,ISP,,unsafe,6697,658
@@ -376,4 +376,4 @@ Equinix Metal,Cloud,signed + filtering peers,partially safe,54825,774
 WOBCOM,ISP,signed + filtering,safe,9136,1821
 Powerhosting,Cloud,signed + filtering,safe,60422,29829
 TELUS Communications,ISP,signed + filtering,safe,852,166
-Bristol Bay Telephone Coop,signed + filtering,safe,397388,74134
+Bristol Bay Telephone Coop,ISP,signed + filtering,safe,397388,74134
