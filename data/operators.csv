@@ -275,7 +275,7 @@ Istanbuldc Veri Merkezi,cloud,,unsafe,197328,6633
 Sprint Personal Communications Systems,transit,,unsafe,10507,6634
 Aura Fiber,ISP,,safe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
-DELTA Fiber,ISP,,unsafe,15435,6903
+DELTA Fiber,ISP,signed + filtering,safe,15435,6903
 Phase Layer Global Networks,cloud,,unsafe,51852,6959
 komro GmbH,ISP,signed + filtering,safe,29413,7308
 eSecureData,cloud,signed,unsafe,11831,7324
