@@ -145,6 +145,7 @@ CYTA,ISP,signed + filtering,safe,6866,763
 Janet,ISP,partially signed + filtering,partially safe,786,781
 CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
+Trustpower,ISP,signed + filtering,safe,55850,796
 Telenet,ISP,,unsafe,6848,804
 Obenetwork,ISP,signed + filtering,safe,3399,833
 NOS COMUNICACOES,ISP,signed + filtering,safe,2860,836
@@ -203,7 +204,6 @@ HostDime.com Inc,cloud,,safe,33182,1841
 xs4all,cloud,signed + filtering,safe,3265,1937
 Worldstream,ISP,signed,partially safe,49981,2000
 CSL IDC,cloud,,unsafe,9891,2007
-Trustpower,ISP,signed + filtering,safe,55850,2091
 Telefonica Peru,ISP,,unsafe,6147,2099
 MTS Belarus,ISP,,unsafe,25106,2127
 TheGigabit,cloud,,unsafe,55720,2147
