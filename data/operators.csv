@@ -203,6 +203,7 @@ HostDime.com Inc,cloud,,safe,33182,1841
 xs4all,cloud,signed + filtering,safe,3265,1937
 Worldstream,ISP,signed,partially safe,49981,2000
 CSL IDC,cloud,,unsafe,9891,2007
+Trustpower,ISP,signed + filtering,safe,55850,2091
 Telefonica Peru,ISP,,unsafe,6147,2099
 MTS Belarus,ISP,,unsafe,25106,2127
 TheGigabit,cloud,,unsafe,55720,2147
@@ -317,7 +318,6 @@ Leaseweb USA-SEA-10,cloud,,unsafe,396190,10900
 Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
 Plusnet,ISP,filtering,partially safe,6871,10921
 Millenicom,ISP,,unsafe,34296,10945
-Trustpower,ISP,signed + filtering,safe,55850,11135
 NetCup,cloud,,unsafe,197540,11196
 NOS MADEIRA COMUNICACOES,ISP,,unsafe,15457,11772
 Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
