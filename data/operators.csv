@@ -362,6 +362,7 @@ TL Group,cloud,,safe,263812,24357
 Pacswitch,ISP,filtering,partially safe,55536,27546
 Nutrien,ISP,signed + filtering,safe,393891,28383
 AnacondaWeb,ISP,signed + filtering,safe,265656,32585
+WARI.NET COMUNICACIONES S.R.L,ISP,,unsafe,265708,34599
 Asimia Damaskou,cloud,,unsafe,205053,36355
 iServer-AS,cloud,,unsafe,57127,36355
 NUT HOST SRL,cloud,,unsafe,264649,36355
