@@ -303,6 +303,7 @@ Taiwan Mobile,ISP,signed,unsafe,24158,10284
 Leaseweb USA-LAX-11,cloud,,unsafe,395954,10306
 TOPNET,ISP,,unsafe,37705,10329
 B2 Net Solutions,cloud,,unsafe,55286,10338
+UKServers,cloud,signed + filtering,safe,42831,1184
 Scaleway,cloud,signed + filtering,safe,12876,10343
 Webpass,ISP,,unsafe,19165,10352
 Turksat,ISP,signed + filtering,safe,47524,10355
