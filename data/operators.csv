@@ -167,6 +167,7 @@ PenTeleData,ISP,signed,unsafe,3737,1071
 Selectel Ltd,cloud,,unsafe,49505,1080
 Total Server Solutions,cloud,,unsafe,46562,1139
 noris network AG,ISP,signed + filtering,safe,12337,1156
+UKServers,cloud,signed + filtering,safe,42831,1184
 IP Converge Data Services Inc.,cloud,,unsafe,23930,1193
 Cablenet Cyprus,ISP,signed + filtering,safe,35432,1219
 Digital Energy Technologies Limited (Global),cloud,signed + filtering peers,partially safe,61317,1224
