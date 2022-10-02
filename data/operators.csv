@@ -284,6 +284,7 @@ Axcelx,cloud,,unsafe,33083,7453
 VoiceHost,ISP,signed + filtering,safe,31472,7527
 Neptune Networks,cloud,signed + filtering,safe,397143,7597
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
+InterNetX,cloud,signed,unsafe,15456,7696
 Iver Norge AS,ISP,,safe,49409,7878
 GTHost,cloud,filtering,partially safe,63023,7915
 Siamdata Communication,cloud,,unsafe,56309,7934
