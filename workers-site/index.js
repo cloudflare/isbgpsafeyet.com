@@ -41,6 +41,7 @@ const majorCloudASNs = [
   '9009', // M247
   '2906', // Netflix
   '14061', // DigitalOcean
+  '8075', // Microsoft
 ]
 
 let MAJOR_OPERATORS_COUNT = 0
