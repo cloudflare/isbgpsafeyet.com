@@ -120,12 +120,12 @@ Delta Telecom,cloud,,unsafe,29049,471
 Kyivstar,ISP,,unsafe,15895,477
 Cogeco,ISP,,unsafe,7992,497
 Inferno Communications,transit,signed + filtering,safe,207841,500
-DNA Oyj,ISP,,unsafe,16086,523
+DNA Oyj,ISP,signed + filtering,safe,16086,523
 Silknet,ISP,signed,unsafe,35805,543
 Brisanet,ISP,signed + filtering,safe,28126,545
 Hydra Communications,cloud,signed + filtering,safe,25369,572
 NIB India,ISP,,unsafe,9829,576
-Elisa Finland,ISP,,unsafe,719,577
+Elisa Finland,ISP,signed + filtering,safe,719,577
 Reliance Jio,ISP,signed,unsafe,55836,584
 KPN-Netco,ISP,signed + filtering,safe,1136,593
 Volia,cloud,,unsafe,25229,595
