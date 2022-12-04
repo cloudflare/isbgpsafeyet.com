@@ -190,7 +190,7 @@ Belwue,ISP,signed + filtering,safe,553,1565
 SpaceNet,ISP,signed + filtering,safe,5539,1584
 CESNET,ISP,signed + filtering,safe,2852,1638
 A3 Sverige,ISP,,unsafe,45011,1644
-Deutsche Glasfaser,ISP,,unsafe,60294,1681
+Deutsche Glasfaser,ISP,signed + filtering,safe,60294,1681
 Google,cloud,signed,partially safe,15169,1714
 Vodafone Portugal,ISP,,unsafe,12353,1725
 Belnet,ISP,signed + filtering,safe,2611,1726
