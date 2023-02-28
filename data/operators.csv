@@ -384,6 +384,7 @@ Chilean Government Network (Red de Conectividad del Estado),ISP,signed + filteri
 Equinix Metal,Cloud,signed + filtering peers,partially safe,54825,774
 WOBCOM,ISP,signed + filtering,safe,9136,1821
 Powerhosting,Cloud,signed + filtering,safe,60422,29829
+Zaledia Networks,ISP,signed + filtering,safe,207149,73745
 TELUS Communications,ISP,signed + filtering,safe,852,166
 Bristol Bay Telephone Coop,ISP,signed + filtering,safe,397388,74134
 Advanced Wireless Network Co. Ltd.,ISP,signed,unsafe,133481,74135
