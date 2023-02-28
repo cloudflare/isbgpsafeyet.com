@@ -353,6 +353,39 @@ h1, h2 {
 }
 
 
+.Updates {
+  position: relative;
+  overflow: hidden;
+  height: 12.7em;
+}
+
+.Updates[data-show-all="true"] {
+  height: auto;
+}
+
+.Updates::after {
+  content: "";
+  position: absolute;
+  background: var(--background-color);
+  height: 5em;
+  left: 0;
+  right: 0;
+  top: 100%;
+  box-shadow:
+    0 -.5em 1em -.8em rgba(var(--color-rgb), .4),
+    0 -1px 5px -3px var(--color),
+    0 -1px rgba(var(--color-rgb), .4);
+}
+
+.Updates[data-show-all="true"]::after {
+  opacity: 0;
+}
+
+.Updates--actions {
+  text-align: center;
+}
+
+
 .InlineSafeHighlight {
   color: var(--status-green-fg);
   background: var(--status-green-bg);
