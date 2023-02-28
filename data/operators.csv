@@ -13,7 +13,7 @@ Vodafone,transit,,unsafe,1273,11
 RETN,transit,partially signed + filtering,safe,9002,12
 Orange,transit,signed + filtering,safe,5511,13
 Telstra International,transit,signed,partially safe,4637,14
-Telefonica/Telxius,transit,,unsafe,12956,16
+Telefonica/Telxius,transit,signed + filtering,safe,12956,16
 PJSC RosTelecom,transit,,unsafe,12389,17
 TransTelecom,transit,,unsafe,20485,18
 Comcast,ISP,signed + filtering,safe,7922,19
