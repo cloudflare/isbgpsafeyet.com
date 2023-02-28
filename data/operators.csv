@@ -146,6 +146,7 @@ CYTA,ISP,signed + filtering,safe,6866,763
 Janet,ISP,partially signed + filtering,partially safe,786,781
 CDN77,cloud,signed,partially safe,60068,782
 Blix Solutions AS,cloud,,unsafe,50304,792
+Trustpower,ISP,signed + filtering,safe,55850,796
 Telenet,ISP,,unsafe,6848,804
 Obenetwork,ISP,signed + filtering,safe,3399,833
 NOS COMUNICACOES,ISP,signed + filtering,safe,2860,836
@@ -321,7 +322,6 @@ Leaseweb USA-SEA-10,cloud,,unsafe,396190,10900
 Leaseweb USA-WDC-01,cloud,,unsafe,30633,10901
 Plusnet,ISP,filtering,partially safe,6871,10921
 Millenicom,ISP,,unsafe,34296,10945
-Trustpower,ISP,started,unsafe,55850,11135
 NetCup,cloud,,unsafe,197540,11196
 True Online,ISP,,unsafe,17552,11486
 NOS MADEIRA COMUNICACOES,ISP,,unsafe,15457,11772
