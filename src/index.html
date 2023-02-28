@@ -70,7 +70,10 @@
       <div class="Markdown">
         <h2 class="Markdown--h2-as-h3">Latest updates</h2>
 
-        <ul>
+        <ul id="updates" class="Updates" data-js-updates>
+          <li>October 19, 2022 - Microsoft (AS8075) has deployed RPKI Origin Validation on all their peers. (<a href="https://storage.googleapis.com/site-media-prod/meetings/NANOG86/4602/20221017_Robachevsky_Internet_Routing_And_v1.pdf">source</a>)
+          <li>June 27, 2022 - Orange International Carrier (AS5511) has fully deployed RPKI Origin Validation on their global worldwide network. (<a href="https://twitter.com/OrangeIC/status/1541436188241891328">source</a>)
+          <li>March 15, 2022 - KPN (AS1136), the largest Internet provider in the Netherlands, now rejects RPKI-invalid BGP routes on its EBGP edge. (<a href="https://twitter.com/JobSnijders/status/1503649158422487040">source</a>)
           <li>June 3, 2021 - NOS Communicações (AS2860), a leading Internet Service Provider in Portugal, has signed its prefixes and is dropping invalids.
           <li>May 20, 2021 - Comcast (AS7922), one of the largest Internet Service Provider in the US, has signed its prefixes and is now dropping invalids over all BGP sessions. (<a href="https://corporate.comcast.com/stories/improved-bgp-routing-security-adds-another-layer-of-protection-to-network">source</a>)
           <li>March 26, 2021 - Lumen (AS3356), <a href="https://asrank.caida.org/asns/3356/as-core">the largest worldwide transit backbone</a>, is now dropping invalids over all BGP sessions. (<a href="https://blog.lumen.com/lumen-enhances-routing-security-with-resource-public-key-infrastructure-rpki/">source</a>)
@@ -110,6 +113,10 @@
           <li>April 20, 2020 – USI Fiber currently working on RPKI implementation (<a href="https://twitter.com/usifiber/status/1252272488979091457">source</a>)
           <li>April 19, 2020 – Aussie Broadband plans to support RPKI “shortly” (<a href="https://twitter.com/Aussie_BB/status/1252067879358361600">source</a>)
         </ul>
+
+        <div class="Updates--actions">
+          <button class="Button Button-is-secondary Button-is-slim" data-js-toggle-show-all-updates>＋ Show all</button>
+        </div>
       </div>
 
       <div class="Spacer"></div>
@@ -149,7 +156,7 @@
     <div class="Column">
       <div class="BGPSafetyTable---footer">
         <div class="Markdown">
-          <p>Last updated July 22, 2020 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/tree/master/data">Edit on GitHub</a></p>
+          <p>Last updated April 25, 2022 – <a href="https://github.com/cloudflare/isbgpsafeyet.com/tree/master/data">Edit on GitHub</a></p>
         </div>
       </div>
 
