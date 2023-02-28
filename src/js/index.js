@@ -18,6 +18,27 @@ const failureMessageDetails = `${ ''
 fetch https://invalid.rpki.cloudflare.com
   <i fail><i>${ svgTimes }</i></i>incorrectly accepted invalid prefixes`
 
+const setupShowAllUpdatesToggle = () => {
+  const updates = document.querySelector('[data-js-updates]')
+  const button = document.querySelector('[data-js-toggle-show-all-updates]')
+
+  if (!updates || !button) return
+
+  button.addEventListener('click', () => {
+    if (updates.getAttribute('data-show-all') === 'true') {
+      updates.setAttribute('data-show-all', 'false')
+      button.textContent = '＋ Show all'
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0)
+        updates.closest('.Column').scrollIntoView(true)
+      })
+    } else {
+      updates.setAttribute('data-show-all', 'true')
+      button.textContent = '－ Show fewer'
+    }
+  })
+}
+
 const setupShowAllRowsToggle = () => {
   const table = document.querySelector('[data-js-table]')
   const button = document.querySelector('[data-js-toggle-show-all-rows]')
@@ -193,7 +214,8 @@ const initTesting = () => {
             }, 2 * 1000)
 
             invalidFetch
-              .then(() => {
+              .then(response => response.json())
+              .then(data => {
                 completed = true
                 if (timedOut) return
                 renderFailure(data)
@@ -270,6 +292,7 @@ const openPossibleTargetFAQItem = () => {
 }
 
 const init = () => {
+  setupShowAllUpdatesToggle()
   setupShowAllRowsToggle()
   setupASNColumnToggle()
   initTesting()
