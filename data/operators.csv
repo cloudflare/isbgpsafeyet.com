@@ -298,6 +298,7 @@ Tech Futures,ISP,signed + filtering,safe,394256,8414
 DK Hostmaster,cloud,signed + filtering,safe,39839,8667
 Wikimedia Foundation,cloud,signed + filtering,safe,14907,8716
 ProveNET,ISP,,unsafe,263945,8791
+Demando,cloud,,unsafe,196819,8835
 Cloud9,cloud,,unsafe,57814,8983
 Stellar Technologies,cloud,signed + filtering,safe,14525,9490
 Claro Brasil,ISP,,unsafe,28573,10205
