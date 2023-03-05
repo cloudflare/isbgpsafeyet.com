@@ -241,7 +241,6 @@ ArgonHost,cloud,,unsafe,58477,3907
 Gis Telecom,ISP,signed + filtering,safe,264130,3924
 OVH,cloud,,unsafe,16276,3982
 ComHemAB,ISP,started,unsafe,39651,3997
-Kingston Communications PLC,ISP,,unsafe,12390,4029
 WestHost,cloud,,unsafe,29854,4032
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 ALMOUROLTEC SERVICOS DE INFORMATICA E INTERNET LDA,cloud,,unsafe,24768,4105
@@ -269,6 +268,7 @@ INTERSPACE-MK,cloud,,unsafe,200899,5200
 Monkeybrains,ISP,,unsafe,32329,5215
 BroadbandGibraltarLtd.,ISP,,unsafe,34803,5285
 AltusHost,cloud,,unsafe,51430,5306
+Kingston Communications,ISP,signed,unsafe,12390,5315
 Stadtnetz Bamberg,ISP,,unsafe,198570,5457
 DigitalOcean,cloud,filtering peers only,partially safe,14061,6381
 Vodafone India,ISP,,unsafe,38266,6428
