@@ -174,6 +174,7 @@ IP Converge Data Services Inc.,cloud,,unsafe,23930,1193
 Cablenet Cyprus,ISP,signed + filtering,safe,35432,1219
 Digital Energy Technologies Limited (Global),cloud,signed + filtering peers,partially safe,61317,1224
 xneelo,cloud,,unsafe,37153,1232
+Nine Internet Solutions,cloud,signed,unsafe,29691,1240
 Claranet,ISP,,safe,8426,1251
 HotNet Internet Services,ISP,,unsafe,12849,1257
 Pakistan Telecom Company Limited,ISP,,unsafe,45595,1259
