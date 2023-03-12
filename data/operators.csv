@@ -157,6 +157,7 @@ Bredband2,ISP,signed + filtering,safe,29518,879
 Vodafone IT,ISP,,unsafe,30722,890
 Shentel,ISP,,unsafe,4922,897
 Proximus,ISP,,unsafe,5432,911
+DFN Deutsches Forschungsnetz,ISP,partially signed + filtering,partially safe,680,913
 FasterNET,ISP,,unsafe,28580,924
 MásMóvil,ISP,,unsafe,15704,938
 Turknet,ISP,,unsafe,12735,954
