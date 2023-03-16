@@ -51,6 +51,7 @@ TPG,ISP,,unsafe,7545,87
 Durand,transit,,unsafe,22356,88
 Bell Canada,ISP,,unsafe,577,90
 IIJ,transit,signed + filtering peers only,partially safe,2497,95
+Orange Polska,ISP,signed + filtering,safe,5617,96
 Optimum,ISP,,unsafe,6128,97
 RCS&RDS,ISP,,unsafe,8708,102
 GEANT,ISP,signed + filtering,safe,20965,103
@@ -88,6 +89,7 @@ Forte Telecom,transit,,unsafe,263009,246
 HiNet,ISP,signed + filtering,safe,3462,249
 ITS Telecom,transit,signed + filtering,safe,28186,255
 Alta Rede,transit,,unsafe,28260,259
+Orange Polska,ISP,signed + filtering,safe,29535,273
 Vodafone DE,ISP,,unsafe,3209,276
 Acorus Networks,ISP,signed + filtering,safe,35280,277
 Virgin Media UK,ISP,signed + filtering,safe,5089,284
