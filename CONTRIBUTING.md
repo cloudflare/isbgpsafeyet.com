@@ -24,9 +24,11 @@ Follow the steps below:
     * type: ISP, cloud or transit
     * details: indicates the progression of an RPKI deployment (eg: signed + filtering/filtering peers only)
     * status: the RPKI state:
-      _unsafe_ (nothing deployed, only signed or not filtering),
-      _partially safe_ (not filtering all the peers),
-      _safe_ (fully signed and fully filtering)
+      * _unsafe_ (nothing deployed, only signed or not filtering),
+      * _partially safe_ (not filtering all the peers),
+      * _safe_ (fully signed and fully filtering)
+      * You can use Cloudflare RPKI Portal to check whether an AS has signed its prefixes
+        * Example: <https://rpki.cloudflare.com/?view=bgp&asn=13335>
     * asn: autonomous system number (eg: 7018 for AT&T)
     * rank: you can look them up using the ASN: [https://asrank.caida.org/asns/3356](https://asrank.caida.org/asns/3356)
   * sort the row by the rank
