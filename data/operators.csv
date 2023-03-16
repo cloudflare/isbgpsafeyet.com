@@ -215,6 +215,7 @@ MTS Belarus,ISP,,unsafe,25106,2127
 TheGigabit,cloud,,unsafe,55720,2147
 Netwerkvereniging ColoClue,ISP,signed + filtering,safe,8283,2152
 TNG Stadtnetz GmbH,ISP,signed + filtering,safe,13101,2174
+TOT-NET,ISP,,unsafe,23969,2198
 ST-BGP,cloud,,unsafe,46844,2295
 Aussie Broadband,ISP,signed + filtering,safe,4764,2319
 Dhiraagu,ISP,signed + filtering,safe,7642,2357
