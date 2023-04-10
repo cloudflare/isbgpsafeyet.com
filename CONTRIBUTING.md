@@ -38,6 +38,6 @@ Create a pull-request.
 We will review it and merge it if it's valid.
 Try to include proof if you're indicating a filtering ISP (mailing-list message, website, tweet, RIPE Atlas test).
 
-If you wish to publish a new major deployment as part of the *latest updates*: edit the following:
+If you wish to publish a new major deployment as part of the _latest updates_: edit the following:
 [index.html](https://github.com/cloudflare/isbgpsafeyet.com/blob/master/src/index.html) [[edit it online](https://github.com/cloudflare/isbgpsafeyet.com/edit/master/src/index.html)]
 Make sure you provide enough information to validate the statement.
