@@ -14,19 +14,20 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
-      path: path.resolve(__dirname, 'public'),
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
     new HtmlWebpackPlugin({
-      template: 'src/404.html', 
+      template: 'src/404.html',
       filename: '404.html',
     }),
-    new CopyPlugin([
-      'resources/*',
-    ]),
+    new CopyPlugin({
+      patterns: [
+        'resources/*',
+      ],
+    }),
   ],
   output: {
     filename: '[name].[contenthash].js',

@@ -22,16 +22,11 @@ To run locally:
 
 If you have never used Wrangler before you will need to [Configure Wrangler](https://developers.cloudflare.com/workers/quickstart#configure).
 
-You will also have to update the wrangler.toml file.
-
-If you have a zone on Cloudflare to test with:
+If you have a zone on Cloudflare to test with, you will also have to update the wrangler.toml file:
 
 - Update the `account_id`, `zone_id`, and `route` values
 
-If you do not have a zone on Cloudflare to test with:
-
-- Update the `account_id`, remove the `zone_id` and `route` fields, and add `workers_dev = true`
-
-To produce a build:
+To produce a build and deploy:
 
 - `npm run build`
+- `npm run deploy-worker`
