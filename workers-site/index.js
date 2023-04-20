@@ -13,7 +13,6 @@ import pickBy from 'lodash.pickby'
  *    than the default 404.html page.
  */
 const DEBUG = false
-console.log(`environment: ${ENVIRONMENT}`)
 
 const IS_BGP_SAFE_YET = false // TODO - update when safe ;)
 
