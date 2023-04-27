@@ -14,24 +14,23 @@ jobs:
       run: cd $GITHUB_WORKSPACE
     - uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '19.x'
     - name: Install deps
-      run: npm install
-    - name: Install Wrangler
-      run: npm i @cloudflare/wrangler@1.8.4 -g
-    - name: Install Workers script deps
-      run: npm install
+      run: npm ci
     - name: Build site
       run: npm run build
     - name: Build Workers script
-      run: wrangler build
+      run: npm run build-worker
+      env:
+        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
     - name: Wrangler auth check
       run: wrangler whoami
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
     - name: Upload assets
-      run: wrangler publish
+      run: npm run deploy-worker
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}

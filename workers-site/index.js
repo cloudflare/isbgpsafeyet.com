@@ -1,8 +1,8 @@
-import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
+import { getAssetFromKV } from '@cloudflare/kv-asset-handler'
 import OPERATORS_STRING from '../data/operators.csv'
 import ISP_TWITTER_STRING from '../data/twitter.csv'
 
-import parse from 'csv-parse/lib/sync'
+import { parse } from 'csv-parse/sync'
 import pickBy from 'lodash.pickby'
 
 /**
@@ -120,7 +120,7 @@ async function handleEvent(event) {
           mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/404.html`, req),
         })
 
-        return new Response(notFoundResponse.body, { ...notFoundResponse, status: 404 })
+        return new Response(notFoundResponse.body, { ...notFoundResponse, status: 404, headers: {'Content-Type': 'text/html'}})
       } catch (e) {}
     }
 
