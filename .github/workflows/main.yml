@@ -22,15 +22,15 @@ jobs:
     - name: Build Workers script
       run: npm run build-worker
       env:
-        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
     - name: Wrangler auth check
-      run: wrangler whoami
+      run: npm run wrangler-whoami
       env:
-        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
     - name: Upload assets
       run: npm run deploy-worker
       env:
-        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
