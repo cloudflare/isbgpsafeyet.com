@@ -13,7 +13,7 @@ html {
   --line-height: 1.7;
   --color-rgb: var(--gray-1-rgb);
   --accent-color-rgb: var(--indigo-3-rgb);
-  --column-width: 42rem;
+  --column-width: 45rem;
   --column-inline-padding: 1rem;
 }
 
@@ -450,10 +450,10 @@ h1, h2 {
   border-spacing: 0;
   border: 0;
 
-  --type-column-width: 6rem;
-  --details-column-width: 14rem;
+  --type-column-width: 5rem;
+  --details-column-width: 18rem;
   --status-column-width: 8rem;
-  --asn-column-width: 7rem;
+  --asn-column-width: 6rem;
 
   --non-name-columns-width-sum: calc(
     var(--type-column-width) +
