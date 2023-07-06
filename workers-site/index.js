@@ -99,7 +99,6 @@ async function handleEvent(event) {
       response.headers.set('X-XSS-Protection', '1; mode=block')
       response.headers.set('X-Frame-Options', 'DENY')
       response.headers.set('Referrer-Policy', 'unsafe-url')
-      response.headers.set('Feature-Policy', 'none')
 
       return new HTMLRewriter()
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
