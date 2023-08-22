@@ -1,6 +1,6 @@
 name,type,details,status,asn,rank
 Lumen,transit,signed + filtering,safe,3356,1
-Arelion (Formally Telia),transit,signed + filtering,safe,1299,2
+Arelion (formerly Telia),transit,signed + filtering,safe,1299,2
 Cogent,transit,signed + filtering,safe,174,3
 NTT,transit,signed + filtering,safe,2914,4
 Sparkle,transit,started,unsafe,6762,5
