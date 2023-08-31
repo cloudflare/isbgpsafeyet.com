@@ -30,7 +30,7 @@
     "lodash.pickby": "^4.6.0"
   },
   "devDependencies": {
-    "wrangler": "^2.15.0",
+    "wrangler": "^2.20.1",
     "clean-webpack-plugin": "^4.0.0",
     "concurrently": "^8.0.1",
     "copy-webpack-plugin": "^11.0.0",
