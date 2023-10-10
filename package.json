@@ -4,10 +4,10 @@
   "description": "**Is BGP safe yet?** is an initiative by Cloudflare to make BGP more secure by deploying RPKI.",
   "main": "public/index.js",
   "scripts": {
-    "build": "webpack-cli",
-    "build-worker": "wrangler publish --dry-run --env production",
-    "deploy-worker": "wrangler publish --env production",
-    "webpack-dev": "webpack-cli -w ",
+    "build": "webpack-cli --mode production",
+    "build-worker": "wrangler deploy --dry-run --env production",
+    "deploy-worker": "wrangler deploy --env production",
+    "webpack-dev": "webpack-cli --watch",
     "wrangler-dev": "wrangler dev",
     "wrangler-whoami": "wrangler whoami",
     "start": "concurrently --kill-others-on-fail --names 'webpack ,wrangler' --prefix name --prefix-colors 'bgCyan.black,bgYellow.black' \"npm run webpack-dev\" \"npm run wrangler-dev\" \"while ! nc -z localhost 8787; do\nsleep 1\ndone; open 'http://localhost:8787'\"",
@@ -26,23 +26,23 @@
   "homepage": "https://github.com/cloudflare/isbgpsafeyet.com#readme",
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.3.0",
-    "csv-parse": "^5.3.6",
+    "csv-parse": "^5.5.2",
     "lodash.pickby": "^4.6.0"
   },
   "devDependencies": {
-    "wrangler": "^2.15.0",
+    "wrangler": "^3.11.0",
     "clean-webpack-plugin": "^4.0.0",
-    "concurrently": "^8.0.1",
+    "concurrently": "^8.2.1",
     "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.7.3",
+    "css-loader": "^6.8.1",
     "focus-visible-polyfill": "^1.0.0",
-    "html-webpack-plugin": "^5.5.0",
-    "jest": "^29.5.0",
-    "mini-css-extract-plugin": "^2.7.5",
-    "css-minimizer-webpack-plugin": "^5.0.0",
-    "terser-webpack-plugin": "^5.3.7",
-    "webpack": "^5.79.0",
-    "webpack-cli": "^5.0.1",
-    "markdownlint-cli": "^0.33.0"
+    "html-webpack-plugin": "^5.5.3",
+    "jest": "^29.7.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "markdownlint-cli": "^0.37.0"
   }
 }
