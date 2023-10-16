@@ -48,8 +48,10 @@ asn,handle
 3399,Obenetwork
 3737,PenTeleData
 4637,Telstra
+4670,sejongtelecom
 4739,iiNet
 4764,Aussie_BB
+4766,KT_cs
 4804,Optus
 4922,Shentel
 5089,virginmedia
@@ -104,6 +106,8 @@ asn,handle
 9208,win_ICTpartner
 9299,PLDT_Cares
 9318,SK_Bworld
+9644,SKtelecom
+9824,jcom_info
 9829,BSNLCorporate
 10139,LiveSmart
 10139,SMARTCares
@@ -156,6 +160,8 @@ asn,handle
 17090,dbdesignllc
 17147,CSIRTGOB
 17552,true_online
+17853,LGUplus
+17858,LGUplus
 18209,ACTFibernet
 19148,Leaseweb
 20001,getspectrum
@@ -310,3 +316,4 @@ asn,handle
 396362,Leaseweb
 397143,neptunenets
 397373,h4ytec
+399866,_Hoto_Cocoa_
