@@ -1,9 +1,9 @@
 name,type,details,status,asn,rank
-LG U+ (Mobile),ISP,,unsafe,17853,65535
-LG U+ (Fixed Line),ISP,,unsafe,17858,65535
-SK Telecom,ISP,,unsafe,9644,65535
-KT (Fixed Line),ISP,,unsafe,4766,65535
-Sejong Telecom,ISP,,unsafe,4670,65535
+LG U+ (Mobile),ISP,,unsafe,17853,11882
+LG U+ (Fixed Line),ISP,,unsafe,17858,11744
+SK Telecom,ISP,,unsafe,9644,11747
+KT (Fixed Line),ISP,,unsafe,4766,46
+Sejong Telecom,ISP,,unsafe,4670,3469
 JCOM,ISP,,unsafe,9824,65535
 Lumen,transit,signed + filtering,safe,3356,1
 Arelion (formerly Telia),transit,signed + filtering,safe,1299,2
