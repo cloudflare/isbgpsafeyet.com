@@ -1,4 +1,6 @@
 name,type,details,status,asn,rank
+Cobaso,Cloud,,safe,399866,39207
+Rakuten Mobile,ISP,,unsafe,138384,5474
 LG U+ (Mobile),ISP,,unsafe,17853,11882
 LG U+ (Fixed Line),ISP,,unsafe,17858,11744
 SK Telecom,ISP,,unsafe,9644,11747
