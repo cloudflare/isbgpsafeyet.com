@@ -1,4 +1,7 @@
 name,type,details,status,asn,rank
+Softbank,ISP,,unsafe,17676,111
+NTT Docomo,ISP,,unsafe,9605,11764
+ASAHI Net,ISP,,unsafe,4685,11789
 Cobaso,Cloud,,safe,399866,39207
 Rakuten Mobile,ISP,,unsafe,138384,5474
 LG U+ (Mobile),ISP,,unsafe,17853,11882
