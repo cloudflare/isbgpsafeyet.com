@@ -48,7 +48,9 @@ asn,handle
 3399,Obenetwork
 3737,PenTeleData
 4637,Telstra
+4685,AsahiNetStatus
 4670,sejongtelecom
+4713,ocn_internet
 4739,iiNet
 4764,Aussie_BB
 4766,KT_cs
@@ -106,6 +108,7 @@ asn,handle
 9208,win_ICTpartner
 9299,PLDT_Cares
 9318,SK_Bworld
+9605,docomo_cs
 9644,SKtelecom
 9824,jcom_support
 9829,BSNLCorporate
@@ -160,6 +163,7 @@ asn,handle
 17090,dbdesignllc
 17147,CSIRTGOB
 17552,true_online
+17676,SBCare
 17853,LGUplus
 17858,LGUplus
 18209,ACTFibernet
@@ -288,6 +292,7 @@ asn,handle
 133481,AIS_Thailand
 134067,unitiwireless
 135478,di_cbn
+138384,Rmobile_Support
 139879,galaxy_net_pk
 196655,NivosOy
 198024,IstekkiOy
