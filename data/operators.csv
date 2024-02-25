@@ -271,6 +271,7 @@ LeapSwitch Networks,cloud,filtering,partially safe,132335,4214
 HEAnet,ISP,signed + filtering,safe,1213,4219
 Amanah,cloud,,unsafe,32489,4279
 UNMETERED,cloud,,unsafe,54133,4340
+Accuris Technologies,ISP,signed + filtering,safe,52210,4537
 Via Radio Dourados,transit,signed + filtering,safe,61785,4697
 T-Mobile,ISP,signed,unsafe,21928,4793
 Vodafone UK,ISP,,unsafe,5378,4810
@@ -418,3 +419,4 @@ Rose Telecom,ISP,signed + filtering,safe,54681,24936
 Bryan Barbolina trading as Cloudwebservices,cloud,signed + filtering,safe,213268,65065
 Hazelnet,ISP,signed + filtering,safe,200242,75603
 Parknet,ISP,signed + filtering,safe,197301,19561
+Kerfuffle,Cloud,signed + filtering,safe,35008,11481
