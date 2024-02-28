@@ -32,7 +32,7 @@ AT&T,ISP,signed + filtering peers only,partially safe,7018,20
 Verizon,ISP,signed + filtering,safe,701,21
 Liberty Global,transit,signed + filtering,safe,6830,22
 SingTel,transit,,unsafe,7473,24
-Deutsche Telekom,ISP,started,unsafe,3320,25
+Deutsche Telekom,ISP,signed + filtering,safe,3320,25
 Algar Telecom,transit,,unsafe,16735,26
 Globenet,transit,,unsafe,52320,32
 T-Mobile,transit,filtering,safe,1239,32
@@ -420,3 +420,4 @@ Bryan Barbolina trading as Cloudwebservices,cloud,signed + filtering,safe,213268
 Hazelnet,ISP,signed + filtering,safe,200242,75603
 Parknet,ISP,signed + filtering,safe,197301,19561
 Kerfuffle,Cloud,signed + filtering,safe,35008,11481
+MilkyWan,ISP,signed + filtering,safe,2027,1829
