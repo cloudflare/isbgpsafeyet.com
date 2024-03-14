@@ -292,7 +292,7 @@ Stadtnetz Bamberg,ISP,,unsafe,198570,5457
 DigitalOcean,cloud,filtering peers only,partially safe,14061,6381
 Vodafone India,ISP,,unsafe,38266,6428
 Vodafone Idea,ISP,,unsafe,55410,1175
-Afrihost,ISP,,unsafe,37611,6457
+Afrihost,ISP,,safe,37611,6457
 EBOX,ISP,signed + filtering,safe,1403,6501
 tzulo,cloud,,unsafe,11878,6586
 Istanbuldc Veri Merkezi,cloud,,unsafe,197328,6633
