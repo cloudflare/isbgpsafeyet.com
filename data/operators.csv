@@ -427,3 +427,4 @@ Rozint Ltd Co,ISP,signed + filtering,safe,21738,2442
 MilkyWan,ISP,signed + filtering,safe,2027,1829
 Telekom Malaysia Berhad,ISP,signed,unsafe,4788,114
 IONOS SE,Cloud,signed + filtering,safe,8560,838
+1&1 Versatel,ISP,partially signed,unsafe,8881,220
