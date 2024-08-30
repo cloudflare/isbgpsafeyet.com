@@ -35,6 +35,7 @@ SingTel,transit,,unsafe,7473,24
 Deutsche Telekom,ISP,signed + filtering,safe,3320,25
 Algar Telecom,transit,,unsafe,16735,26
 Globenet,transit,,unsafe,52320,32
+PJSC MegaFon,transit,signed,partially safe,31133,36
 T-Mobile,transit,partially signed + filtering,safe,1239,98
 KPN,transit,signed + filtering,safe,286,36
 Telefonica Vivo,transit,,unsafe,10429,39
