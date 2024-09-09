@@ -76,7 +76,7 @@ M247,cloud,,unsafe,9009,133
 A1 Telekom Austria,ISP,,unsafe,8447,135
 Wave Broadband,ISP,,unsafe,11404,136
 W I X NET DO BRASIL,cloud,,unsafe,53013,137
-Init7 (Schweiz) AG,ISP,started,unsafe,13030,139
+Init7 (Schweiz) AG,ISP,signed + filtering,safe,13030,208
 Next Layer GmbH,transit,signed + filtering,safe,1764,141
 Telecom Argentina,ISP,,unsafe,7303,142
 Fastweb,ISP,,unsafe,12874,151
