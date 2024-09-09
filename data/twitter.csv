@@ -14,6 +14,7 @@ asn,handle
 513,CERN
 559,SWITCH_ch
 577,Bell
+680,DFN_de
 701,VERIZON
 786,Jisc
 812,Rogers
@@ -47,13 +48,18 @@ asn,handle
 3399,Obenetwork
 3737,PenTeleData
 4637,Telstra
+4685,AsahiNetStatus
+4670,sejongtelecom
+4713,ocn_internet
 4739,iiNet
 4764,Aussie_BB
+4766,KT_cs
 4804,Optus
 4922,Shentel
 5089,virginmedia
 5198,jazzpk
 5378,VodafoneUK
+5405,interdotlink
 5410,bouyguestelecom
 5432,proximus
 5466,eir
@@ -61,6 +67,7 @@ asn,handle
 5488,proximus
 5607,SkyUK
 5610,O2_CZ
+5617,CERT_OPL
 5645,TekSavvyNetwork
 5769,videotron
 6128,Optimum
@@ -102,6 +109,9 @@ asn,handle
 9208,win_ICTpartner
 9299,PLDT_Cares
 9318,SK_Bworld
+9605,docomo_cs
+9644,SKtelecom
+9824,jcom_support
 9829,BSNLCorporate
 10139,LiveSmart
 10139,SMARTCares
@@ -115,6 +125,7 @@ asn,handle
 12337,norisnetwork
 12350,VTX_Telecom
 12353,VodafonePT
+12390,KCOMhome
 12392,VOOetvous
 12430,vodafone_es
 12511,swisspost
@@ -136,7 +147,9 @@ asn,handle
 14525,StellarTechInc
 14537,Continent8
 15424,ElisaOyj
+15435,deltafiber
 15496,AaltoUniversity
+15456,InterNetX
 15517,netstream
 15547,bliblablo_ch
 15557,SFR
@@ -150,6 +163,10 @@ asn,handle
 16591,GoogleFiber
 17090,dbdesignllc
 17147,CSIRTGOB
+17552,true_online
+17676,SBCare
+17853,LGUplus
+17858,LGUplus
 18209,ACTFibernet
 19148,Leaseweb
 20001,getspectrum
@@ -176,6 +193,7 @@ asn,handle
 25106,by_mts
 25178,PCCWGlobal
 25255,dreioesterreich
+25560,rhgmbh
 27796,Ovnicom
 28329,G8Networks
 28403,RadiomovilDIPSA
@@ -187,6 +205,8 @@ asn,handle
 29372,SFR
 29422,TeliaFinland
 29485,A1Hrvatska
+29535,CERT_OPL
+29691,nine_ch
 29695,Altibox
 29854,WestHost
 30633,Leaseweb
@@ -270,8 +290,10 @@ asn,handle
 132199,talk2GLOBE
 132335,leapswitch
 133480,intergridanz
+133481,AIS_Thailand
 134067,unitiwireless
 135478,di_cbn
+138384,Rmobile_Support
 139879,galaxy_net_pk
 196655,NivosOy
 198024,IstekkiOy
@@ -284,8 +306,10 @@ asn,handle
 206067,ThreeUKSupport
 206567,tamedia
 206927,Bittium
+207149,jsansonn
 207960,AS_207960
 209507,DashfloNet
+211562,as211562
 262287,maxihost
 263812,ipxonnetworks
 264649,nuthost
@@ -298,3 +322,4 @@ asn,handle
 396362,Leaseweb
 397143,neptunenets
 397373,h4ytec
+399866,_Hoto_Cocoa_

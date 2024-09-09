@@ -13,7 +13,7 @@ html {
   --line-height: 1.7;
   --color-rgb: var(--gray-1-rgb);
   --accent-color-rgb: var(--indigo-3-rgb);
-  --column-width: 42rem;
+  --column-width: 45rem;
   --column-inline-padding: 1rem;
 }
 
@@ -353,6 +353,39 @@ h1, h2 {
 }
 
 
+.Updates {
+  position: relative;
+  overflow: hidden;
+  height: 12.7em;
+}
+
+.Updates[data-show-all="true"] {
+  height: auto;
+}
+
+.Updates::after {
+  content: "";
+  position: absolute;
+  background: var(--background-color);
+  height: 5em;
+  left: 0;
+  right: 0;
+  top: 100%;
+  box-shadow:
+    0 -.5em 1em -.8em rgba(var(--color-rgb), .4),
+    0 -1px 5px -3px var(--color),
+    0 -1px rgba(var(--color-rgb), .4);
+}
+
+.Updates[data-show-all="true"]::after {
+  opacity: 0;
+}
+
+.Updates--actions {
+  text-align: center;
+}
+
+
 .InlineSafeHighlight {
   color: var(--status-green-fg);
   background: var(--status-green-bg);
@@ -417,10 +450,10 @@ h1, h2 {
   border-spacing: 0;
   border: 0;
 
-  --type-column-width: 6rem;
-  --details-column-width: 14rem;
+  --type-column-width: 5rem;
+  --details-column-width: 18rem;
   --status-column-width: 8rem;
-  --asn-column-width: 7rem;
+  --asn-column-width: 6rem;
 
   --non-name-columns-width-sum: calc(
     var(--type-column-width) +

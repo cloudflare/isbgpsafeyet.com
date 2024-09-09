@@ -5,18 +5,39 @@ const svgCheck = '<svg viewBox="0 0 16 16"><path d="M2.5 8.5l3.5 3.5l8 -8"/></sv
 const svgTimes = '<svg viewBox="0 0 16 16"><path d="M3 3l10 10m-10 0l10 -10"/></svg>'
 
 const successMessageDetails = `${ ''
-}fetch https://valid.rpki.cloudflare.com
+}fetch https://valid.rpki.isbgpsafeyet.com
   <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
-fetch https://invalid.rpki.cloudflare.com
+fetch https://invalid.rpki.isbgpsafeyet.com
   <i pass><i>${ svgCheck }</i></i>correctly rejected invalid prefixes`
 
 const failureMessageDetails = `${ ''
-}fetch https://valid.rpki.cloudflare.com
+}fetch https://valid.rpki.isbgpsafeyet.com
   <i pass><i>${ svgCheck }</i></i>correctly accepted valid prefixes
 
-fetch https://invalid.rpki.cloudflare.com
+fetch https://invalid.rpki.isbgpsafeyet.com
   <i fail><i>${ svgTimes }</i></i>incorrectly accepted invalid prefixes`
+
+const setupShowAllUpdatesToggle = () => {
+  const updates = document.querySelector('[data-js-updates]')
+  const button = document.querySelector('[data-js-toggle-show-all-updates]')
+
+  if (!updates || !button) return
+
+  button.addEventListener('click', () => {
+    if (updates.getAttribute('data-show-all') === 'true') {
+      updates.setAttribute('data-show-all', 'false')
+      button.textContent = '＋ Show all'
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0)
+        updates.closest('.Column').scrollIntoView(true)
+      })
+    } else {
+      updates.setAttribute('data-show-all', 'true')
+      button.textContent = '－ Show fewer'
+    }
+  })
+}
 
 const setupShowAllRowsToggle = () => {
   const table = document.querySelector('[data-js-table]')
@@ -164,9 +185,9 @@ const initTesting = () => {
 
     const uid = Math.floor((Math.random() * 10e10)).toString(16)
 
-    const warpFetch = fetch('https://valid.rpki.cloudflare.com/cdn-cgi/trace')
-    const validFetch = fetch(`https://valid.rpki.cloudflare.com/${ uid }`)
-    const invalidFetch = fetch(`https://invalid.rpki.cloudflare.com/${ uid }`)
+    const warpFetch = fetch('https://valid.rpki.isbgpsafeyet.com/cdn-cgi/trace')
+    const validFetch = fetch(`https://valid.rpki.isbgpsafeyet.com/${ uid }`)
+    const invalidFetch = fetch(`https://invalid.rpki.isbgpsafeyet.com/${ uid }`)
 
     render({
       type: 'running',
@@ -193,7 +214,8 @@ const initTesting = () => {
             }, 2 * 1000)
 
             invalidFetch
-              .then(() => {
+              .then(response => response.json())
+              .then(data => {
                 completed = true
                 if (timedOut) return
                 renderFailure(data)
@@ -270,6 +292,7 @@ const openPossibleTargetFAQItem = () => {
 }
 
 const init = () => {
+  setupShowAllUpdatesToggle()
   setupShowAllRowsToggle()
   setupASNColumnToggle()
   initTesting()

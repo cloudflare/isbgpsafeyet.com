@@ -1,10 +1,22 @@
 name = "isbgpsafeyet"
-type = "webpack"
-account_id = "04cb62d57d02b212c133288d8e42f84c"
+main = "workers-site/index.js"
+account_id = "0b7358d77426ae6413d56c1cc0499b4f"
+compatibility_date = "2023-04-13"
+send_metrics = false
+node_compat = true  # ...needed for Buffer.
 workers_dev = false
-route = "isbgpsafeyet.com/*"
-zone_id = "72a2ccd3f2b1c26c23d134d8d1a70a5d"
-webpack_config = "workers-site/webpack.config.js"
+rules = [{ type = "Text", globs = ["**/*.csv"], fallthrough = true }]
+vars = { ENVIRONMENT = "dev" }
 
 [site]
 bucket = "./public"
+
+[env.production]
+workers_dev = false
+vars = { ENVIRONMENT = "production" }
+routes = [{ pattern = "isbgpsafeyet.com/*", zone_id = "a97af0401334292793f51b86dd90375a" }]
+
+[env.staging]
+workers_dev = false
+vars = { ENVIRONMENT = "staging" }
+routes = [{ pattern = "staging.isbgpsafeyet.com/*", zone_id = "a97af0401334292793f51b86dd90375a" }]

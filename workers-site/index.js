@@ -1,8 +1,8 @@
-import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
+import { getAssetFromKV } from '@cloudflare/kv-asset-handler'
 import OPERATORS_STRING from '../data/operators.csv'
 import ISP_TWITTER_STRING from '../data/twitter.csv'
 
-import parse from 'csv-parse/lib/sync'
+import { parse } from 'csv-parse/sync'
 import pickBy from 'lodash.pickby'
 
 /**
@@ -41,6 +41,7 @@ const majorCloudASNs = [
   '9009', // M247
   '2906', // Netflix
   '14061', // DigitalOcean
+  '8075', // Microsoft
 ]
 
 let MAJOR_OPERATORS_COUNT = 0
@@ -94,11 +95,10 @@ async function handleEvent(event) {
 
     if (url.pathname === '/' || url.pathname === '/index.html') {
       response.headers.set('Cache-Control', 'public; max-age=60')
-      response.headers.set('Content-Security-Policy', "default-src 'none'; script-src 'self' data: 'unsafe-inline'; object-src 'none'; style-src 'self' ui.components.workers.dev; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' invalid.rpki.cloudflare.com valid.rpki.cloudflare.com")
+      response.headers.set('Content-Security-Policy', "default-src 'none'; script-src 'self' data: 'unsafe-inline'; object-src 'none'; style-src 'self' ui.components.workers.dev; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' invalid.rpki.isbgpsafeyet.com valid.rpki.isbgpsafeyet.com")
       response.headers.set('X-XSS-Protection', '1; mode=block')
       response.headers.set('X-Frame-Options', 'DENY')
       response.headers.set('Referrer-Policy', 'unsafe-url')
-      response.headers.set('Feature-Policy', 'none')
 
       return new HTMLRewriter()
         .on('head', new VarInjector('ISP_TWITTER', ISP_TWITTER))
@@ -119,7 +119,7 @@ async function handleEvent(event) {
           mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/404.html`, req),
         })
 
-        return new Response(notFoundResponse.body, { ...notFoundResponse, status: 404 })
+        return new Response(notFoundResponse.body, { ...notFoundResponse, status: 404, headers: {'Content-Type': 'text/html'}})
       } catch (e) {}
     }
 
