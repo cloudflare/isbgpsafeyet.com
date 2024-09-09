@@ -429,3 +429,4 @@ MilkyWan,ISP,signed + filtering,safe,2027,1829
 Telekom Malaysia Berhad,ISP,signed,unsafe,4788,114
 IONOS SE,Cloud,signed + filtering,safe,8560,838
 1&1 Versatel,ISP,partially signed,unsafe,8881,220
+Inter.link,transit,signed + filtering,safe,5405,83
