@@ -222,6 +222,7 @@ Cybernet Pakistan,ISP,,unsafe,9541,1757
 Cloudflare,cloud,signed + filtering,safe,13335,1819
 HostDime.com Inc,cloud,,safe,33182,1841
 xs4all,cloud,signed + filtering,safe,3265,1937
+Sonic,ISP,signed,unsafe,46375,1978
 Worldstream,ISP,signed,partially safe,49981,2000
 CSL IDC,cloud,,unsafe,9891,2007
 Telefonica Peru,ISP,,unsafe,6147,2099
