@@ -305,6 +305,7 @@ Phase Layer Global Networks,cloud,,unsafe,51852,6959
 komro GmbH,ISP,signed + filtering,safe,29413,7308
 eSecureData,cloud,signed,unsafe,11831,7324
 Axcelx,cloud,,unsafe,33083,7453
+Starlink,ISP,signed,unsafe,14593,7478
 VoiceHost,ISP,signed + filtering,safe,31472,7527
 rh-tec,cloud,signed,unsafe,25560,7543
 Neptune Networks,cloud,signed + filtering,safe,397143,7597
