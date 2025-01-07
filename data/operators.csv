@@ -65,7 +65,7 @@ Bell Canada,ISP,,unsafe,577,90
 IIJ,transit,signed + filtering peers only,partially safe,2497,95
 Orange Polska,ISP,signed + filtering,safe,5617,96
 Optimum,ISP,,unsafe,6128,97
-RCS&RDS,ISP,,unsafe,8708,102
+Digi Romania,ISP,signed + filtering,safe,8708,102
 GEANT,ISP,signed + filtering,safe,20965,103
 Commcorp,transit,,unsafe,14840,122
 Softdados Telecom,transit,signed + filtering,safe,52873,124
