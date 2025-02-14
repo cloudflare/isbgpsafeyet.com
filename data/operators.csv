@@ -421,7 +421,7 @@ UPX TECNOLOGIA,transit,signed + filtering,safe,52863,338
 Ursin Filli,ISP,signed + filtering,safe,202427,75328
 Rose Telecom,ISP,signed + filtering,safe,54681,24936
 Bryan Barbolina trading as Cloudwebservices,cloud,signed + filtering,safe,213268,65065
-Hazelnet,ISP,signed + filtering,safe,200242,75603
+de.theirs,ISP,signed + filtering,safe,200242,77721
 Parknet,ISP,signed + filtering,safe,197301,19561
 Datacamp Limited,signed,transit,unsafe,212238,11971
 C1V hosting,ISP,signed + filtering,safe,212271,5350
@@ -435,4 +435,6 @@ IONOS SE,Cloud,signed + filtering,safe,8560,838
 Inter.link,transit,signed + filtering,safe,5405,83
 SysEleven,transit,signed + filtering,safe,25291,1618
 TelHi Corporation (Infal),ISP,signed + filtering,safe,150369,2195
-Communications of America (FCA),ISP,,unsafe,5650,235
+Frontier Communications of America (FCA),ISP,,unsafe,5650,235
+Valex Cloud LLC (VALEX),ISP,signed + filtering,safe,19468,66787
+Skhron,cloud,signed + filtering,safe,215467,48506
