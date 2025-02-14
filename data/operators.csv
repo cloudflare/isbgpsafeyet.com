@@ -30,6 +30,7 @@ TransTelecom,transit,,unsafe,20485,18
 Comcast,ISP,signed + filtering,safe,7922,19
 AT&T,ISP,signed + filtering,safe,7018,20
 Verizon,ISP,signed + filtering,safe,701,21
+Verizon Business,ISP,signed + filtering,safe,6167,12163
 Liberty Global,transit,signed + filtering,safe,6830,22
 SingTel,transit,,unsafe,7473,24
 Deutsche Telekom,ISP,signed + filtering,safe,3320,25
