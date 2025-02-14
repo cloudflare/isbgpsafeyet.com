@@ -435,4 +435,5 @@ IONOS SE,Cloud,signed + filtering,safe,8560,838
 Inter.link,transit,signed + filtering,safe,5405,83
 SysEleven,transit,signed + filtering,safe,25291,1618
 TelHi Corporation (Infal),ISP,signed + filtering,safe,150369,2195
+Valex Cloud LLC (VALEX),ISP,signed + filtering,safe,19468,66787
 Skhron,cloud,signed + filtering,safe,215467,48506
