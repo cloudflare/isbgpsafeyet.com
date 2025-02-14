@@ -14,7 +14,7 @@ Lumen,transit,signed + filtering,safe,3356,1
 Arelion (formerly Telia),transit,signed + filtering,safe,1299,2
 Cogent,transit,signed + filtering,safe,174,3
 NTT,transit,signed + filtering,safe,2914,4
-Sparkle,transit,started,unsafe,6762,5
+Sparkle,transit,,unsafe,6762,5
 Hurricane Electric,transit,signed + filtering,safe,6939,6
 GTT,transit,signed + filtering,safe,3257,7
 TATA,transit,signed + filtering,safe,6453,8
@@ -117,7 +117,7 @@ Biznet Networks,ISP,signed + filtering,safe,17451,324
 Claro Argentina,ISP,,unsafe,11664,330
 Copel Telecom,transit,,unsafe,14868,333
 Vocus Group NZ,ISP,,unsafe,9790,370
-ACONET,transit,started,unsafe,1853,384
+ACONET,transit,,unsafe,1853,384
 Wirelink,transit,,unsafe,28368,391
 SFR,ISP,,unsafe,15557,394
 RCN,ISP,signed + filtering,safe,6079,396
@@ -261,7 +261,7 @@ FishNet,cloud,,unsafe,43317,3679
 ArgonHost,cloud,,unsafe,58477,3907
 Gis Telecom,ISP,signed + filtering,safe,264130,3924
 OVH,cloud,,unsafe,16276,3982
-ComHemAB,ISP,started,unsafe,39651,3997
+ComHemAB,ISP,,unsafe,39651,77693
 WestHost,cloud,,unsafe,29854,4032
 Magenta (T-Mobile) Austria,ISP,,unsafe,8412,4043
 ALMOUROLTEC SERVICOS DE INFORMATICA E INTERNET LDA,cloud,,unsafe,24768,4105
@@ -357,7 +357,7 @@ A1 Hrvatska,ISP,,unsafe,29485,12837
 Wave G, ISP,,unsafe,54858,13010
 PROMAX,ISP,,safe,31423,13951
 Leaseweb USA-DAL-10,cloud,,unsafe,394380,13079
-CBN Broadband,ISP,started,unsafe,135478,13267
+CBN Broadband,ISP,,unsafe,135478,13267
 Lanet Network,ISP,,unsafe,47800,13295
 EHOSTIDC,cloud,,unsafe,45382,13385
 Silknet,ISP,signed,unsafe,15491,13467
@@ -404,7 +404,7 @@ Estoxy,cloud,,unsafe,208673,48965
 WhiteHat,ISP,signed + filtering,safe,51999,52250
 Raiola Networks,cloud,signed + filtering,safe,56958,57203
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
-Galaxy Broadband,ISP,started,unsafe,139879,59342
+Galaxy Broadband,ISP,,unsafe,139879,59342
 andrewnet,ISP,signed + filtering,safe,211562,63535
 Wifx,ISP,signed + filtering,safe,199811,9171
 Chilean Government Network (Red de Conectividad del Estado),ISP,signed + filtering,safe,17147,67265
