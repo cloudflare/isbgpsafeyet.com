@@ -96,7 +96,7 @@ async function handleEvent(event) {
     if (url.pathname === '/' || url.pathname === '/index.html') {
       response.headers.set('Cache-Control', 'public; max-age=60')
       response.headers.set('Content-Security-Policy', "default-src 'none'; script-src 'self' data: 'unsafe-inline'; object-src 'none'; style-src 'self' ui.components.workers.dev; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' invalid.rpki.isbgpsafeyet.com valid.rpki.isbgpsafeyet.com")
-      response.headers.set('X-XSS-Protection', '1; mode=block')
+      response.headers.set('X-XSS-Protection', '0')
       response.headers.set('X-Frame-Options', 'DENY')
       response.headers.set('Referrer-Policy', 'unsafe-url')
 
