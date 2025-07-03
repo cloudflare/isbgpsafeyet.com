@@ -185,7 +185,7 @@ const initTesting = () => {
 
     const uid = Math.floor((Math.random() * 10e10)).toString(16)
 
-    const warpFetch = fetch('https://valid.rpki.isbgpsafeyet.com/cdn-cgi/trace')
+    const warpFetch = fetch('https://isbgpsafeyet.com/cdn-cgi/trace')
     const validFetch = fetch(`https://valid.rpki.isbgpsafeyet.com/${ uid }`)
     const invalidFetch = fetch(`https://invalid.rpki.isbgpsafeyet.com/${ uid }`)
 
