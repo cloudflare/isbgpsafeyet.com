@@ -62,7 +62,7 @@ Seabras,transit,,unsafe,13786,83
 SK Broadband,ISP,,unsafe,9318,85
 TPG,ISP,,unsafe,7545,87
 Durand,transit,,unsafe,22356,88
-Bell Canada,ISP,,unsafe,577,90
+Bell Canada,ISP,signed + filtering,safe,577,126
 IIJ,transit,signed + filtering peers only,partially safe,2497,95
 Orange Polska,ISP,signed + filtering,safe,5617,96
 Optimum,ISP,,unsafe,6128,97
