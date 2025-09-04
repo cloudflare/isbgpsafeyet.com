@@ -62,7 +62,7 @@ Seabras,transit,,unsafe,13786,83
 SK Broadband,ISP,,unsafe,9318,85
 TPG,ISP,,unsafe,7545,87
 Durand,transit,,unsafe,22356,88
-Bell Canada,ISP,,unsafe,577,90
+Bell Canada,ISP,signed + filtering,safe,577,126
 IIJ,transit,signed + filtering peers only,partially safe,2497,95
 Orange Polska,ISP,signed + filtering,safe,5617,96
 Optimum,ISP,,unsafe,6128,97
@@ -443,3 +443,4 @@ BOXIS,cloud,signed + filtering,safe,201199,45389
 Charter,ISP,signed + filtering,safe,10796,166
 Ssmidge Technologies,ISP,signed + filtering,safe,60900,60411
 Bharat Datacenter,Cloud,signed + filtering,safe,151704,7196
+sc Network,ISP,signed + filtering,safe,53343,12141
