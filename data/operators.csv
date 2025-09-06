@@ -1,5 +1,5 @@
 name,type,details,status,asn,rank
-RoyaleHosting BV,Cloud,signed + filtering,safe,212477,601
+RoyaleHosting BV,Cloud,signed,partially safe,212477,601
 Softbank,ISP,,unsafe,17676,111
 NTT Docomo,ISP,,unsafe,9605,11764
 ASAHI Net,ISP,,unsafe,4685,11789
