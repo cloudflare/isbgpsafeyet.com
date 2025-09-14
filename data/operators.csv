@@ -445,3 +445,4 @@ Charter,ISP,signed + filtering,safe,10796,166
 Ssmidge Technologies,ISP,signed + filtering,safe,60900,60411
 Bharat Datacenter,Cloud,signed + filtering,safe,151704,7196
 sc Network,ISP,signed + filtering,safe,53343,12141
+Neptune Internet,ISP,,unsafe,151660,9594
