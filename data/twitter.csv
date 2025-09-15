@@ -48,8 +48,8 @@ asn,handle
 3399,Obenetwork
 3737,PenTeleData
 4637,Telstra
-4685,AsahiNetStatus
 4670,sejongtelecom
+4685,AsahiNetStatus
 4713,ocn_internet
 4739,iiNet
 4764,Aussie_BB
@@ -149,8 +149,8 @@ asn,handle
 14593,Starlink
 15424,ElisaOyj
 15435,deltafiber
-15496,AaltoUniversity
 15456,InterNetX
+15496,AaltoUniversity
 15517,netstream
 15547,bliblablo_ch
 15557,SFR
@@ -317,7 +317,7 @@ asn,handle
 262287,maxihost
 263812,ipxonnetworks
 264649,nuthost
-265656,AnacondaWeb 
+265656,AnacondaWeb
 393886,Leaseweb
 394256,Tech_Futures
 394380,Leaseweb
