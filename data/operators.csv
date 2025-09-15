@@ -423,8 +423,8 @@ Powerhosting,Cloud,signed + filtering,safe,60422,29829
 AnacondaWeb,ISP,signed + filtering,safe,265656,32585
 WARI.NET COMUNICACIONES S.R.L,ISP,,unsafe,265708,34599
 Asimia Damaskou,cloud,,unsafe,205053,36355
-iServer-AS,cloud,,unsafe,57127,36355
 NUT HOST SRL,cloud,,unsafe,264649,36355
+iServer-AS,cloud,,unsafe,57127,36355
 Cobaso,Cloud,,safe,399866,39207
 SIA Bighost.lv,cloud,,unsafe,200709,42875
 BOXIS,cloud,signed + filtering,safe,201199,45389
@@ -445,4 +445,5 @@ Advanced Wireless Network Co. Ltd.,ISP,signed,unsafe,133481,74135
 NNET,ISP,signed + filtering,safe,142582,74809
 Ursin Filli,ISP,signed + filtering,safe,202427,75328
 ComHemAB,ISP,,unsafe,39651,77693
+de.theirs,ISP,signed + filtering,safe,200242,77721
 de.theirs,ISP,signed + filtering,safe,200242,77721
