@@ -337,6 +337,7 @@ Demando,cloud,,unsafe,196819,8835
 Cloud9,cloud,,unsafe,57814,8983
 Wifx,ISP,signed + filtering,safe,199811,9171
 Stellar Technologies,cloud,signed + filtering,safe,14525,9490
+Neptune Internet,ISP,,unsafe,151660,9594
 Claro Brasil,ISP,,unsafe,28573,10205
 EE,ISP,filtering,partially safe,12576,10206
 TurkCell,ISP,,unsafe,16135,10254
