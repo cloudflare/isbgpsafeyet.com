@@ -43,6 +43,6 @@
     "terser-webpack-plugin": "^5.3.7",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
-    "wrangler": "^3.109.1"
+    "wrangler": "^4.21.0"
   }
 }
