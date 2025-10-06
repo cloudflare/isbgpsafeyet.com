@@ -79,6 +79,7 @@ Vogel,transit,,unsafe,25933,166
 OpenX,transit,signed + filtering,safe,263444,173
 TIM,ISP,,unsafe,3269,176
 AAPT Limited,ISP,,unsafe,2764,181
+FPT Telecom,ISP,signed + filtering,safe,18403,183
 TELY,transit,,unsafe,53087,188
 Rogers,ISP,,unsafe,812,198
 British Telecommunications,ISP,,unsafe,2856,199
@@ -447,4 +448,3 @@ Ursin Filli,ISP,signed + filtering,safe,202427,75328
 ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
-FPT Telecom,ISP,signed + filtering,safe,18403
