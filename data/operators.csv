@@ -167,6 +167,7 @@ STARTNET,transit,signed + filtering,safe,52999,821
 Obenetwork,ISP,signed + filtering,safe,3399,833
 NOS COMUNICACOES,ISP,signed + filtering,safe,2860,836
 IONOS SE,Cloud,signed + filtering,safe,8560,838
+Energotel,ISP,signed+filtering,safe,31117,852
 2degrees,ISP,,unsafe,23655,856
 Altibox,ISP,signed + filtering,safe,29695,872
 NetCologne,ISP,,unsafe,8422,873
