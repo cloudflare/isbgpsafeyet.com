@@ -306,6 +306,7 @@ Kingston Communications,ISP,signed,unsafe,12390,5315
 C1V hosting,ISP,signed + filtering,safe,212271,5350
 Stadtnetz Bamberg,ISP,,unsafe,198570,5457
 Rakuten Mobile,ISP,,unsafe,138384,5474
+BlackGATE,ISP,signed + filtering,safe,201290,6275
 DigitalOcean,cloud,filtering peers only,partially safe,14061,6381
 Vodafone India,ISP,,unsafe,38266,6428
 Afrihost,ISP,,safe,37611,6457
