@@ -98,6 +98,7 @@ Forte Telecom,transit,,unsafe,263009,246
 HiNet,ISP,signed + filtering,safe,3462,249
 ITS Telecom,transit,signed + filtering,safe,28186,255
 Alta Rede,transit,,unsafe,28260,259
+IELO,ISP,signed + filtering,safe,29075,270
 Orange Polska,ISP,signed + filtering,safe,29535,273
 Vodafone DE,ISP,,unsafe,3209,276
 Acorus Networks,ISP,signed + filtering,safe,35280,277
