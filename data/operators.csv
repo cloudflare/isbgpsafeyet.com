@@ -305,6 +305,7 @@ Kingston Communications,ISP,signed,unsafe,12390,5315
 C1V hosting,ISP,signed + filtering,safe,212271,5350
 Stadtnetz Bamberg,ISP,,unsafe,198570,5457
 Rakuten Mobile,ISP,,unsafe,138384,5474
+BlackGATE,ISP,signed + filtering,safe,201290,6275
 DigitalOcean,cloud,filtering peers only,partially safe,14061,6381
 Vodafone India,ISP,,unsafe,38266,6428
 Afrihost,ISP,,safe,37611,6457
@@ -449,4 +450,3 @@ Ursin Filli,ISP,signed + filtering,safe,202427,75328
 ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
-BlackGATE,ISP,signed + filtering,safe,201290,6275
