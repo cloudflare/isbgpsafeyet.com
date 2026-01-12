@@ -325,7 +325,7 @@ Axcelx,cloud,,unsafe,33083,7453
 Starlink,ISP,signed,unsafe,14593,7478
 VoiceHost,ISP,signed + filtering,safe,31472,7527
 rh-tec,cloud,signed,unsafe,25560,7543
-Neptune Networks,cloud,signed + filtering,safe,397143,7597
+Neptune Networks,transit,signed + filtering,safe,21700,7597
 Gigabit DK,ISP,signed + filtering,safe,60876,7680
 InterNetX,cloud,signed,unsafe,15456,7696
 Iver Norge AS,ISP,,safe,49409,7878
