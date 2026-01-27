@@ -2,8 +2,8 @@ name = "isbgpsafeyet"
 main = "workers-site/index.js"
 account_id = "0b7358d77426ae6413d56c1cc0499b4f"
 compatibility_date = "2023-04-13"
+compatibility_flags = ["nodejs_compat"]
 send_metrics = false
-node_compat = true  # ...needed for Buffer.
 workers_dev = false
 rules = [{ type = "Text", globs = ["**/*.csv"], fallthrough = true }]
 vars = { ENVIRONMENT = "dev" }
