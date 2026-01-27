@@ -9,12 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - name: Navigate to repo
       run: cd $GITHUB_WORKSPACE
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v4
       with:
-        node-version: '19.x'
+        node-version: '22.x'
     - name: Install deps
       run: npm ci
     - name: Build site
