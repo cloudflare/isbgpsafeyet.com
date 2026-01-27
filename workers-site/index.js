@@ -2,8 +2,30 @@ import { getAssetFromKV } from '@cloudflare/kv-asset-handler'
 import OPERATORS_STRING from '../data/operators.csv'
 import ISP_TWITTER_STRING from '../data/twitter.csv'
 
-import { parse } from 'csv-parse/sync'
 import pickBy from 'lodash.pickby'
+
+/**
+ * Simple CSV parser that returns an array of objects with column headers as keys.
+ * Does not use Node.js Buffer, compatible with Cloudflare Workers.
+ */
+function parseCSV(csvString) {
+  const lines = csvString.trim().split('\n')
+  if (lines.length === 0) return []
+  
+  const headers = lines[0].split(',').map(h => h.trim())
+  const rows = []
+  
+  for (let i = 1; i < lines.length; i++) {
+    const values = lines[i].split(',')
+    const row = {}
+    for (let j = 0; j < headers.length; j++) {
+      row[headers[j]] = (values[j] || '').trim()
+    }
+    rows.push(row)
+  }
+  
+  return rows
+}
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -16,8 +38,8 @@ const DEBUG = false
 
 const IS_BGP_SAFE_YET = false // TODO - update when safe ;)
 
-const OPERATORS = parse(OPERATORS_STRING, {columns: true})
-const ISP_TWITTER = parse(ISP_TWITTER_STRING, {columns: true})
+const OPERATORS = parseCSV(OPERATORS_STRING)
+const ISP_TWITTER = parseCSV(ISP_TWITTER_STRING)
 
 function statusSortIndex(status) {
   return [, 'safe', 'partially safe', 'unsafe'].indexOf(status)
