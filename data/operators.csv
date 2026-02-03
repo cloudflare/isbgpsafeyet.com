@@ -212,6 +212,7 @@ Selectel MSK,cloud,,unsafe,50340,1504
 NetCom BW,ISP,,unsafe,41998,1508
 Continent 8 LLC,cloud,,unsafe,14537,1513
 Synapsecom Telecoms,cloud,,unsafe,8280,1522
+Rackforest Zrt,cloud,signed,unsafe,62214,1544
 RKOM,ISP,signed + filtering,safe,12611,1548
 Belwue,ISP,signed + filtering,safe,553,1565
 SpaceNet,ISP,signed + filtering,safe,5539,1584
@@ -452,4 +453,3 @@ Ursin Filli,ISP,signed + filtering,safe,202427,75328
 ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
-Rackforest Zrt,cloud,,unsafe,62214,
