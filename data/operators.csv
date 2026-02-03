@@ -58,7 +58,7 @@ T-Mobile,transit,partially signed + filtering,safe,1239,98
 Digi Romania,ISP,signed + filtering,safe,8708,102
 GEANT,ISP,signed + filtering,safe,20965,103
 Softbank,ISP,,unsafe,17676,111
-Telekom Malaysia Berhad,ISP,signed,unsafe,4788,114
+Telekom Malaysia Berhad,ISP,signed + filtering,safe,4788,114
 Commcorp,transit,,unsafe,14840,122
 Softdados Telecom,transit,signed + filtering,safe,52873,124
 Bell Canada,ISP,signed + filtering,safe,577,126
