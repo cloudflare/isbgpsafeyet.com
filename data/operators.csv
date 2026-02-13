@@ -380,6 +380,8 @@ Datacamp Limited,transit,signed,unsafe,212238,11971
 sc Network,ISP,signed + filtering,safe,53343,12141
 Verizon Business,ISP,signed + filtering,safe,6167,12163
 Iliad Italia,ISP,signed + filtering,safe,29447,12387
+AIRTELBROADBAND-AS-AP,ISP,,unsafe,24560,12395
+BHARTI-MOBILITY-AS-AP,ISP,signed,unsafe,45609,12396
 Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
 Leaseweb USA-PHX-11,cloud,,unsafe,19148,12777
 A1 Hrvatska,ISP,,unsafe,29485,12837
