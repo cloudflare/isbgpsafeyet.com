@@ -382,6 +382,7 @@ Verizon Business,ISP,signed + filtering,safe,6167,12163
 Iliad Italia,ISP,signed + filtering,safe,29447,12387
 Leaseweb USA-NYC-11,cloud,,unsafe,396362,12489
 Leaseweb USA-PHX-11,cloud,,unsafe,19148,12777
+Hyperoptic,ISP,,unsafe,56478,12825
 A1 Hrvatska,ISP,,unsafe,29485,12837
 Wave G, ISP,,unsafe,54858,13010
 Leaseweb USA-DAL-10,cloud,,unsafe,394380,13079
