@@ -3,6 +3,9 @@ name: CI
 # Trigger workflow on push and pull requests.
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
