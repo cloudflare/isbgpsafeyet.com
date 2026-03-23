@@ -38,7 +38,7 @@
     "focus-visible-polyfill": "^1.0.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^29.5.0",
-    "markdownlint-cli": "^0.47.0",
+    "markdownlint-cli": "^0.48.0",
     "mini-css-extract-plugin": "^2.7.5",
     "terser-webpack-plugin": "^5.3.7",
     "webpack": "^5.79.0",
