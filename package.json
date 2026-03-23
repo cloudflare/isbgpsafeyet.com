@@ -24,6 +24,9 @@
     "url": "https://github.com/cloudflare/isbgpsafeyet.com/issues"
   },
   "homepage": "https://github.com/cloudflare/isbgpsafeyet.com#readme",
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/.claude/"]
+  },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.2",
     "lodash.pickby": "^4.6.0"
@@ -31,17 +34,16 @@
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "concurrently": "^9.2.1",
-    "copy-webpack-plugin": "^13.0.1",
-    "css-loader": "^7.1.3",
-    "css-minimizer-webpack-plugin": "^7.0.4",
-    "csv-parse": "^5.3.6",
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
+    "css-minimizer-webpack-plugin": "^8.0.0",
     "focus-visible-polyfill": "^1.0.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^29.5.0",
     "markdownlint-cli": "^0.48.0",
-    "mini-css-extract-plugin": "^2.7.5",
-    "terser-webpack-plugin": "^5.3.7",
-    "webpack": "^5.79.0",
+    "mini-css-extract-plugin": "^2.10.1",
+    "terser-webpack-plugin": "^5.4.0",
+    "webpack": "^5.105.4",
     "webpack-cli": "^6.0.1",
     "wrangler": "^4.76.0"
   }

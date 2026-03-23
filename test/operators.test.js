@@ -1,11 +1,19 @@
 const fs = require('fs');
-const csv = require('csv-parse/sync');
 const path = require('path');
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const values = line.split(',').map(v => v.trim());
+    return Object.fromEntries(headers.map((h, i) => [h, values[i]]));
+  });
+}
 
 describe('Operators', function() {
   test('Has duplicate ASN returns false', () => {
     const OPERATORS_STRING = fs.readFileSync(path.join(__dirname, '..', 'data', 'operators.csv'), {encoding: 'utf-8'});
-    const OPERATORS = csv.parse(OPERATORS_STRING, {columns: true});
+    const OPERATORS = parseCSV(OPERATORS_STRING);
 
     let seen = new Set();
 
@@ -18,7 +26,7 @@ describe('Operators', function() {
 
   test('File is sorted ascendingly by AS Rank column', () => {
     const OPERATORS_STRING = fs.readFileSync(path.join(__dirname, '..', 'data', 'operators.csv'), {encoding: 'utf-8'});
-    const OPERATORS = csv.parse(OPERATORS_STRING, {columns: true});
+    const OPERATORS = parseCSV(OPERATORS_STRING);
 
     // Check if the rank column is sorted in ascending order
     for (let i = 1; i < OPERATORS.length; i++) {
