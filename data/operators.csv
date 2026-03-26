@@ -233,6 +233,7 @@ WOBCOM,ISP,signed + filtering,safe,9136,1821
 MilkyWan,ISP,signed + filtering,safe,2027,1829
 HostDime.com Inc,cloud,,safe,33182,1841
 xs4all,cloud,signed + filtering,safe,3265,1937
+O.P.T New Caledonia,ISP,signed + filtering,safe,18200,1963
 Sonic,ISP,signed,unsafe,46375,1978
 Worldstream,ISP,signed,partially safe,49981,2000
 CSL IDC,cloud,,unsafe,9891,2007
@@ -456,4 +457,3 @@ ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
 AR Informatik AG (Kanton Appenzell Ausserrhoden),ISP,signed + filtering,safe,211452,77797
-O.P.T New Caledonia,ISP,signed + filtering,safe,18200,77798
