@@ -443,6 +443,7 @@ Raiola Networks,cloud,signed + filtering,safe,56958,57203
 Galaxy Broadband,ISP,,unsafe,139879,59342
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
 Ssmidge Technologies,ISP,signed + filtering,safe,60900,60411
+AVS ISP,transit,signed + filtering,safe,210464,60658
 andrewnet,ISP,signed + filtering,safe,211562,63535
 Bryan Barbolina trading as Cloudwebservices,cloud,signed + filtering,safe,213268,65065
 Valex Cloud LLC (VALEX),ISP,signed + filtering,safe,19468,66787
@@ -456,4 +457,3 @@ ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
 AR Informatik AG (Kanton Appenzell Ausserrhoden),ISP,signed + filtering,safe,211452,77797
-AVS ISP,transit,signed + filtering,safe,210464,0
