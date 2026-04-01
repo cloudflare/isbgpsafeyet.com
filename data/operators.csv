@@ -291,6 +291,7 @@ Amanah,cloud,,unsafe,32489,4279
 UNMETERED,cloud,,unsafe,54133,4340
 Accuris Technologies,ISP,signed + filtering,safe,52210,4537
 Via Radio Dourados,transit,signed + filtering,safe,61785,4697
+Zen Internet,ISP,filtering,safe,13037,4742
 T-Mobile,ISP,signed,unsafe,21928,4793
 Vodafone UK,ISP,,unsafe,5378,4810
 ACT Fibernet,ISP,signed + filtering,safe,18209,4821
