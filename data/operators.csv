@@ -72,6 +72,7 @@ W I X NET DO BRASIL,cloud,,unsafe,53013,137
 Next Layer GmbH,transit,signed + filtering,safe,1764,141
 Telecom Argentina,ISP,,unsafe,7303,142
 Fastweb,ISP,,unsafe,12874,151
+KDDI,ISP,,unsafe,2516,152
 American Tower Brasil,transit,,unsafe,23106,154
 Charter,ISP,signed + filtering,safe,10796,166
 TELUS Communications,ISP,signed + filtering,safe,852,166
@@ -460,4 +461,3 @@ ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
 AR Informatik AG (Kanton Appenzell Ausserrhoden),ISP,signed + filtering,safe,211452,77797
-KDDI,ISP,,unsafe,2516,152
