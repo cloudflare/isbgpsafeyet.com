@@ -246,6 +246,7 @@ Netwerkvereniging ColoClue,ISP,signed + filtering,safe,8283,2152
 TNG Stadtnetz GmbH,ISP,signed + filtering,safe,13101,2174
 TelHi Corporation (Infal),ISP,signed + filtering,safe,150369,2195
 TOT-NET,ISP,,unsafe,23969,2198
+Telefónica Germany GmbH & Co. OHG,ISP,signed,unsafe,6805,2257
 ST-BGP,cloud,,unsafe,46844,2295
 Aussie Broadband,ISP,signed + filtering,safe,4764,2319
 Dhiraagu,ISP,signed + filtering,safe,7642,2357
