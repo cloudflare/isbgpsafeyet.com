@@ -157,6 +157,7 @@ Hetzner Online,cloud,signed,unsafe,24940,717
 eww ag,transit,,unsafe,21013,722
 Videotron,ISP,,unsafe,5769,727
 ASAP Telecom,transit,,unsafe,264144,749
+Pilot Fiber,ISP,signed + filtering,safe,46450,753
 G-Core Labs,cloud,,unsafe,199524,759
 CYTA,ISP,signed + filtering,safe,6866,763
 Equinix Metal,Cloud,signed + filtering peers,partially safe,54825,774
