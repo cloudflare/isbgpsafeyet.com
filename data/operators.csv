@@ -58,7 +58,7 @@ T-Mobile,transit,partially signed + filtering,safe,1239,98
 Digi Romania,ISP,signed + filtering,safe,8708,102
 GEANT,ISP,signed + filtering,safe,20965,103
 Softbank,ISP,,unsafe,17676,111
-Telekom Malaysia Berhad,ISP,signed + filtering,safe,4788,114
+Telekom Malaysia Berhad,ISP,signed + filtering,safe,4788,107
 Commcorp,transit,,unsafe,14840,122
 Softdados Telecom,transit,signed + filtering,safe,52873,124
 Bell Canada,ISP,signed + filtering,safe,577,126
@@ -465,3 +465,7 @@ ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
 AR Informatik AG (Kanton Appenzell Ausserrhoden),ISP,signed + filtering,safe,211452,77797
+TIME dotCom Berhad,ISP,,unsafe,9930,399
+Perfect Networks,ISP,,unsafe,154516,54406
+Moedove,ISP,signed + filtering,safe,53808,6981
+MoeDove LLC,ISP,signed + filtering,safe,44324,2022
