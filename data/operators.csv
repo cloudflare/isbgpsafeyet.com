@@ -57,8 +57,8 @@ Optimum,ISP,,unsafe,6128,97
 T-Mobile,transit,partially signed + filtering,safe,1239,98
 Digi Romania,ISP,signed + filtering,safe,8708,102
 GEANT,ISP,signed + filtering,safe,20965,103
-Softbank,ISP,,unsafe,17676,111
 Telekom Malaysia Berhad,ISP,signed + filtering,safe,4788,107
+Softbank,ISP,,unsafe,17676,111
 Commcorp,transit,,unsafe,14840,122
 Softdados Telecom,transit,signed + filtering,safe,52873,124
 Bell Canada,ISP,signed + filtering,safe,577,126
@@ -121,6 +121,7 @@ ACONET,transit,,unsafe,1853,384
 Wirelink,transit,,unsafe,28368,391
 SFR,ISP,,unsafe,15557,394
 RCN,ISP,signed + filtering,safe,6079,396
+TIME dotCom Berhad,ISP,,unsafe,9930,399
 TASCOM,transit,,unsafe,52871,415
 Devoli,ISP,signed + filtering,safe,45177,422
 NTS Workspace AG,ISP,signed + filtering,safe,15576,432
@@ -238,6 +239,7 @@ O.P.T New Caledonia,ISP,signed + filtering,safe,18200,1963
 Sonic,ISP,signed,unsafe,46375,1978
 Worldstream,ISP,signed,partially safe,49981,2000
 CSL IDC,cloud,,unsafe,9891,2007
+MoeDove LLC,ISP,signed + filtering,safe,44324,2022
 Telefonica Peru,ISP,,unsafe,6147,2099
 MTS Belarus,ISP,,unsafe,25106,2127
 Netinternet,cloud,signed + filtering,safe,51559,2136
@@ -325,6 +327,7 @@ Aura Fiber,ISP,,safe,204274,6735
 Kaisanet Oy,ISP,,unsafe,13170,6773
 DELTA Fiber,ISP,signed,unsafe,15435,6903
 Phase Layer Global Networks,cloud,,unsafe,51852,6959
+Moedove,ISP,signed + filtering,safe,53808,6981
 Bharat Datacenter,Cloud,signed + filtering,safe,151704,7196
 komro GmbH,ISP,signed + filtering,safe,29413,7308
 eSecureData,cloud,signed,unsafe,11831,7324
@@ -447,6 +450,7 @@ BOXIS,cloud,signed + filtering,safe,201199,45389
 Skhron,cloud,signed + filtering,safe,215467,48506
 Estoxy,cloud,,unsafe,208673,48965
 WhiteHat,ISP,signed + filtering,safe,51999,52250
+Perfect Networks,ISP,,unsafe,154516,54406
 Raiola Networks,cloud,signed + filtering,safe,56958,57203
 Galaxy Broadband,ISP,,unsafe,139879,59342
 NETSTYLE A. LTD,cloud,,unsafe,43945,59342
@@ -465,7 +469,3 @@ ComHemAB,ISP,,unsafe,39651,77693
 de.theirs,ISP,signed + filtering,safe,200242,77721
 VDX Networks,ISP,signed + filtering,safe,208723,77796
 AR Informatik AG (Kanton Appenzell Ausserrhoden),ISP,signed + filtering,safe,211452,77797
-TIME dotCom Berhad,ISP,,unsafe,9930,399
-Perfect Networks,ISP,,unsafe,154516,54406
-Moedove,ISP,signed + filtering,safe,53808,6981
-MoeDove LLC,ISP,signed + filtering,safe,44324,2022
