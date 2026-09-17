@@ -21,6 +21,7 @@ asn,handle
 852,TELUS
 1136,KPN
 1221,Telstra
+1257,Tele2 Sverige AB
 1267,WIND_Telecomunicazioni
 1399,megacable
 1741,CSCfi
@@ -238,7 +239,6 @@ asn,handle
 37611,Afrihost
 37705,Topnet_FSI
 38195,Superloopnet
-39651,ComHemAB
 39699,LouneaOy
 39857,AaltoUniversity
 40676,PsychzNetworks
