@@ -143,7 +143,7 @@ Brisanet,ISP,signed + filtering,safe,28126,545
 Hydra Communications,cloud,signed + filtering,safe,25369,572
 NIB India,ISP,,unsafe,9829,576
 Elisa Finland,ISP,signed + filtering,safe,719,577
-Reliance Jio,ISP,signed,unsafe,55836,584
+Reliance Jio,ISP,signed + filtering safe,55836,584
 KPN-Netco,ISP,signed + filtering,safe,1136,593
 Volia,cloud,,unsafe,25229,595
 RoyaleHosting BV,Cloud,signed,partially safe,212477,601
